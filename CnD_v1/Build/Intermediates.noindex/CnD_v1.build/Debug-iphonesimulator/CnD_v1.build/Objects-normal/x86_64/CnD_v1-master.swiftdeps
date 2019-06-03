@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "c52a4d9db42417182a2ef718a6f5191f"
+build_time: [1559583968, 229935000]
+inputs:
+  "/Users/arrinity/Library/Autosave Information/CnD_v1/CnD_v1/GameScene.swift": [1559502958, 867132732]
+  "/Users/arrinity/Library/Autosave Information/CnD_v1/CnD_v1/GameViewController.swift": [1559504341, 207712423]
+  "/Users/arrinity/Library/Autosave Information/CnD_v1/CnD_v1/AppDelegate.swift": [1559501957, 426443302]
