@@ -7,11 +7,17 @@
 //
 
 import Foundation
+import SpriteKit
 
 
 class Entity : Object
 {
-    var sprite = SKSpriteNode()
+    
+    override init(x : Int, y : Int, w : Int, h: Int, s : SKSpriteNode)
+    {
+        super.init(x : x, y : y, w : w, h : h, s : s)
+    }
+    
     func collision (response : Entity)
     {}
 }
