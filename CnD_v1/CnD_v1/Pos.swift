@@ -20,3 +20,14 @@ class Pos
         y = yY
     }
 }
+
+
+extension Pos : Equatable
+{
+    static func == (lhs : Pos, rhs : Pos) -> Bool
+    {
+        return
+            lhs.x == rhs.x &&
+                lhs.y == rhs.y
+    }
+}
