@@ -16,6 +16,7 @@ enum collisionType
     case INTERACTABLE
     case ENEMY
     case COLLECTABLE
+    case NONE
 }
 
 class Entity

@@ -9,7 +9,7 @@
 import Foundation
 
 
-class Gear
+class Gear : Collectable
 {
     
 }
