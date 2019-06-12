@@ -19,11 +19,11 @@ class Player : Entity
     
     var interact : Button
     
-    init (x : Int, y : Int, w : Int, h : Int, s : SKSpriteNode)
+    init (x : Int, y : Int, s : SKSpriteNode)
     {
         //left = Button()
         
-        super.init(x : x, y : y, w : w, h : h, s : s, m : .PLAYER)
+        super.init(x : x, y : y, s : s, m : .PLAYER)
     }
     
     override func update()
@@ -59,14 +59,14 @@ class Player : Entity
     
     override func collision(response : Entity)
     {
-        let aBottom = self.pos.y - (self.height / 2)
-        let aTop = self.pos.y + (self.height / 2)
-        let aLeft = self.pos.x - (self.width / 2)
-        let aRight = self.pos.x + (self.width / 2)
-        let bBottom = response.pos.y - (response.height / 2)
-        let bTop = response.pos.y + (response.height / 2)
-        let bLeft = response.pos.x - (response.width / 2)
-        let bRight = response.pos.x + (response.width / 2)
+        let aBottom = self.pos.y - Int(self.sprite.size.height / 2)
+        let aTop = self.pos.y + Int(self.sprite.size.height / 2)
+        let aLeft = self.pos.x - Int(self.sprite.size.width / 2)
+        let aRight = self.pos.x + Int(self.sprite.size.width / 2)
+        let bBottom = response.pos.y - Int(response.sprite.size.height / 2)
+        let bTop = response.pos.y + Int(response.sprite.size.height / 2)
+        let bLeft = response.pos.x - Int(response.sprite.size.width / 2)
+        let bRight = response.pos.x + Int(response.sprite.size.width / 2)
         
         var diffX = 0
         var diffY = 0
@@ -104,22 +104,22 @@ class Player : Entity
                 {
                     if pos.y < response.pos.y
                     {
-                        pos.y = aBottom - (aTop - (bBottom - 1)) - (height / 2)
+                        pos.y = aBottom - (aTop - (bBottom - 1)) - Int(sprite.size.height / 2)
                     }
                     else
                     {
-                        pos.y = bTop + (height / 2)
+                        pos.y = bTop + Int(sprite.size.height / 2)
                     }
                 }
                 else if diffX > diffY
                 {
                     if pos.x < response.pos.x
                     {
-                        pos.x = aLeft - (aRight - bLeft) - (width / 2)
+                        pos.x = aLeft - (aRight - bLeft) - Int(sprite.size.width / 2)
                     }
                     else
                     {
-                        pos.x = bRight + (width / 2) + 1
+                        pos.x = bRight + Int(sprite.size.width / 2) + 1
                     }
                 }
             }

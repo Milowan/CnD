@@ -13,9 +13,9 @@ class World : Entity
 {
     
     
-    init (x : Int, y : Int, w : Int, h : Int, s : SKSpriteNode)
+    init (x : Int, y : Int, w : Int, h : Int)
     {
         
-        super.init (x : x, y : y, w : w, h : h, s : s, m : .WORLD)
+        super.init (x : x, y : y, m : .WORLD)
     }
 }

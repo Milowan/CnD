@@ -14,8 +14,8 @@ class Collectable : Interactable
 {
     
     
-    init (x : Int, y : Int, w : Int, h : Int, s : SKSpriteNode)
-    {
-        super.init (x : x, y : y, w : w, h : h, s : s)
-    }
+//    init (x : Int, y : Int, s : SKSpriteNode)
+//    {
+//        super.init (x : x, y : y, s : s)
+//    }
 }

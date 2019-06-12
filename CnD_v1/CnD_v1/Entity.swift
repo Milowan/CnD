@@ -24,18 +24,20 @@ class Entity
     var collisionMask : collisionType
     
     var pos : Pos
-    var width : Int
-    var height : Int
-    var sprite : SKSpriteNode
+    var sprite : SKSpriteNode?
     
     
-    init(x : Int, y : Int, w : Int, h: Int, s : SKSpriteNode, m : collisionType)
+    init(x : Int, y : Int, s : SKSpriteNode?, m : collisionType)
     {
         collisionMask = m
         pos = Pos(xX : x, yY : y)
-        width = w
-        height = h
         sprite = s
+    }
+    
+    init (x : Int, y : Int, m : collisionType)
+    {
+        collisionMask = m
+        pos = Pos(xX : x, yY : y)
     }
     
     func draw()
@@ -56,8 +58,6 @@ extension Entity : Equatable
         return
             lhs.collisionMask == rhs.collisionMask &&
                 lhs.pos == rhs.pos &&
-                lhs.width == rhs.width &&
-                lhs.height == rhs.height &&
                 lhs.sprite == rhs.sprite
     }
 }
