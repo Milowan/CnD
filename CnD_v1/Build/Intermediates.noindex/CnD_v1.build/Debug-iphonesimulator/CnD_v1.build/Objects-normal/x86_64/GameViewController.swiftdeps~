@@ -14,10 +14,8 @@ depends-top-level:
 - !private "BooleanLiteralType"
 - !private "CGSize"
 - "CastingPrecedence"
-- !private "FloatLiteralType"
 - !private "GameScene"
 - "GameViewController"
-- !private "IntegerLiteralType"
 - !private "SKView"
 - "UIViewController"
 depends-member:
