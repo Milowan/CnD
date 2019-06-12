@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26F9808922A6F67800E7B5FE /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9808822A6F67800E7B5FE /* GameLogic.swift */; };
 		26F9808B22A6FD1800E7B5FE /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9808A22A6FD1800E7B5FE /* Gear.swift */; };
 		26F99AB022A98CD800D0F879 /* Collectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F99AAF22A98CD800D0F879 /* Collectable.swift */; };
 		26FBAF0222A5965C00AEDCDC /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAEFB22A5965C00AEDCDC /* World.swift */; };
@@ -46,7 +45,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		26F9808822A6F67800E7B5FE /* GameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
 		26F9808A22A6FD1800E7B5FE /* Gear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gear.swift; sourceTree = "<group>"; };
 		26F99AAF22A98CD800D0F879 /* Collectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collectable.swift; sourceTree = "<group>"; };
 		26FBAEFB22A5965C00AEDCDC /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 				A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */,
 				A686E4C022A45406004E1B64 /* LaunchScreen.storyboard */,
 				A686E4C322A45406004E1B64 /* Info.plist */,
-				26F9808822A6F67800E7B5FE /* GameLogic.swift */,
 				26F9808A22A6FD1800E7B5FE /* Gear.swift */,
 				26F99AAF22A98CD800D0F879 /* Collectable.swift */,
 			);
@@ -294,7 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26F9808922A6F67800E7B5FE /* GameLogic.swift in Sources */,
 				26FBAF0322A5965C00AEDCDC /* Button.swift in Sources */,
 				A686E4B822A45405004E1B64 /* GameScene.swift in Sources */,
 				26FBAF0422A5965C00AEDCDC /* Entity.swift in Sources */,

@@ -10,12 +10,12 @@ import Foundation
 import SpriteKit
 
 
-class Collectable : Entity
+class Collectable : Interactable
 {
     
     
     init (x : Int, y : Int, w : Int, h : Int, s : SKSpriteNode)
     {
-        super.init (x : x, y : y, w : w, h : h, s : s, m : collisionType.COLLECTABLE)
+        super.init (x : x, y : y, w : w, h : h, s : s)
     }
 }

@@ -15,7 +15,6 @@ enum collisionType
     case PLAYER
     case INTERACTABLE
     case ENEMY
-    case COLLECTABLE
     case NONE
 }
 
