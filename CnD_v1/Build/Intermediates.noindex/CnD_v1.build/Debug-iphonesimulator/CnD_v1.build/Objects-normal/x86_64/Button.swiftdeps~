@@ -44,17 +44,12 @@ depends-member:
 - ["6CnD_v16EntityC", "player"]
 - ["6CnD_v16EntityC", "update"]
 - !private ["SQ", "NONE"]
-- ["SQ", ""]
-- !private ["SQ", "active"]
-- !private ["SQ", "init"]
-- !private ["SQ", "interactable"]
-- !private ["SQ", "player"]
 - !private ["SH", "NONE"]
 - !private ["6CnD_v113collisionTypeO", "NONE"]
 depends-nominal:
 - "6CnD_v16ButtonC"
 - "6CnD_v16EntityC"
-- "SQ"
+- !private "SQ"
 - !private "SH"
 - !private "6CnD_v113collisionTypeO"
 depends-dynamic-lookup:

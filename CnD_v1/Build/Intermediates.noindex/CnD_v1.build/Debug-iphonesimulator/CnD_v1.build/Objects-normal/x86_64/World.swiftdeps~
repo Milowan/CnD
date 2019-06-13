@@ -20,8 +20,6 @@ depends-member:
 - ["6CnD_v16EntityC", ""]
 - ["6CnD_v16EntityC", "init"]
 - !private ["SQ", "WORLD"]
-- ["SQ", ""]
-- !private ["SQ", "init"]
 - !private ["SH", "WORLD"]
 - ["6CnD_v15WorldC", "Int"]
 - ["6CnD_v15WorldC", "SKSpriteNode"]
@@ -29,7 +27,7 @@ depends-member:
 - !private ["6CnD_v113collisionTypeO", "WORLD"]
 depends-nominal:
 - "6CnD_v16EntityC"
-- "SQ"
+- !private "SQ"
 - !private "SH"
 - "6CnD_v15WorldC"
 - !private "6CnD_v113collisionTypeO"

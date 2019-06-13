@@ -9,6 +9,7 @@ provides-nominal:
 provides-member:
 - ["6CnD_v113collisionTypeO", ""]
 - ["6CnD_v16EntityC", ""]
+- ["6CnD_v16EntityC", "=="]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "&&"
@@ -16,10 +17,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Bool"
 - "Entity"
-- "Equatable"
-- !private "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
 - "Pos"
 - "SKSpriteNode"
 - "collisionType"
@@ -33,7 +31,6 @@ depends-member:
 - ["6CnD_v16EntityC", "collision"]
 - ["6CnD_v16EntityC", "collisionMask"]
 - ["6CnD_v16EntityC", "collisionType"]
-- ["6CnD_v16EntityC", "deinit"]
 - ["6CnD_v16EntityC", "draw"]
 - ["6CnD_v16EntityC", "height"]
 - ["6CnD_v16EntityC", "init"]
@@ -42,17 +39,11 @@ depends-member:
 - ["6CnD_v16EntityC", "update"]
 - ["6CnD_v16EntityC", "width"]
 - ["SQ", "=="]
-- !private ["SQ", "Pos"]
 - ["SQ", ""]
 - ["SQ", "_rawHashValue"]
-- !private ["SQ", "collisionMask"]
 - ["SQ", "hash"]
 - ["SQ", "hashValue"]
-- !private ["SQ", "height"]
 - !private ["SQ", "init"]
-- !private ["SQ", "pos"]
-- !private ["SQ", "sprite"]
-- !private ["SQ", "width"]
 - ["SH", "=="]
 - ["SH", ""]
 - ["SH", "_rawHashValue"]
@@ -112,4 +103,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "1ccfa1939d27d646fa9326f05cfea2d0"
+interface-hash: "4fcdd656094ddfa8f2d70b0d563d1552"

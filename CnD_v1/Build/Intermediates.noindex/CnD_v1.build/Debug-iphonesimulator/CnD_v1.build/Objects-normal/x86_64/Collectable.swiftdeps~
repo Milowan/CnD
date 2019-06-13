@@ -9,11 +9,8 @@ provides-dynamic-lookup:
 depends-top-level:
 - "Collectable"
 - "Entity"
-- !private "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
 - "SKSpriteNode"
-- !private "StringLiteralType"
 - !private "collisionType"
 depends-member:
 - ["6CnD_v111CollectableC", "Int"]
@@ -26,15 +23,12 @@ depends-member:
 - !private ["6CnD_v16EntityC", "collisionType"]
 - ["6CnD_v16EntityC", "init"]
 - !private ["SQ", "COLLECTABLE"]
-- ["SQ", ""]
-- !private ["SQ", "collisionType"]
-- !private ["SQ", "init"]
 - !private ["SH", "COLLECTABLE"]
 - !private ["6CnD_v113collisionTypeO", "COLLECTABLE"]
 depends-nominal:
 - "6CnD_v111CollectableC"
 - "6CnD_v16EntityC"
-- "SQ"
+- !private "SQ"
 - !private "SH"
 - !private "6CnD_v113collisionTypeO"
 depends-dynamic-lookup:

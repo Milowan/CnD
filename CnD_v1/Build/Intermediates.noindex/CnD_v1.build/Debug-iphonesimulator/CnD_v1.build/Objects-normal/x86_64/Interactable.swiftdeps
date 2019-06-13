@@ -14,7 +14,6 @@ depends-member:
 - ["6CnD_v16EntityC", "init"]
 - ["SQ", ""]
 - !private ["SQ", "init"]
-- ["6CnD_v112InteractableC", "deinit"]
 - ["6CnD_v112InteractableC", "init"]
 depends-nominal:
 - "6CnD_v16EntityC"

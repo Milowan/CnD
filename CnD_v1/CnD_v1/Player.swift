@@ -12,12 +12,12 @@ import SpriteKit
 
 class Player : Entity
 {
-    var left : Button
-    var right : Button
-    var up : Button
-    var down : Button
+   // var left : Button
+   // var right : Button
+   // var up : Button
+   // var down : Button
     
-    var interact : Button
+   // var interact : Button
     
     init (x : Int, y : Int, w : Int, h : Int, s : SKSpriteNode)
     {
@@ -26,37 +26,37 @@ class Player : Entity
         super.init(x : x, y : y, w : w, h : h, s : s, m : .PLAYER)
     }
     
-    override func update()
-    {
-        left.update()
-        right.update()
-        up.update()
-        down.update()
-        interact.update()
-        
-        if left.active
-        {
-            
-        }
-        if right.active
-        {
-            
-        }
-        if up.active
-        {
-            
-        }
-        if down.active
-        {
-            
-        }
-        if interact.active
-        {
-            
-        }
-        
-    }
-    
+//    override func update()
+//    {
+//        left.update()
+//        right.update()
+//        up.update()
+//        down.update()
+//        interact.update()
+//
+//        if left.active
+//        {
+//
+//        }
+//        if right.active
+//        {
+//
+//        }
+//        if up.active
+//        {
+//
+//        }
+//        if down.active
+//        {
+//
+//        }
+//        if interact.active
+//        {
+//
+//        }
+//
+//    }
+//
     override func collision(response : Entity)
     {
         let aBottom = self.pos.y - (self.height / 2)
@@ -94,39 +94,41 @@ class Player : Entity
         aLeft <= bRight &&
         aRight >= bLeft
         {
-            if response.collisionMask == .INTERACTABLE
-            {
-                interact.interactable = (response as! Interactable)
-            }
-            else if response.collisionMask == .WORLD
-            {
-                if diffX < diffY
-                {
-                    if pos.y < response.pos.y
-                    {
-                        pos.y = aBottom - (aTop - (bBottom - 1)) - (height / 2)
-                    }
-                    else
-                    {
-                        pos.y = bTop + (height / 2)
-                    }
-                }
-                else if diffX > diffY
-                {
-                    if pos.x < response.pos.x
-                    {
-                        pos.x = aLeft - (aRight - bLeft) - (width / 2)
-                    }
-                    else
-                    {
-                        pos.x = bRight + (width / 2) + 1
-                    }
-                }
-            }
-        }
-        else if interact.interactable == response
-        {
-            interact.interactable = nil
-        }
-    }
+//            if response.collisionMask == .INTERACTABLE
+//            {
+//                interact.interactable = (response as! Interactable)
+//            }
+//            else if response.collisionMask == .WORLD
+//            {
+//                if diffX < diffY
+//                {
+//                    if pos.y < response.pos.y
+//                    {
+//                        pos.y = aBottom - (aTop - (bBottom - 1)) - (height / 2)
+//                    }
+//                    else
+//                    {
+//                        pos.y = bTop + (height / 2)
+//                    }
+//                }
+//                else if diffX > diffY
+//                {
+//                    if pos.x < response.pos.x
+//                    {
+//                        pos.x = aLeft - (aRight - bLeft) - (width / 2)
+//                    }
+//                    else
+//                    {
+//                        pos.x = bRight + (width / 2) + 1
+//                    }
+//                }
+//            }
+//        }
+//        else if interact.interactable == response
+//        {
+//            interact.interactable = nil
+//        }
+//    }
+}
+}
 }

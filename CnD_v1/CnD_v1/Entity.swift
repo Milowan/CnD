@@ -39,6 +39,8 @@ class Entity
         sprite = s
     }
     
+    
+    
     func draw()
     {}
     
