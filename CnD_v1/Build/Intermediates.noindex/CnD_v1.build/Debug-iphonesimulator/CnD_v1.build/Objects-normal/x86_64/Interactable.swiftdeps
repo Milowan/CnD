@@ -8,18 +8,31 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Entity"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
 - "Interactable"
+- "SKSpriteNode"
+- !private "StringLiteralType"
 depends-member:
+- ["6CnD_v16EntityC", "Int"]
+- ["6CnD_v16EntityC", "SKSpriteNode"]
 - ["6CnD_v16EntityC", ""]
 - ["6CnD_v16EntityC", "init"]
+- !private ["SQ", "INTERACTABLE"]
 - ["SQ", ""]
 - !private ["SQ", "init"]
-- ["6CnD_v112InteractableC", "deinit"]
+- !private ["SH", "INTERACTABLE"]
+- ["6CnD_v112InteractableC", "Int"]
+- ["6CnD_v112InteractableC", "SKSpriteNode"]
 - ["6CnD_v112InteractableC", "init"]
+- !private ["6CnD_v113collisionTypeO", "INTERACTABLE"]
 depends-nominal:
 - "6CnD_v16EntityC"
 - "SQ"
+- !private "SH"
 - "6CnD_v112InteractableC"
+- !private "6CnD_v113collisionTypeO"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -53,4 +66,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e4adc2eaa017c6deffdab73e8c57bebf"
+interface-hash: "4209517b8adf1b88e8b6bb6c9578c5c9"

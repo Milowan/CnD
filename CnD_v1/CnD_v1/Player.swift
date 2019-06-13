@@ -12,13 +12,14 @@ import SpriteKit
 
 class Player : Entity
 {
+
 //    var left : Button
 //    var right : Button
 //    var up : Button
 //    var down : Button
 //
 //    var interact : Button
-
+    
     init (x : Int, y : Int, s : SKSpriteNode)
     {
         //left = Button()
@@ -56,7 +57,7 @@ class Player : Entity
 //        }
 //
 //    }
-    
+
     override func collision(response : Entity)
     {
         
@@ -133,4 +134,5 @@ class Player : Entity
 //            interact.interactable = nil
 //        }
     }
+
 }

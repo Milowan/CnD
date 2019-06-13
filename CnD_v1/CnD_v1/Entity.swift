@@ -34,11 +34,13 @@ class Entity
         sprite = s
     }
     
+    
     init (x : Int, y : Int, m : collisionType)
     {
         collisionMask = m
         pos = Pos(xX : x, yY : y)
     }
+    
     
     func draw()
     {}

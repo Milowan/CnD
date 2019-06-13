@@ -8,8 +8,13 @@
 
 import SpriteKit
 
+
 class GameScene: SKScene
 {
+    
+    
+    var currentLevel: Int = 0
+
     var pool = [Entity]()
     
     override init (size : CGSize)
@@ -21,6 +26,7 @@ class GameScene: SKScene
     {
         super.init(coder : coder)
     }
+
     
     override func didMove(to view: SKView)
     {
@@ -29,6 +35,16 @@ class GameScene: SKScene
         //addEntity(entity : Player())
     }
     
+    
+    class func level(levelNum: Int) -> GameScene?
+    {
+        let scene = GameScene(fileNamed: "LevelScene_\(levelNum)")!
+        scene.currentLevel = levelNum
+        scene.scaleMode = .aspectFill
+        return scene
+    }
+}
+
     func addEntity(entity : Entity)
     {
         pool.append(entity)
@@ -60,3 +76,4 @@ class GameScene: SKScene
             }
         }
     }}
+
