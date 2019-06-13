@@ -43,7 +43,7 @@ class GameScene: SKScene
         scene.scaleMode = .aspectFill
         return scene
     }
-}
+
 
     func addEntity(entity : Entity)
     {
@@ -76,4 +76,4 @@ class GameScene: SKScene
             }
         }
     }}
-
+}

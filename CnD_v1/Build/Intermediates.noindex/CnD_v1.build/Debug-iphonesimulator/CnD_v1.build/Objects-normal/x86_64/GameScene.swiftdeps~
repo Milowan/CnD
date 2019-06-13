@@ -1,6 +1,9 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "GameScene"
+- "addEntity"
+- "update"
+- "collision"
 provides-nominal:
 - "6CnD_v19GameSceneC"
 provides-member:
@@ -9,54 +12,62 @@ provides-dynamic-lookup:
 - "didMove"
 depends-top-level:
 - "AssignmentPrecedence"
-- "FloatLiteralType"
+- "CGSize"
+- "Entity"
 - "GameScene"
 - "Int"
-- "IntegerLiteralType"
+- "NSCoder"
 - !private "SKColor"
 - "SKScene"
 - "SKView"
-- !private "StringLiteralType"
+- !private "addChild"
+- "addEntity"
+- "collision"
+- !private "pool"
+- "update"
 depends-member:
+- ["Sa", "init"]
+- ["SK", "init"]
+- ["s7CVarArgP", "Entity"]
 - !private ["s7CVarArgP", "GameScene"]
 - !private ["s7CVarArgP", "SKColor"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "backgroundColor"]
 - !private ["s7CVarArgP", "black"]
-- !private ["s7CVarArgP", "currentLevel"]
-- !private ["s7CVarArgP", "init"]
-- !private ["s7CVarArgP", "scaleMode"]
+- ["s7CVarArgP", "init"]
+- ["Sl", "init"]
+- ["10Foundation15ContiguousBytesP", "init"]
+- ["s28CustomDebugStringConvertibleP", "Entity"]
 - !private ["s28CustomDebugStringConvertibleP", "GameScene"]
 - !private ["s28CustomDebugStringConvertibleP", "SKColor"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
 - !private ["s28CustomDebugStringConvertibleP", "black"]
-- !private ["s28CustomDebugStringConvertibleP", "currentLevel"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "scaleMode"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "Entity"]
 - !private ["s23CustomStringConvertibleP", "GameScene"]
 - !private ["s23CustomStringConvertibleP", "SKColor"]
 - ["s23CustomStringConvertibleP", ""]
-- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
-- !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "backgroundColor"]
 - !private ["s23CustomStringConvertibleP", "black"]
-- !private ["s23CustomStringConvertibleP", "currentLevel"]
-- !private ["s23CustomStringConvertibleP", "init"]
-- !private ["s23CustomStringConvertibleP", "scaleMode"]
-- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
-- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["10Foundation12DataProtocolP", "init"]
+- ["Se", "init"]
+- ["SE", "init"]
+- ["SQ", "Entity"]
 - !private ["SQ", "GameScene"]
 - !private ["SQ", "SKColor"]
 - ["SQ", ""]
-- !private ["SQ", "aspectFill"]
 - !private ["SQ", "backgroundColor"]
 - !private ["SQ", "black"]
-- !private ["SQ", "currentLevel"]
-- !private ["SQ", "init"]
-- !private ["SQ", "scaleMode"]
+- ["SQ", "init"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- ["6CnD_v19GameSceneC", "CGSize"]
+- ["6CnD_v19GameSceneC", "Entity"]
 - ["6CnD_v19GameSceneC", "GameScene"]
 - ["6CnD_v19GameSceneC", "Int"]
+- ["6CnD_v19GameSceneC", "NSCoder"]
 - !private ["6CnD_v19GameSceneC", "SKColor"]
 - ["6CnD_v19GameSceneC", "SKView"]
 - !private ["6CnD_v19GameSceneC", "backgroundColor"]
@@ -65,36 +76,37 @@ depends-member:
 - ["6CnD_v19GameSceneC", "didMove"]
 - ["6CnD_v19GameSceneC", "init"]
 - ["6CnD_v19GameSceneC", "level"]
-- !private ["6CnD_v19GameSceneC", "scaleMode"]
+- ["6CnD_v19GameSceneC", "pool"]
+- ["SH", "Entity"]
 - !private ["SH", "GameScene"]
 - !private ["SH", "SKColor"]
 - ["SH", ""]
-- !private ["SH", "aspectFill"]
 - !private ["SH", "backgroundColor"]
 - !private ["SH", "black"]
-- !private ["SH", "currentLevel"]
-- !private ["SH", "init"]
-- !private ["SH", "scaleMode"]
+- ["SH", "init"]
+- ["SM", "init"]
+- ["10Foundation19MutableDataProtocolP", "init"]
+- ["So8NSCodingP", "Entity"]
 - !private ["So8NSCodingP", "GameScene"]
 - !private ["So8NSCodingP", "SKColor"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "backgroundColor"]
 - !private ["So8NSCodingP", "black"]
-- !private ["So8NSCodingP", "currentLevel"]
 - !private ["So8NSCodingP", "init"]
-- !private ["So8NSCodingP", "scaleMode"]
+- ["So9NSCopyingP", "Entity"]
 - !private ["So9NSCopyingP", "GameScene"]
 - !private ["So9NSCopyingP", "SKColor"]
 - ["So9NSCopyingP", ""]
 - !private ["So9NSCopyingP", "backgroundColor"]
 - !private ["So9NSCopyingP", "black"]
-- !private ["So9NSCopyingP", "currentLevel"]
 - !private ["So9NSCopyingP", "init"]
-- !private ["So9NSCopyingP", "scaleMode"]
 - !private ["So21NSItemProviderReadingP", "black"]
 - !private ["So21NSItemProviderWritingP", "black"]
+- ["So8NSObjectC", "CGSize"]
+- ["So8NSObjectC", "Entity"]
 - ["So8NSObjectC", "GameScene"]
 - ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "NSCoder"]
 - !private ["So8NSObjectC", "SKColor"]
 - ["So8NSObjectC", "SKView"]
 - !private ["So8NSObjectC", "backgroundColor"]
@@ -103,26 +115,28 @@ depends-member:
 - ["So8NSObjectC", "didMove"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "level"]
-- !private ["So8NSObjectC", "scaleMode"]
+- ["So8NSObjectC", "pool"]
+- ["So8NSObjectP", "Entity"]
 - !private ["So8NSObjectP", "GameScene"]
 - !private ["So8NSObjectP", "SKColor"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "backgroundColor"]
 - !private ["So8NSObjectP", "black"]
-- !private ["So8NSObjectP", "currentLevel"]
 - !private ["So8NSObjectP", "init"]
-- !private ["So8NSObjectP", "scaleMode"]
+- ["So14NSSecureCodingP", "Entity"]
 - !private ["So14NSSecureCodingP", "GameScene"]
 - !private ["So14NSSecureCodingP", "SKColor"]
 - ["So14NSSecureCodingP", ""]
 - !private ["So14NSSecureCodingP", "backgroundColor"]
 - !private ["So14NSSecureCodingP", "black"]
-- !private ["So14NSSecureCodingP", "currentLevel"]
 - !private ["So14NSSecureCodingP", "init"]
-- !private ["So14NSSecureCodingP", "scaleMode"]
-- !private ["SY", "aspectFill"]
+- ["Sk", "init"]
+- ["Sm", "init"]
+- ["So12SKEffectNodeC", "CGSize"]
+- ["So12SKEffectNodeC", "Entity"]
 - ["So12SKEffectNodeC", "GameScene"]
 - ["So12SKEffectNodeC", "Int"]
+- ["So12SKEffectNodeC", "NSCoder"]
 - !private ["So12SKEffectNodeC", "SKColor"]
 - ["So12SKEffectNodeC", "SKView"]
 - !private ["So12SKEffectNodeC", "backgroundColor"]
@@ -130,9 +144,12 @@ depends-member:
 - ["So12SKEffectNodeC", "didMove"]
 - ["So12SKEffectNodeC", "init"]
 - ["So12SKEffectNodeC", "level"]
-- !private ["So12SKEffectNodeC", "scaleMode"]
+- ["So12SKEffectNodeC", "pool"]
+- ["So6SKNodeC", "CGSize"]
+- ["So6SKNodeC", "Entity"]
 - ["So6SKNodeC", "GameScene"]
 - ["So6SKNodeC", "Int"]
+- ["So6SKNodeC", "NSCoder"]
 - !private ["So6SKNodeC", "SKColor"]
 - ["So6SKNodeC", "SKView"]
 - !private ["So6SKNodeC", "backgroundColor"]
@@ -140,9 +157,12 @@ depends-member:
 - ["So6SKNodeC", "didMove"]
 - ["So6SKNodeC", "init"]
 - ["So6SKNodeC", "level"]
-- !private ["So6SKNodeC", "scaleMode"]
+- ["So6SKNodeC", "pool"]
+- ["So7SKSceneC", "CGSize"]
+- ["So7SKSceneC", "Entity"]
 - ["So7SKSceneC", "GameScene"]
 - ["So7SKSceneC", "Int"]
+- ["So7SKSceneC", "NSCoder"]
 - !private ["So7SKSceneC", "SKColor"]
 - ["So7SKSceneC", "SKView"]
 - ["So7SKSceneC", ""]
@@ -151,43 +171,38 @@ depends-member:
 - ["So7SKSceneC", "didMove"]
 - ["So7SKSceneC", "init"]
 - ["So7SKSceneC", "level"]
-- !private ["So7SKSceneC", "scaleMode"]
-- !private ["So16SKSceneScaleModeV", "aspectFill"]
+- ["So7SKSceneC", "pool"]
+- ["So10SKWarpableP", "Entity"]
 - !private ["So10SKWarpableP", "GameScene"]
 - !private ["So10SKWarpableP", "SKColor"]
 - ["So10SKWarpableP", ""]
 - !private ["So10SKWarpableP", "backgroundColor"]
-- !private ["So10SKWarpableP", "currentLevel"]
 - !private ["So10SKWarpableP", "init"]
-- !private ["So10SKWarpableP", "scaleMode"]
-- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
-- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
-- !private ["s16TextOutputStreamP", "appendInterpolation"]
-- !private ["s16TextOutputStreamP", "appendLiteral"]
+- ["ST", "init"]
 - !private ["So7UIColorC", "black"]
+- ["So18UIFocusEnvironmentP", "Entity"]
 - !private ["So18UIFocusEnvironmentP", "GameScene"]
 - !private ["So18UIFocusEnvironmentP", "SKColor"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "backgroundColor"]
-- !private ["So18UIFocusEnvironmentP", "currentLevel"]
 - !private ["So18UIFocusEnvironmentP", "init"]
-- !private ["So18UIFocusEnvironmentP", "scaleMode"]
+- ["So11UIFocusItemP", "Entity"]
 - !private ["So11UIFocusItemP", "GameScene"]
 - !private ["So11UIFocusItemP", "SKColor"]
 - ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "backgroundColor"]
-- !private ["So11UIFocusItemP", "currentLevel"]
 - !private ["So11UIFocusItemP", "init"]
-- !private ["So11UIFocusItemP", "scaleMode"]
+- ["So30UIPasteConfigurationSupportingP", "Entity"]
 - !private ["So30UIPasteConfigurationSupportingP", "GameScene"]
 - !private ["So30UIPasteConfigurationSupportingP", "SKColor"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
-- !private ["So30UIPasteConfigurationSupportingP", "currentLevel"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
-- !private ["So30UIPasteConfigurationSupportingP", "scaleMode"]
+- ["So11UIResponderC", "CGSize"]
+- ["So11UIResponderC", "Entity"]
 - ["So11UIResponderC", "GameScene"]
 - ["So11UIResponderC", "Int"]
+- ["So11UIResponderC", "NSCoder"]
 - !private ["So11UIResponderC", "SKColor"]
 - ["So11UIResponderC", "SKView"]
 - !private ["So11UIResponderC", "backgroundColor"]
@@ -195,38 +210,50 @@ depends-member:
 - ["So11UIResponderC", "didMove"]
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "level"]
-- !private ["So11UIResponderC", "scaleMode"]
+- ["So11UIResponderC", "pool"]
+- ["So30UIResponderStandardEditActionsP", "Entity"]
 - !private ["So30UIResponderStandardEditActionsP", "GameScene"]
 - !private ["So30UIResponderStandardEditActionsP", "SKColor"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
-- !private ["So30UIResponderStandardEditActionsP", "currentLevel"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
-- !private ["So30UIResponderStandardEditActionsP", "scaleMode"]
+- ["So23UIUserActivityRestoringP", "Entity"]
 - !private ["So23UIUserActivityRestoringP", "GameScene"]
 - !private ["So23UIUserActivityRestoringP", "SKColor"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "backgroundColor"]
-- !private ["So23UIUserActivityRestoringP", "currentLevel"]
 - !private ["So23UIUserActivityRestoringP", "init"]
-- !private ["So23UIUserActivityRestoringP", "scaleMode"]
+- ["s14_ArrayProtocolP", "init"]
+- ["s24_DestructorSafeContainerP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "black"]
+- ["s19_HasContiguousBytesP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Entity"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "GameScene"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SKColor"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "currentLevel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "scaleMode"]
+- ["s21_ObjectiveCBridgeableP", "init"]
 depends-nominal:
+- "Sa"
+- "SK"
 - "s7CVarArgP"
+- "Sl"
+- "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s26DefaultStringInterpolationV"
+- "10Foundation12DataProtocolP"
+- "Se"
+- "SE"
 - "SQ"
+- "s25ExpressibleByArrayLiteralP"
 - "6CnD_v19GameSceneC"
 - "SH"
+- "SM"
+- "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
 - "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
@@ -234,14 +261,13 @@ depends-nominal:
 - "So8NSObjectC"
 - "So8NSObjectP"
 - "So14NSSecureCodingP"
-- !private "SY"
+- "Sk"
+- "Sm"
 - "So12SKEffectNodeC"
 - "So6SKNodeC"
 - "So7SKSceneC"
-- !private "So16SKSceneScaleModeV"
 - "So10SKWarpableP"
-- !private "s27StringInterpolationProtocolP"
-- !private "s16TextOutputStreamP"
+- "ST"
 - !private "So7UIColorC"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
@@ -249,8 +275,13 @@ depends-nominal:
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - "So23UIUserActivityRestoringP"
+- "s14_ArrayProtocolP"
+- "s24_DestructorSafeContainerP"
 - !private "s26_ExpressibleByColorLiteralP"
+- "s19_HasContiguousBytesP"
+- "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -284,4 +315,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5abbcb5d29fff4a5836f4738278e51aa"
+interface-hash: "3b9fc4e41feda8a92700d9521a96b326"

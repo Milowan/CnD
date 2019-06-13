@@ -18,7 +18,7 @@ enum collisionType
     case NONE
 }
 
-class Entity
+class Entity 
 {
     
     var collisionMask : collisionType

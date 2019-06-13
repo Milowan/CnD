@@ -96,6 +96,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A658836A22B2C36F00F7F2CC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				26FBAEFD22A5965C00AEDCDC /* Entity.swift */,
+				26FBAEFE22A5965C00AEDCDC /* Interactable.swift */,
+				26FBAF0022A5965C00AEDCDC /* Player.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		A686E4A522A45405004E1B64 = {
 			isa = PBXGroup;
 			children = (
@@ -120,9 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				26FBAEFC22A5965C00AEDCDC /* Button.swift */,
-				26FBAEFD22A5965C00AEDCDC /* Entity.swift */,
-				26FBAEFE22A5965C00AEDCDC /* Interactable.swift */,
-				26FBAF0022A5965C00AEDCDC /* Player.swift */,
+				A658836A22B2C36F00F7F2CC /* Entity */,
 				26FBAEFF22A5965C00AEDCDC /* Pos.swift */,
 				26FBAEFB22A5965C00AEDCDC /* World.swift */,
 				A686E4B122A45405004E1B64 /* AppDelegate.swift */,

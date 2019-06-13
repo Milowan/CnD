@@ -15,14 +15,19 @@ depends-member:
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", ""]
 - ["6CnD_v16EntityC", "init"]
+- !private ["SQ", "WORLD"]
 - ["SQ", ""]
 - !private ["SQ", "init"]
+- !private ["SH", "WORLD"]
 - ["6CnD_v15WorldC", "Int"]
 - ["6CnD_v15WorldC", "init"]
+- !private ["6CnD_v113collisionTypeO", "WORLD"]
 depends-nominal:
 - "6CnD_v16EntityC"
 - "SQ"
+- !private "SH"
 - "6CnD_v15WorldC"
+- !private "6CnD_v113collisionTypeO"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"

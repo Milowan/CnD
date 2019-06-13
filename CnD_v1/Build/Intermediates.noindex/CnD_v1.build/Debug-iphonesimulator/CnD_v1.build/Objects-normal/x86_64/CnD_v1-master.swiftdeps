@@ -1,15 +1,15 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "db25aa211e833d4e09202272a0331669"
-build_time: [1560446518, 132151000]
+build_time: [1560448019, 348929000]
 inputs:
   "/Users/arrinity/Documents/GitHub/CnD/CnD_v1/CnD_v1/Button.swift": !dirty [1560446512, 630823406]
-  "/Users/arrinity/Documents/GitHub/CnD/CnD_v1/CnD_v1/GameScene.swift": !dirty [1560446512, 695941141]
-  "/Users/arrinity/Documents/GitHub/CnD/CnD_v1/CnD_v1/Entity.swift": !dirty [1560446512, 698842501]
+  "/Users/arrinity/Documents/GitHub/CnD/CnD_v1/CnD_v1/GameScene.swift": !dirty [1560448012, 795293526]
+  "/Users/arrinity/Documents/GitHub/CnD/CnD_v1/CnD_v1/Entity/Entity.swift": !dirty [1560448012, 801233793]
   "/Users/arrinity/Documents/GitHub/CnD/CnD_v1/CnD_v1/GameViewController.swift": !dirty [1560361987, 318852172]
   "/Users/arrinity/Documents/GitHub/CnD/CnD_v1/CnD_v1/World.swift": !dirty [1560446512, 632580243]
   "/Users/arrinity/Documents/GitHub/CnD/CnD_v1/CnD_v1/Collectable.swift": !dirty [1560446512, 631066336]
-  "/Users/arrinity/Documents/GitHub/CnD/CnD_v1/CnD_v1/Interactable.swift": !dirty [1560446512, 632334251]
+  "/Users/arrinity/Documents/GitHub/CnD/CnD_v1/CnD_v1/Entity/Interactable.swift": !dirty [1560446512, 632334251]
   "/Users/arrinity/Documents/GitHub/CnD/CnD_v1/CnD_v1/Gear.swift": !dirty [1560446512, 631487418]
   "/Users/arrinity/Documents/GitHub/CnD/CnD_v1/CnD_v1/Pos.swift": !dirty [1559844084, 62158276]
-  "/Users/arrinity/Documents/GitHub/CnD/CnD_v1/CnD_v1/Player.swift": !dirty [1560446512, 694741466]
+  "/Users/arrinity/Documents/GitHub/CnD/CnD_v1/CnD_v1/Entity/Player.swift": !dirty [1560448012, 789262396]
   "/Users/arrinity/Documents/GitHub/CnD/CnD_v1/CnD_v1/AppDelegate.swift": !dirty [1559501957, 426443302]

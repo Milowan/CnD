@@ -13,6 +13,7 @@ depends-top-level:
 - "Bool"
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
+- !private "FloatLiteralType"
 - !private "GameScene"
 - "GameViewController"
 - !private "IntegerLiteralType"
@@ -63,7 +64,6 @@ depends-member:
 - !private ["SQ", "showsNodeCount"]
 - !private ["SQ", "view"]
 - !private ["SQ", "viewDidLoad"]
-- !private ["6CnD_v19GameSceneC", "deinit"]
 - !private ["6CnD_v19GameSceneC", "level"]
 - ["6CnD_v118GameViewControllerC", "Bool"]
 - !private ["6CnD_v118GameViewControllerC", "GameScene"]

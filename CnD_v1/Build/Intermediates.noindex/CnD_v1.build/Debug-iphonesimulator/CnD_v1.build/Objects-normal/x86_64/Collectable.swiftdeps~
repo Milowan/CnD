@@ -8,35 +8,17 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Collectable"
-- "Entity"
-- !private "FloatLiteralType"
-- "Int"
-- !private "IntegerLiteralType"
-- "SKSpriteNode"
-- !private "StringLiteralType"
-- !private "collisionType"
+- "Interactable"
 depends-member:
-- ["6CnD_v111CollectableC", "Int"]
-- ["6CnD_v111CollectableC", "SKSpriteNode"]
-- !private ["6CnD_v111CollectableC", "collisionType"]
 - ["6CnD_v111CollectableC", "init"]
-- ["6CnD_v16EntityC", "Int"]
-- ["6CnD_v16EntityC", "SKSpriteNode"]
-- ["6CnD_v16EntityC", ""]
-- !private ["6CnD_v16EntityC", "collisionType"]
-- ["6CnD_v16EntityC", "init"]
-- !private ["SQ", "COLLECTABLE"]
 - ["SQ", ""]
-- !private ["SQ", "collisionType"]
 - !private ["SQ", "init"]
-- !private ["SH", "COLLECTABLE"]
-- !private ["6CnD_v113collisionTypeO", "COLLECTABLE"]
+- ["6CnD_v112InteractableC", ""]
+- ["6CnD_v112InteractableC", "init"]
 depends-nominal:
 - "6CnD_v111CollectableC"
-- "6CnD_v16EntityC"
 - "SQ"
-- !private "SH"
-- !private "6CnD_v113collisionTypeO"
+- "6CnD_v112InteractableC"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -70,4 +52,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e6297312dc646b5da272c11efa95a7ec"
+interface-hash: "1968c05ed7cba8de915809c8b0936e8a"

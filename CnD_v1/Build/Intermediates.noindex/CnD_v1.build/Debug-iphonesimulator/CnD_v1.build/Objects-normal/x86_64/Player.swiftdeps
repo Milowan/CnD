@@ -13,6 +13,7 @@ depends-top-level:
 - !private "/"
 - !private "<"
 - !private "<="
+- "=="
 - !private ">"
 - !private ">="
 - "AssignmentPrecedence"
@@ -22,7 +23,8 @@ depends-top-level:
 - !private "IntegerLiteralType"
 - "Player"
 - "SKSpriteNode"
-- !private "StringLiteralType"
+- "interact"
+- "response"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
 - !private ["Sz", "init"]
@@ -204,4 +206,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d5cb3cfb067eb96af8267228ba52877c"
+interface-hash: "6e4da67798dc751ecc50aa2e2a3fafb8"

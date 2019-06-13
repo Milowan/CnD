@@ -19,6 +19,11 @@ class Player : Entity
     
    // var interact : Button
     
+    required init?(coder aDecoder: NSCoder)
+    {
+        fatalError("Use init()")
+    }
+    
     init (x : Int, y : Int, s : SKSpriteNode)
     {
         //left = Button()
