@@ -48,7 +48,7 @@ class GameScene: SKScene
     func addEntity(entity : Entity)
     {
         pool.append(entity)
-        addChild(entity.sprite)
+        addChild(entity.sprite as! SKSpriteNode)
     }
     
     
