@@ -34,6 +34,11 @@ depends-member:
 - !private ["6CnD_v16EntityC", "pos"]
 - !private ["6CnD_v16EntityC", "width"]
 - !private ["SQ", "PLAYER"]
+- ["SQ", ""]
+- !private ["SQ", "height"]
+- !private ["SQ", "init"]
+- !private ["SQ", "pos"]
+- !private ["SQ", "width"]
 - !private ["SQ", "x"]
 - !private ["SQ", "y"]
 - !private ["SH", "PLAYER"]
@@ -50,7 +55,7 @@ depends-member:
 - !private ["6CnD_v113collisionTypeO", "PLAYER"]
 depends-nominal:
 - "6CnD_v16EntityC"
-- !private "SQ"
+- "SQ"
 - !private "SH"
 - "6CnD_v16PlayerC"
 - !private "6CnD_v13PosC"

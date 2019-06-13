@@ -12,9 +12,12 @@ depends-top-level:
 depends-member:
 - ["6CnD_v111CollectableC", ""]
 - ["6CnD_v111CollectableC", "init"]
+- ["SQ", ""]
+- !private ["SQ", "init"]
 - ["6CnD_v14GearC", "init"]
 depends-nominal:
 - "6CnD_v111CollectableC"
+- "SQ"
 - "6CnD_v14GearC"
 depends-dynamic-lookup:
 depends-external:
