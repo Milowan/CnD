@@ -12,13 +12,13 @@ import SpriteKit
 
 class Player : Entity
 {
-    var left : Button
-    var right : Button
-    var up : Button
-    var down : Button
-    
-    var interact : Button
-    
+//    var left : Button
+//    var right : Button
+//    var up : Button
+//    var down : Button
+//
+//    var interact : Button
+
     init (x : Int, y : Int, s : SKSpriteNode)
     {
         //left = Button()
@@ -26,47 +26,51 @@ class Player : Entity
         super.init(x : x, y : y, s : s, m : .PLAYER)
     }
     
-    override func update()
-    {
-        left.update()
-        right.update()
-        up.update()
-        down.update()
-        interact.update()
-        
-        if left.active
-        {
-            
-        }
-        if right.active
-        {
-            
-        }
-        if up.active
-        {
-            
-        }
-        if down.active
-        {
-            
-        }
-        if interact.active
-        {
-            
-        }
-        
-    }
+//    override func update()
+//    {
+//        left.update()
+//        right.update()
+//        up.update()
+//        down.update()
+//        interact.update()
+//
+//        if left.active
+//        {
+//
+//        }
+//        if right.active
+//        {
+//
+//        }
+//        if up.active
+//        {
+//
+//        }
+//        if down.active
+//        {
+//
+//        }
+//        if interact.active
+//        {
+//
+//        }
+//
+//    }
     
     override func collision(response : Entity)
     {
-        let aBottom = self.pos.y - Int(self.sprite.size.height / 2)
-        let aTop = self.pos.y + Int(self.sprite.size.height / 2)
-        let aLeft = self.pos.x - Int(self.sprite.size.width / 2)
-        let aRight = self.pos.x + Int(self.sprite.size.width / 2)
-        let bBottom = response.pos.y - Int(response.sprite.size.height / 2)
-        let bTop = response.pos.y + Int(response.sprite.size.height / 2)
-        let bLeft = response.pos.x - Int(response.sprite.size.width / 2)
-        let bRight = response.pos.x + Int(response.sprite.size.width / 2)
+        
+        let a = self.sprite as! SKSpriteNode
+        let aBottom = self.pos.y - Int(a.size.height / 2)
+        let aTop = self.pos.y + Int(a.size.height / 2)
+        let aLeft = self.pos.x - Int(a.size.width / 2)
+        let aRight = self.pos.x + Int(a.size.width / 2)
+        
+        let b = response.sprite as! SKSpriteNode
+        let bBottom = response.pos.y - Int(b.size.height / 2)
+        let bTop = response.pos.y + Int(b.size.height / 2)
+        let bLeft = response.pos.x - Int(b.size.width / 2)
+        let bRight = response.pos.x + Int(b.size.width / 2)
         
         var diffX = 0
         var diffY = 0
@@ -96,7 +100,7 @@ class Player : Entity
         {
             if response.collisionMask == .INTERACTABLE
             {
-                interact.interactable = (response as! Interactable)
+                //interact.interactable = (response as! Interactable)
             }
             else if response.collisionMask == .WORLD
             {
@@ -104,29 +108,29 @@ class Player : Entity
                 {
                     if pos.y < response.pos.y
                     {
-                        pos.y = aBottom - (aTop - (bBottom - 1)) - Int(sprite.size.height / 2)
+                        pos.y = aBottom - (aTop - (bBottom - 1)) - Int(a.size.height / 2)
                     }
                     else
                     {
-                        pos.y = bTop + Int(sprite.size.height / 2)
+                        pos.y = bTop + Int(a.size.height / 2)
                     }
                 }
                 else if diffX > diffY
                 {
                     if pos.x < response.pos.x
                     {
-                        pos.x = aLeft - (aRight - bLeft) - Int(sprite.size.width / 2)
+                        pos.x = aLeft - (aRight - bLeft) - Int(a.size.width / 2)
                     }
                     else
                     {
-                        pos.x = bRight + Int(sprite.size.width / 2) + 1
+                        pos.x = bRight + Int(a.size.width / 2) + 1
                     }
                 }
             }
         }
-        else if interact.interactable == response
-        {
-            interact.interactable = nil
-        }
+//        else if interact.interactable == response
+//        {
+//            interact.interactable = nil
+//        }
     }
 }
