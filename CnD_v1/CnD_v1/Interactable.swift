@@ -7,9 +7,14 @@
 //
 
 import Foundation
-
+import SpriteKit
 
 class Interactable : Entity
 {
+    
+    init (x : Int, y : Int, s : SKSpriteNode)
+    {
+        super.init(x : x, y : y, s : s, m : .INTERACTABLE)
+    }
     
 }

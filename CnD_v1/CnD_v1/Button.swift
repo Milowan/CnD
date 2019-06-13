@@ -16,13 +16,13 @@ class Button : Entity
     var player : Player?
     var active : Bool
     
-    init(x : Int, y : Int, w : Int, h : Int, s : SKSpriteNode)
+    init(x : Int, y : Int, s : SKSpriteNode)
     {
         active = false
         interactable = nil
         player = nil
         
-        super.init(x : x, y : y, w : w, h : h, s : s, m : .NONE)
+        super.init(x : x, y : y, s : s, m : .NONE)
     }
     
     override func update()
