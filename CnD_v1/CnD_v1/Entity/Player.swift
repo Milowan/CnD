@@ -24,12 +24,12 @@ class Player : Entity
     {
         fatalError("Use init()")
     }
+
     
-    init (x : Int, y : Int, s : SKSpriteNode)
+    init (x : Int, y : Int, z : Int, s : SKSpriteNode)
     {
         //left = Button()
-        
-        super.init(x : x, y : y, s : s, m : .PLAYER)
+        super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
     }
     
 //    override func update()
@@ -66,13 +66,13 @@ class Player : Entity
     override func collision(response : Entity)
     {
         
-        let a = self.sprite as! SKSpriteNode
+        let a = self.sprite! as SKSpriteNode
         let aBottom = self.pos.y - Int(a.size.height / 2)
         let aTop = self.pos.y + Int(a.size.height / 2)
         let aLeft = self.pos.x - Int(a.size.width / 2)
         let aRight = self.pos.x + Int(a.size.width / 2)
         
-        let b = response.sprite as! SKSpriteNode
+        let b = response.sprite! as SKSpriteNode
         let bBottom = response.pos.y - Int(b.size.height / 2)
         let bTop = response.pos.y + Int(b.size.height / 2)
         let bLeft = response.pos.x - Int(b.size.width / 2)

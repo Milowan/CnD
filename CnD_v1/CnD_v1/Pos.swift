@@ -13,11 +13,13 @@ class Pos
 {
     var x : Int
     var y : Int
+    var z : Int
     
-    init(xX : Int, yY: Int)
+    init(xX : Int, yY: Int, zZ: Int)
     {
         x = xX
         y = yY
+        z = zZ
     }
 }
 
