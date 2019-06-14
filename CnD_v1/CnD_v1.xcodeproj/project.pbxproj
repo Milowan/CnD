@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2609CF2322B4102000F02100 /* Pos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2609CF2222B4102000F02100 /* Pos.swift */; };
+		2609CF2722B41CBA00F02100 /* BSNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2609CF2622B41CBA00F02100 /* BSNode.swift */; };
 		26F9808B22A6FD1800E7B5FE /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9808A22A6FD1800E7B5FE /* Gear.swift */; };
 		26F99AB022A98CD800D0F879 /* Collectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F99AAF22A98CD800D0F879 /* Collectable.swift */; };
 		26FBAF0222A5965C00AEDCDC /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAEFB22A5965C00AEDCDC /* World.swift */; };
 		26FBAF0322A5965C00AEDCDC /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAEFC22A5965C00AEDCDC /* Button.swift */; };
 		26FBAF0422A5965C00AEDCDC /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAEFD22A5965C00AEDCDC /* Entity.swift */; };
 		26FBAF0522A5965C00AEDCDC /* Interactable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAEFE22A5965C00AEDCDC /* Interactable.swift */; };
-		26FBAF0622A5965C00AEDCDC /* Pos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAEFF22A5965C00AEDCDC /* Pos.swift */; };
 		26FBAF0722A5965C00AEDCDC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAF0022A5965C00AEDCDC /* Player.swift */; };
 		A61C3F5E22AF05ED0031B4B7 /* MapTiles.sks in Resources */ = {isa = PBXBuildFile; fileRef = A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */; };
 		A61C3F6022B025320031B4B7 /* LevelScene_1.sks in Resources */ = {isa = PBXBuildFile; fileRef = A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */; };
@@ -45,13 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2609CF2222B4102000F02100 /* Pos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pos.swift; sourceTree = "<group>"; };
+		2609CF2622B41CBA00F02100 /* BSNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSNode.swift; sourceTree = "<group>"; };
 		26F9808A22A6FD1800E7B5FE /* Gear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gear.swift; sourceTree = "<group>"; };
 		26F99AAF22A98CD800D0F879 /* Collectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collectable.swift; sourceTree = "<group>"; };
 		26FBAEFB22A5965C00AEDCDC /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
 		26FBAEFC22A5965C00AEDCDC /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		26FBAEFD22A5965C00AEDCDC /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		26FBAEFE22A5965C00AEDCDC /* Interactable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactable.swift; sourceTree = "<group>"; };
-		26FBAEFF22A5965C00AEDCDC /* Pos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pos.swift; sourceTree = "<group>"; };
 		26FBAF0022A5965C00AEDCDC /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MapTiles.sks; sourceTree = "<group>"; };
 		A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelScene_1.sks; sourceTree = "<group>"; };
@@ -129,9 +131,10 @@
 		A686E4B022A45405004E1B64 /* CnD_v1 */ = {
 			isa = PBXGroup;
 			children = (
+				2609CF2622B41CBA00F02100 /* BSNode.swift */,
+				2609CF2222B4102000F02100 /* Pos.swift */,
 				26FBAEFC22A5965C00AEDCDC /* Button.swift */,
 				A658836A22B2C36F00F7F2CC /* Entity */,
-				26FBAEFF22A5965C00AEDCDC /* Pos.swift */,
 				26FBAEFB22A5965C00AEDCDC /* World.swift */,
 				A686E4B122A45405004E1B64 /* AppDelegate.swift */,
 				A686E4B722A45405004E1B64 /* GameScene.swift */,
@@ -301,14 +304,15 @@
 			files = (
 				26FBAF0322A5965C00AEDCDC /* Button.swift in Sources */,
 				A686E4B822A45405004E1B64 /* GameScene.swift in Sources */,
+				2609CF2722B41CBA00F02100 /* BSNode.swift in Sources */,
 				26FBAF0422A5965C00AEDCDC /* Entity.swift in Sources */,
 				A686E4BA22A45405004E1B64 /* GameViewController.swift in Sources */,
 				26FBAF0222A5965C00AEDCDC /* World.swift in Sources */,
 				26F99AB022A98CD800D0F879 /* Collectable.swift in Sources */,
 				26FBAF0522A5965C00AEDCDC /* Interactable.swift in Sources */,
 				26F9808B22A6FD1800E7B5FE /* Gear.swift in Sources */,
-				26FBAF0622A5965C00AEDCDC /* Pos.swift in Sources */,
 				26FBAF0722A5965C00AEDCDC /* Player.swift in Sources */,
+				2609CF2322B4102000F02100 /* Pos.swift in Sources */,
 				A686E4B222A45405004E1B64 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,14 +23,14 @@ class Entity
     
     var collisionMask : collisionType
     
-    var pos : Pos
+    var pos : Pos?
     var sprite : SKSpriteNode?
     
     
-    init(x : Int, y : Int, s : SKSpriteNode?, m : collisionType)
+    init(x : Int, y : Int, s : SKSpriteNode, m : collisionType)
     {
         collisionMask = m
-        pos = Pos(xX : x, yY : y)
+        s.position = CGPoint(x : x, y : y)
         sprite = s
     }
     

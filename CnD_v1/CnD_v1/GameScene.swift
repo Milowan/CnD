@@ -14,6 +14,8 @@ class GameScene: SKScene
     
     
     var currentLevel: Int = 0
+    
+    static var view : SKView?
 
     var pool = [Entity]()
     
@@ -26,12 +28,12 @@ class GameScene: SKScene
     {
         super.init(coder : coder)
     }
-
+    
     
     override func didMove(to view: SKView)
     {
         backgroundColor = SKColor.black
-        
+        GameScene.view = view
         //addEntity(entity : Player())
     }
     
@@ -75,5 +77,5 @@ class GameScene: SKScene
                 }
             }
         }
-    }}
+    }
 }
