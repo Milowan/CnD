@@ -39,7 +39,6 @@ class GameScene: SKScene
         addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0")))
     }
     
-    
     class func level(levelNum: Int) -> GameScene?
     {
         let scene = GameScene(fileNamed: "LevelScene_\(levelNum)")!
@@ -47,6 +46,16 @@ class GameScene: SKScene
         scene.currentLevel = levelNum
         scene.scaleMode = .aspectFill
         return scene
+    }
+    
+    func setupCamera(player: SKNode)
+    {
+        guard let camera = camera else {return}
+        
+        let zeroDistance = SKRange(constantValue: 0)
+        let playerConstraint = SKConstraint.distance(zeroDistance, to: player)
+        
+        camera.constraints = [playerConstraint]
     }
     
     
@@ -81,4 +90,6 @@ class GameScene: SKScene
             }
         }
     }
+    
+
 }

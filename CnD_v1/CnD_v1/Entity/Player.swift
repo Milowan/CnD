@@ -13,12 +13,12 @@ import SpriteKit
 class Player : Entity
 {
 
-//    var left : Button
-//    var right : Button
-//    var up : Button
-//    var down : Button
-//
-//    var interact : Button
+   // var left : Button
+   // var right : Button
+   // var up : Button
+   // var down : Button
+
+   // var interact : Button
     
     required init?(coder aDecoder: NSCoder)
     {
@@ -26,14 +26,26 @@ class Player : Entity
     }
 
     
-    init (x : Int, y : Int, z : Int, s : SKSpriteNode)
-    {
-        //left = Button()
+   init (x : Int, y : Int, z : Int, s : SKSpriteNode)
+   {
+//        left = Button(x: 0,y: 0,z: 5, s: SKSpriteNode(imageNamed: "arrow_left"))
+//        s.addChild(left.sprite as! SKSpriteNode)
+//        right = Button(x: 0,y: 0,z: 5, s: SKSpriteNode(imageNamed: "arrow_right"))
+//        s.addChild(right.sprite as! SKSpriteNode)
+//        up = Button(x: 0,y: 0,z: 5, s: SKSpriteNode(imageNamed: "arrow_up"))
+//        s.addChild(up.sprite as! SKSpriteNode)
+//        down = Button(x: 0,y: 0,z: 5, s: SKSpriteNode(imageNamed: "arrow_down"))
+//        s.addChild(down.sprite as! SKSpriteNode)
+//        
+//        interact = Button(x: 0,y: 0,z: 5, s: SKSpriteNode(imageNamed: "arrow_interact"))
+//        s.addChild(interact.sprite as! SKSpriteNode)
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
     }
-    
+//    
 //    override func update()
 //    {
+//        updateCamera(player: self.sprite as! SKNode)
+//        
 //        left.update()
 //        right.update()
 //        up.update()
@@ -139,5 +151,10 @@ class Player : Entity
 //            interact.interactable = nil
 //        }
     }
+    
+//    func updateCamera(player: SKNode)
+//    {
+//        GameScene.setupCamera(player)
+//    }
 
 }

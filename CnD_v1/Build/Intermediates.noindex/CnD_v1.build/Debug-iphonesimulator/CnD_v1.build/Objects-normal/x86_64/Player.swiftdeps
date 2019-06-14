@@ -19,10 +19,13 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "CastingPrecedence"
 - "Entity"
+- !private "FloatLiteralType"
 - "Int"
+- !private "IntegerLiteralType"
 - "NSCoder"
 - "Player"
 - "SKSpriteNode"
+- !private "StringLiteralType"
 - !private "fatalError"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
@@ -93,7 +96,6 @@ depends-member:
 - ["6CnD_v16PlayerC", "NSCoder"]
 - ["6CnD_v16PlayerC", "SKSpriteNode"]
 - ["6CnD_v16PlayerC", "collision"]
-- ["6CnD_v16PlayerC", "deinit"]
 - !private ["6CnD_v16PlayerC", "fatalError"]
 - ["6CnD_v16PlayerC", "init"]
 - !private ["6CnD_v16PlayerC", "pos"]
