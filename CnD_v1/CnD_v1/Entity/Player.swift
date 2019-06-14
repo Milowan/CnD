@@ -86,7 +86,7 @@ class Player : Entity
         }
         else
         {
-            aPos = Pos(xX : Int(a.position.x), yY : Int(a.position.y))
+            aPos = Pos(xX : Int(a.position.x), yY : Int(a.position.y), zZ : Int(a.zPosition))
         }
         let aBottom = aPos.y - Int(a.size.height / 2)
         let aTop = aPos.y + Int(a.size.height / 2)
@@ -101,7 +101,7 @@ class Player : Entity
         }
         else
         {
-            bPos = Pos(xX : Int(b.position.x), yY : Int(b.position.y))
+            bPos = Pos(xX : Int(b.position.x), yY : Int(b.position.y), zZ : Int(b.zPosition))
         }
         let bBottom = bPos.y - Int(b.size.height / 2)
         let bTop = bPos.y + Int(b.size.height / 2)

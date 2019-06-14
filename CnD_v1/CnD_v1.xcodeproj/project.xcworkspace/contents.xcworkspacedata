@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CnD_v1.xcodeproj">
+      location = "group:/Users/milo/Documents/GitHub/CnD/CnD_v1/CnD_v1/Pos.swift">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
