@@ -201,15 +201,15 @@ SWIFT_CLASS("_TtC6CnD_v111AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class SKView;
 @class NSCoder;
+@class SKView;
 
 SWIFT_CLASS("_TtC6CnD_v19GameScene")
 @interface GameScene : SKScene
-- (void)didMoveToView:(SKView * _Nonnull)view;
 - (nonnull instancetype)initWithSize:(CGSize)size OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init;
+- (void)didMoveToView:(SKView * _Nonnull)view;
 @end
 
 @class NSBundle;

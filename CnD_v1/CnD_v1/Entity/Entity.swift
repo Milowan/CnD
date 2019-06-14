@@ -18,7 +18,7 @@ enum collisionType
     case NONE
 }
 
-class Entity 
+class Entity
 {
     
     var collisionMask : collisionType
@@ -26,19 +26,18 @@ class Entity
     var pos : Pos?
     var sprite : SKSpriteNode?
     
-    
-    init(x : Int, y : Int, s : SKSpriteNode, m : collisionType)
+    init(x : Int, y : Int, z : Int, s : SKSpriteNode, m : collisionType)
     {
         collisionMask = m
+        s.zPosition = CGFloat(z)
         s.position = CGPoint(x : x, y : y)
         sprite = s
     }
     
-    
-    init (x : Int, y : Int, m : collisionType)
+    init (x : Int, y : Int, z : Int, m : collisionType)
     {
         collisionMask = m
-        pos = Pos(xX : x, yY : y)
+        pos = Pos(xX : x, yY : y, zZ: z)
     }
     
     
@@ -50,8 +49,8 @@ class Entity
     
     func collision (response : Entity)
     {}
+    
 }
-
 
 extension Entity : Equatable
 {

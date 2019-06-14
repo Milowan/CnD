@@ -14,12 +14,14 @@ class GameViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        let scene = GameScene.level(levelNum: 1)
-        let skView = self.view as! SKView
-        skView.showsFPS = true
-        skView.showsNodeCount = true
-        skView.ignoresSiblingOrder = true
-        skView.presentScene(scene)
+        if let scene = GameScene.level(levelNum: 1)
+        {
+            let skView = self.view as! SKView
+            skView.showsFPS = true
+            skView.showsNodeCount = true
+            skView.ignoresSiblingOrder = true
+            skView.presentScene(scene)
+        }
     }
     override var prefersStatusBarHidden: Bool
     {

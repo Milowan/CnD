@@ -13,18 +13,21 @@ depends-top-level:
 - !private "/"
 - !private "<"
 - !private "<="
-- "=="
+- !private "=="
 - !private ">"
 - !private ">="
 - "AssignmentPrecedence"
+- "Button"
+- "CastingPrecedence"
 - "Entity"
 - !private "FloatLiteralType"
-- "Int"
+- !private "Int"
 - !private "IntegerLiteralType"
+- "NSCoder"
 - "Player"
-- "SKSpriteNode"
-- "interact"
-- "response"
+- !private "SKSpriteNode"
+- !private "StringLiteralType"
+- !private "fatalError"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
 - !private ["Sz", "init"]
@@ -38,29 +41,38 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "width"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "init"]
-- !private ["s17CustomReflectableP", "size"]
 - !private ["s17CustomReflectableP", "width"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "size"]
 - !private ["Se", "height"]
 - !private ["Se", "init"]
-- !private ["Se", "size"]
 - !private ["Se", "width"]
 - !private ["SE", "height"]
 - !private ["SE", "init"]
-- !private ["SE", "size"]
 - !private ["SE", "width"]
+- ["6CnD_v16EntityC", "Button"]
 - ["6CnD_v16EntityC", "Entity"]
-- ["6CnD_v16EntityC", "Int"]
-- ["6CnD_v16EntityC", "SKSpriteNode"]
+- !private ["6CnD_v16EntityC", "Int"]
+- ["6CnD_v16EntityC", "NSCoder"]
+- !private ["6CnD_v16EntityC", "SKSpriteNode"]
 - ["6CnD_v16EntityC", ""]
 - ["6CnD_v16EntityC", "collision"]
+- !private ["6CnD_v16EntityC", "collisionMask"]
+- ["6CnD_v16EntityC", "down"]
+- !private ["6CnD_v16EntityC", "fatalError"]
 - ["6CnD_v16EntityC", "init"]
+- ["6CnD_v16EntityC", "interact"]
+- ["6CnD_v16EntityC", "left"]
 - !private ["6CnD_v16EntityC", "pos"]
+- ["6CnD_v16EntityC", "right"]
 - !private ["6CnD_v16EntityC", "sprite"]
+- ["6CnD_v16EntityC", "up"]
+- !private ["SQ", "INTERACTABLE"]
 - !private ["SQ", "Int"]
-- !private ["SQ", "PLAYER"]
+- !private ["SQ", "WORLD"]
 - ["SQ", ""]
+- !private ["SQ", "collisionMask"]
+- !private ["SQ", "fatalError"]
 - !private ["SQ", "height"]
 - !private ["SQ", "init"]
 - !private ["SQ", "pos"]
@@ -70,15 +82,11 @@ depends-member:
 - !private ["SQ", "x"]
 - !private ["SQ", "y"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
-- !private ["s23ExpressibleByNilLiteralP", "height"]
-- !private ["s23ExpressibleByNilLiteralP", "size"]
-- !private ["s23ExpressibleByNilLiteralP", "width"]
 - !private ["s17FixedWidthIntegerP", "init"]
-- !private ["SH", "PLAYER"]
-- !private ["SH", "height"]
+- !private ["SH", "INTERACTABLE"]
+- !private ["SH", "WORLD"]
 - !private ["SH", "init"]
 - !private ["SH", "size"]
-- !private ["SH", "width"]
 - !private ["Si", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
@@ -88,16 +96,21 @@ depends-member:
 - !private ["So8NSObjectP", "size"]
 - !private ["So14NSSecureCodingP", "size"]
 - !private ["Sj", "init"]
-- !private ["Sq", "height"]
-- !private ["Sq", "size"]
-- !private ["Sq", "width"]
+- ["6CnD_v16PlayerC", "Button"]
 - ["6CnD_v16PlayerC", "Entity"]
-- ["6CnD_v16PlayerC", "Int"]
-- ["6CnD_v16PlayerC", "SKSpriteNode"]
+- !private ["6CnD_v16PlayerC", "Int"]
+- ["6CnD_v16PlayerC", "NSCoder"]
+- !private ["6CnD_v16PlayerC", "SKSpriteNode"]
 - ["6CnD_v16PlayerC", "collision"]
+- ["6CnD_v16PlayerC", "down"]
+- !private ["6CnD_v16PlayerC", "fatalError"]
 - ["6CnD_v16PlayerC", "init"]
+- ["6CnD_v16PlayerC", "interact"]
+- ["6CnD_v16PlayerC", "left"]
 - !private ["6CnD_v16PlayerC", "pos"]
+- ["6CnD_v16PlayerC", "right"]
 - !private ["6CnD_v16PlayerC", "sprite"]
+- ["6CnD_v16PlayerC", "up"]
 - !private ["6CnD_v13PosC", "x"]
 - !private ["6CnD_v13PosC", "y"]
 - !private ["s10SIMDScalarP", "init"]
@@ -122,9 +135,10 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "size"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "size"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
-- !private ["6CnD_v113collisionTypeO", "PLAYER"]
+- !private ["6CnD_v113collisionTypeO", "INTERACTABLE"]
+- !private ["6CnD_v113collisionTypeO", "WORLD"]
+- !private ["6CnD_v113collisionTypeO", "deinit"]
 depends-nominal:
 - !private "s18AdditiveArithmeticP"
 - !private "Sz"
@@ -139,7 +153,6 @@ depends-nominal:
 - "6CnD_v16EntityC"
 - "SQ"
 - !private "s27ExpressibleByIntegerLiteralP"
-- !private "s23ExpressibleByNilLiteralP"
 - !private "s17FixedWidthIntegerP"
 - !private "SH"
 - !private "Si"
@@ -151,7 +164,6 @@ depends-nominal:
 - !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "Sj"
-- !private "Sq"
 - "6CnD_v16PlayerC"
 - !private "6CnD_v13PosC"
 - !private "s10SIMDScalarP"
@@ -206,4 +218,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "6e4da67798dc751ecc50aa2e2a3fafb8"
+interface-hash: "c07d88af2874e1df6a9b5b2b27ad927e"
