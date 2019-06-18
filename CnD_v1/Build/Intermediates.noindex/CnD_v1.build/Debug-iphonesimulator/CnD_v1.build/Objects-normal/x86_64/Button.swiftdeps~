@@ -8,41 +8,34 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
-- "BSNode"
 - "Bool"
 - !private "BooleanLiteralType"
 - "Button"
-- "CastingPrecedence"
 - "Entity"
+- !private "FloatLiteralType"
 - "Int"
+- !private "IntegerLiteralType"
 - "Interactable"
 - "Player"
+- "SKSpriteNode"
 - !private "StringLiteralType"
 depends-member:
-- !private ["6CnD_v16BSNodeC", "button"]
-- !private ["6CnD_v16BSNodeC", "isUserInteractionEnabled"]
-- ["6CnD_v16ButtonC", "BSNode"]
 - ["6CnD_v16ButtonC", "Bool"]
 - ["6CnD_v16ButtonC", "Int"]
 - ["6CnD_v16ButtonC", "Interactable"]
 - ["6CnD_v16ButtonC", "Player"]
+- ["6CnD_v16ButtonC", "SKSpriteNode"]
 - ["6CnD_v16ButtonC", "act"]
 - ["6CnD_v16ButtonC", "active"]
 - ["6CnD_v16ButtonC", "init"]
 - ["6CnD_v16ButtonC", "interactable"]
 - ["6CnD_v16ButtonC", "player"]
 - ["6CnD_v16ButtonC", "update"]
-- !private ["s7CVarArgP", "button"]
-- !private ["s7CVarArgP", "isUserInteractionEnabled"]
-- !private ["s28CustomDebugStringConvertibleP", "button"]
-- !private ["s28CustomDebugStringConvertibleP", "isUserInteractionEnabled"]
-- !private ["s23CustomStringConvertibleP", "button"]
-- !private ["s23CustomStringConvertibleP", "isUserInteractionEnabled"]
-- ["6CnD_v16EntityC", "BSNode"]
 - ["6CnD_v16EntityC", "Bool"]
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "Interactable"]
 - ["6CnD_v16EntityC", "Player"]
+- ["6CnD_v16EntityC", "SKSpriteNode"]
 - ["6CnD_v16EntityC", ""]
 - ["6CnD_v16EntityC", "act"]
 - ["6CnD_v16EntityC", "active"]
@@ -53,72 +46,16 @@ depends-member:
 - !private ["SQ", "NONE"]
 - ["SQ", ""]
 - !private ["SQ", "active"]
-- !private ["SQ", "button"]
 - !private ["SQ", "init"]
 - !private ["SQ", "interactable"]
-- !private ["SQ", "isUserInteractionEnabled"]
 - !private ["SQ", "player"]
 - !private ["SH", "NONE"]
-- !private ["SH", "button"]
-- !private ["SH", "isUserInteractionEnabled"]
-- !private ["So8NSCodingP", "button"]
-- !private ["So8NSCodingP", "isUserInteractionEnabled"]
-- !private ["So9NSCopyingP", "button"]
-- !private ["So9NSCopyingP", "isUserInteractionEnabled"]
-- !private ["So8NSObjectC", "button"]
-- !private ["So8NSObjectC", "isUserInteractionEnabled"]
-- !private ["So8NSObjectP", "button"]
-- !private ["So8NSObjectP", "isUserInteractionEnabled"]
-- !private ["So14NSSecureCodingP", "button"]
-- !private ["So14NSSecureCodingP", "isUserInteractionEnabled"]
-- !private ["So6SKNodeC", "button"]
-- !private ["So6SKNodeC", "isUserInteractionEnabled"]
-- !private ["So12SKSpriteNodeC", "button"]
-- !private ["So12SKSpriteNodeC", "isUserInteractionEnabled"]
-- !private ["So10SKWarpableP", "button"]
-- !private ["So10SKWarpableP", "isUserInteractionEnabled"]
-- !private ["So18UIFocusEnvironmentP", "button"]
-- !private ["So18UIFocusEnvironmentP", "isUserInteractionEnabled"]
-- !private ["So11UIFocusItemP", "button"]
-- !private ["So11UIFocusItemP", "isUserInteractionEnabled"]
-- !private ["So30UIPasteConfigurationSupportingP", "button"]
-- !private ["So30UIPasteConfigurationSupportingP", "isUserInteractionEnabled"]
-- !private ["So11UIResponderC", "button"]
-- !private ["So11UIResponderC", "isUserInteractionEnabled"]
-- !private ["So30UIResponderStandardEditActionsP", "button"]
-- !private ["So30UIResponderStandardEditActionsP", "isUserInteractionEnabled"]
-- !private ["So23UIUserActivityRestoringP", "button"]
-- !private ["So23UIUserActivityRestoringP", "isUserInteractionEnabled"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "button"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "isUserInteractionEnabled"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "button"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "isUserInteractionEnabled"]
 - !private ["6CnD_v113collisionTypeO", "NONE"]
 depends-nominal:
-- !private "6CnD_v16BSNodeC"
 - "6CnD_v16ButtonC"
-- !private "s7CVarArgP"
-- !private "s28CustomDebugStringConvertibleP"
-- !private "s23CustomStringConvertibleP"
 - "6CnD_v16EntityC"
 - "SQ"
 - !private "SH"
-- !private "So8NSCodingP"
-- !private "So9NSCopyingP"
-- !private "So8NSObjectC"
-- !private "So8NSObjectP"
-- !private "So14NSSecureCodingP"
-- !private "So6SKNodeC"
-- !private "So12SKSpriteNodeC"
-- !private "So10SKWarpableP"
-- !private "So18UIFocusEnvironmentP"
-- !private "So11UIFocusItemP"
-- !private "So30UIPasteConfigurationSupportingP"
-- !private "So11UIResponderC"
-- !private "So30UIResponderStandardEditActionsP"
-- !private "So23UIUserActivityRestoringP"
-- !private "s30_CustomPlaygroundQuickLookableP"
-- !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "6CnD_v113collisionTypeO"
 depends-dynamic-lookup:
 depends-external:
@@ -153,4 +90,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e3813041207b2913a4cefbd3d5eb26dc"
+interface-hash: "e65f36a9e3106e21286941902fdc3530"

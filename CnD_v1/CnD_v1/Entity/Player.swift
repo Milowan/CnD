@@ -28,17 +28,17 @@ class Player : Entity
     
    init (x : Int, y : Int, z : Int, s : SKSpriteNode)
    {
-        left = Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_left"))
-            s.addChild(left.sprite!)
-        right = Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_right"))
-            s.addChild(right.sprite!)
-        up = Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_up"))
-            s.addChild(up.sprite!)
-        down = Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_down"))
-            s.addChild(down.sprite!)
-        interact = Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "btn_interact"))
-            s.addChild(interact.sprite!)
+        left = Button(x: 0,y: 0,z: 5, s: SKSpriteNode(imageNamed: "arrow_left"))
+        s.addChild(left.sprite as! BSNode)
+        right = Button(x: 0,y: 0,z: 5, s: SKSpriteNode(imageNamed: "arrow_right"))
+        s.addChild(right.sprite as! BSNode)
+        up = Button(x: 0,y: 0,z: 5, s: SKSpriteNode(imageNamed: "arrow_up"))
+        s.addChild(up.sprite as! BSNode)
+        down = Button(x: 0,y: 0,z: 5, s: SKSpriteNode(imageNamed: "arrow_down"))
+        s.addChild(down.sprite as! BSNode)
     
+        interact = Button(x: 0,y: 0,z: 5, s: SKSpriteNode(imageNamed: "btn_interact"))
+        s.addChild(interact.sprite as! BSNode)
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
         let dim = CGSize(width: 32, height: 32)
         self.sprite?.size = dim

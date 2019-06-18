@@ -14,8 +14,10 @@ depends-top-level:
 - "CGSize"
 - "CastingPrecedence"
 - "Entity"
+- "FloatLiteralType"
 - "GameScene"
 - "Int"
+- "IntegerLiteralType"
 - "NSCoder"
 - !private "Player"
 - !private "SKColor"
@@ -25,6 +27,7 @@ depends-top-level:
 - "SKScene"
 - !private "SKSpriteNode"
 - "SKView"
+- !private "StringLiteralType"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
 - !private ["Sa", "append"]
@@ -57,7 +60,6 @@ depends-member:
 - !private ["s7CVarArgP", "pool"]
 - !private ["s7CVarArgP", "scaleMode"]
 - !private ["s7CVarArgP", "size"]
-- !private ["s7CVarArgP", "view"]
 - !private ["Sl", "append"]
 - ["Sl", "init"]
 - !private ["SL", "init"]
@@ -87,7 +89,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "pool"]
 - !private ["s28CustomDebugStringConvertibleP", "scaleMode"]
 - !private ["s28CustomDebugStringConvertibleP", "size"]
-- !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "height"]
@@ -118,7 +119,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "pool"]
 - !private ["s23CustomStringConvertibleP", "scaleMode"]
 - !private ["s23CustomStringConvertibleP", "size"]
-- !private ["s23CustomStringConvertibleP", "view"]
 - !private ["10Foundation12DataProtocolP", "append"]
 - ["10Foundation12DataProtocolP", "init"]
 - !private ["Se", "append"]
@@ -162,7 +162,6 @@ depends-member:
 - !private ["SQ", "size"]
 - !private ["SQ", "sprite"]
 - !private ["SQ", "update"]
-- !private ["SQ", "view"]
 - !private ["SQ", "width"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
@@ -195,7 +194,6 @@ depends-member:
 - ["6CnD_v19GameSceneC", "setupCamera"]
 - !private ["6CnD_v19GameSceneC", "size"]
 - ["6CnD_v19GameSceneC", "update"]
-- ["6CnD_v19GameSceneC", "view"]
 - ["SH", "Entity"]
 - !private ["SH", "GameScene"]
 - !private ["SH", "Int"]
@@ -220,7 +218,6 @@ depends-member:
 - !private ["SH", "resizeFill"]
 - !private ["SH", "scaleMode"]
 - !private ["SH", "size"]
-- !private ["SH", "view"]
 - !private ["Si", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
@@ -250,7 +247,6 @@ depends-member:
 - !private ["So8NSCodingP", "pool"]
 - !private ["So8NSCodingP", "scaleMode"]
 - !private ["So8NSCodingP", "size"]
-- !private ["So8NSCodingP", "view"]
 - ["So9NSCopyingP", "Entity"]
 - !private ["So9NSCopyingP", "GameScene"]
 - !private ["So9NSCopyingP", "Int"]
@@ -273,7 +269,6 @@ depends-member:
 - !private ["So9NSCopyingP", "pool"]
 - !private ["So9NSCopyingP", "scaleMode"]
 - !private ["So9NSCopyingP", "size"]
-- !private ["So9NSCopyingP", "view"]
 - !private ["So21NSItemProviderReadingP", "black"]
 - !private ["So21NSItemProviderWritingP", "black"]
 - ["So8NSObjectC", "CGSize"]
@@ -305,7 +300,6 @@ depends-member:
 - ["So8NSObjectC", "setupCamera"]
 - !private ["So8NSObjectC", "size"]
 - ["So8NSObjectC", "update"]
-- ["So8NSObjectC", "view"]
 - ["So8NSObjectP", "Entity"]
 - !private ["So8NSObjectP", "GameScene"]
 - !private ["So8NSObjectP", "Int"]
@@ -328,7 +322,6 @@ depends-member:
 - !private ["So8NSObjectP", "pool"]
 - !private ["So8NSObjectP", "scaleMode"]
 - !private ["So8NSObjectP", "size"]
-- !private ["So8NSObjectP", "view"]
 - ["So14NSSecureCodingP", "Entity"]
 - !private ["So14NSSecureCodingP", "GameScene"]
 - !private ["So14NSSecureCodingP", "Int"]
@@ -351,7 +344,6 @@ depends-member:
 - !private ["So14NSSecureCodingP", "pool"]
 - !private ["So14NSSecureCodingP", "scaleMode"]
 - !private ["So14NSSecureCodingP", "size"]
-- !private ["So14NSSecureCodingP", "view"]
 - !private ["Sj", "init"]
 - !private ["6CnD_v16PlayerC", "init"]
 - !private ["Sk", "append"]
@@ -388,7 +380,6 @@ depends-member:
 - ["So12SKEffectNodeC", "setupCamera"]
 - !private ["So12SKEffectNodeC", "size"]
 - ["So12SKEffectNodeC", "update"]
-- ["So12SKEffectNodeC", "view"]
 - ["So6SKNodeC", "CGSize"]
 - ["So6SKNodeC", "Entity"]
 - ["So6SKNodeC", "GameScene"]
@@ -416,7 +407,6 @@ depends-member:
 - ["So6SKNodeC", "setupCamera"]
 - !private ["So6SKNodeC", "size"]
 - ["So6SKNodeC", "update"]
-- ["So6SKNodeC", "view"]
 - !private ["So7SKRangeC", "init"]
 - ["So7SKSceneC", "CGSize"]
 - ["So7SKSceneC", "Entity"]
@@ -445,7 +435,6 @@ depends-member:
 - ["So7SKSceneC", "setupCamera"]
 - !private ["So7SKSceneC", "size"]
 - ["So7SKSceneC", "update"]
-- ["So7SKSceneC", "view"]
 - !private ["So16SKSceneScaleModeV", "resizeFill"]
 - !private ["So12SKSpriteNodeC", "init"]
 - ["So10SKWarpableP", "Entity"]
@@ -467,7 +456,6 @@ depends-member:
 - !private ["So10SKWarpableP", "pool"]
 - !private ["So10SKWarpableP", "scaleMode"]
 - !private ["So10SKWarpableP", "size"]
-- !private ["So10SKWarpableP", "view"]
 - !private ["ST", "append"]
 - ["ST", "init"]
 - !private ["SZ", "init"]
@@ -498,7 +486,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "pool"]
 - !private ["So18UIFocusEnvironmentP", "scaleMode"]
 - !private ["So18UIFocusEnvironmentP", "size"]
-- !private ["So18UIFocusEnvironmentP", "view"]
 - ["So11UIFocusItemP", "Entity"]
 - !private ["So11UIFocusItemP", "GameScene"]
 - !private ["So11UIFocusItemP", "Int"]
@@ -519,7 +506,6 @@ depends-member:
 - !private ["So11UIFocusItemP", "pool"]
 - !private ["So11UIFocusItemP", "scaleMode"]
 - !private ["So11UIFocusItemP", "size"]
-- !private ["So11UIFocusItemP", "view"]
 - ["So30UIPasteConfigurationSupportingP", "Entity"]
 - !private ["So30UIPasteConfigurationSupportingP", "GameScene"]
 - !private ["So30UIPasteConfigurationSupportingP", "Int"]
@@ -540,7 +526,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "pool"]
 - !private ["So30UIPasteConfigurationSupportingP", "scaleMode"]
 - !private ["So30UIPasteConfigurationSupportingP", "size"]
-- !private ["So30UIPasteConfigurationSupportingP", "view"]
 - ["So11UIResponderC", "CGSize"]
 - ["So11UIResponderC", "Entity"]
 - ["So11UIResponderC", "GameScene"]
@@ -568,7 +553,6 @@ depends-member:
 - ["So11UIResponderC", "setupCamera"]
 - !private ["So11UIResponderC", "size"]
 - ["So11UIResponderC", "update"]
-- ["So11UIResponderC", "view"]
 - ["So30UIResponderStandardEditActionsP", "Entity"]
 - !private ["So30UIResponderStandardEditActionsP", "GameScene"]
 - !private ["So30UIResponderStandardEditActionsP", "Int"]
@@ -589,7 +573,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "pool"]
 - !private ["So30UIResponderStandardEditActionsP", "scaleMode"]
 - !private ["So30UIResponderStandardEditActionsP", "size"]
-- !private ["So30UIResponderStandardEditActionsP", "view"]
 - ["So23UIUserActivityRestoringP", "Entity"]
 - !private ["So23UIUserActivityRestoringP", "GameScene"]
 - !private ["So23UIUserActivityRestoringP", "Int"]
@@ -610,7 +593,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "pool"]
 - !private ["So23UIUserActivityRestoringP", "scaleMode"]
 - !private ["So23UIUserActivityRestoringP", "size"]
-- !private ["So23UIUserActivityRestoringP", "view"]
 - !private ["s14_ArrayProtocolP", "append"]
 - ["s14_ArrayProtocolP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "height"]
@@ -646,7 +628,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "pool"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "scaleMode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "size"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - ["s21_ObjectiveCBridgeableP", "init"]
@@ -757,4 +738,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d2307e80abd647597d2c9fee542232a9"
+interface-hash: "0e6b997f45f685f254ca5e14bf06e4ef"
