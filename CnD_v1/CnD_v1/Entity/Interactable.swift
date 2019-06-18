@@ -17,9 +17,4 @@ class Interactable : Entity
         super.init(x: x, y: y, z: z, s: s, m: .INTERACTABLE)
     }
     
-    
-    func act()
-    {}
-    
-    
 }
