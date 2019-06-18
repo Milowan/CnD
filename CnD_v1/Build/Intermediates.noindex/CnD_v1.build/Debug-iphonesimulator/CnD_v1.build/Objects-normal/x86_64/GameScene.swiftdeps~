@@ -147,7 +147,6 @@ depends-member:
 - !private ["SQ", "addChild"]
 - !private ["SQ", "addEntity"]
 - !private ["SQ", "append"]
-- !private ["SQ", "aspectFill"]
 - !private ["SQ", "backgroundColor"]
 - !private ["SQ", "black"]
 - !private ["SQ", "camera"]
@@ -158,6 +157,7 @@ depends-member:
 - !private ["SQ", "height"]
 - ["SQ", "init"]
 - !private ["SQ", "pool"]
+- !private ["SQ", "resizeFill"]
 - !private ["SQ", "scaleMode"]
 - !private ["SQ", "size"]
 - !private ["SQ", "sprite"]
@@ -206,7 +206,6 @@ depends-member:
 - !private ["SH", "addChild"]
 - !private ["SH", "addEntity"]
 - !private ["SH", "append"]
-- !private ["SH", "aspectFill"]
 - !private ["SH", "backgroundColor"]
 - !private ["SH", "black"]
 - !private ["SH", "camera"]
@@ -216,6 +215,7 @@ depends-member:
 - !private ["SH", "distance"]
 - ["SH", "init"]
 - !private ["SH", "pool"]
+- !private ["SH", "resizeFill"]
 - !private ["SH", "scaleMode"]
 - !private ["SH", "size"]
 - !private ["Si", "init"]
@@ -345,12 +345,12 @@ depends-member:
 - !private ["So14NSSecureCodingP", "scaleMode"]
 - !private ["So14NSSecureCodingP", "size"]
 - !private ["Sj", "init"]
-- ["6CnD_v16PlayerC", "init"]
+- !private ["6CnD_v16PlayerC", "init"]
 - !private ["Sk", "append"]
 - ["Sk", "init"]
 - !private ["Sm", "append"]
 - ["Sm", "init"]
-- !private ["SY", "aspectFill"]
+- !private ["SY", "resizeFill"]
 - !private ["s10SIMDScalarP", "init"]
 - !private ["So12SKCameraNodeC", "constraints"]
 - !private ["So12SKConstraintC", "distance"]
@@ -435,7 +435,7 @@ depends-member:
 - ["So7SKSceneC", "setupCamera"]
 - !private ["So7SKSceneC", "size"]
 - ["So7SKSceneC", "update"]
-- !private ["So16SKSceneScaleModeV", "aspectFill"]
+- !private ["So16SKSceneScaleModeV", "resizeFill"]
 - !private ["So12SKSpriteNodeC", "init"]
 - ["So10SKWarpableP", "Entity"]
 - !private ["So10SKWarpableP", "GameScene"]
@@ -669,7 +669,7 @@ depends-nominal:
 - "So8NSObjectP"
 - "So14NSSecureCodingP"
 - !private "Sj"
-- "6CnD_v16PlayerC"
+- !private "6CnD_v16PlayerC"
 - "Sk"
 - "Sm"
 - !private "SY"

@@ -22,18 +22,17 @@ class Entity
 {
     
     var collisionMask : collisionType
-    var pos : Pos
-    var sprite : SKSpriteNode?
     
+    var pos : Pos?
+    var sprite : SKSpriteNode?
     
     init(x : Int, y : Int, z : Int, s : SKSpriteNode, m : collisionType)
     {
         collisionMask = m
         s.zPosition = CGFloat(z)
-        pos = Pos(xX : x, yY : y, zZ: z)
+        s.position = CGPoint(x : x, y : y)
         sprite = s
     }
-    
     
     init (x : Int, y : Int, z : Int, m : collisionType)
     {
@@ -50,8 +49,8 @@ class Entity
     
     func collision (response : Entity)
     {}
+    
 }
-
 
 extension Entity : Equatable
 {

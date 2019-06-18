@@ -13,7 +13,7 @@ import SpriteKit
 class Collectable : Interactable
 {
     
-    
+    var item : Item?
 //    init (x : Int, y : Int, s : SKSpriteNode)
 //    {
 //        super.init (x : x, y : y, s : s)
