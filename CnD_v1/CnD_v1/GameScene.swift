@@ -44,7 +44,7 @@ class GameScene: SKScene
         let scene = GameScene(fileNamed: "LevelScene_\(levelNum)")!
         
         scene.currentLevel = levelNum
-        scene.scaleMode = .resizeFill
+        scene.scaleMode = .aspectFill
         return scene
     }
     
