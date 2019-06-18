@@ -8,9 +8,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Entity"
+- !private "FloatLiteralType"
 - "Int"
+- !private "IntegerLiteralType"
 - "Interactable"
 - "SKSpriteNode"
+- !private "StringLiteralType"
 depends-member:
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "SKSpriteNode"]

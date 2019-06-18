@@ -19,16 +19,19 @@ class GameScene: SKScene
     
     override init (size : CGSize)
     {
+        GameScene.view = nil
         super.init(size : size)
     }
     
     required init?(coder : NSCoder)
     {
+        GameScene.view = nil
         super.init(coder : coder)
     }
     
     convenience override init()
     {
+        GameScene.view = nil
         self.init()
     }
     
