@@ -13,8 +13,6 @@ class GameScene: SKScene
 {
     var currentLevel: Int = 0
     
-    static var view : SKView?
-    
     var pool = [Entity]()
     
     override init (size : CGSize)
@@ -35,7 +33,6 @@ class GameScene: SKScene
     override func didMove(to view: SKView)
     {
         backgroundColor = SKColor.black
-        GameScene.view = view
         let x = Int(size.width / 2)
         let y = Int(size.height / 2)
         let z = 15
@@ -93,4 +90,6 @@ class GameScene: SKScene
             }
         }
     }
+    
+
 }

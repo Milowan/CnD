@@ -80,53 +80,35 @@ class Player : Entity
     override func collision(response : Entity)
     {
         
-        let a = self.sprite as! SKSpriteNode
-        var aPos : Pos
-        if let pos = self.pos as! Pos?
-        {
-            aPos = pos
-        }
-        else
-        {
-            aPos = Pos(xX : Int(a.position.x), yY : Int(a.position.y), zZ : Int(a.zPosition))
-        }
-        let aBottom = aPos.y - Int(a.size.height / 2)
-        let aTop = aPos.y + Int(a.size.height / 2)
-        let aLeft = aPos.x - Int(a.size.width / 2)
-        let aRight = aPos.x + Int(a.size.width / 2)
+        let a = self.sprite! as SKSpriteNode
+        let aBottom = self.pos.y - Int(a.size.height / 2)
+        let aTop = self.pos.y + Int(a.size.height / 2)
+        let aLeft = self.pos.x - Int(a.size.width / 2)
+        let aRight = self.pos.x + Int(a.size.width / 2)
         
-        let b = response.sprite as! SKSpriteNode
-        var bPos : Pos
-        if let pos = response.pos as! Pos?
-        {
-            bPos = pos
-        }
-        else
-        {
-            bPos = Pos(xX : Int(b.position.x), yY : Int(b.position.y), zZ : Int(b.zPosition))
-        }
-        let bBottom = bPos.y - Int(b.size.height / 2)
-        let bTop = bPos.y + Int(b.size.height / 2)
-        let bLeft = bPos.x - Int(b.size.width / 2)
-        let bRight = bPos.x + Int(b.size.width / 2)
+        let b = response.sprite! as SKSpriteNode
+        let bBottom = response.pos.y - Int(b.size.height / 2)
+        let bTop = response.pos.y + Int(b.size.height / 2)
+        let bLeft = response.pos.x - Int(b.size.width / 2)
+        let bRight = response.pos.x + Int(b.size.width / 2)
         
         var diffX = 0
         var diffY = 0
         
-        if aTop < bPos.y
+        if aTop < response.pos.y
         {
             diffY = bBottom - aTop
         }
-        else if aBottom > bPos.y
+        else if aBottom > response.pos.y
         {
             diffY = aBottom - bTop
         }
         
-        if aRight < bPos.y
+        if aRight < response.pos.y
         {
             diffX = bLeft - aRight
         }
-        else if aLeft > bPos.y
+        else if aLeft > response.pos.y
         {
             diffX = aLeft - bRight
         }
@@ -144,24 +126,24 @@ class Player : Entity
             {
                 if diffX < diffY
                 {
-                    if aPos.y < bPos.y
+                    if pos.y < response.pos.y
                     {
-                        aPos.y = aBottom - (aTop - (bBottom - 1)) - Int(a.size.height / 2)
+                        pos.y = aBottom - (aTop - (bBottom - 1)) - Int(a.size.height / 2)
                     }
                     else
                     {
-                        aPos.y = bTop + Int(a.size.height / 2)
+                        pos.y = bTop + Int(a.size.height / 2)
                     }
                 }
                 else if diffX > diffY
                 {
-                    if aPos.x < bPos.x
+                    if pos.x < response.pos.x
                     {
-                        aPos.x = aLeft - (aRight - bLeft) - Int(a.size.width / 2)
+                        pos.x = aLeft - (aRight - bLeft) - Int(a.size.width / 2)
                     }
                     else
                     {
-                        aPos.x = bRight + Int(a.size.width / 2) + 1
+                        pos.x = bRight + Int(a.size.width / 2) + 1
                     }
                 }
             }
