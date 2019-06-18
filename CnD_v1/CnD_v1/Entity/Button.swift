@@ -18,12 +18,13 @@ class Button : Entity
     
     init(x : Int, y : Int, z : Int, s : BSNode)
     {
+        let temp = s as! BSNode
         active = false
         interactable = nil
         player = nil
         s.isUserInteractionEnabled = true
-        super.init(x : x, y : y, z : z, s : s, m : .NONE)
-        s.button = self
+        super.init(x : x, y : y, z : z, s : temp, m : .NONE)
+        temp.button = self
     }
     
     override func update()
