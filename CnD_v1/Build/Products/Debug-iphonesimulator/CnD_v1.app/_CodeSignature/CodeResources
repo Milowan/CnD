@@ -20,6 +20,18 @@
 		<data>
 		IyyQXPa9HHbJreqRlcwRQn1k1tA=
 		</data>
+		<key>Base.lproj/Main.storyboardc/BV1-FR-VrT-view-3se-qz-xqx.nib</key>
+		<data>
+		d+spFKCMtC4JmuAOz09M0IUl0/c=
+		</data>
+		<key>Base.lproj/Main.storyboardc/Info.plist</key>
+		<data>
+		p+k+nurmvwMbUWmNRS/zp9fBJGc=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UIViewController-BV1-FR-VrT.nib</key>
+		<data>
+		a+VqUpgB/T66v8Zrhh9uL/G/D+M=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		ynWQ/COMcZ7fnPPJlp7kCp2tZlE=
@@ -27,18 +39,6 @@
 		<key>LevelScene_1.sks</key>
 		<data>
 		2q0q1ZTrKIoldTbnBtpDcCcsuPQ=
-		</data>
-		<key>Main.storyboardc/BV1-FR-VrT-view-3se-qz-xqx.nib</key>
-		<data>
-		Z9ATsSnA3/1zFH1FAuCk3uX9PK8=
-		</data>
-		<key>Main.storyboardc/Info.plist</key>
-		<data>
-		p+k+nurmvwMbUWmNRS/zp9fBJGc=
-		</data>
-		<key>Main.storyboardc/UIViewController-BV1-FR-VrT.nib</key>
-		<data>
-		KORR2ztikEaxBhlTfrbWGanclcw=
 		</data>
 		<key>MapTiles.sks</key>
 		<data>
@@ -83,32 +83,32 @@
 			GnsZJ4mlgpftrAW+eKcFYDRgOBM8aic8T1DRina6Ygs=
 			</data>
 		</dict>
-		<key>LevelScene_1.sks</key>
+		<key>Base.lproj/Main.storyboardc/BV1-FR-VrT-view-3se-qz-xqx.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iKJ/cYZz4lqDE+rjWtd23mBp4UXYZtF4Diz1rSr8oGU=
+			7OO2X/bEV+DyQcRyy2qSlrFCrNj0P96tx9vbeg5pTWo=
 			</data>
 		</dict>
-		<key>Main.storyboardc/BV1-FR-VrT-view-3se-qz-xqx.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mwQ8ZJiFRj0heB9RPR2j16lPVDYFSoI93caHAKd+tZE=
-			</data>
-		</dict>
-		<key>Main.storyboardc/Info.plist</key>
+		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			hyM7E3MXhLV08tADxifvIoZ3e+F4NbmLVtE3U01a4e8=
 			</data>
 		</dict>
-		<key>Main.storyboardc/UIViewController-BV1-FR-VrT.nib</key>
+		<key>Base.lproj/Main.storyboardc/UIViewController-BV1-FR-VrT.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oBNTQd5fO/LmLaQlMD4En4XMkCZABX9a2Qnve2T9Xfg=
+			D+08PyxXwp0riRUT+0MbcOXmtbrAajWq+pEbaYsEBus=
+			</data>
+		</dict>
+		<key>LevelScene_1.sks</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iKJ/cYZz4lqDE+rjWtd23mBp4UXYZtF4Diz1rSr8oGU=
 			</data>
 		</dict>
 		<key>MapTiles.sks</key>

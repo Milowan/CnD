@@ -12,6 +12,12 @@ import SpriteKit
 
 class Player : Entity
 {
+
+    var left : Button
+    var right : Button
+    var up : Button
+    var down : Button
+    var interact : Button
     
     required init?(coder aDecoder: NSCoder)
     {
@@ -21,6 +27,12 @@ class Player : Entity
     
    init (x : Int, y : Int, z : Int, s : SKSpriteNode)
    {
+        left = Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_left"))
+        right = Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_right"))
+        up = Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_up"))
+        down = Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_down"))
+        interact = Button(x: 0,y: 0,z: 6, s: BSNode(imageNamed: "btn_interact"))
+    
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
         let dim = CGSize(width: 32, height: 32)
         self.sprite?.size = dim

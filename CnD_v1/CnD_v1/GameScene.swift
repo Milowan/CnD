@@ -11,6 +11,8 @@ import SpriteKit
 
 class GameScene: SKScene
 {
+    let numButtons = 5
+    var buttons = [BSNode]()
     var currentLevel: Int = 0
     
     static var view: SKView?
@@ -64,17 +66,35 @@ class GameScene: SKScene
     
     func addButtons()
     {
+        var i = 0
+        while i < numButtons
+        {
+            if i == 0
+            {
+                buttons.append(BSNode(imageNamed: "arrow_left"))
+            }
+            if i == 1
+            {
+                buttons.append(BSNode(imageNamed: "arrow_right"))
+            }
+            if i == 2
+            {
+                buttons.append(BSNode(imageNamed: "arrow_up"))
+            }
+            if i == 3
+            {
+                buttons.append(BSNode(imageNamed: "arrow_down"))
+            }
+            if i == 4
+            {
+                buttons.append(BSNode(imageNamed: "btn_interact"))
+            }
+            addChild(buttons[i])
+            i += 1
+        }
         
-        Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_left"))
-        addChild(left.sprite!)
-        Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_right"))
-        addChild(right!.sprite!)
-        Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_up"))
-        addChild(up!.sprite!)
-        Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_down"))
-        addChild(down!.sprite!)
-        Button(x: 0,y: 0,z: 6, s: BSNode(imageNamed: "btn_interact"))
-        addChild(interact!.sprite!)
+        
+        
     }
     
     func addEntity(entity : Entity)
