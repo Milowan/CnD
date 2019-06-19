@@ -39,6 +39,7 @@ class GameScene: SKScene
         let x = Int(size.width / 2)
         let y = Int(size.height / 2)
         let z = 15
+        addButtons()
         addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0")))
     }
     
@@ -61,6 +62,20 @@ class GameScene: SKScene
         camera.constraints = [playerConstraint]
     }
     
+    func addButtons()
+    {
+        
+        Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_left"))
+        addChild(left.sprite!)
+        Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_right"))
+        addChild(right!.sprite!)
+        Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_up"))
+        addChild(up!.sprite!)
+        Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_down"))
+        addChild(down!.sprite!)
+        Button(x: 0,y: 0,z: 6, s: BSNode(imageNamed: "btn_interact"))
+        addChild(interact!.sprite!)
+    }
     
     func addEntity(entity : Entity)
     {
