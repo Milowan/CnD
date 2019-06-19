@@ -19,6 +19,7 @@ class Player : Entity
     var down : Button?
     var interact : Button?
     
+    let movSpeed = 2
     var uiGap = 5
     var uiBotMargin = 9
     
@@ -59,39 +60,33 @@ class Player : Entity
         let dim = CGSize(width: 32, height: 32)
         self.sprite?.size = dim
     }
-//    
-//    override func update()
-//    {
-//        updateCamera(player: self.sprite as! SKNode)
-//        
-//        left.update()
-//        right.update()
-//        up.update()
-//        down.update()
-//        interact.update()
-//
-//        if left.active
-//        {
-//
-//        }
-//        if right.active
-//        {
-//
-//        }
-//        if up.active
-//        {
-//
-//        }
-//        if down.active
-//        {
-//
-//        }
-//        if interact.active
-//        {
-//
-//        }
-//
-//    }
+    
+    override func update()
+    {
+        //updateCamera(player: self.sprite as! SKNode)
+
+        if left!.active
+        {
+            sprite!.position.x -= CGFloat(movSpeed)
+        }
+        if right!.active
+        {
+            sprite!.position.x += CGFloat(movSpeed)
+        }
+        if up!.active
+        {
+            sprite!.position.y += CGFloat(movSpeed)
+        }
+        if down!.active
+        {
+            sprite!.position.y -= CGFloat(movSpeed)
+        }
+        if interact!.active
+        {
+
+        }
+
+    }
 
     override func collision(response : Entity)
     {
@@ -136,7 +131,7 @@ class Player : Entity
         {
             if response.collisionMask == .INTERACTABLE
             {
-                //interact.interactable = (response as! Interactable)
+                interact!.interactable = (response as! Interactable)
             }
             else if response.collisionMask == .WORLD
             {
@@ -164,15 +159,15 @@ class Player : Entity
                 }
             }
         }
-//        else if interact.interactable == response
-//        {
-//            interact.interactable = nil
-//        }
+        else if interact!.interactable == response
+        {
+            interact!.interactable = nil
+        }
     }
     
 //    func updateCamera(player: SKNode)
 //    {
-//        GameScene.setupCamera(player)
+//        GameScene.setupCamera(player as! GameScene)
 //    }
 
 }
