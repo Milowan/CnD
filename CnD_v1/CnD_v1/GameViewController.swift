@@ -10,7 +10,7 @@ import UIKit
 import SpriteKit
 
 class GameViewController: UIViewController
-{
+{    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -20,6 +20,7 @@ class GameViewController: UIViewController
             skView.showsFPS = true
             skView.showsNodeCount = true
             skView.ignoresSiblingOrder = true
+            scene.size = skView.bounds.size
             skView.presentScene(scene)
         }
     }

@@ -18,6 +18,7 @@ depends-member:
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "SKSpriteNode"]
 - ["6CnD_v16EntityC", ""]
+- ["6CnD_v16EntityC", "act"]
 - ["6CnD_v16EntityC", "init"]
 - !private ["SQ", "INTERACTABLE"]
 - ["SQ", ""]
@@ -25,6 +26,7 @@ depends-member:
 - !private ["SH", "INTERACTABLE"]
 - ["6CnD_v112InteractableC", "Int"]
 - ["6CnD_v112InteractableC", "SKSpriteNode"]
+- ["6CnD_v112InteractableC", "act"]
 - ["6CnD_v112InteractableC", "init"]
 - !private ["6CnD_v113collisionTypeO", "INTERACTABLE"]
 depends-nominal:
@@ -66,4 +68,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "adf7f09f5c4c213aae7a515ee2e2875f"
+interface-hash: "c9b2da98aa8fb287fec3ae96760ca409"

@@ -8,17 +8,14 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Gear"
-- "Interactable"
+- "Item"
 depends-member:
-- ["SQ", ""]
-- !private ["SQ", "init"]
 - ["6CnD_v14GearC", "init"]
-- ["6CnD_v112InteractableC", ""]
-- ["6CnD_v112InteractableC", "init"]
+- ["6CnD_v14ItemC", ""]
+- ["6CnD_v14ItemC", "init"]
 depends-nominal:
-- "SQ"
 - "6CnD_v14GearC"
-- "6CnD_v112InteractableC"
+- "6CnD_v14ItemC"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -52,4 +49,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "0c50214ee9faa10af49d5663f60aadfb"
+interface-hash: "df0553eea97b63dd348bc4f8274861e3"

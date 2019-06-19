@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		lzabgUmAm5MHXQQ1NHGv2nmKRlQ=
+		3AWrJMvxKWrixhzhWgYwaJEugNs=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		6oUq726htVclGNV1Sfm8avG0CpI=
+		Sen4K0eyNxSyXs0xRO1u4CTiQMI=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,19 +18,7 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		Aj+BJM6PVUZPXRSlhIYKHdpa82s=
-		</data>
-		<key>Base.lproj/Main.storyboardc/BV1-FR-VrT-view-3se-qz-xqx.nib</key>
-		<data>
-		yuYmPL0GwTratWm1n+J9PXsvg20=
-		</data>
-		<key>Base.lproj/Main.storyboardc/Info.plist</key>
-		<data>
-		p+k+nurmvwMbUWmNRS/zp9fBJGc=
-		</data>
-		<key>Base.lproj/Main.storyboardc/UIViewController-BV1-FR-VrT.nib</key>
-		<data>
-		TprFeLG2hdmmNKEIRF30NzWjC4Q=
+		YhtBTZHZj1XvhxadWR44qDNErl0=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -38,7 +26,19 @@
 		</data>
 		<key>LevelScene_1.sks</key>
 		<data>
-		X0kQ+CdEVV/4/kSkVibaIwf3ITc=
+		2q0q1ZTrKIoldTbnBtpDcCcsuPQ=
+		</data>
+		<key>Main.storyboardc/BV1-FR-VrT-view-3se-qz-xqx.nib</key>
+		<data>
+		NKFi/URPBRMnJE6twhN4IE0Ipp0=
+		</data>
+		<key>Main.storyboardc/Info.plist</key>
+		<data>
+		p+k+nurmvwMbUWmNRS/zp9fBJGc=
+		</data>
+		<key>Main.storyboardc/UIViewController-BV1-FR-VrT.nib</key>
+		<data>
+		aILN2+eOSi4TlEVG7dMHgV+0VZc=
 		</data>
 		<key>MapTiles.sks</key>
 		<data>
@@ -59,14 +59,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yIaUEdIXbVCY0jalcwBL92JqJNNWoXTZi+OiQjLwu3w=
+			Dlu3LaY2ECq2sh05UaMQ5Opq3PMxdEyC8JqvR8lsMgg=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WWhhcy4dvrnunG9sZAT/Og1NgPb1VGaGLi2brw+L+b8=
+			vqfq+rt+0wUGClSYtLPvb6ZQxE4mzkRADGT8VpY12VQ=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -80,35 +80,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4IVsQspnIeDDS8R4rUxKiU1XW5GJOZBzHtx0Npqc1w4=
-			</data>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/BV1-FR-VrT-view-3se-qz-xqx.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			oN6rw9hfIc4/oGmuIRn8uBC85+0nU7O0b43/wtZTkG4=
-			</data>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hyM7E3MXhLV08tADxifvIoZ3e+F4NbmLVtE3U01a4e8=
-			</data>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-BV1-FR-VrT.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			jD3kxapBWvxohUgPUCWlPuHOws0qslV9Gt4Rx8u2SKk=
+			G6vW/mmwxoQeOaAUX+Bwf1D3raucHB1YdnK7U7Bh5OY=
 			</data>
 		</dict>
 		<key>LevelScene_1.sks</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x+NJV8Yot4IfBhtOyPQ7cvg89wGESSSDJL8E73SM5Rc=
+			iKJ/cYZz4lqDE+rjWtd23mBp4UXYZtF4Diz1rSr8oGU=
+			</data>
+		</dict>
+		<key>Main.storyboardc/BV1-FR-VrT-view-3se-qz-xqx.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NlucsC2i81QbHpRKnKkInhkRYJileX3mtBtRYy2Z1U4=
+			</data>
+		</dict>
+		<key>Main.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hyM7E3MXhLV08tADxifvIoZ3e+F4NbmLVtE3U01a4e8=
+			</data>
+		</dict>
+		<key>Main.storyboardc/UIViewController-BV1-FR-VrT.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bqYnNoT8IaFuHx7fAFH1Aqp0oJO9iJeoNgjSHhS+niM=
 			</data>
 		</dict>
 		<key>MapTiles.sks</key>
