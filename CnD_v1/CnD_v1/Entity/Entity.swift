@@ -42,7 +42,6 @@ class Entity
         pos = Pos(xX : x, yY : y, zZ: z)
     }
     
-    
     func draw()
     {}
     

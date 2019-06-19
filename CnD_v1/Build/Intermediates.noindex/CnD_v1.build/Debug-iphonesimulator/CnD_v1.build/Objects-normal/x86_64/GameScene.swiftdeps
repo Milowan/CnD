@@ -7,6 +7,7 @@ provides-member:
 - ["6CnD_v19GameSceneC", ""]
 provides-dynamic-lookup:
 - "didMove"
+- "update"
 depends-top-level:
 - !private "!="
 - !private "+="
@@ -18,8 +19,10 @@ depends-top-level:
 - "CGSize"
 - "CastingPrecedence"
 - "Entity"
+- "FloatLiteralType"
 - "GameScene"
 - "Int"
+- "IntegerLiteralType"
 - "NSCoder"
 - !private "Player"
 - !private "SKColor"
@@ -950,4 +953,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "2d0277432eea9a004e84c6f26b40e6f1"
+interface-hash: "a53b93c40d93b17f8111e28e23261e02"

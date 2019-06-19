@@ -19,6 +19,10 @@ class Player : Entity
     var down : Button?
     var interact : Button?
     
+    var playerIdle: SKAction?
+    var piTextures:[SKTexture] = []
+    
+    
     let movSpeed = 2
     var uiGap = 5
     var uiBotMargin = 9
@@ -54,9 +58,9 @@ class Player : Entity
             {
                 interact = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: value)
             }
-            
         }
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
+        setAnimations()
         let dim = CGSize(width: 32, height: 32)
         self.sprite?.size = dim
     }
@@ -68,6 +72,7 @@ class Player : Entity
         if left!.active
         {
             sprite!.position.x -= CGFloat(movSpeed)
+            sprite!.run(SKAction.repeatForever(playerIdle!))
         }
         if right!.active
         {
@@ -163,6 +168,15 @@ class Player : Entity
         {
             interact!.interactable = nil
         }
+    }
+    
+    func setAnimations()
+    {
+        for i in 0...3
+        {
+            piTextures.append(SKTexture(imageNamed: "knight iso char_idle_\(i)"))
+        }
+        playerIdle = SKAction.animate(with: piTextures, timePerFrame: 0.1)
     }
     
 //    func updateCamera(player: SKNode)
