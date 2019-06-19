@@ -16,7 +16,6 @@ depends-top-level:
 - !private ">"
 - "AssignmentPrecedence"
 - "BSNode"
-- !private "BooleanLiteralType"
 - "Button"
 - !private "GameScene"
 - "SKSpriteNode"
