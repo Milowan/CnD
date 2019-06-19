@@ -110,7 +110,7 @@ class GameScene: SKScene
     }
     
     
-    func update(_currentTime: TimeInterval)
+    override func update(_  currentTime : TimeInterval)
     {
         for entity in pool
         {
