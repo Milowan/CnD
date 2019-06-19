@@ -32,23 +32,23 @@ class Player : Entity
     {
         if index == 0
         {
-            left = Button(x: 0,y: 0,z: 5, s: value)
+            left = Button(x: 30,y: 0,z: 5, s: value)
         }
         if index == 1
         {
-            right = Button(x: 0,y: 0,z: 5, s: value)
+            right = Button(x: 0,y: 40,z: 5, s: value)
         }
         if index == 2
         {
-            up = Button(x: 0,y: 0,z: 5, s: value)
+            up = Button(x: -20,y: 0,z: 5, s: value)
         }
         if index == 3
         {
-            down = Button(x: 0,y: 0,z: 5, s: value)
+            down = Button(x: 0,y: -10,z: 5, s: value)
         }
         if index == 4
         {
-            interact = Button(x: 0,y: 0,z: 6, s: value)
+            interact = Button(x: 25,y: 25,z: 6, s: value)
         }
         
     }
