@@ -19,6 +19,9 @@ class Player : Entity
     var down : Button?
     var interact : Button?
     
+    var uiGap = 5
+    var uiBotMargin = 8
+    
     required init?(coder aDecoder: NSCoder)
     {
         fatalError("Use init()")
@@ -32,23 +35,23 @@ class Player : Entity
     {
         if index == 0
         {
-            left = Button(x: 30,y: 0,z: 5, s: value)
+            left = Button(x: (GameScene.gridSize! * -11),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: value)
         }
         if index == 1
         {
-            right = Button(x: 0,y: 40,z: 5, s: value)
+            right = Button(x: (GameScene.gridSize! * -9) + (uiGap * 2),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: value)
         }
         if index == 2
         {
-            up = Button(x: -20,y: 0,z: 5, s: value)
+            up = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2),z: 5, s: value)
         }
         if index == 3
         {
-            down = Button(x: 0,y: -10,z: 5, s: value)
+            down = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -5) + uiBotMargin,z: 5, s: value)
         }
         if index == 4
         {
-            interact = Button(x: 25,y: 25,z: 6, s: value)
+            interact = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: value)
         }
         
     }

@@ -24,15 +24,15 @@ class GameScene: SKScene
     
     override init (size : CGSize)
     {
-        GameScene.gridSize = Int(size.width / 25)
-        GameScene.rows = Int(size.height) / GameScene.gridSize!
-        GameScene.columns = Int(size.width) / GameScene.gridSize!
         super.init(size : size)
     }
     
     required init?(coder : NSCoder)
     {
         super.init(coder : coder)
+        GameScene.gridSize = Int(size.width / 50)
+        GameScene.rows = Int(size.height) / GameScene.gridSize!
+        GameScene.columns = Int(size.width) / GameScene.gridSize!
     }
     
     convenience override init()
