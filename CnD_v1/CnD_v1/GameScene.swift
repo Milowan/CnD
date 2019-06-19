@@ -16,11 +16,17 @@ class GameScene: SKScene
     var currentLevel: Int = 0
     
     static var view: SKView?
+    static var rows: Int?
+    static var columns: Int?
+    static var gridSize: Int?
     
     var pool = [Entity]()
     
     override init (size : CGSize)
     {
+        GameScene.gridSize = Int(size.width / 25)
+        GameScene.rows = Int(size.height) / GameScene.gridSize!
+        GameScene.columns = Int(size.width) / GameScene.gridSize!
         super.init(size : size)
     }
     
