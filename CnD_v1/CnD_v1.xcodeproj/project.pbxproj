@@ -15,11 +15,11 @@
 		26FBAF0522A5965C00AEDCDC /* Interactable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAEFE22A5965C00AEDCDC /* Interactable.swift */; };
 		26FBAF0622A5965C00AEDCDC /* Pos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAEFF22A5965C00AEDCDC /* Pos.swift */; };
 		26FBAF0722A5965C00AEDCDC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAF0022A5965C00AEDCDC /* Player.swift */; };
+		26FEEBCE22BAACD3006A1566 /* BSNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FEEBCD22BAACD3006A1566 /* BSNode.swift */; };
 		A61C3F5E22AF05ED0031B4B7 /* MapTiles.sks in Resources */ = {isa = PBXBuildFile; fileRef = A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */; };
 		A61C3F6022B025320031B4B7 /* LevelScene_1.sks in Resources */ = {isa = PBXBuildFile; fileRef = A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */; };
 		A6216A4822B97AAD001DB637 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6216A4722B97AAD001DB637 /* Item.swift */; };
 		A6216A4A22B97B6B001DB637 /* Door.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6216A4922B97B6B001DB637 /* Door.swift */; };
-		A659255622BAA0AD001ECE56 /* BSNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A659255522BAA0AD001ECE56 /* BSNode.swift */; };
 		A659255822BAA0CC001ECE56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A659255722BAA0CC001ECE56 /* Main.storyboard */; };
 		A686E4B222A45405004E1B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A686E4B122A45405004E1B64 /* AppDelegate.swift */; };
 		A686E4BA22A45405004E1B64 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A686E4B922A45405004E1B64 /* GameViewController.swift */; };
@@ -56,11 +56,11 @@
 		26FBAEFE22A5965C00AEDCDC /* Interactable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactable.swift; sourceTree = "<group>"; };
 		26FBAEFF22A5965C00AEDCDC /* Pos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pos.swift; sourceTree = "<group>"; };
 		26FBAF0022A5965C00AEDCDC /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		26FEEBCD22BAACD3006A1566 /* BSNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSNode.swift; sourceTree = "<group>"; };
 		A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MapTiles.sks; sourceTree = "<group>"; };
 		A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelScene_1.sks; sourceTree = "<group>"; };
 		A6216A4722B97AAD001DB637 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A6216A4922B97B6B001DB637 /* Door.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Door.swift; sourceTree = "<group>"; };
-		A659255522BAA0AD001ECE56 /* BSNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BSNode.swift; path = "../../../CnD-v1/CnD_v1/CnD_v1/BSNode.swift"; sourceTree = "<group>"; };
 		A659255722BAA0CC001ECE56 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		A686E4AE22A45405004E1B64 /* CnD_v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CnD_v1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A686E4B122A45405004E1B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,7 +139,6 @@
 		A686E4B022A45405004E1B64 /* CnD_v1 */ = {
 			isa = PBXGroup;
 			children = (
-				A659255522BAA0AD001ECE56 /* BSNode.swift */,
 				A686E4C322A45406004E1B64 /* Info.plist */,
 				A686E4B122A45405004E1B64 /* AppDelegate.swift */,
 				A686E4BE22A45406004E1B64 /* Assets.xcassets */,
@@ -153,6 +152,7 @@
 				A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */,
 				26F9808A22A6FD1800E7B5FE /* Gear.swift */,
 				A6216A4722B97AAD001DB637 /* Item.swift */,
+				26FEEBCD22BAACD3006A1566 /* BSNode.swift */,
 			);
 			path = CnD_v1;
 			sourceTree = "<group>";
@@ -310,9 +310,9 @@
 			files = (
 				26FBAF0322A5965C00AEDCDC /* Button.swift in Sources */,
 				26FBAF0422A5965C00AEDCDC /* Entity.swift in Sources */,
+				26FEEBCE22BAACD3006A1566 /* BSNode.swift in Sources */,
 				A686E4BA22A45405004E1B64 /* GameViewController.swift in Sources */,
 				26FBAF0222A5965C00AEDCDC /* World.swift in Sources */,
-				A659255622BAA0AD001ECE56 /* BSNode.swift in Sources */,
 				26F99AB022A98CD800D0F879 /* Collectable.swift in Sources */,
 				A6FD168822B3E8420090D045 /* GameScene.swift in Sources */,
 				A6216A4822B97AAD001DB637 /* Item.swift in Sources */,
