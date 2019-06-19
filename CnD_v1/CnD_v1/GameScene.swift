@@ -42,7 +42,7 @@ class GameScene: SKScene
         let y = Int(size.height / 2)
         let z = 15
         addButtons()
-        addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0")))
+        addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0"), buttons: buttons))
     }
     
     class func level(levelNum: Int) -> GameScene?

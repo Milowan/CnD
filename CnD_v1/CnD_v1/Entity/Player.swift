@@ -13,11 +13,11 @@ import SpriteKit
 class Player : Entity
 {
 
-    var left : Button
-    var right : Button
-    var up : Button
-    var down : Button
-    var interact : Button
+    var left : Button?
+    var right : Button?
+    var up : Button?
+    var down : Button?
+    var interact : Button?
     
     required init?(coder aDecoder: NSCoder)
     {
@@ -25,14 +25,33 @@ class Player : Entity
     }
 
     
-   init (x : Int, y : Int, z : Int, s : SKSpriteNode)
+    init (x : Int, y : Int, z : Int, s : SKSpriteNode, buttons : [BSNode])
    {
-        left = Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_left"))
-        right = Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_right"))
-        up = Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_up"))
-        down = Button(x: 0,y: 0,z: 5, s: BSNode(imageNamed: "arrow_down"))
-        interact = Button(x: 0,y: 0,z: 6, s: BSNode(imageNamed: "btn_interact"))
     
+    for (index, value) in buttons.enumerated()
+    {
+        if index == 0
+        {
+            left = Button(x: 0,y: 0,z: 5, s: value)
+        }
+        if index == 1
+        {
+            right = Button(x: 0,y: 0,z: 5, s: value)
+        }
+        if index == 2
+        {
+            up = Button(x: 0,y: 0,z: 5, s: value)
+        }
+        if index == 3
+        {
+            down = Button(x: 0,y: 0,z: 5, s: value)
+        }
+        if index == 4
+        {
+            interact = Button(x: 0,y: 0,z: 6, s: value)
+        }
+        
+    }
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
         let dim = CGSize(width: 32, height: 32)
         self.sprite?.size = dim
