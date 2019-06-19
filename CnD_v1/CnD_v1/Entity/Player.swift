@@ -20,7 +20,7 @@ class Player : Entity
     var interact : Button?
     
     var uiGap = 5
-    var uiBotMargin = 8
+    var uiBotMargin = 9
     
     required init?(coder aDecoder: NSCoder)
     {
@@ -31,30 +31,30 @@ class Player : Entity
     init (x : Int, y : Int, z : Int, s : SKSpriteNode, buttons : [BSNode])
    {
     
-    for (index, value) in buttons.enumerated()
-    {
-        if index == 0
+        for (index, value) in buttons.enumerated()
         {
-            left = Button(x: (GameScene.gridSize! * -11),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: value)
+            if index == 0
+            {
+                left = Button(x: (GameScene.gridSize! * -11),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: value)
+            }
+            if index == 1
+            {
+                right = Button(x: (GameScene.gridSize! * -9) + (uiGap * 2),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: value)
+            }
+            if index == 2
+            {
+                up = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2),z: 5, s: value)
+            }
+            if index == 3
+            {
+                down = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -5) + uiBotMargin,z: 5, s: value)
+            }
+            if index == 4
+            {
+                interact = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: value)
+            }
+            
         }
-        if index == 1
-        {
-            right = Button(x: (GameScene.gridSize! * -9) + (uiGap * 2),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: value)
-        }
-        if index == 2
-        {
-            up = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2),z: 5, s: value)
-        }
-        if index == 3
-        {
-            down = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -5) + uiBotMargin,z: 5, s: value)
-        }
-        if index == 4
-        {
-            interact = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: value)
-        }
-        
-    }
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
         let dim = CGSize(width: 32, height: 32)
         self.sprite?.size = dim

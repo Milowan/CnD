@@ -23,14 +23,11 @@ depends-top-level:
 - !private "CGSize"
 - "CastingPrecedence"
 - "Entity"
-- "FloatLiteralType"
 - !private "GameScene"
 - "Int"
-- "IntegerLiteralType"
 - "NSCoder"
 - "Player"
 - "SKSpriteNode"
-- !private "StringLiteralType"
 - !private "fatalError"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
@@ -156,6 +153,7 @@ depends-member:
 - ["6CnD_v16PlayerC", "NSCoder"]
 - ["6CnD_v16PlayerC", "SKSpriteNode"]
 - ["6CnD_v16PlayerC", "collision"]
+- ["6CnD_v16PlayerC", "deinit"]
 - ["6CnD_v16PlayerC", "down"]
 - !private ["6CnD_v16PlayerC", "fatalError"]
 - ["6CnD_v16PlayerC", "init"]
