@@ -44,11 +44,11 @@ class GameScene: SKScene
     {
         backgroundColor = SKColor.black
         GameScene.view = view
-        let x = Int(size.width / 2)
-        let y = Int(size.height / 2)
+        let x = 0
+        let y = 0
         let z = 15
         addButtons()
-        addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0")))
+        addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0"), buttons: buttons))
     }
     
     class func level(levelNum: Int) -> GameScene?

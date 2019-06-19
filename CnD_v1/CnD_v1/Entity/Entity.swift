@@ -32,6 +32,7 @@ class Entity
         s.zPosition = CGFloat(z)
         pos = Pos(xX : x, yY : y, zZ: z)
         sprite = s
+        sprite!.position = CGPoint(x : x, y : y)
     }
     
     
