@@ -16,12 +16,12 @@ class BSNode : SKSpriteNode
     
     override func touchesBegan (_ touches : Set<UITouch>, with event : UIEvent?)
     {
-        let button = self.button as! Button
+        let button = self.button!
         
         for touch in touches
         {
-            var sprite = button.sprite as! SKSpriteNode
-            var touchP = touch.location(in : GameScene.view as! UIView?)
+            let sprite = button.sprite!
+            let touchP = touch.location(in : GameScene.view!)
             
             if  touchP.x > sprite.position.x && touchP.x < sprite.position.x + sprite.size.width &&
                 touchP.y > sprite.position.y && touchP.y < sprite.position.y + sprite.size.height
@@ -39,7 +39,7 @@ class BSNode : SKSpriteNode
     
     override func touchesEnded(_ touches : Set<UITouch>, with event : UIEvent?)
     {
-        let button = self.button as! Button
+        let button = self.button!
         button.active = false
     }
     
