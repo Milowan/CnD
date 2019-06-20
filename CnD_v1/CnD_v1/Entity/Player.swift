@@ -19,9 +19,24 @@ class Player : Entity
     var down : Button?
     var interact : Button?
     
+    let animSpeed = 0.2
+    var isIdle = true
+    var tempString: String?
+    
     var playerIdle: SKAction?
     var piTextures:[SKTexture] = []
     
+    var playerLeft: SKAction?
+    var plTextures:[SKTexture] = []
+    
+    var playerRight: SKAction?
+    var prTextures:[SKTexture] = []
+    
+    var playerUp: SKAction?
+    var puTextures:[SKTexture] = []
+    
+    var playerDown: SKAction?
+    var pdTextures:[SKTexture] = []
     
     let movSpeed = 2
     var uiGap = 5
@@ -35,31 +50,42 @@ class Player : Entity
     
     init (x : Int, y : Int, z : Int, s : SKSpriteNode, buttons : [BSNode])
    {
+        left = Button(x: (GameScene.gridSize! * -11),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: BSNode(imageNamed: "arrow_left"))
+        s.addChild(left!.sprite!)
+        right = Button(x: (GameScene.gridSize! * -9) + (uiGap * 2),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: BSNode(imageNamed: "arrow_right"))
+        s.addChild(right!.sprite!)
+        up = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2),z: 5, s: BSNode(imageNamed: "arrow_up"))
+        s.addChild(up!.sprite!)
+        down = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -5) + uiBotMargin,z: 5, s: BSNode(imageNamed: "arrow_down"))
+        s.addChild(down!.sprite!)
+        interact = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: BSNode(imageNamed: "btn_interact"))
+        s.addChild(interact!.sprite!)
     
-        for (index, value) in buttons.enumerated()
-        {
-            if index == 0
-            {
-                left = Button(x: (GameScene.gridSize! * -11),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: value)
-            }
-            if index == 1
-            {
-                right = Button(x: (GameScene.gridSize! * -9) + (uiGap * 2),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: value)
-            }
-            if index == 2
-            {
-                up = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2),z: 5, s: value)
-            }
-            if index == 3
-            {
-                down = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -5) + uiBotMargin,z: 5, s: value)
-            }
-            if index == 4
-            {
-                interact = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: value)
-            }
-        }
+//        for (index, value) in buttons.enumerated()
+//        {
+//            if index == 0
+//            {
+//                left = Button(x: (GameScene.gridSize! * -11),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: value)
+//            }
+//            if index == 1
+//            {
+//                right = Button(x: (GameScene.gridSize! * -9) + (uiGap * 2),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: value)
+//            }
+//            if index == 2
+//            {
+//                up = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2),z: 5, s: value)
+//            }
+//            if index == 3
+//            {
+//                down = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -5) + uiBotMargin,z: 5, s: value)
+//            }
+//            if index == 4
+//            {
+//                interact = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: value)
+//            }
+//        }
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
+        GameScene.player = self
         setAnimations()
         let dim = CGSize(width: 32, height: 32)
         self.sprite?.size = dim
@@ -67,30 +93,57 @@ class Player : Entity
     
     override func update()
     {
-        //updateCamera(player: self.sprite as! SKNode)
-
-        if left!.active
+        if left!.active == false &&
+            right!.active == false &&
+            up!.active == false &&
+            down!.active == false
         {
-            sprite!.position.x -= CGFloat(movSpeed)
-            sprite!.run(SKAction.repeatForever(playerIdle!))
+            isIdle = true
+            if tempString != nil && tempString != "playerIdle"
+            {
+                stopAnimation(animKey: tempString!)
+            }
         }
-        if right!.active
+        else
         {
-            sprite!.position.x += CGFloat(movSpeed)
+            isIdle = false
         }
-        if up!.active
+        if isIdle && tempString != "playerIdle"
         {
-            sprite!.position.y += CGFloat(movSpeed)
+            tempString = "playerIdle"
+            startAnimation(animAction: playerIdle!, animKey: tempString!)
         }
-        if down!.active
+        else
         {
-            sprite!.position.y -= CGFloat(movSpeed)
+            if left!.active
+            {
+                tempString = "playerLeft"
+                startAnimation(animAction: playerLeft!, animKey: tempString!)
+                sprite!.position.x -= CGFloat(movSpeed)
+            }
+            if right!.active
+            {
+                tempString = "playerRight"
+                startAnimation(animAction: playerRight!, animKey: tempString!)
+                sprite!.position.x += CGFloat(movSpeed)
+            }
+            if up!.active
+            {
+                tempString = "playerUp"
+                startAnimation(animAction: playerUp!, animKey: tempString!)
+                sprite!.position.y += CGFloat(movSpeed)
+            }
+            if down!.active
+            {
+                tempString = "playerDown"
+                startAnimation(animAction: playerDown!, animKey: tempString!)
+                sprite!.position.y -= CGFloat(movSpeed)
+            }
+            if interact!.active
+            {
+                
+            }
         }
-        if interact!.active
-        {
-
-        }
-
     }
 
     override func collision(response : Entity)
@@ -176,12 +229,39 @@ class Player : Entity
         {
             piTextures.append(SKTexture(imageNamed: "knight iso char_idle_\(i)"))
         }
-        playerIdle = SKAction.animate(with: piTextures, timePerFrame: 0.1)
+        for i in 0...5
+        {
+            plTextures.append(SKTexture(imageNamed: "knight iso char_run left_\(i)"))
+        }
+        for i in 0...5
+        {
+            prTextures.append(SKTexture(imageNamed: "knight iso char_run right_\(i)"))
+        }
+        for i in 0...4
+        {
+            puTextures.append(SKTexture(imageNamed: "knight iso char_run up_\(i)"))
+        }
+        for i in 0...4
+        {
+            pdTextures.append(SKTexture(imageNamed: "knight iso char_run down_\(i)"))
+        }
+        playerIdle = SKAction.animate(with: piTextures, timePerFrame: animSpeed)
+        playerLeft = SKAction.animate(with: plTextures, timePerFrame: animSpeed)
+        playerRight = SKAction.animate(with: prTextures, timePerFrame: animSpeed)
+        playerUp = SKAction.animate(with: puTextures, timePerFrame: animSpeed)
+        playerDown = SKAction.animate(with: pdTextures, timePerFrame: animSpeed)
     }
     
-//    func updateCamera(player: SKNode)
-//    {
-//        GameScene.setupCamera(player as! GameScene)
-//    }
-
+    func startAnimation(animAction: SKAction, animKey: String)
+    {
+        if sprite!.action(forKey: animKey) == nil
+        {
+            sprite!.run(SKAction.repeatForever(animAction), withKey: animKey)
+        }
+    }
+    
+    func stopAnimation(animKey: String)
+    {
+        sprite!.removeAction(forKey: animKey)
+    }
 }

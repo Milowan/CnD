@@ -15,10 +15,13 @@ class GameScene: SKScene
     var buttons = [BSNode]()
     var currentLevel: Int = 0
     
+    var edgeLimits = SKTileMapNode()
     static var view: SKView?
     static var rows: Int?
     static var columns: Int?
     static var gridSize: Int?
+    
+    static var player: Player?
     
     var pool = [Entity]()
     
@@ -42,14 +45,24 @@ class GameScene: SKScene
     
     override func didMove(to view: SKView)
     {
+        for node in self.children
+        {
+            if node.name == "Floor_Node"
+            {
+                if let _:SKTileMapNode = node as? SKTileMapNode
+                {
+                    edgeLimits = node as! SKTileMapNode
+                }
+            }
+        }
         backgroundColor = SKColor.black
         GameScene.view = view
-        let x = 0
-        let y = 0
+        let x = -15
+        let y = -200
         let z = 15
         addButtons()
         addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0"), buttons: buttons))
-        
+        setupCamera(player: GameScene.player!.sprite!)
     }
     
     class func level(levelNum: Int) -> GameScene?
@@ -67,8 +80,16 @@ class GameScene: SKScene
         
         let zeroDistance = SKRange(constantValue: 0)
         let playerConstraint = SKConstraint.distance(zeroDistance, to: player)
+        let xInset = min((view?.bounds.width)!/2 * camera.xScale, edgeLimits.frame.width/2)
+        let yInset = min((view?.bounds.height)!/2 * camera.yScale, edgeLimits.frame.height/2)
         
-        camera.constraints = [playerConstraint]
+        let constraintRect = edgeLimits.frame.insetBy(dx: xInset, dy: yInset)
+        let xRange = SKRange(lowerLimit: constraintRect.minX, upperLimit: constraintRect.maxX)
+        let yRange = SKRange(lowerLimit: constraintRect.minY, upperLimit: constraintRect.maxY)
+        let edgeConstraint = SKConstraint.positionX(xRange, y: yRange)
+        
+        edgeConstraint.referenceNode = edgeLimits
+        camera.constraints = [playerConstraint, edgeConstraint]
     }
     
     func addButtons()
