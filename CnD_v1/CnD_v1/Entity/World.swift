@@ -13,9 +13,8 @@ class World : Entity
 {
     
     
-    init (x : Int, y : Int, z : Int, w : Int, h : Int)
+    init (x : Int, y : Int, z : Int)
     {
-        
         super.init (x : x, y : y, z : z, m : .WORLD)
     }
 }
