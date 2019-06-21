@@ -7,12 +7,24 @@ provides-member:
 - ["6CnD_v14GearC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "AssignmentPrecedence"
+- !private "FloatLiteralType"
 - "Gear"
+- !private "IntegerLiteralType"
 - "Item"
+- "SKSpriteNode"
+- "Stats"
+- !private "StringLiteralType"
 depends-member:
+- ["6CnD_v14GearC", "SKSpriteNode"]
+- ["6CnD_v14GearC", "Stats"]
 - ["6CnD_v14GearC", "init"]
+- ["6CnD_v14GearC", "stats"]
+- ["6CnD_v14ItemC", "SKSpriteNode"]
+- ["6CnD_v14ItemC", "Stats"]
 - ["6CnD_v14ItemC", ""]
 - ["6CnD_v14ItemC", "init"]
+- ["6CnD_v14ItemC", "stats"]
 depends-nominal:
 - "6CnD_v14GearC"
 - "6CnD_v14ItemC"
@@ -49,4 +61,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "df0553eea97b63dd348bc4f8274861e3"
+interface-hash: "c3a6c3fff63f433286f8a25ebb1715c2"

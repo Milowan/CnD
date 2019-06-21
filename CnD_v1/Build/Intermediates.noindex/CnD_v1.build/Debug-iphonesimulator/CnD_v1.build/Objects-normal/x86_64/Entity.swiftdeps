@@ -54,10 +54,12 @@ depends-member:
 - ["6CnD_v16EntityC", "collisionType"]
 - ["6CnD_v16EntityC", "deinit"]
 - ["6CnD_v16EntityC", "draw"]
+- ["6CnD_v16EntityC", "height"]
 - ["6CnD_v16EntityC", "init"]
 - ["6CnD_v16EntityC", "pos"]
 - ["6CnD_v16EntityC", "sprite"]
 - ["6CnD_v16EntityC", "update"]
+- ["6CnD_v16EntityC", "width"]
 - ["SQ", "=="]
 - !private ["SQ", "CGFloat"]
 - !private ["SQ", "CGPoint"]
@@ -211,4 +213,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "85243f2cb0dce45d804db4297eb294d4"
+interface-hash: "0c3b697f45a85446a2fa7a9109e7a4ca"

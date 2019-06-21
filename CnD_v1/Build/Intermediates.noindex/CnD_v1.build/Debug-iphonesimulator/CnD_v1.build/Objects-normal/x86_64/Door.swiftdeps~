@@ -7,16 +7,29 @@ provides-member:
 - ["6CnD_v14DoorC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "AssignmentPrecedence"
 - "Door"
+- "Int"
 - "Interactable"
+- "SKSpriteNode"
 depends-member:
+- ["6CnD_v14DoorC", "Int"]
+- ["6CnD_v14DoorC", "SKSpriteNode"]
 - ["6CnD_v14DoorC", "act"]
+- ["6CnD_v14DoorC", "iD"]
 - ["6CnD_v14DoorC", "init"]
+- ["6CnD_v16EntityC", "Int"]
+- ["6CnD_v16EntityC", "SKSpriteNode"]
 - ["6CnD_v16EntityC", "act"]
+- ["6CnD_v16EntityC", "iD"]
 - ["SQ", ""]
+- !private ["SQ", "iD"]
 - !private ["SQ", "init"]
+- ["6CnD_v112InteractableC", "Int"]
+- ["6CnD_v112InteractableC", "SKSpriteNode"]
 - ["6CnD_v112InteractableC", ""]
 - ["6CnD_v112InteractableC", "act"]
+- ["6CnD_v112InteractableC", "iD"]
 - ["6CnD_v112InteractableC", "init"]
 depends-nominal:
 - "6CnD_v14DoorC"
@@ -56,4 +69,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e7669fd5d140a7a0b653b13918526ea2"
+interface-hash: "fff554d9525ae0b6af9bb4c170529ea3"

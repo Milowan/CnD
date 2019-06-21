@@ -77,8 +77,9 @@ class GameScene: SKScene
         createPressPlates()
         createGemDias()
         createChests()
-        //createWallCollisions()
-        addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0"), buttons: buttons))
+        createDoors()
+        createWallCollisions()
+        addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0")))
         addEntity(entity : World(bottom: -64, left : -47, top : 50, right : 0))
         setupCamera(player: GameScene.player!.sprite!)
     }
@@ -217,7 +218,7 @@ class GameScene: SKScene
             for column in 0..<colMap1.numberOfColumns
             {
                 guard tile(in: colMap1, at: (column, row)) != nil else {continue}
-                addEntity(entity: World(x: tempX!, y: tempY!, z: 5))
+                addEntity(entity: World(bottom: tempY! - 8, left: tempX! - 8, top: tempY! + 8, right: tempX! + 8))
             }
         }
         guard let colMap2 = childNode(withName: "BotCollisions") as? SKTileMapNode else {return}
@@ -226,7 +227,7 @@ class GameScene: SKScene
             for column in 0..<colMap2.numberOfColumns
             {
                 guard tile(in: colMap2, at: (column, row)) != nil else {continue}
-                addEntity(entity: World(x: tempX!, y: tempY!, z: 5))
+                addEntity(entity: World(bottom: tempY! - 8, left: tempX! - 8, top: tempY! + 8, right: tempX! + 8))
                 
                 colMap2.removeFromParent()
             }
@@ -251,13 +252,13 @@ class GameScene: SKScene
     func createDoors()
     {
         var i: Int = 0
-        guard let doorMap = childNode(withName: "Interactable_Doors") as? SKTileMapNode else {return}
+        guard let doorMap = childNode(withName: "Interactable_Door") as? SKTileMapNode else {return}
         for row in 0..<doorMap.numberOfRows
         {
             for column in 0..<doorMap.numberOfColumns
             {
                 guard tile(in: doorMap, at: (column, row)) != nil else {continue}
-                addEntity(entity: Door(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "door_bg"), id: i))
+                addEntity(entity: Door(x: tempX! + 8, y: tempY! + 24, z: 5, s: SKSpriteNode(imageNamed: "door_bg"), id: i))
                 i += 1
                 doorMap.removeFromParent()
             }

@@ -1,11 +1,38 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "PressPlates"
 provides-nominal:
+- "6CnD_v111PressPlatesC"
 provides-member:
+- ["6CnD_v111PressPlatesC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "Entity"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "PressPlates"
+- "SKSpriteNode"
+- !private "StringLiteralType"
 depends-member:
+- ["6CnD_v16EntityC", "Int"]
+- ["6CnD_v16EntityC", "SKSpriteNode"]
+- ["6CnD_v16EntityC", ""]
+- ["6CnD_v16EntityC", "init"]
+- !private ["SQ", "INTERACTABLE"]
+- ["SQ", ""]
+- !private ["SQ", "init"]
+- !private ["SH", "INTERACTABLE"]
+- ["6CnD_v111PressPlatesC", "Int"]
+- ["6CnD_v111PressPlatesC", "SKSpriteNode"]
+- ["6CnD_v111PressPlatesC", "init"]
+- !private ["6CnD_v113collisionTypeO", "INTERACTABLE"]
 depends-nominal:
+- "6CnD_v16EntityC"
+- "SQ"
+- !private "SH"
+- "6CnD_v111PressPlatesC"
+- !private "6CnD_v113collisionTypeO"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -39,4 +66,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5bf39d8b5f0094ca83c744a0da4fb204"
+interface-hash: "176a52180b027f0924d89ccc52f8de4d"
