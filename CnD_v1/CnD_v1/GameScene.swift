@@ -15,10 +15,21 @@ class GameScene: SKScene
     var buttons = [BSNode]()
     var currentLevel: Int = 0
     
+    var tileSet: SKTileSet?
+    typealias TileCoordinates = (column: Int, row: Int)
+    var tempPoint: CGPoint?
+    var tempX: Int?
+    var tempY: Int?
+    
+    var customBGColor = UIColor(red: (22/255), green: (19/255), blue: (24/255), alpha: 1)
+    
+    var edgeLimits = SKTileMapNode()
     static var view: SKView?
     static var rows: Int?
     static var columns: Int?
     static var gridSize: Int?
+    
+    static var player: Player?
     
     var pool = [Entity]()
     
@@ -33,6 +44,7 @@ class GameScene: SKScene
         GameScene.gridSize = Int(size.width / 50)
         GameScene.rows = Int(size.height) / GameScene.gridSize!
         GameScene.columns = Int(size.width) / GameScene.gridSize!
+        setTextures()
     }
     
     convenience override init()
@@ -42,14 +54,29 @@ class GameScene: SKScene
     
     override func didMove(to view: SKView)
     {
-        backgroundColor = SKColor.black
+//        for node in self.children
+//        {
+//            if node.name == "FloorAndBG"
+//            {
+//                if let someTileNode:SKTileMapNode = node as? SKTileMapNode
+//                {
+//                    edgeLimits = someTileNode
+//                }
+//                break
+//            }
+//        }
+        self.backgroundColor = customBGColor
         GameScene.view = view
-        let x = 1
-        let y = 0
-        let z = 15
+        
+        let x = -15
+        let y = -200
+        let z = 8
+        
         addButtons()
+        createLever()
         addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0"), buttons: buttons))
         addEntity(entity : World(bottom: -64, left : -47, top : 50, right : 0))
+        setupCamera(player: GameScene.player!.sprite!)
     }
     
     class func level(levelNum: Int) -> GameScene?
@@ -68,7 +95,90 @@ class GameScene: SKScene
         let zeroDistance = SKRange(constantValue: 0)
         let playerConstraint = SKConstraint.distance(zeroDistance, to: player)
         
-        camera.constraints = [playerConstraint]
+//        let xInset = min((view?.bounds.width)!/2 * camera.xScale, edgeLimits.frame.width/2)
+//        let yInset = min((view?.bounds.height)!/2 * camera.yScale, edgeLimits.frame.height/2)
+//        let constraintRect = edgeLimits.frame.insetBy(dx: xInset, dy: yInset)
+//        let xRange = SKRange(lowerLimit: constraintRect.minX, upperLimit: constraintRect.maxX)
+//        let yRange = SKRange(lowerLimit: constraintRect.minY, upperLimit: constraintRect.maxY)
+//        let edgeConstraint = SKConstraint.positionX(xRange, y: yRange)
+//
+//        edgeConstraint.referenceNode = edgeLimits
+          camera.constraints = [playerConstraint]
+    }
+    
+    func setTextures()
+    {
+        tileSet = SKTileSet(named: "BG Map Tiles")!
+        for tileGroup in tileSet!.tileGroups
+        {
+            for tileRule in tileGroup.rules
+            {
+                for tileDefinition in tileRule.tileDefinitions
+                {
+                    for texture in tileDefinition.textures
+                    {
+                        texture.filteringMode = .nearest
+                    }
+                }
+            }
+        }
+        tileSet = SKTileSet(named: "FG Map Tiles")!
+        for tileGroup in tileSet!.tileGroups
+        {
+            for tileRule in tileGroup.rules
+            {
+                for tileDefinition in tileRule.tileDefinitions
+                {
+                    for texture in tileDefinition.textures
+                    {
+                        texture.filteringMode = .nearest
+                    }
+                }
+            }
+        }
+        tileSet = SKTileSet(named: "BG DiagonalFloor Tiles")!
+        for tileGroup in tileSet!.tileGroups
+        {
+            for tileRule in tileGroup.rules
+            {
+                for tileDefinition in tileRule.tileDefinitions
+                {
+                    for texture in tileDefinition.textures
+                    {
+                        texture.filteringMode = .nearest
+                    }
+                }
+            }
+        }
+    }
+    
+    func tile(in tileMap: SKTileMapNode, at coordinates: TileCoordinates) -> SKTileDefinition?
+    {
+        tempPoint = tileMap.centerOfTile(atColumn: coordinates.column, row: coordinates.row)
+        tempX = Int(tempPoint!.x)
+        tempY = Int(tempPoint!.y)
+        return tileMap.tileDefinition(atColumn: coordinates.column, row: coordinates.row)
+    }
+    
+    func createLever()
+    {
+        guard let leverMap = childNode(withName: "Interactable_wLever") as? SKTileMapNode else {return}
+        for row in 0..<leverMap.numberOfRows
+        {
+            for column in 0..<leverMap.numberOfColumns
+            {
+                guard tile(in: leverMap, at: (column, row)) != nil else {continue}
+            
+            //let lever = Interactable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "lever_wall_up"))
+            
+            addEntity(entity: Interactable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "switch_wall_on")))
+            
+            leverMap.removeFromParent()
+                
+            }
+        }
+//        let doorMap = childNode(withName: "Doorways") as? SKTileMapNode
+//        doorMap?.removeFromParent()
     }
     
     func addButtons()

@@ -2,10 +2,62 @@
 provides-top-level:
 provides-nominal:
 provides-member:
+- ["So9SKTextureC", ""]
+- ["So9SKTextureC", "init"]
 provides-dynamic-lookup:
 depends-top-level:
+- "AssignmentPrecedence"
+- "SKTexture"
+- "String"
 depends-member:
+- !private ["s7CVarArgP", "filteringMode"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "filteringMode"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "filteringMode"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["SQ", "filteringMode"]
+- !private ["SQ", "init"]
+- !private ["SQ", "nearest"]
+- !private ["SH", "filteringMode"]
+- !private ["SH", "init"]
+- !private ["SH", "nearest"]
+- !private ["So8NSCodingP", "filteringMode"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "filteringMode"]
+- !private ["So9NSCopyingP", "init"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "filteringMode"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectP", "filteringMode"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So14NSSecureCodingP", "filteringMode"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["SY", "nearest"]
+- ["So9SKTextureC", "String"]
+- !private ["So9SKTextureC", "filteringMode"]
+- ["So9SKTextureC", "init"]
+- !private ["So22SKTextureFilteringModeV", "nearest"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "filteringMode"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "filteringMode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 depends-nominal:
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "SQ"
+- !private "SH"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "SY"
+- "So9SKTextureC"
+- !private "So22SKTextureFilteringModeV"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -39,4 +91,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5bf39d8b5f0094ca83c744a0da4fb204"
+interface-hash: "f7b68060db544128ec916d12f4106c3c"

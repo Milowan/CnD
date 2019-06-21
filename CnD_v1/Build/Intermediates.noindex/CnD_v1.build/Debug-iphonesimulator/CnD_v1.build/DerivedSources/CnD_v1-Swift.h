@@ -167,6 +167,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreGraphics;
+@import Foundation;
 @import SpriteKit;
 @import UIKit;
 #endif
@@ -224,6 +225,7 @@ SWIFT_CLASS("_TtC6CnD_v19GameScene")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init;
 - (void)didMoveToView:(SKView * _Nonnull)view;
+- (void)update:(NSTimeInterval)currentTime;
 @end
 
 @class NSBundle;
