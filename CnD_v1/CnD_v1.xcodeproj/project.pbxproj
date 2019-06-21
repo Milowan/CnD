@@ -15,8 +15,12 @@
 		26FBAF0522A5965C00AEDCDC /* Interactable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAEFE22A5965C00AEDCDC /* Interactable.swift */; };
 		26FBAF0622A5965C00AEDCDC /* Pos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAEFF22A5965C00AEDCDC /* Pos.swift */; };
 		26FBAF0722A5965C00AEDCDC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAF0022A5965C00AEDCDC /* Player.swift */; };
+
+		A611F0FD22BD4D8400F18221 /* PressPlates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611F0FC22BD4D8400F18221 /* PressPlates.swift */; };
+
 		26FDCA8E22BBFFE200CEE077 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FDCA8D22BBFFE200CEE077 /* Stats.swift */; };
 		26FEEBD022BAC5A6006A1566 /* BSNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FEEBCF22BAC5A6006A1566 /* BSNode.swift */; };
+
 		A61C3F5E22AF05ED0031B4B7 /* MapTiles.sks in Resources */ = {isa = PBXBuildFile; fileRef = A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */; };
 		A61C3F6022B025320031B4B7 /* LevelScene_1.sks in Resources */ = {isa = PBXBuildFile; fileRef = A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */; };
 		A6216A4822B97AAD001DB637 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6216A4722B97AAD001DB637 /* Item.swift */; };
@@ -58,8 +62,12 @@
 		26FBAEFE22A5965C00AEDCDC /* Interactable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactable.swift; sourceTree = "<group>"; };
 		26FBAEFF22A5965C00AEDCDC /* Pos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pos.swift; sourceTree = "<group>"; };
 		26FBAF0022A5965C00AEDCDC /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+
+		A611F0FC22BD4D8400F18221 /* PressPlates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressPlates.swift; sourceTree = "<group>"; };
+
 		26FDCA8D22BBFFE200CEE077 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		26FEEBCF22BAC5A6006A1566 /* BSNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSNode.swift; sourceTree = "<group>"; };
+
 		A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MapTiles.sks; sourceTree = "<group>"; };
 		A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelScene_1.sks; sourceTree = "<group>"; };
 		A6216A4722B97AAD001DB637 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -116,6 +124,7 @@
 				26FBAEFC22A5965C00AEDCDC /* Button.swift */,
 				26F99AAF22A98CD800D0F879 /* Collectable.swift */,
 				A6216A4922B97B6B001DB637 /* Door.swift */,
+				A611F0FC22BD4D8400F18221 /* PressPlates.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -316,6 +325,7 @@
 			files = (
 				26FBAF0322A5965C00AEDCDC /* Button.swift in Sources */,
 				26FBAF0422A5965C00AEDCDC /* Entity.swift in Sources */,
+				A611F0FD22BD4D8400F18221 /* PressPlates.swift in Sources */,
 				A686E4BA22A45405004E1B64 /* GameViewController.swift in Sources */,
 				26FBAF0222A5965C00AEDCDC /* World.swift in Sources */,
 				26F99AB022A98CD800D0F879 /* Collectable.swift in Sources */,

@@ -74,6 +74,10 @@ class GameScene: SKScene
         
         addButtons()
         createLever()
+        createPressPlates()
+        createGemDias()
+        createChests()
+        //createWallCollisions()
         addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0")))
         addEntity(entity : World(bottom: -64, left : -47, top : 50, right : 0))
         setupCamera(player: GameScene.player!.sprite!)
@@ -101,9 +105,9 @@ class GameScene: SKScene
 //        let xRange = SKRange(lowerLimit: constraintRect.minX, upperLimit: constraintRect.maxX)
 //        let yRange = SKRange(lowerLimit: constraintRect.minY, upperLimit: constraintRect.maxY)
 //        let edgeConstraint = SKConstraint.positionX(xRange, y: yRange)
-//
 //        edgeConstraint.referenceNode = edgeLimits
-          camera.constraints = [playerConstraint]
+        
+        camera.constraints = [playerConstraint]
     }
     
     func setTextures()
@@ -168,18 +172,98 @@ class GameScene: SKScene
             for column in 0..<leverMap.numberOfColumns
             {
                 guard tile(in: leverMap, at: (column, row)) != nil else {continue}
-            
-            //let lever = Interactable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "lever_wall_up"))
-            
-            addEntity(entity: Interactable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "switch_wall_on")))
-            
-            leverMap.removeFromParent()
+                addEntity(entity: Interactable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "switch_wall_on")))
                 
+                leverMap.removeFromParent()
             }
         }
-//        let doorMap = childNode(withName: "Doorways") as? SKTileMapNode
-//        doorMap?.removeFromParent()
     }
+    
+    func createPressPlates()
+    {
+        guard let plateMap = childNode(withName: "Interactable_pPlate") as? SKTileMapNode else {return}
+        for row in 0..<plateMap.numberOfRows
+        {
+            for column in 0..<plateMap.numberOfColumns
+            {
+                guard tile(in: plateMap, at: (column, row)) != nil else {continue}
+                addEntity(entity: Interactable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "floor")))
+                
+                plateMap.removeFromParent()
+            }
+        }
+    }
+    
+    func createGemDias()
+    {
+        guard let gemMap = childNode(withName: "Interactable_GemDias") as? SKTileMapNode else {return}
+        for row in 0..<gemMap.numberOfRows
+        {
+            for column in 0..<gemMap.numberOfColumns
+            {
+                guard tile(in: gemMap, at: (column, row)) != nil else {continue}
+                addEntity(entity: Interactable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "switch_floor_on")))
+                
+                gemMap.removeFromParent()
+            }
+        }
+    }
+    
+    func createWallCollisions()
+    {
+        guard let colMap1 = childNode(withName: "TopWalls") as? SKTileMapNode else {return}
+        for row in 0..<colMap1.numberOfRows
+        {
+            for column in 0..<colMap1.numberOfColumns
+            {
+                guard tile(in: colMap1, at: (column, row)) != nil else {continue}
+                addEntity(entity: World(x: tempX!, y: tempY!, z: 5))
+            }
+        }
+        guard let colMap2 = childNode(withName: "BotCollisions") as? SKTileMapNode else {return}
+        for row in 0..<colMap2.numberOfRows
+        {
+            for column in 0..<colMap2.numberOfColumns
+            {
+                guard tile(in: colMap2, at: (column, row)) != nil else {continue}
+                addEntity(entity: World(x: tempX!, y: tempY!, z: 5))
+                
+                colMap2.removeFromParent()
+            }
+        }
+    }
+    
+    func createChests()
+    {
+        guard let chestMap = childNode(withName: "Interactable_Chest") as? SKTileMapNode else {return}
+        for row in 0..<chestMap.numberOfRows
+        {
+            for column in 0..<chestMap.numberOfColumns
+            {
+                guard tile(in: chestMap, at: (column, row)) != nil else {continue}
+                addEntity(entity: Interactable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "chest_closed")))
+                
+                chestMap.removeFromParent()
+            }
+        }
+    }
+    
+    func createDoors()
+    {
+        var i: Int = 0
+        guard let doorMap = childNode(withName: "Interactable_Doors") as? SKTileMapNode else {return}
+        for row in 0..<doorMap.numberOfRows
+        {
+            for column in 0..<doorMap.numberOfColumns
+            {
+                guard tile(in: doorMap, at: (column, row)) != nil else {continue}
+                addEntity(entity: Door(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "door_bg"), id: i))
+                i += 1
+                doorMap.removeFromParent()
+            }
+        }
+    }
+    
     
     func addButtons()
     {
