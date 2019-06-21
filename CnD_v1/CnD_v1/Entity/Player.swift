@@ -33,7 +33,7 @@ class Player : Entity
     
     var stats : Stats
     
-    let movSpeed = 2
+    let movSpeed = 3
     let animSpeed = 0.2
     var isIdle = true
     var tempString: String?
@@ -156,7 +156,7 @@ class Player : Entity
         
         let a = self.sprite!
         let aBottom = self.pos.y - Int(a.size.height / 2)
-        let aTop = self.pos.y
+        let aTop = self.pos.y - Int(a.size.height / 4)
         let aLeft = self.pos.x - Int((a.size.width / 3) / 2)
         let aRight = self.pos.x + Int((a.size.width / 3) / 2)
         
