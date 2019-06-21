@@ -156,7 +156,7 @@ class Player : Entity
         
         let a = self.sprite!
         let aBottom = self.pos.y - Int(a.size.height / 2)
-        let aTop = self.pos.y + Int(a.size.height / 2)
+        let aTop = self.pos.y
         let aLeft = self.pos.x - Int((a.size.width / 3) / 2)
         let aRight = self.pos.x + Int((a.size.width / 3) / 2)
         
@@ -205,11 +205,11 @@ class Player : Entity
                     }
                     if lastDirection == .RIGHT
                     {
-                        aPos.x = aRight - (bLeft - 1)
+                        aPos.x = bRight - (aLeft - 1)
                     }
                     if lastDirection == .LEFT
                     {
-                        aPos.x = bRight - (aLeft - 1)
+                        aPos.x = aRight - (bLeft - 1)
                     }
                 }
                 else
@@ -224,11 +224,11 @@ class Player : Entity
                     }
                     if direction == .RIGHT
                     {
-                        aPos.x = aRight - (bLeft - 1)
+                        aPos.x -= aRight - (bLeft - 1)
                     }
                     if direction == .LEFT
                     {
-                        aPos.x = bRight - (aLeft - 1)
+                        aPos.x += bRight - (aLeft - 1)
                     }
                 }
             }

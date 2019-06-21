@@ -74,7 +74,7 @@ class GameScene: SKScene
         
         addButtons()
         createLever()
-        addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0"), buttons: buttons))
+        addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0")))
         addEntity(entity : World(bottom: -64, left : -47, top : 50, right : 0))
         setupCamera(player: GameScene.player!.sprite!)
     }
