@@ -201,7 +201,7 @@ class Player : Entity
                     }
                     if lastDirection == .DOWN
                     {
-                        aPos.y += bTop - aBottom
+                        aPos.y += bTop - (aBottom - 1)
                     }
                     if lastDirection == .RIGHT
                     {
@@ -220,7 +220,7 @@ class Player : Entity
                     }
                     if direction == .DOWN
                     {
-                        aPos.y += bTop - aBottom
+                        aPos.y += bTop - (aBottom - 1)
                     }
                     if direction == .RIGHT
                     {
