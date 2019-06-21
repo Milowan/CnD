@@ -31,8 +31,10 @@ depends-top-level:
 - "CastingPrecedence"
 - "Direction"
 - "Entity"
+- "FloatLiteralType"
 - !private "GameScene"
 - "Int"
+- "IntegerLiteralType"
 - !private "Interactable"
 - "Player"
 - !private "Pos"
@@ -41,6 +43,7 @@ depends-top-level:
 - "SKTexture"
 - "Stats"
 - "String"
+- !private "StringLiteralType"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
 - !private ["Sa", "append"]
