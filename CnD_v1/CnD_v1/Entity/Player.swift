@@ -60,30 +60,7 @@ class Player : Entity
         s.addChild(down!.sprite!)
         interact = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: BSNode(imageNamed: "btn_interact"))
         s.addChild(interact!.sprite!)
-    
-//        for (index, value) in buttons.enumerated()
-//        {
-//            if index == 0
-//            {
-//                left = Button(x: (GameScene.gridSize! * -11),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: value)
-//            }
-//            if index == 1
-//            {
-//                right = Button(x: (GameScene.gridSize! * -9) + (uiGap * 2),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: value)
-//            }
-//            if index == 2
-//            {
-//                up = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2),z: 5, s: value)
-//            }
-//            if index == 3
-//            {
-//                down = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -5) + uiBotMargin,z: 5, s: value)
-//            }
-//            if index == 4
-//            {
-//                interact = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: value)
-//            }
-//        }
+
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
         GameScene.player = self
         setAnimations()
