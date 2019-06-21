@@ -38,7 +38,7 @@ class Player : Entity
     var playerDown: SKAction?
     var pdTextures:[SKTexture] = []
     
-    let movSpeed = 2
+    let movSpeed = 3
     var uiGap = 5
     var uiBotMargin = 9
     
@@ -227,23 +227,23 @@ class Player : Entity
     {
         for i in 0...3
         {
-            piTextures.append(SKTexture(imageNamed: "knight iso char_idle_\(i)"))
+            piTextures.append(SKTexture(pixelImageNamed: "knight iso char_idle_\(i)"))
         }
         for i in 0...5
         {
-            plTextures.append(SKTexture(imageNamed: "knight iso char_run left_\(i)"))
+            plTextures.append(SKTexture(pixelImageNamed: "knight iso char_run left_\(i)"))
         }
         for i in 0...5
         {
-            prTextures.append(SKTexture(imageNamed: "knight iso char_run right_\(i)"))
+            prTextures.append(SKTexture(pixelImageNamed: "knight iso char_run right_\(i)"))
         }
         for i in 0...4
         {
-            puTextures.append(SKTexture(imageNamed: "knight iso char_run up_\(i)"))
+            puTextures.append(SKTexture(pixelImageNamed: "knight iso char_run up_\(i)"))
         }
         for i in 0...4
         {
-            pdTextures.append(SKTexture(imageNamed: "knight iso char_run down_\(i)"))
+            pdTextures.append(SKTexture(pixelImageNamed: "knight iso char_run down_\(i)"))
         }
         playerIdle = SKAction.animate(with: piTextures, timePerFrame: animSpeed)
         playerLeft = SKAction.animate(with: plTextures, timePerFrame: animSpeed)

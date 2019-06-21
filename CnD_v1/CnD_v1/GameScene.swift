@@ -15,6 +15,8 @@ class GameScene: SKScene
     var buttons = [BSNode]()
     var currentLevel: Int = 0
     
+    var customBGColor = UIColor(red: (22/255), green: (19/255), blue: (24/255), alpha: 1)
+    
     var edgeLimits = SKTileMapNode()
     static var view: SKView?
     static var rows: Int?
@@ -47,19 +49,20 @@ class GameScene: SKScene
     {
         for node in self.children
         {
-            if node.name == "Floor_Node"
+            if node.name == "FloorAndBG"
             {
-                if let _:SKTileMapNode = node as? SKTileMapNode
+                if let someTileNode:SKTileMapNode = node as? SKTileMapNode
                 {
-                    edgeLimits = node as! SKTileMapNode
+                    edgeLimits = someTileNode
                 }
+                break
             }
         }
-        backgroundColor = SKColor.black
+        self.backgroundColor = customBGColor
         GameScene.view = view
         let x = -15
         let y = -200
-        let z = 15
+        let z = 8
         addButtons()
         addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0"), buttons: buttons))
         setupCamera(player: GameScene.player!.sprite!)
