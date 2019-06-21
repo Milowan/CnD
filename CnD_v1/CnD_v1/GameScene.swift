@@ -15,6 +15,7 @@ class GameScene: SKScene
     var buttons = [BSNode]()
     var currentLevel: Int = 0
     
+    var tileSet: SKTileSet?
     var customBGColor = UIColor(red: (22/255), green: (19/255), blue: (24/255), alpha: 1)
     
     var edgeLimits = SKTileMapNode()
@@ -38,6 +39,7 @@ class GameScene: SKScene
         GameScene.gridSize = Int(size.width / 50)
         GameScene.rows = Int(size.height) / GameScene.gridSize!
         GameScene.columns = Int(size.width) / GameScene.gridSize!
+        setTextures()
     }
     
     convenience override init()
@@ -93,6 +95,52 @@ class GameScene: SKScene
         
         edgeConstraint.referenceNode = edgeLimits
         camera.constraints = [playerConstraint, edgeConstraint]
+    }
+    
+    func setTextures()
+    {
+        tileSet = SKTileSet(named: "BG Map Tiles")!
+        for tileGroup in tileSet!.tileGroups
+        {
+            for tileRule in tileGroup.rules
+            {
+                for tileDefinition in tileRule.tileDefinitions
+                {
+                    for texture in tileDefinition.textures
+                    {
+                        texture.filteringMode = .nearest
+                    }
+                }
+            }
+        }
+        tileSet = SKTileSet(named: "FG Map Tiles")!
+        for tileGroup in tileSet!.tileGroups
+        {
+            for tileRule in tileGroup.rules
+            {
+                for tileDefinition in tileRule.tileDefinitions
+                {
+                    for texture in tileDefinition.textures
+                    {
+                        texture.filteringMode = .nearest
+                    }
+                }
+            }
+        }
+        tileSet = SKTileSet(named: "BG DiagonalFloor Tiles")!
+        for tileGroup in tileSet!.tileGroups
+        {
+            for tileRule in tileGroup.rules
+            {
+                for tileDefinition in tileRule.tileDefinitions
+                {
+                    for texture in tileDefinition.textures
+                    {
+                        texture.filteringMode = .nearest
+                    }
+                }
+            }
+        }
     }
     
     func addButtons()
