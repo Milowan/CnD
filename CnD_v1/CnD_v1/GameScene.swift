@@ -67,9 +67,11 @@ class GameScene: SKScene
 //        }
         self.backgroundColor = customBGColor
         GameScene.view = view
+        
         let x = -15
         let y = -200
         let z = 8
+        
         addButtons()
         createLever()
         createPressPlates()
@@ -77,6 +79,7 @@ class GameScene: SKScene
         createChests()
         //createWallCollisions()
         addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0"), buttons: buttons))
+        addEntity(entity : World(bottom: -64, left : -47, top : 50, right : 0))
         setupCamera(player: GameScene.player!.sprite!)
     }
     
@@ -298,7 +301,10 @@ class GameScene: SKScene
     func addEntity(entity : Entity)
     {
         pool.append(entity)
-        addChild(entity.sprite! as SKSpriteNode)
+        if entity.sprite != nil
+        {
+            addChild(entity.sprite! as SKSpriteNode)
+        }
     }
     
     
@@ -321,13 +327,8 @@ class GameScene: SKScene
                 if entity != response
                 {
                     entity.collision(response : response)
-                    
                 }
             }
         }
     }
-    
-
-    
-
 }

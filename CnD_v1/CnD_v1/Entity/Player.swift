@@ -9,6 +9,15 @@
 import Foundation
 import SpriteKit
 
+enum Direction
+{
+    case UP
+    case DOWN
+    case LEFT
+    case RIGHT
+    case NONE
+}
+
 
 class Player : Entity
 {
@@ -19,6 +28,12 @@ class Player : Entity
     var down : Button?
     var interact : Button?
     
+    var direction : Direction
+    var lastDirection : Direction
+    
+    var stats : Stats
+    
+    let movSpeed = 2
     let animSpeed = 0.2
     var isIdle = true
     var tempString: String?
@@ -37,19 +52,18 @@ class Player : Entity
     
     var playerDown: SKAction?
     var pdTextures:[SKTexture] = []
-    
-    let movSpeed = 3
+
     var uiGap = 5
     var uiBotMargin = 9
     
-    required init?(coder aDecoder: NSCoder)
-    {
-        fatalError("Use init()")
-    }
-
-    
-    init (x : Int, y : Int, z : Int, s : SKSpriteNode, buttons : [BSNode])
+    init (x : Int, y : Int, z : Int, s : SKSpriteNode)
    {
+    
+        stats = Stats(s : 5, d : 5, c : 5)
+    
+        direction = .NONE
+        lastDirection = .NONE
+    
         left = Button(x: (GameScene.gridSize! * -11),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: BSNode(imageNamed: "arrow_left"))
         s.addChild(left!.sprite!)
         right = Button(x: (GameScene.gridSize! * -9) + (uiGap * 2),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: BSNode(imageNamed: "arrow_right"))
@@ -70,11 +84,14 @@ class Player : Entity
     
     override func update()
     {
+        //updateCamera(player: self.sprite as! SKNode)
         if left!.active == false &&
             right!.active == false &&
             up!.active == false &&
             down!.active == false
         {
+            lastDirection = direction
+            direction = .NONE
             isIdle = true
             if tempString != nil && tempString != "playerIdle"
             {
@@ -96,24 +113,32 @@ class Player : Entity
             {
                 tempString = "playerLeft"
                 startAnimation(animAction: playerLeft!, animKey: tempString!)
+                lastDirection = direction
+                direction = .LEFT
                 sprite!.position.x -= CGFloat(movSpeed)
             }
             if right!.active
             {
                 tempString = "playerRight"
                 startAnimation(animAction: playerRight!, animKey: tempString!)
+                lastDirection = direction
+                direction = .RIGHT
                 sprite!.position.x += CGFloat(movSpeed)
             }
             if up!.active
             {
                 tempString = "playerUp"
                 startAnimation(animAction: playerUp!, animKey: tempString!)
+                lastDirection = direction
+                direction = .UP
                 sprite!.position.y += CGFloat(movSpeed)
             }
             if down!.active
             {
                 tempString = "playerDown"
                 startAnimation(animAction: playerDown!, animKey: tempString!)
+                lastDirection = direction
+                direction = .DOWN
                 sprite!.position.y -= CGFloat(movSpeed)
             }
             if interact!.active
@@ -121,42 +146,39 @@ class Player : Entity
                 
             }
         }
+        
+        pos.x = Int(sprite!.position.x)
+        pos.y = Int(sprite!.position.y)
     }
 
     override func collision(response : Entity)
     {
         
-        let a = self.sprite! as SKSpriteNode
+        let a = self.sprite!
         let aBottom = self.pos.y - Int(a.size.height / 2)
         let aTop = self.pos.y + Int(a.size.height / 2)
-        let aLeft = self.pos.x - Int(a.size.width / 2)
-        let aRight = self.pos.x + Int(a.size.width / 2)
+        let aLeft = self.pos.x - Int((a.size.width / 3) / 2)
+        let aRight = self.pos.x + Int((a.size.width / 3) / 2)
         
-        let b = response.sprite! as SKSpriteNode
-        let bBottom = response.pos.y - Int(b.size.height / 2)
-        let bTop = response.pos.y + Int(b.size.height / 2)
-        let bLeft = response.pos.x - Int(b.size.width / 2)
-        let bRight = response.pos.x + Int(b.size.width / 2)
+        let aPos = Pos(xX : Int(a.position.x), yY : aBottom + Int(a.size.height / 4))
         
-        var diffX = 0
-        var diffY = 0
-        
-        if aTop < response.pos.y
+        var bBottom : Int
+        var bTop : Int
+        var bLeft : Int
+        var bRight : Int
+        if let b = response.sprite
         {
-            diffY = bBottom - aTop
+             bBottom = response.pos.y - Int(b.size.height / 2)
+             bTop = response.pos.y + Int(b.size.height / 2)
+             bLeft = response.pos.x - Int(b.size.width / 2)
+             bRight = response.pos.x + Int(b.size.width / 2)
         }
-        else if aBottom > response.pos.y
+        else
         {
-            diffY = aBottom - bTop
-        }
-        
-        if aRight < response.pos.y
-        {
-            diffX = bLeft - aRight
-        }
-        else if aLeft > response.pos.y
-        {
-            diffX = aLeft - bRight
+            bBottom = response.pos.y - (response.height! / 2)
+            bTop = response.pos.y + (response.height! / 2)
+            bLeft = response.pos.x - (response.width! / 2)
+            bRight = response.pos.x + (response.width! / 2)
         }
         
         if aBottom <= bTop &&
@@ -164,32 +186,49 @@ class Player : Entity
         aLeft <= bRight &&
         aRight >= bLeft
         {
+            
             if response.collisionMask == .INTERACTABLE
             {
                 interact!.interactable = (response as! Interactable)
             }
             else if response.collisionMask == .WORLD
             {
-                if diffX < diffY
+                if direction == .NONE
                 {
-                    if pos.y < response.pos.y
+                    if lastDirection == .UP
                     {
-                        pos.y = aBottom - (aTop - (bBottom - 1)) - Int(a.size.height / 2)
+                        aPos.y -= aTop - (bBottom - 1)
                     }
-                    else
+                    if lastDirection == .DOWN
                     {
-                        pos.y = bTop + Int(a.size.height / 2)
+                        aPos.y += bTop - aBottom
+                    }
+                    if lastDirection == .RIGHT
+                    {
+                        aPos.x = aRight - (bLeft - 1)
+                    }
+                    if lastDirection == .LEFT
+                    {
+                        aPos.x = bRight - (aLeft - 1)
                     }
                 }
-                else if diffX > diffY
+                else
                 {
-                    if pos.x < response.pos.x
+                    if direction == .UP
                     {
-                        pos.x = aLeft - (aRight - bLeft) - Int(a.size.width / 2)
+                        aPos.y -= aTop - (bBottom - 1)
                     }
-                    else
+                    if direction == .DOWN
                     {
-                        pos.x = bRight + Int(a.size.width / 2) + 1
+                        aPos.y += bTop - aBottom
+                    }
+                    if direction == .RIGHT
+                    {
+                        aPos.x = aRight - (bLeft - 1)
+                    }
+                    if direction == .LEFT
+                    {
+                        aPos.x = bRight - (aLeft - 1)
                     }
                 }
             }
@@ -198,6 +237,12 @@ class Player : Entity
         {
             interact!.interactable = nil
         }
+        
+        pos = Pos(xX : aPos.x, yY : aPos.y + Int(a.size.height / 4))
+        
+        sprite!.position.x = CGFloat(pos.x)
+        sprite!.position.y = CGFloat(pos.y)
+        
     }
     
     func setAnimations()

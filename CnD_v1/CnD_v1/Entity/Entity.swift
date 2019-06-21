@@ -25,21 +25,24 @@ class Entity
     var pos : Pos
     var sprite : SKSpriteNode?
     
+    var width : Int?
+    var height : Int?
+    
     
     init(x : Int, y : Int, z : Int, s : SKSpriteNode, m : collisionType)
     {
         collisionMask = m
         s.zPosition = CGFloat(z)
-        pos = Pos(xX : x, yY : y, zZ: z)
+        pos = Pos(xX : x, yY : y)
         sprite = s
         sprite!.position = CGPoint(x : x, y : y)
     }
     
     
-    init (x : Int, y : Int, z : Int, m : collisionType)
+    init (x : Int, y : Int, m : collisionType)
     {
         collisionMask = m
-        pos = Pos(xX : x, yY : y, zZ: z)
+        pos = Pos(xX : x, yY : y)
     }
     
     func draw()

@@ -7,9 +7,15 @@
 //
 
 import Foundation
-
+import SpriteKit
 
 class Gear : Item
 {
+    var stats : Stats
     
+    init (st : Stats, sp : SKSpriteNode)
+    {
+        stats = st
+        super.init(s : sp)
+    }
 }

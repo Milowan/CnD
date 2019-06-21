@@ -11,10 +11,20 @@ import SpriteKit
 
 class World : Entity
 {
-    
-    
-    init (x : Int, y : Int, z : Int)
+    init (bottom : Int, left : Int, top : Int, right : Int)
     {
-        super.init (x : x, y : y, z : z, m : .WORLD)
+        var x : Int
+        var y : Int
+        let width = right - left
+        let height = top - bottom
+        
+        x = left + (width / 2)
+        y = bottom + (height / 2)
+        
+        
+        super.init (x : x, y : y, m : .WORLD)
+        
+        self.width = width
+        self.height = height
     }
 }
