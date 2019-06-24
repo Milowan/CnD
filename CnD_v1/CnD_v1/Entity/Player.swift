@@ -26,6 +26,12 @@ class Player : Entity
     var right : Button?
     var up : Button?
     var down : Button?
+    
+    var upRight : Button?
+    var upLeft : Button?
+    var downRight : Button?
+    var downLeft : Button?
+
     var interact : Button?
     
     var direction : Direction
@@ -53,11 +59,12 @@ class Player : Entity
     var playerDown: SKAction?
     var pdTextures:[SKTexture] = []
 
-    var uiGap = 5
-    var uiBotMargin = 9
+    let uiGap = 5
+    let uiBuffer = 2
+    let uiBotMargin = 9
     
     init (x : Int, y : Int, z : Int, s : SKSpriteNode)
-   {
+    {
     
         stats = Stats(s : 5, d : 5, c : 5)
     
@@ -74,6 +81,15 @@ class Player : Entity
         s.addChild(down!.sprite!)
         interact = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: BSNode(imageNamed: "btn_interact"))
         s.addChild(interact!.sprite!)
+    
+        downLeft = Button(x: (GameScene.gridSize! * -11) + uiBuffer,y: (GameScene.gridSize! * -5) + uiBotMargin + uiBuffer,z: 5, s: BSNode(imageNamed: "downLeft"))
+        s.addChild(downLeft!.sprite!)
+        downRight = Button(x: (GameScene.gridSize! * -9) + (uiGap * 2) - uiBuffer,y: (GameScene.gridSize! * -5) + uiBotMargin + uiBuffer,z: 5, s: BSNode(imageNamed: "downRight"))
+        s.addChild(downRight!.sprite!)
+        upLeft = Button(x: (GameScene.gridSize! * -11) + uiBuffer,y: (GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2) - uiBuffer,z: 5, s: BSNode(imageNamed: "upLeft"))
+        s.addChild(upLeft!.sprite!)
+        upRight = Button(x: (GameScene.gridSize! * -9) + (uiGap * 2) - uiBuffer,y: (GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2) - uiBuffer,z: 5, s: BSNode(imageNamed: "upRight"))
+        s.addChild(upRight!.sprite!)
 
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
         GameScene.player = self

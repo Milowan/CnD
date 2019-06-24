@@ -11,8 +11,6 @@ import SpriteKit
 
 class GameScene: SKScene
 {
-    let numButtons = 5
-    var buttons = [BSNode]()
     var currentLevel: Int = 0
     
     var tileSet: SKTileSet?
@@ -72,7 +70,6 @@ class GameScene: SKScene
         let y = -200
         let z = 8
         
-        addButtons()
         createLever()
         createPressPlates()
         createGemDias()
@@ -264,41 +261,7 @@ class GameScene: SKScene
             }
         }
     }
-    
-    
-    func addButtons()
-    {
-        var i = 0
-        while i < numButtons
-        {
-            if i == 0
-            {
-                buttons.append(BSNode(imageNamed: "arrow_left"))
-            }
-            if i == 1
-            {
-                buttons.append(BSNode(imageNamed: "arrow_right"))
-            }
-            if i == 2
-            {
-                buttons.append(BSNode(imageNamed: "arrow_up"))
-            }
-            if i == 3
-            {
-                buttons.append(BSNode(imageNamed: "arrow_down"))
-            }
-            if i == 4
-            {
-                buttons.append(BSNode(imageNamed: "btn_interact"))
-            }
-            addChild(buttons[i])
-            i += 1
-        }
-        
-        
-        
-    }
-    
+
     func addEntity(entity : Entity)
     {
         pool.append(entity)

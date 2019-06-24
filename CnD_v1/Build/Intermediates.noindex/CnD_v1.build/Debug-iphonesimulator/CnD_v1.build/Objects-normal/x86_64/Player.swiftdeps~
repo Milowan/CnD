@@ -31,8 +31,10 @@ depends-top-level:
 - "CastingPrecedence"
 - "Direction"
 - "Entity"
+- "FloatLiteralType"
 - !private "GameScene"
 - "Int"
+- "IntegerLiteralType"
 - !private "Interactable"
 - "Player"
 - !private "Pos"
@@ -41,6 +43,7 @@ depends-top-level:
 - "SKTexture"
 - "Stats"
 - "String"
+- !private "StringLiteralType"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
 - !private ["Sa", "append"]
@@ -159,6 +162,8 @@ depends-member:
 - !private ["6CnD_v16EntityC", "deinit"]
 - ["6CnD_v16EntityC", "direction"]
 - ["6CnD_v16EntityC", "down"]
+- ["6CnD_v16EntityC", "downLeft"]
+- ["6CnD_v16EntityC", "downRight"]
 - !private ["6CnD_v16EntityC", "height"]
 - ["6CnD_v16EntityC", "init"]
 - ["6CnD_v16EntityC", "interact"]
@@ -186,8 +191,11 @@ depends-member:
 - ["6CnD_v16EntityC", "stopAnimation"]
 - ["6CnD_v16EntityC", "tempString"]
 - ["6CnD_v16EntityC", "uiBotMargin"]
+- ["6CnD_v16EntityC", "uiBuffer"]
 - ["6CnD_v16EntityC", "uiGap"]
 - ["6CnD_v16EntityC", "up"]
+- ["6CnD_v16EntityC", "upLeft"]
+- ["6CnD_v16EntityC", "upRight"]
 - ["6CnD_v16EntityC", "update"]
 - !private ["6CnD_v16EntityC", "width"]
 - ["SQ", "=="]
@@ -220,6 +228,8 @@ depends-member:
 - !private ["SQ", "collisionMask"]
 - !private ["SQ", "direction"]
 - !private ["SQ", "down"]
+- !private ["SQ", "downLeft"]
+- !private ["SQ", "downRight"]
 - !private ["SQ", "gridSize"]
 - ["SQ", "hash"]
 - ["SQ", "hashValue"]
@@ -256,8 +266,11 @@ depends-member:
 - !private ["SQ", "stopAnimation"]
 - !private ["SQ", "tempString"]
 - !private ["SQ", "uiBotMargin"]
+- !private ["SQ", "uiBuffer"]
 - !private ["SQ", "uiGap"]
 - !private ["SQ", "up"]
+- !private ["SQ", "upLeft"]
+- !private ["SQ", "upRight"]
 - !private ["SQ", "width"]
 - !private ["SQ", "x"]
 - !private ["SQ", "y"]
@@ -375,6 +388,8 @@ depends-member:
 - ["6CnD_v16PlayerC", "collision"]
 - ["6CnD_v16PlayerC", "direction"]
 - ["6CnD_v16PlayerC", "down"]
+- ["6CnD_v16PlayerC", "downLeft"]
+- ["6CnD_v16PlayerC", "downRight"]
 - ["6CnD_v16PlayerC", "init"]
 - ["6CnD_v16PlayerC", "interact"]
 - ["6CnD_v16PlayerC", "isIdle"]
@@ -400,8 +415,11 @@ depends-member:
 - ["6CnD_v16PlayerC", "stopAnimation"]
 - ["6CnD_v16PlayerC", "tempString"]
 - ["6CnD_v16PlayerC", "uiBotMargin"]
+- ["6CnD_v16PlayerC", "uiBuffer"]
 - ["6CnD_v16PlayerC", "uiGap"]
 - ["6CnD_v16PlayerC", "up"]
+- ["6CnD_v16PlayerC", "upLeft"]
+- ["6CnD_v16PlayerC", "upRight"]
 - ["6CnD_v16PlayerC", "update"]
 - !private ["6CnD_v13PosC", "init"]
 - !private ["6CnD_v13PosC", "x"]
@@ -658,4 +676,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5fee48c4fdb9921f320f090369661849"
+interface-hash: "b43ef825bb686a6b0329248a5c84d998"
