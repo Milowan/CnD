@@ -64,8 +64,7 @@ class Player : Entity
     let uiBotMargin = 9
     
     init (x : Int, y : Int, z : Int, s : SKSpriteNode)
-    {
-    
+    {    
         stats = Stats(s : 5, d : 5, c : 5)
     
         direction = .NONE

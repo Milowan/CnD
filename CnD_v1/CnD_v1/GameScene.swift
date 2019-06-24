@@ -74,7 +74,7 @@ class GameScene: SKScene
         createPressPlates()
         createGemDias()
         createChests()
-        createDoors()
+        setupDoors()
         createWallCollisions()
         addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0")))
         addEntity(entity : World(bottom: -64, left : -47, top : 50, right : 0))
@@ -162,6 +162,29 @@ class GameScene: SKScene
         return tileMap.tileDefinition(atColumn: coordinates.column, row: coordinates.row)
     }
     
+    func setupDoors()
+    {
+        
+    }
+    
+    func createDoors()
+    {
+        var i: Int = 0
+        guard let doorMap = childNode(withName: "Interactable_Door") as? SKTileMapNode else {return}
+        for row in 0..<doorMap.numberOfRows
+        {
+            for column in 0..<doorMap.numberOfColumns
+            {
+                guard tile(in: doorMap, at: (column, row)) != nil else {continue}
+                let tempDoor = Door(x: tempX! + 8, y: tempY! + 24, z: 5, s: SKSpriteNode(imageNamed: "door_bg"), id: i)
+                addEntity(entity: tempDoor)
+                
+                i += 1
+                doorMap.removeFromParent()
+            }
+        }
+    }
+    
     func createLever()
     {
         guard let leverMap = childNode(withName: "Interactable_wLever") as? SKTileMapNode else {return}
@@ -242,22 +265,6 @@ class GameScene: SKScene
                 addEntity(entity: Interactable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "chest_closed")))
                 
                 chestMap.removeFromParent()
-            }
-        }
-    }
-    
-    func createDoors()
-    {
-        var i: Int = 0
-        guard let doorMap = childNode(withName: "Interactable_Door") as? SKTileMapNode else {return}
-        for row in 0..<doorMap.numberOfRows
-        {
-            for column in 0..<doorMap.numberOfColumns
-            {
-                guard tile(in: doorMap, at: (column, row)) != nil else {continue}
-                addEntity(entity: Door(x: tempX! + 8, y: tempY! + 24, z: 5, s: SKSpriteNode(imageNamed: "door_bg"), id: i))
-                i += 1
-                doorMap.removeFromParent()
             }
         }
     }
