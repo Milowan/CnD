@@ -158,7 +158,7 @@ class Player : Entity
             }
             if interact!.active
             {
-                
+                interact!.interactable!.act()
             }
         }
         
@@ -205,6 +205,7 @@ class Player : Entity
             if response.collisionMask == .INTERACTABLE
             {
                 interact!.interactable = (response as! Interactable)
+                interact!.interactable!.player = self
             }
             else if response.collisionMask == .WORLD
             {

@@ -1,27 +1,28 @@
 //
-//  Door.swift
+//  Ldoor.swift
 //  CnD_v1
 //
-//  Created by Michael Sweeny on 2019-06-18.
+//  Created by Gavin McGuire on 2019-06-24.
 //  Copyright © 2019 Michael Sweeny. All rights reserved.
 //
 
 import Foundation
 import SpriteKit
 
-class Door: Interactable
+
+class Adoor : Entity
 {
+    
     var isOpen : Bool
-    override init (x: Int, y: Int, z: Int, s: SKSpriteNode)
+    
+    init (x : Int, y : Int, z : Int, s : SKSpriteNode)
     {
         isOpen = false
         
-        super.init(x: x, y: y, z: z, s: s)
-        
-        collisionMask = .WORLD
+        super.init(x : x, y : y, z : z, s : s, m : .WORLD)
     }
     
-    override func act()
+    func toggleState()
     {
         if isOpen
         {
