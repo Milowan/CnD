@@ -258,7 +258,7 @@ class GameScene: SKScene
             for column in 0..<doorMap.numberOfColumns
             {
                 guard tile(in: doorMap, at: (column, row)) != nil else {continue}
-                addEntity(entity: Door(x: tempX! + 8, y: tempY! + 24, z: 5, s: SKSpriteNode(imageNamed: "door_bg"), id: i))
+                addEntity(entity: Door(x: tempX! + 8, y: tempY! + 24, z: 5, s: SKSpriteNode(imageNamed: "door_bg")))
                 i += 1
                 doorMap.removeFromParent()
             }
