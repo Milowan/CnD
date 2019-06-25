@@ -16,7 +16,7 @@ class Interactable : Entity
     
     init (x : Int, y : Int, z: Int, s : SKSpriteNode)
     {
-        super.init(x: x, y: y, z: z, s: s, m: .INTERACTABLE)
+        super.init(x: x, y: y, z: z, s: s, m: .NONE)
     }
     
     func act()

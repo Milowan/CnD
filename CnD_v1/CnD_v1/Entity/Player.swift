@@ -22,24 +22,25 @@ enum Direction
 class Player : Entity
 {
 
-    var left : Button?
-    var right : Button?
-    var up : Button?
-    var down : Button?
+    var left : Button
+    var right : Button
+    var up : Button
+    var down : Button
     
-    var upRight : Button?
-    var upLeft : Button?
-    var downRight : Button?
-    var downLeft : Button?
+    var upRight : SKSpriteNode
+    var upLeft : SKSpriteNode
+    var downRight : SKSpriteNode
+    var downLeft : SKSpriteNode
 
-    var interact : Button?
+    var interact : Button
     
     var direction : Direction
     var lastDirection : Direction
     
-    var stats : Stats
+    let stats = Stats(s : 5, d : 5, c : 5)
+    let inventory = Inventory()
     
-    let movSpeed = 3
+    let movSpeed = 5
     let animSpeed = 0.2
     var isIdle = true
     var tempString: String?
@@ -65,33 +66,44 @@ class Player : Entity
     
     init (x : Int, y : Int, z : Int, s : SKSpriteNode)
     {
-    
-        stats = Stats(s : 5, d : 5, c : 5)
-    
         direction = .NONE
         lastDirection = .NONE
     
         left = Button(x: (GameScene.gridSize! * -11),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: BSNode(imageNamed: "arrow_left"))
-        s.addChild(left!.sprite!)
+        s.addChild(left.sprite!)
         right = Button(x: (GameScene.gridSize! * -9) + (uiGap * 2),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: BSNode(imageNamed: "arrow_right"))
-        s.addChild(right!.sprite!)
+        s.addChild(right.sprite!)
         up = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2),z: 5, s: BSNode(imageNamed: "arrow_up"))
-        s.addChild(up!.sprite!)
+        s.addChild(up.sprite!)
         down = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -5) + uiBotMargin,z: 5, s: BSNode(imageNamed: "arrow_down"))
-        s.addChild(down!.sprite!)
+        s.addChild(down.sprite!)
         interact = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: BSNode(imageNamed: "btn_interact"))
-        s.addChild(interact!.sprite!)
-    
-        downLeft = Button(x: (GameScene.gridSize! * -11) + uiBuffer,y: (GameScene.gridSize! * -5) + uiBotMargin + uiBuffer,z: 5, s: BSNode(imageNamed: "downLeft"))
-        s.addChild(downLeft!.sprite!)
-        downRight = Button(x: (GameScene.gridSize! * -9) + (uiGap * 2) - uiBuffer,y: (GameScene.gridSize! * -5) + uiBotMargin + uiBuffer,z: 5, s: BSNode(imageNamed: "downRight"))
-        s.addChild(downRight!.sprite!)
-        upLeft = Button(x: (GameScene.gridSize! * -11) + uiBuffer,y: (GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2) - uiBuffer,z: 5, s: BSNode(imageNamed: "upLeft"))
-        s.addChild(upLeft!.sprite!)
-        upRight = Button(x: (GameScene.gridSize! * -9) + (uiGap * 2) - uiBuffer,y: (GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2) - uiBuffer,z: 5, s: BSNode(imageNamed: "upRight"))
-        s.addChild(upRight!.sprite!)
+        s.addChild(interact.sprite!)
+        
+        downLeft = SKSpriteNode(imageNamed : "downLeft")
+        downLeft.position.x = CGFloat((GameScene.gridSize! * -11) + uiBuffer)
+        downLeft.position.y = CGFloat((GameScene.gridSize! * -5) + uiBotMargin + uiBuffer)
+        downLeft.zPosition = CGFloat(5)
+        s.addChild(downLeft)
+        downRight = SKSpriteNode(imageNamed: "downRight")
+        downRight.position.x = CGFloat((GameScene.gridSize! * -9) + (uiGap * 2) - uiBuffer)
+        downRight.position.y = CGFloat((GameScene.gridSize! * -5) + uiBotMargin + uiBuffer)
+        downRight.zPosition = CGFloat(5)
+        s.addChild(downRight)
+        upLeft = SKSpriteNode(imageNamed: "upLeft")
+        upLeft.position.x = CGFloat((GameScene.gridSize! * -11) + uiBuffer)
+        upLeft.position.y = CGFloat((GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2) - uiBuffer)
+        upLeft.zPosition = CGFloat(5)
+        s.addChild(upLeft)
+        upRight = SKSpriteNode(imageNamed : "upRight")
+        upRight.position.x = CGFloat((GameScene.gridSize! * -9) + (uiGap * 2) - uiBuffer)
+        upRight.position.y = CGFloat((GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2) - uiBuffer)
+        upRight.zPosition = CGFloat(5)
+        s.addChild(upRight)
 
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
+        
+        
         GameScene.player = self
         setAnimations()
         let dim = CGSize(width: 32, height: 32)
@@ -101,10 +113,10 @@ class Player : Entity
     override func update()
     {
         //updateCamera(player: self.sprite as! SKNode)
-        if left!.active == false &&
-            right!.active == false &&
-            up!.active == false &&
-            down!.active == false
+        if left.active == false &&
+            right.active == false &&
+            up.active == false &&
+            down.active == false
         {
             lastDirection = direction
             direction = .NONE
@@ -125,7 +137,7 @@ class Player : Entity
         }
         else
         {
-            if left!.active
+            if left.active
             {
                 tempString = "playerLeft"
                 startAnimation(animAction: playerLeft!, animKey: tempString!)
@@ -133,7 +145,7 @@ class Player : Entity
                 direction = .LEFT
                 sprite!.position.x -= CGFloat(movSpeed)
             }
-            if right!.active
+            if right.active
             {
                 tempString = "playerRight"
                 startAnimation(animAction: playerRight!, animKey: tempString!)
@@ -141,7 +153,7 @@ class Player : Entity
                 direction = .RIGHT
                 sprite!.position.x += CGFloat(movSpeed)
             }
-            if up!.active
+            if up.active
             {
                 tempString = "playerUp"
                 startAnimation(animAction: playerUp!, animKey: tempString!)
@@ -149,7 +161,7 @@ class Player : Entity
                 direction = .UP
                 sprite!.position.y += CGFloat(movSpeed)
             }
-            if down!.active
+            if down.active
             {
                 tempString = "playerDown"
                 startAnimation(animAction: playerDown!, animKey: tempString!)
@@ -157,9 +169,13 @@ class Player : Entity
                 direction = .DOWN
                 sprite!.position.y -= CGFloat(movSpeed)
             }
-            if interact!.active
+            
+            if interact.active
             {
-                interact!.interactable!.act()
+                if let interactable = interact.interactable
+                {
+                    interactable.act()
+                }
             }
         }
         
@@ -197,18 +213,23 @@ class Player : Entity
             bRight = response.pos.x + (response.width! / 2)
         }
         
-        if aBottom <= bTop &&
-        aTop >= bBottom &&
-        aLeft <= bRight &&
-        aRight >= bLeft
+        if aBottom <= bTop + 15 &&
+        aTop >= bBottom - 15 &&
+        aLeft <= bRight + 15 &&
+        aRight >= bLeft - 15
         {
             
-            if response.collisionMask == .INTERACTABLE
+            if let interactable = response as? Interactable
             {
-                interact!.interactable = (response as! Interactable)
-                interact!.interactable!.player = self
+                interact.interactable = interactable
+                interact.interactable!.player = self
             }
-            else if response.collisionMask == .WORLD
+                
+            if response.collisionMask == .WORLD &&
+                aBottom <= bTop &&
+                aTop >= bBottom &&
+                aLeft <= bRight &&
+                aRight >= bLeft
             {
                 if direction == .NONE
                 {
@@ -250,9 +271,10 @@ class Player : Entity
                 }
             }
         }
-        else if interact!.interactable == response
+        else if interact.interactable == response
         {
-            interact!.interactable = nil
+            interact.interactable!.player = nil
+            interact.interactable = nil
         }
         
         pos = Pos(xX : aPos.x, yY : aPos.y + Int(a.size.height / 4))

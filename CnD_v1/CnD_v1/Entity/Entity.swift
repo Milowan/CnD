@@ -13,7 +13,6 @@ enum collisionType
 {
     case WORLD
     case PLAYER
-    case INTERACTABLE
     case ENEMY
     case NONE
 }
