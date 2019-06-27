@@ -121,39 +121,7 @@ class Player : Entity
         miniMapButton.sprite!.texture!.filteringMode = .nearest
         inventoryButton = Button(x: (GameScene.gridSize! * 9) - (uiGap), y: (GameScene.gridSize! * -4), z: 5, s: BSNode(imageNamed: "inventoryIcon"))
         s.addChild(inventoryButton.sprite!)
-        inventoryButton.sprite!.texture!.filteringMode = .nearest
-        
-        s.addChild(left.sprite!)
-        right = Button(x: (GameScene.gridSize! * -9) + (uiGap * 2),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: BSNode(imageNamed: "arrow_right"))
-        s.addChild(right.sprite!)
-        up = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2),z: 5, s: BSNode(imageNamed: "arrow_up"))
-        s.addChild(up.sprite!)
-        down = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -5) + uiBotMargin,z: 5, s: BSNode(imageNamed: "arrow_down"))
-        s.addChild(down.sprite!)
-        interact = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: BSNode(imageNamed: "btn_interact"))
-        s.addChild(interact.sprite!)
-        
-        downLeft = SKSpriteNode(imageNamed : "downLeft")
-        downLeft.position.x = CGFloat((GameScene.gridSize! * -11) + uiBuffer)
-        downLeft.position.y = CGFloat((GameScene.gridSize! * -5) + uiBotMargin + uiBuffer)
-        downLeft.zPosition = CGFloat(5)
-        s.addChild(downLeft)
-        downRight = SKSpriteNode(imageNamed: "downRight")
-        downRight.position.x = CGFloat((GameScene.gridSize! * -9) + (uiGap * 2) - uiBuffer)
-        downRight.position.y = CGFloat((GameScene.gridSize! * -5) + uiBotMargin + uiBuffer)
-        downRight.zPosition = CGFloat(5)
-        s.addChild(downRight)
-        upLeft = SKSpriteNode(imageNamed: "upLeft")
-        upLeft.position.x = CGFloat((GameScene.gridSize! * -11) + uiBuffer)
-        upLeft.position.y = CGFloat((GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2) - uiBuffer)
-        upLeft.zPosition = CGFloat(5)
-        s.addChild(upLeft)
-        upRight = SKSpriteNode(imageNamed : "upRight")
-        upRight.position.x = CGFloat((GameScene.gridSize! * -9) + (uiGap * 2) - uiBuffer)
-        upRight.position.y = CGFloat((GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2) - uiBuffer)
-        upRight.zPosition = CGFloat(5)
-        s.addChild(upRight)
-        
+        inventoryButton.sprite!.texture!.filteringMode = .nearest        
 
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
         

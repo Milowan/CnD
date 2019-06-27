@@ -9,13 +9,10 @@ provides-dynamic-lookup:
 depends-top-level:
 - "Adoor"
 - "AssignmentPrecedence"
-- !private "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
 - "Interactable"
 - "Lever"
 - "SKSpriteNode"
-- !private "StringLiteralType"
 depends-member:
 - !private ["6CnD_v15AdoorC", "toggleState"]
 - ["6CnD_v16EntityC", "Adoor"]

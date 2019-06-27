@@ -7,77 +7,18 @@ provides-member:
 - ["6CnD_v15StatsC", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "*"
 - "AssignmentPrecedence"
-- "Float"
 - "Int"
 - "Stats"
 depends-member:
-- !private ["s18AdditiveArithmeticP", "init"]
-- !private ["SB", "init"]
-- !private ["s7CVarArgP", "init"]
-- !private ["SL", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s17CustomReflectableP", "init"]
-- !private ["s23CustomStringConvertibleP", "init"]
-- !private ["Se", "init"]
-- !private ["SE", "init"]
-- !private ["SQ", "init"]
-- !private ["s25ExpressibleByFloatLiteralP", "init"]
-- !private ["s27ExpressibleByIntegerLiteralP", "init"]
-- !private ["Sf", "init"]
-- !private ["SF", "init"]
-- !private ["SH", "init"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["Sj", "init"]
-- !private ["s10SIMDScalarP", "init"]
-- !private ["s13SignedNumericP", "init"]
 - ["6CnD_v15StatsC", "CON"]
 - ["6CnD_v15StatsC", "DEX"]
-- ["6CnD_v15StatsC", "DMG"]
-- ["6CnD_v15StatsC", "Float"]
 - ["6CnD_v15StatsC", "Int"]
 - ["6CnD_v15StatsC", "STR"]
+- ["6CnD_v15StatsC", "deinit"]
 - ["6CnD_v15StatsC", "init"]
-- !private ["Sx", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
-- !private ["s15_CVarArgAlignedP", "init"]
-- !private ["s22_CVarArgPassedAsDoubleP", "init"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
-- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
 depends-nominal:
-- !private "s18AdditiveArithmeticP"
-- !private "SB"
-- !private "s7CVarArgP"
-- !private "SL"
-- !private "s28CustomDebugStringConvertibleP"
-- !private "s17CustomReflectableP"
-- !private "s23CustomStringConvertibleP"
-- !private "Se"
-- !private "SE"
-- !private "SQ"
-- !private "s25ExpressibleByFloatLiteralP"
-- !private "s27ExpressibleByIntegerLiteralP"
-- !private "Sf"
-- !private "SF"
-- !private "SH"
-- !private "s25LosslessStringConvertibleP"
-- !private "Sj"
-- !private "s10SIMDScalarP"
-- !private "s13SignedNumericP"
 - "6CnD_v15StatsC"
-- !private "Sx"
-- !private "s20TextOutputStreamableP"
-- !private "s15_CVarArgAlignedP"
-- !private "s22_CVarArgPassedAsDoubleP"
-- !private "s30_CustomPlaygroundQuickLookableP"
-- !private "s33_ExpressibleByBuiltinFloatLiteralP"
-- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -111,4 +52,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "23a52bd57b7e18471adb81c2cb1ac399"
+interface-hash: "ffbfd43693098b7f0e21b8920231d6a7"

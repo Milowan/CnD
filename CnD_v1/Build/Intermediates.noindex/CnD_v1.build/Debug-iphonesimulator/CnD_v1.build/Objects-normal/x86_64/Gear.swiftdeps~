@@ -8,13 +8,10 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
-- !private "FloatLiteralType"
 - "Gear"
-- !private "IntegerLiteralType"
 - "Item"
 - "SKSpriteNode"
 - "Stats"
-- !private "StringLiteralType"
 depends-member:
 - ["6CnD_v14GearC", "SKSpriteNode"]
 - ["6CnD_v14GearC", "Stats"]

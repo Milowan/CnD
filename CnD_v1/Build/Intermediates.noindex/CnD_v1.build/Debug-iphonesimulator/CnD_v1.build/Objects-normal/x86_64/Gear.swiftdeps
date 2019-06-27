@@ -12,6 +12,7 @@ depends-top-level:
 - "Item"
 - "SKSpriteNode"
 - "Stats"
+- !private "StringLiteralType"
 depends-member:
 - ["6CnD_v14GearC", "SKSpriteNode"]
 - ["6CnD_v14GearC", "Stats"]
