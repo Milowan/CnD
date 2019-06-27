@@ -27,6 +27,7 @@
 		A6216A4A22B97B6B001DB637 /* Door.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6216A4922B97B6B001DB637 /* Door.swift */; };
 		A659255E22BAB49F001ECE56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A659255C22BAB49F001ECE56 /* Main.storyboard */; };
 		A659256022BABB14001ECE56 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A659255F22BABB14001ECE56 /* Extensions.swift */; };
+		A65DA19622C27BEF00F4F687 /* InventorySceneRef.sks in Resources */ = {isa = PBXBuildFile; fileRef = A65DA19522C27BEF00F4F687 /* InventorySceneRef.sks */; };
 		A686E4B222A45405004E1B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A686E4B122A45405004E1B64 /* AppDelegate.swift */; };
 		A686E4BA22A45405004E1B64 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A686E4B922A45405004E1B64 /* GameViewController.swift */; };
 		A686E4BF22A45406004E1B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A686E4BE22A45406004E1B64 /* Assets.xcassets */; };
@@ -74,6 +75,7 @@
 		A6216A4922B97B6B001DB637 /* Door.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Door.swift; sourceTree = "<group>"; };
 		A659255D22BAB49F001ECE56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A659255F22BABB14001ECE56 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A65DA19522C27BEF00F4F687 /* InventorySceneRef.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = InventorySceneRef.sks; sourceTree = "<group>"; };
 		A686E4AE22A45405004E1B64 /* CnD_v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CnD_v1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A686E4B122A45405004E1B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A686E4B922A45405004E1B64 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				A686E4C322A45406004E1B64 /* Info.plist */,
 				A686E4B122A45405004E1B64 /* AppDelegate.swift */,
 				A686E4BE22A45406004E1B64 /* Assets.xcassets */,
+				A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */,
 				A659255C22BAB49F001ECE56 /* Main.storyboard */,
 				A686E4C022A45406004E1B64 /* LaunchScreen.storyboard */,
 				A658836A22B2C36F00F7F2CC /* Entity */,
@@ -166,11 +169,11 @@
 				A686E4B922A45405004E1B64 /* GameViewController.swift */,
 				26FBAEFF22A5965C00AEDCDC /* Pos.swift */,
 				A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */,
-				A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */,
 				26F9808A22A6FD1800E7B5FE /* Gear.swift */,
 				A6216A4722B97AAD001DB637 /* Item.swift */,
 				26FEEBCF22BAC5A6006A1566 /* BSNode.swift */,
 				26FDCA8D22BBFFE200CEE077 /* Stats.swift */,
+				A65DA19522C27BEF00F4F687 /* InventorySceneRef.sks */,
 			);
 			path = CnD_v1;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				A61C3F5E22AF05ED0031B4B7 /* MapTiles.sks in Resources */,
 				A686E4C222A45406004E1B64 /* LaunchScreen.storyboard in Resources */,
 				A61C3F6022B025320031B4B7 /* LevelScene_1.sks in Resources */,
+				A65DA19622C27BEF00F4F687 /* InventorySceneRef.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

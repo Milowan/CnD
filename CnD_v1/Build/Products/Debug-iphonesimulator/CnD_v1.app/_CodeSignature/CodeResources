@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		MEzTJiCiRs7zLysc5X+q8Jo1/gI=
+		Xcq2aiFegrtgei2E0vrOa2XZWLE=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		cpMYMaDR7DokhV/2P7rv3VfwO6k=
+		dLaS3rVxA6mZFcMjQ3ty4RWMqeo=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		ofEjbXu6IeCsJ9OXiOeeB1Lm7hI=
+		Tjj4S8K6+qurwudujgzKcd8JXmQ=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BV1-FR-VrT-view-3se-qz-xqx.nib</key>
 		<data>
-		Il9MrGl4UBzE96KjNjypqhKNOf8=
+		TlDPwd2fKH0ek3gT/EEfBijYx8o=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -30,19 +30,23 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BV1-FR-VrT.nib</key>
 		<data>
-		r2QHCOChRRWGBqo4WVQeet1C9dY=
+		IzaNOniZzh/Z0WNC9MUUodNUBVY=
 		</data>
 		<key>Info.plist</key>
 		<data>
 		ynWQ/COMcZ7fnPPJlp7kCp2tZlE=
 		</data>
+		<key>InventorySceneRef.sks</key>
+		<data>
+		3CXZsL7tYY6c4zk5jIHsE5dLU7w=
+		</data>
 		<key>LevelScene_1.sks</key>
 		<data>
-		gyuDHmdfO9mUCv4N5xTfVpweSQg=
+		qmx1d9Y3P1zPo0UgPvPj/UCJRJI=
 		</data>
 		<key>MapTiles.sks</key>
 		<data>
-		JTXDs4PWArfin/8HVriiNQ3XLWw=
+		Yf2qjNR5wkvvw+ImpfGnoo/EXrU=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -59,14 +63,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L0fQ3kWgta2pZobNRGhwRv6/Yq4jcWTcYi3io0L4Bu8=
+			S+RgZ6smMvKk6SD8TRaE4/DG5+6MuzZgn7rCf7aAUHY=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mRqOxIluLQHkCqDpBOSwqIUPhJ+W8YQmNSM5KvJX50Y=
+			DsoW6/IwWmsvg6gMt10vRMMlQSKwf1tGRgJSljutSQg=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -80,14 +84,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XjGKNtVDKi2/XbOc45/go88b2ebFGOWc1Br85oOOm4c=
+			5UMVmR/PJ5aFWFgphXEbtJ+B3qnrPu0CjEWLrFyeLfI=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BV1-FR-VrT-view-3se-qz-xqx.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Je5irDmMhsmL0S752qT5Qrq1A+s8pl82mMqFcFPAOU=
+			O/q7GOomCUbO/jhc8wmmbjBuJo0aXXuUKVSPkf4Tz5Q=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -101,21 +105,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oHYkHqNWxa59JoO8cow/xVgeNaLIQHKPixB1HYXsk18=
+			uc1V4LZafc/bI6PgM+bTV2jMLEpB0TVinZnsEoLRxgA=
+			</data>
+		</dict>
+		<key>InventorySceneRef.sks</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vBrhgFI2t0YssSWMGshlmVvPQL240NTEvlyM+YZ79Ss=
 			</data>
 		</dict>
 		<key>LevelScene_1.sks</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PUpHcXhbnig2WS6hl0suXUQunzVvhPVWkA1UBruUA+0=
+			7o9FdwYYwfpyOo6MpzFzro7RBxszEKTqa13fiX0LipU=
 			</data>
 		</dict>
 		<key>MapTiles.sks</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2acfvDP8NwltEcItGp1m6EC7Ldhlv4261VjB3GYYu1g=
+			mENXfMAqHU80E6uWFPk191VXmhWuW5+WX1PkmeCxHeQ=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>

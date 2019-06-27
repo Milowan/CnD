@@ -7,38 +7,53 @@ provides-member:
 - ["6CnD_v14DoorC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!"
 - "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
 - "Door"
-- !private "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
 - "Interactable"
 - "SKSpriteNode"
-- !private "StringLiteralType"
 depends-member:
+- ["6CnD_v14DoorC", "Bool"]
 - ["6CnD_v14DoorC", "Int"]
 - ["6CnD_v14DoorC", "SKSpriteNode"]
 - ["6CnD_v14DoorC", "act"]
-- ["6CnD_v14DoorC", "iD"]
+- !private ["6CnD_v14DoorC", "collisionMask"]
 - ["6CnD_v14DoorC", "init"]
+- ["6CnD_v14DoorC", "isOpen"]
+- ["6CnD_v16EntityC", "Bool"]
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "SKSpriteNode"]
 - ["6CnD_v16EntityC", "act"]
-- ["6CnD_v16EntityC", "iD"]
+- !private ["6CnD_v16EntityC", "collisionMask"]
+- ["6CnD_v16EntityC", "isOpen"]
+- !private ["SQ", "NONE"]
+- !private ["SQ", "WORLD"]
 - ["SQ", ""]
-- !private ["SQ", "iD"]
+- !private ["SQ", "collisionMask"]
 - !private ["SQ", "init"]
+- !private ["SQ", "isOpen"]
+- !private ["SH", "NONE"]
+- !private ["SH", "WORLD"]
+- ["6CnD_v112InteractableC", "Bool"]
 - ["6CnD_v112InteractableC", "Int"]
 - ["6CnD_v112InteractableC", "SKSpriteNode"]
 - ["6CnD_v112InteractableC", ""]
 - ["6CnD_v112InteractableC", "act"]
-- ["6CnD_v112InteractableC", "iD"]
+- !private ["6CnD_v112InteractableC", "collisionMask"]
 - ["6CnD_v112InteractableC", "init"]
+- ["6CnD_v112InteractableC", "isOpen"]
+- !private ["6CnD_v113collisionTypeO", "NONE"]
+- !private ["6CnD_v113collisionTypeO", "WORLD"]
 depends-nominal:
 - "6CnD_v14DoorC"
 - "6CnD_v16EntityC"
 - "SQ"
+- !private "SH"
 - "6CnD_v112InteractableC"
+- !private "6CnD_v113collisionTypeO"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -72,4 +87,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "fff554d9525ae0b6af9bb4c170529ea3"
+interface-hash: "81c81dd7dfc2745676f9543784b25c60"
