@@ -31,6 +31,10 @@ class Player : Entity
     var upLeft : SKSpriteNode
     var downRight : SKSpriteNode
     var downLeft : SKSpriteNode
+    
+    var sword : Sword?
+    var armour : Armour?
+    var helmet : Helmet?
 
     var interact : Button
     var miniMapButton : Button
@@ -149,9 +153,14 @@ class Player : Entity
         upRight.position.y = CGFloat((GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2) - uiBuffer)
         upRight.zPosition = CGFloat(5)
         s.addChild(upRight)
+        
 
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
         
+        
+        //self.sword = Sword(p : self, st : Stats(s : 0, d : 0, c : 0), sp : )
+        //self.armour = Armour(p : self, st : Stats(s : 0, d : 0, c : 0), sp : )
+        //self.sword = Sword(p : self, st : Stats(s : 0, d : 0, c : 0), sp : )
         
         GameScene.player = self
         setAnimations()

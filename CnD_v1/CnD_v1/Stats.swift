@@ -14,13 +14,11 @@ class Stats
     var STR : Int
     var DEX : Int
     var CON : Int
-    var DMG : Float
     
     init (s : Int, d : Int, c : Int)
     {
         STR = s
         DEX = d
         CON = c
-        DMG = Float(STR) * 1.5
     }
 }
