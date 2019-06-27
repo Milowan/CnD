@@ -16,7 +16,6 @@ depends-top-level:
 - "Entity"
 - "Int"
 - "Interactable"
-- "Player"
 - !private "StringLiteralType"
 depends-member:
 - !private ["6CnD_v16BSNodeC", "button"]
@@ -25,12 +24,10 @@ depends-member:
 - ["6CnD_v16ButtonC", "Bool"]
 - ["6CnD_v16ButtonC", "Int"]
 - ["6CnD_v16ButtonC", "Interactable"]
-- ["6CnD_v16ButtonC", "Player"]
 - ["6CnD_v16ButtonC", "act"]
 - ["6CnD_v16ButtonC", "active"]
 - ["6CnD_v16ButtonC", "init"]
 - ["6CnD_v16ButtonC", "interactable"]
-- ["6CnD_v16ButtonC", "player"]
 - !private ["6CnD_v16ButtonC", "sprite"]
 - ["6CnD_v16ButtonC", "update"]
 - !private ["s7CVarArgP", "button"]
@@ -43,13 +40,11 @@ depends-member:
 - ["6CnD_v16EntityC", "Bool"]
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "Interactable"]
-- ["6CnD_v16EntityC", "Player"]
 - ["6CnD_v16EntityC", ""]
 - ["6CnD_v16EntityC", "act"]
 - ["6CnD_v16EntityC", "active"]
 - ["6CnD_v16EntityC", "init"]
 - ["6CnD_v16EntityC", "interactable"]
-- ["6CnD_v16EntityC", "player"]
 - !private ["6CnD_v16EntityC", "sprite"]
 - ["6CnD_v16EntityC", "update"]
 - !private ["SQ", "NONE"]
@@ -59,7 +54,6 @@ depends-member:
 - !private ["SQ", "init"]
 - !private ["SQ", "interactable"]
 - !private ["SQ", "isUserInteractionEnabled"]
-- !private ["SQ", "player"]
 - !private ["SQ", "sprite"]
 - !private ["SH", "NONE"]
 - !private ["SH", "button"]
@@ -156,4 +150,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e3813041207b2913a4cefbd3d5eb26dc"
+interface-hash: "27e0465971ef1cf8d4e66fb367e75827"

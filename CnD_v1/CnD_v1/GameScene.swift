@@ -19,6 +19,7 @@ class GameScene: SKScene
     var tempX: Int?
     var tempY: Int?
     
+    var doorArray: [Door]? = []
     var customBGColor = UIColor(red: (22/255), green: (19/255), blue: (24/255), alpha: 1)
     
     var edgeLimits = SKTileMapNode()
@@ -42,7 +43,7 @@ class GameScene: SKScene
         GameScene.gridSize = Int(size.width / 50)
         GameScene.rows = Int(size.height) / GameScene.gridSize!
         GameScene.columns = Int(size.width) / GameScene.gridSize!
-        setTextures()
+        setPixelTextures()
     }
     
     convenience override init()
@@ -52,17 +53,6 @@ class GameScene: SKScene
     
     override func didMove(to view: SKView)
     {
-//        for node in self.children
-//        {
-//            if node.name == "FloorAndBG"
-//            {
-//                if let someTileNode:SKTileMapNode = node as? SKTileMapNode
-//                {
-//                    edgeLimits = someTileNode
-//                }
-//                break
-//            }
-//        }
         self.backgroundColor = customBGColor
         GameScene.view = view
         
@@ -73,8 +63,10 @@ class GameScene: SKScene
         createLever()
         createPressPlates()
         createGemDias()
+        createAlcoves()
         createChests()
-        setupDoors()
+        createDoors()
+        setupADoors()
         createWallCollisions()
         addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0")))
         addEntity(entity : World(bottom: -64, left : -47, top : 50, right : 0))
@@ -93,22 +85,12 @@ class GameScene: SKScene
     func setupCamera(player: SKNode)
     {
         guard let camera = camera else {return}
-        
         let zeroDistance = SKRange(constantValue: 0)
         let playerConstraint = SKConstraint.distance(zeroDistance, to: player)
-        
-//        let xInset = min((view?.bounds.width)!/2 * camera.xScale, edgeLimits.frame.width/2)
-//        let yInset = min((view?.bounds.height)!/2 * camera.yScale, edgeLimits.frame.height/2)
-//        let constraintRect = edgeLimits.frame.insetBy(dx: xInset, dy: yInset)
-//        let xRange = SKRange(lowerLimit: constraintRect.minX, upperLimit: constraintRect.maxX)
-//        let yRange = SKRange(lowerLimit: constraintRect.minY, upperLimit: constraintRect.maxY)
-//        let edgeConstraint = SKConstraint.positionX(xRange, y: yRange)
-//        edgeConstraint.referenceNode = edgeLimits
-        
         camera.constraints = [playerConstraint]
     }
     
-    func setTextures()
+    func setPixelTextures()
     {
         tileSet = SKTileSet(named: "BG Map Tiles")!
         for tileGroup in tileSet!.tileGroups
@@ -162,9 +144,22 @@ class GameScene: SKScene
         return tileMap.tileDefinition(atColumn: coordinates.column, row: coordinates.row)
     }
     
-    func setupDoors()
+    func setupADoors()
     {
-        
+        var i: Int = 0
+        guard let doorMap = childNode(withName: "Interactable_aDoor") as? SKTileMapNode else {return}
+        for row in 0..<doorMap.numberOfRows
+        {
+            for column in 0..<doorMap.numberOfColumns
+            {
+                guard tile(in: doorMap, at: (column, row)) != nil else {continue}
+                let tempDoor = Door(x: tempX! + 8, y: tempY! + 24, z: 5, s: SKSpriteNode(imageNamed: "door_bg"))
+                addEntity(entity: tempDoor)
+                doorArray![i] = tempDoor
+                i += 1
+                doorMap.removeFromParent()
+            }
+        }
     }
     
     func createDoors()
@@ -178,7 +173,6 @@ class GameScene: SKScene
                 guard tile(in: doorMap, at: (column, row)) != nil else {continue}
                 let tempDoor = Door(x: tempX! + 8, y: tempY! + 24, z: 5, s: SKSpriteNode(imageNamed: "door_bg"))
                 addEntity(entity: tempDoor)
-                
                 i += 1
                 doorMap.removeFromParent()
             }
@@ -194,7 +188,6 @@ class GameScene: SKScene
             {
                 guard tile(in: leverMap, at: (column, row)) != nil else {continue}
                 addEntity(entity: Interactable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "switch_wall_on")))
-                
                 leverMap.removeFromParent()
             }
         }
@@ -209,7 +202,6 @@ class GameScene: SKScene
             {
                 guard tile(in: plateMap, at: (column, row)) != nil else {continue}
                 addEntity(entity: Interactable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "floor")))
-                
                 plateMap.removeFromParent()
             }
         }
@@ -224,10 +216,24 @@ class GameScene: SKScene
             {
                 guard tile(in: gemMap, at: (column, row)) != nil else {continue}
                 addEntity(entity: Interactable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "switch_floor_on")))
-                
                 gemMap.removeFromParent()
             }
         }
+    }
+    
+    func createAlcoves()
+    {
+        guard let alcMap = childNode(withName: "Collectable_Alcove") as? SKTileMapNode else {return}
+        for row in 0..<alcMap.numberOfRows
+        {
+            for column in 0..<alcMap.numberOfColumns
+            {
+                guard tile(in: alcMap, at: (column, row)) != nil else {continue}
+                addEntity(entity: Collectable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "window_3_02")))
+                alcMap.removeFromParent()
+            }
+        }
+
     }
     
     func createWallCollisions()
@@ -248,7 +254,6 @@ class GameScene: SKScene
             {
                 guard tile(in: colMap2, at: (column, row)) != nil else {continue}
                 addEntity(entity: World(bottom: tempY! - 8, left: tempX! - 8, top: tempY! + 8, right: tempX! + 8))
-                
                 colMap2.removeFromParent()
             }
         }
@@ -263,7 +268,6 @@ class GameScene: SKScene
             {
                 guard tile(in: chestMap, at: (column, row)) != nil else {continue}
                 addEntity(entity: Interactable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "chest_closed")))
-                
                 chestMap.removeFromParent()
             }
         }
