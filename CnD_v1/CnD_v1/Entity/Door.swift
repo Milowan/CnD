@@ -12,10 +12,12 @@ import SpriteKit
 class Door: Interactable
 {
     var isOpen : Bool
+    
+    var i : Int
     override init (x: Int, y: Int, z: Int, s: SKSpriteNode)
     {
         isOpen = false
-        
+        i = 0
         super.init(x: x, y: y, z: z, s: s)
         
         collisionMask = .WORLD
@@ -23,15 +25,20 @@ class Door: Interactable
     
     override func act()
     {
-        if isOpen
+        i %= 2
+        if i == 0
         {
-            collisionMask = .WORLD
+            if isOpen
+            {
+                collisionMask = .WORLD
+            }
+            else
+            {
+                collisionMask = .NONE
+            }
+            
+            isOpen = !isOpen
         }
-        else
-        {
-            collisionMask = .NONE
-        }
-        
-        isOpen = !isOpen
+        i += 1
     }
 }
