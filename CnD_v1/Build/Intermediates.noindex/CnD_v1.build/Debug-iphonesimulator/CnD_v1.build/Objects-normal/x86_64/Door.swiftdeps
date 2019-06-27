@@ -8,9 +8,11 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "!"
+- !private "%="
+- !private "+="
+- !private "=="
 - "AssignmentPrecedence"
 - "Bool"
-- !private "BooleanLiteralType"
 - "Door"
 - "Int"
 - "Interactable"
@@ -21,6 +23,7 @@ depends-member:
 - ["6CnD_v14DoorC", "SKSpriteNode"]
 - ["6CnD_v14DoorC", "act"]
 - !private ["6CnD_v14DoorC", "collisionMask"]
+- ["6CnD_v14DoorC", "i"]
 - ["6CnD_v14DoorC", "init"]
 - ["6CnD_v14DoorC", "isOpen"]
 - ["6CnD_v16EntityC", "Bool"]
@@ -28,11 +31,13 @@ depends-member:
 - ["6CnD_v16EntityC", "SKSpriteNode"]
 - ["6CnD_v16EntityC", "act"]
 - !private ["6CnD_v16EntityC", "collisionMask"]
+- ["6CnD_v16EntityC", "i"]
 - ["6CnD_v16EntityC", "isOpen"]
 - !private ["SQ", "NONE"]
 - !private ["SQ", "WORLD"]
 - ["SQ", ""]
 - !private ["SQ", "collisionMask"]
+- !private ["SQ", "i"]
 - !private ["SQ", "init"]
 - !private ["SQ", "isOpen"]
 - !private ["SH", "NONE"]
@@ -43,6 +48,7 @@ depends-member:
 - ["6CnD_v112InteractableC", ""]
 - ["6CnD_v112InteractableC", "act"]
 - !private ["6CnD_v112InteractableC", "collisionMask"]
+- ["6CnD_v112InteractableC", "i"]
 - ["6CnD_v112InteractableC", "init"]
 - ["6CnD_v112InteractableC", "isOpen"]
 - !private ["6CnD_v113collisionTypeO", "NONE"]
@@ -87,4 +93,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "81c81dd7dfc2745676f9543784b25c60"
+interface-hash: "01c7a8d1a86cf4c6ab7eb008109a280f"

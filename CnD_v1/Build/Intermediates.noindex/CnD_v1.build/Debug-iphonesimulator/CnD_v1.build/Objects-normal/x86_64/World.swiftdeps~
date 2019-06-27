@@ -7,22 +7,29 @@ provides-member:
 - ["6CnD_v15WorldC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "+"
+- !private "-"
+- !private "/"
+- "AssignmentPrecedence"
 - "Entity"
-- !private "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
-- !private "StringLiteralType"
 - "World"
 depends-member:
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", ""]
+- !private ["6CnD_v16EntityC", "height"]
 - ["6CnD_v16EntityC", "init"]
+- !private ["6CnD_v16EntityC", "width"]
 - !private ["SQ", "WORLD"]
 - ["SQ", ""]
+- !private ["SQ", "height"]
 - !private ["SQ", "init"]
+- !private ["SQ", "width"]
 - !private ["SH", "WORLD"]
 - ["6CnD_v15WorldC", "Int"]
+- !private ["6CnD_v15WorldC", "height"]
 - ["6CnD_v15WorldC", "init"]
+- !private ["6CnD_v15WorldC", "width"]
 - !private ["6CnD_v113collisionTypeO", "WORLD"]
 depends-nominal:
 - "6CnD_v16EntityC"
@@ -63,4 +70,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "50d3ca7816d96d21921a2ae4c273d9c1"
+interface-hash: "8eba5623e02d11f70e88c798dbf820cc"

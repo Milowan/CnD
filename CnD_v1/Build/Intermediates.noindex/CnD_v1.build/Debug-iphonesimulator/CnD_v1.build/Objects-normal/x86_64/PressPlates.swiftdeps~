@@ -8,9 +8,7 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Entity"
-- !private "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
 - "PressPlates"
 - "SKSpriteNode"
 - !private "StringLiteralType"
@@ -19,14 +17,14 @@ depends-member:
 - ["6CnD_v16EntityC", "SKSpriteNode"]
 - ["6CnD_v16EntityC", ""]
 - ["6CnD_v16EntityC", "init"]
-- !private ["SQ", "INTERACTABLE"]
+- !private ["SQ", "NONE"]
 - ["SQ", ""]
 - !private ["SQ", "init"]
-- !private ["SH", "INTERACTABLE"]
+- !private ["SH", "NONE"]
 - ["6CnD_v111PressPlatesC", "Int"]
 - ["6CnD_v111PressPlatesC", "SKSpriteNode"]
 - ["6CnD_v111PressPlatesC", "init"]
-- !private ["6CnD_v113collisionTypeO", "INTERACTABLE"]
+- !private ["6CnD_v113collisionTypeO", "NONE"]
 depends-nominal:
 - "6CnD_v16EntityC"
 - "SQ"

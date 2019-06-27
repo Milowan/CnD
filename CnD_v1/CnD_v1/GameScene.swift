@@ -155,7 +155,7 @@ class GameScene: SKScene
                 guard tile(in: doorMap, at: (column, row)) != nil else {continue}
                 let tempDoor = Door(x: tempX! + 8, y: tempY! + 24, z: 5, s: SKSpriteNode(imageNamed: "door_bg"))
                 addEntity(entity: tempDoor)
-                doorArray![i] = tempDoor
+                doorArray?.append(tempDoor)
                 i += 1
                 doorMap.removeFromParent()
             }

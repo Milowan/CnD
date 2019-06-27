@@ -32,9 +32,9 @@ class Player : Entity
     var downRight : SKSpriteNode
     var downLeft : SKSpriteNode
 
-    var interact : Button?
-    var miniMap : Button?
-    var inventory : Button?
+    var interact : Button
+    var miniMapButton : Button
+    var inventoryButton : Button
     
     var direction : Direction
     var lastDirection : Direction
@@ -72,48 +72,53 @@ class Player : Entity
         lastDirection = .NONE
     
         left = Button(x: (GameScene.gridSize! * -11),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: BSNode(imageNamed: "arrow_left"))
-        s.addChild(left!.sprite!)
-        left!.sprite!.texture!.filteringMode = .nearest
+        s.addChild(left.sprite!)
+        left.sprite!.texture!.filteringMode = .nearest
         
         right = Button(x: (GameScene.gridSize! * -9) + (uiGap * 2),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: BSNode(imageNamed: "arrow_right"))
-        s.addChild(right!.sprite!)
-        right!.sprite!.texture!.filteringMode = .nearest
+        s.addChild(right.sprite!)
+        right.sprite!.texture!.filteringMode = .nearest
         
         up = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2),z: 5, s: BSNode(imageNamed: "arrow_up"))
-        s.addChild(up!.sprite!)
-        up!.sprite!.texture!.filteringMode = .nearest
+        s.addChild(up.sprite!)
+        up.sprite!.texture!.filteringMode = .nearest
         
         down = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -5) + uiBotMargin,z: 5, s: BSNode(imageNamed: "arrow_down"))
-        s.addChild(down!.sprite!)
-        down!.sprite!.texture!.filteringMode = .nearest
+        s.addChild(down.sprite!)
+        down.sprite!.texture!.filteringMode = .nearest
         
         interact = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: BSNode(imageNamed: "btn_interact"))
-        s.addChild(interact!.sprite!)
-        interact!.sprite!.texture!.filteringMode = .nearest
+        s.addChild(interact.sprite!)
+        interact.sprite!.texture!.filteringMode = .nearest
     
-        downLeft = Button(x: (GameScene.gridSize! * -11) + uiBuffer,y: (GameScene.gridSize! * -5) + uiBotMargin + uiBuffer,z: 5, s: BSNode(imageNamed: "downLeft"))
-        s.addChild(downLeft!.sprite!)
-        downLeft!.sprite!.texture!.filteringMode = .nearest
+        downLeft = SKSpriteNode(imageNamed : "downLeft")
+        downLeft.position.x = CGFloat((GameScene.gridSize! * -11) + uiBuffer)
+        downLeft.position.y = CGFloat((GameScene.gridSize! * -5) + uiBotMargin + uiBuffer)
+        downLeft.zPosition = CGFloat(5)
+        s.addChild(downLeft)
+        downRight = SKSpriteNode(imageNamed: "downRight")
+        downRight.position.x = CGFloat((GameScene.gridSize! * -9) + (uiGap * 2) - uiBuffer)
+        downRight.position.y = CGFloat((GameScene.gridSize! * -5) + uiBotMargin + uiBuffer)
+        downRight.zPosition = CGFloat(5)
+        s.addChild(downRight)
+        upLeft = SKSpriteNode(imageNamed: "upLeft")
+        upLeft.position.x = CGFloat((GameScene.gridSize! * -11) + uiBuffer)
+        upLeft.position.y = CGFloat((GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2) - uiBuffer)
+        upLeft.zPosition = CGFloat(5)
+        s.addChild(upLeft)
+        upRight = SKSpriteNode(imageNamed : "upRight")
+        upRight.position.x = CGFloat((GameScene.gridSize! * -9) + (uiGap * 2) - uiBuffer)
+        upRight.position.y = CGFloat((GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2) - uiBuffer)
+        upRight.zPosition = CGFloat(5)
+        s.addChild(upRight)
         
-        downRight = Button(x: (GameScene.gridSize! * -9) + (uiGap * 2) - uiBuffer,y: (GameScene.gridSize! * -5) + uiBotMargin + uiBuffer,z: 5, s: BSNode(imageNamed: "downRight"))
-        s.addChild(downRight!.sprite!)
-        downRight!.sprite!.texture!.filteringMode = .nearest
+        miniMapButton = Button(x: (GameScene.gridSize! * 10), y: (GameScene.gridSize! * -2), z: 5, s: BSNode(imageNamed: "mapIcon"))
+        s.addChild(miniMapButton.sprite!)
+        miniMapButton.sprite!.texture!.filteringMode = .nearest
+        inventoryButton = Button(x: (GameScene.gridSize! * 9) - (uiGap), y: (GameScene.gridSize! * -4), z: 5, s: BSNode(imageNamed: "inventoryIcon"))
+        s.addChild(inventoryButton.sprite!)
+        inventoryButton.sprite!.texture!.filteringMode = .nearest
         
-        upLeft = Button(x: (GameScene.gridSize! * -11) + uiBuffer,y: (GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2) - uiBuffer,z: 5, s: BSNode(imageNamed: "upLeft"))
-        s.addChild(upLeft!.sprite!)
-        upLeft!.sprite!.texture!.filteringMode = .nearest
-        
-        upRight = Button(x: (GameScene.gridSize! * -9) + (uiGap * 2) - uiBuffer,y: (GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2) - uiBuffer,z: 5, s: BSNode(imageNamed: "upRight"))
-        s.addChild(upRight!.sprite!)
-        upRight!.sprite!.texture!.filteringMode = .nearest
-        
-        miniMap = Button(x: (GameScene.gridSize! * 10), y: (GameScene.gridSize! * -2), z: 5, s: BSNode(imageNamed: "mapIcon"))
-        s.addChild(miniMap!.sprite!)
-        miniMap!.sprite!.texture!.filteringMode = .nearest
-        
-        inventory = Button(x: (GameScene.gridSize! * 9) - (uiGap), y: (GameScene.gridSize! * -4), z: 5, s: BSNode(imageNamed: "inventoryIcon"))
-        s.addChild(inventory!.sprite!)
-        inventory!.sprite!.texture!.filteringMode = .nearest
         s.addChild(left.sprite!)
         right = Button(x: (GameScene.gridSize! * -9) + (uiGap * 2),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 5, s: BSNode(imageNamed: "arrow_right"))
         s.addChild(right.sprite!)

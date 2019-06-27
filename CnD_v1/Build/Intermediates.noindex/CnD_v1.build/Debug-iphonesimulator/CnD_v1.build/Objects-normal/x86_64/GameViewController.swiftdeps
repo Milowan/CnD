@@ -13,10 +13,8 @@ depends-top-level:
 - "Bool"
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
-- !private "FloatLiteralType"
 - !private "GameScene"
 - "GameViewController"
-- !private "IntegerLiteralType"
 - !private "SKView"
 - "UIViewController"
 depends-member:

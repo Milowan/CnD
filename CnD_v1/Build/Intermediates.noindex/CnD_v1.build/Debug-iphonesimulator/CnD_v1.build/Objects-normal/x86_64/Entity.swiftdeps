@@ -128,7 +128,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - ["6CnD_v113collisionTypeO", "=="]
 - ["6CnD_v113collisionTypeO", "ENEMY"]
-- ["6CnD_v113collisionTypeO", "INTERACTABLE"]
 - ["6CnD_v113collisionTypeO", "NONE"]
 - ["6CnD_v113collisionTypeO", "PLAYER"]
 - ["6CnD_v113collisionTypeO", "WORLD"]
@@ -213,4 +212,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "0c3b697f45a85446a2fa7a9109e7a4ca"
+interface-hash: "3bb288b4681077d92580634ec6442242"

@@ -8,10 +8,13 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Entity"
+- !private "FloatLiteralType"
 - "Int"
+- !private "IntegerLiteralType"
 - "Interactable"
 - "Player"
 - "SKSpriteNode"
+- !private "StringLiteralType"
 depends-member:
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "Player"]
@@ -20,10 +23,10 @@ depends-member:
 - ["6CnD_v16EntityC", "act"]
 - ["6CnD_v16EntityC", "init"]
 - ["6CnD_v16EntityC", "player"]
-- !private ["SQ", "INTERACTABLE"]
+- !private ["SQ", "NONE"]
 - ["SQ", ""]
 - !private ["SQ", "init"]
-- !private ["SH", "INTERACTABLE"]
+- !private ["SH", "NONE"]
 - ["6CnD_v112InteractableC", "Int"]
 - ["6CnD_v112InteractableC", "Player"]
 - ["6CnD_v112InteractableC", "SKSpriteNode"]
@@ -31,7 +34,7 @@ depends-member:
 - ["6CnD_v112InteractableC", "deinit"]
 - ["6CnD_v112InteractableC", "init"]
 - ["6CnD_v112InteractableC", "player"]
-- !private ["6CnD_v113collisionTypeO", "INTERACTABLE"]
+- !private ["6CnD_v113collisionTypeO", "NONE"]
 depends-nominal:
 - "6CnD_v16EntityC"
 - "SQ"

@@ -31,11 +31,10 @@ depends-top-level:
 - "CastingPrecedence"
 - "Direction"
 - "Entity"
-- "FloatLiteralType"
 - !private "GameScene"
 - "Int"
-- "IntegerLiteralType"
 - !private "Interactable"
+- "Inventory"
 - "Player"
 - !private "Pos"
 - "SKAction"
@@ -43,7 +42,6 @@ depends-top-level:
 - "SKTexture"
 - "Stats"
 - "String"
-- !private "StringLiteralType"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
 - !private ["Sa", "append"]
@@ -76,6 +74,7 @@ depends-member:
 - !private ["s7CVarArgP", "run"]
 - !private ["s7CVarArgP", "size"]
 - !private ["s7CVarArgP", "texture"]
+- !private ["s7CVarArgP", "zPosition"]
 - !private ["Sl", "append"]
 - !private ["SL", "init"]
 - !private ["10Foundation15ContiguousBytesP", "append"]
@@ -97,6 +96,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "width"]
 - !private ["s28CustomDebugStringConvertibleP", "x"]
 - !private ["s28CustomDebugStringConvertibleP", "y"]
+- !private ["s28CustomDebugStringConvertibleP", "zPosition"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "init"]
@@ -119,6 +119,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "run"]
 - !private ["s23CustomStringConvertibleP", "size"]
 - !private ["s23CustomStringConvertibleP", "texture"]
+- !private ["s23CustomStringConvertibleP", "zPosition"]
 - !private ["10Foundation12DataProtocolP", "append"]
 - !private ["Se", "append"]
 - !private ["Se", "height"]
@@ -154,6 +155,7 @@ depends-member:
 - !private ["6CnD_v16EntityC", "GameScene"]
 - ["6CnD_v16EntityC", "Int"]
 - !private ["6CnD_v16EntityC", "Interactable"]
+- ["6CnD_v16EntityC", "Inventory"]
 - !private ["6CnD_v16EntityC", "Pos"]
 - ["6CnD_v16EntityC", "SKAction"]
 - ["6CnD_v16EntityC", "SKSpriteNode"]
@@ -176,10 +178,11 @@ depends-member:
 - ["6CnD_v16EntityC", "interact"]
 - !private ["6CnD_v16EntityC", "interactable"]
 - ["6CnD_v16EntityC", "inventory"]
+- ["6CnD_v16EntityC", "inventoryButton"]
 - ["6CnD_v16EntityC", "isIdle"]
 - ["6CnD_v16EntityC", "lastDirection"]
 - ["6CnD_v16EntityC", "left"]
-- ["6CnD_v16EntityC", "miniMap"]
+- ["6CnD_v16EntityC", "miniMapButton"]
 - ["6CnD_v16EntityC", "movSpeed"]
 - ["6CnD_v16EntityC", "pdTextures"]
 - ["6CnD_v16EntityC", "piTextures"]
@@ -215,16 +218,17 @@ depends-member:
 - !private ["SQ", "CGSize"]
 - !private ["SQ", "DOWN"]
 - !private ["SQ", "GameScene"]
-- !private ["SQ", "INTERACTABLE"]
 - !private ["SQ", "Int"]
+- ["SQ", "Inventory"]
 - !private ["SQ", "LEFT"]
 - !private ["SQ", "NONE"]
 - !private ["SQ", "PLAYER"]
 - !private ["SQ", "Pos"]
 - !private ["SQ", "RIGHT"]
 - !private ["SQ", "SKAction"]
+- !private ["SQ", "SKSpriteNode"]
 - !private ["SQ", "SKTexture"]
-- !private ["SQ", "Stats"]
+- ["SQ", "Stats"]
 - !private ["SQ", "UP"]
 - !private ["SQ", "WORLD"]
 - ["SQ", ""]
@@ -249,11 +253,11 @@ depends-member:
 - !private ["SQ", "init"]
 - !private ["SQ", "interact"]
 - !private ["SQ", "interactable"]
-- !private ["SQ", "inventory"]
+- !private ["SQ", "inventoryButton"]
 - !private ["SQ", "isIdle"]
 - !private ["SQ", "lastDirection"]
 - !private ["SQ", "left"]
-- !private ["SQ", "miniMap"]
+- !private ["SQ", "miniMapButton"]
 - !private ["SQ", "movSpeed"]
 - !private ["SQ", "nearest"]
 - !private ["SQ", "pdTextures"]
@@ -277,7 +281,6 @@ depends-member:
 - !private ["SQ", "size"]
 - !private ["SQ", "sprite"]
 - !private ["SQ", "startAnimation"]
-- !private ["SQ", "stats"]
 - !private ["SQ", "stopAnimation"]
 - !private ["SQ", "tempString"]
 - !private ["SQ", "texture"]
@@ -290,6 +293,7 @@ depends-member:
 - !private ["SQ", "width"]
 - !private ["SQ", "x"]
 - !private ["SQ", "y"]
+- !private ["SQ", "zPosition"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
@@ -299,7 +303,6 @@ depends-member:
 - !private ["6CnD_v19GameSceneC", "player"]
 - ["SH", "=="]
 - !private ["SH", "DOWN"]
-- !private ["SH", "INTERACTABLE"]
 - !private ["SH", "LEFT"]
 - !private ["SH", "NONE"]
 - !private ["SH", "PLAYER"]
@@ -325,11 +328,13 @@ depends-member:
 - !private ["SH", "run"]
 - !private ["SH", "size"]
 - !private ["SH", "texture"]
+- !private ["SH", "zPosition"]
 - !private ["s6HasherV", "combine"]
 - !private ["Si", "init"]
 - !private ["6CnD_v112InteractableC", "act"]
 - !private ["6CnD_v112InteractableC", "deinit"]
 - !private ["6CnD_v112InteractableC", "player"]
+- ["6CnD_v19InventoryC", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["SM", "append"]
@@ -347,6 +352,7 @@ depends-member:
 - !private ["So8NSCodingP", "run"]
 - !private ["So8NSCodingP", "size"]
 - !private ["So8NSCodingP", "texture"]
+- !private ["So8NSCodingP", "zPosition"]
 - !private ["So9NSCopyingP", "action"]
 - !private ["So9NSCopyingP", "addChild"]
 - !private ["So9NSCopyingP", "animate"]
@@ -360,6 +366,7 @@ depends-member:
 - !private ["So9NSCopyingP", "run"]
 - !private ["So9NSCopyingP", "size"]
 - !private ["So9NSCopyingP", "texture"]
+- !private ["So9NSCopyingP", "zPosition"]
 - !private ["So8NSObjectC", "action"]
 - !private ["So8NSObjectC", "addChild"]
 - !private ["So8NSObjectC", "animate"]
@@ -373,6 +380,7 @@ depends-member:
 - !private ["So8NSObjectC", "run"]
 - !private ["So8NSObjectC", "size"]
 - !private ["So8NSObjectC", "texture"]
+- !private ["So8NSObjectC", "zPosition"]
 - !private ["So8NSObjectP", "action"]
 - !private ["So8NSObjectP", "addChild"]
 - !private ["So8NSObjectP", "animate"]
@@ -386,6 +394,7 @@ depends-member:
 - !private ["So8NSObjectP", "run"]
 - !private ["So8NSObjectP", "size"]
 - !private ["So8NSObjectP", "texture"]
+- !private ["So8NSObjectP", "zPosition"]
 - !private ["So14NSSecureCodingP", "action"]
 - !private ["So14NSSecureCodingP", "addChild"]
 - !private ["So14NSSecureCodingP", "animate"]
@@ -399,6 +408,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "run"]
 - !private ["So14NSSecureCodingP", "size"]
 - !private ["So14NSSecureCodingP", "texture"]
+- !private ["So14NSSecureCodingP", "zPosition"]
 - !private ["Sj", "init"]
 - !private ["6CnD_v16PlayerC", "BSNode"]
 - ["6CnD_v16PlayerC", "Button"]
@@ -409,6 +419,7 @@ depends-member:
 - !private ["6CnD_v16PlayerC", "GameScene"]
 - ["6CnD_v16PlayerC", "Int"]
 - !private ["6CnD_v16PlayerC", "Interactable"]
+- ["6CnD_v16PlayerC", "Inventory"]
 - !private ["6CnD_v16PlayerC", "Pos"]
 - ["6CnD_v16PlayerC", "SKAction"]
 - ["6CnD_v16PlayerC", "SKSpriteNode"]
@@ -417,6 +428,7 @@ depends-member:
 - ["6CnD_v16PlayerC", "String"]
 - ["6CnD_v16PlayerC", "animSpeed"]
 - ["6CnD_v16PlayerC", "collision"]
+- ["6CnD_v16PlayerC", "deinit"]
 - ["6CnD_v16PlayerC", "direction"]
 - ["6CnD_v16PlayerC", "down"]
 - ["6CnD_v16PlayerC", "downLeft"]
@@ -424,10 +436,11 @@ depends-member:
 - ["6CnD_v16PlayerC", "init"]
 - ["6CnD_v16PlayerC", "interact"]
 - ["6CnD_v16PlayerC", "inventory"]
+- ["6CnD_v16PlayerC", "inventoryButton"]
 - ["6CnD_v16PlayerC", "isIdle"]
 - ["6CnD_v16PlayerC", "lastDirection"]
 - ["6CnD_v16PlayerC", "left"]
-- ["6CnD_v16PlayerC", "miniMap"]
+- ["6CnD_v16PlayerC", "miniMapButton"]
 - ["6CnD_v16PlayerC", "movSpeed"]
 - ["6CnD_v16PlayerC", "pdTextures"]
 - ["6CnD_v16PlayerC", "piTextures"]
@@ -475,6 +488,7 @@ depends-member:
 - !private ["So6SKNodeC", "run"]
 - !private ["So6SKNodeC", "size"]
 - !private ["So6SKNodeC", "texture"]
+- !private ["So6SKNodeC", "zPosition"]
 - !private ["So7SKSceneC", "gridSize"]
 - !private ["So7SKSceneC", "player"]
 - !private ["So12SKSpriteNodeC", "action"]
@@ -485,6 +499,7 @@ depends-member:
 - !private ["So12SKSpriteNodeC", "run"]
 - !private ["So12SKSpriteNodeC", "size"]
 - !private ["So12SKSpriteNodeC", "texture"]
+- !private ["So12SKSpriteNodeC", "zPosition"]
 - !private ["So9SKTextureC", "filteringMode"]
 - !private ["So9SKTextureC", "init"]
 - !private ["So22SKTextureFilteringModeV", "nearest"]
@@ -498,10 +513,11 @@ depends-member:
 - !private ["So10SKWarpableP", "run"]
 - !private ["So10SKWarpableP", "size"]
 - !private ["So10SKWarpableP", "texture"]
+- !private ["So10SKWarpableP", "zPosition"]
 - !private ["ST", "append"]
 - !private ["SZ", "init"]
 - !private ["s13SignedNumericP", "init"]
-- !private ["6CnD_v15StatsC", "init"]
+- ["6CnD_v15StatsC", "init"]
 - !private ["Sx", "init"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
@@ -517,6 +533,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "run"]
 - !private ["So18UIFocusEnvironmentP", "size"]
 - !private ["So18UIFocusEnvironmentP", "texture"]
+- !private ["So18UIFocusEnvironmentP", "zPosition"]
 - !private ["So11UIFocusItemP", "action"]
 - !private ["So11UIFocusItemP", "addChild"]
 - !private ["So11UIFocusItemP", "gridSize"]
@@ -527,6 +544,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "run"]
 - !private ["So11UIFocusItemP", "size"]
 - !private ["So11UIFocusItemP", "texture"]
+- !private ["So11UIFocusItemP", "zPosition"]
 - !private ["So30UIPasteConfigurationSupportingP", "action"]
 - !private ["So30UIPasteConfigurationSupportingP", "addChild"]
 - !private ["So30UIPasteConfigurationSupportingP", "gridSize"]
@@ -537,6 +555,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "run"]
 - !private ["So30UIPasteConfigurationSupportingP", "size"]
 - !private ["So30UIPasteConfigurationSupportingP", "texture"]
+- !private ["So30UIPasteConfigurationSupportingP", "zPosition"]
 - !private ["So11UIResponderC", "action"]
 - !private ["So11UIResponderC", "addChild"]
 - !private ["So11UIResponderC", "gridSize"]
@@ -547,6 +566,7 @@ depends-member:
 - !private ["So11UIResponderC", "run"]
 - !private ["So11UIResponderC", "size"]
 - !private ["So11UIResponderC", "texture"]
+- !private ["So11UIResponderC", "zPosition"]
 - !private ["So30UIResponderStandardEditActionsP", "action"]
 - !private ["So30UIResponderStandardEditActionsP", "addChild"]
 - !private ["So30UIResponderStandardEditActionsP", "gridSize"]
@@ -557,6 +577,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "run"]
 - !private ["So30UIResponderStandardEditActionsP", "size"]
 - !private ["So30UIResponderStandardEditActionsP", "texture"]
+- !private ["So30UIResponderStandardEditActionsP", "zPosition"]
 - !private ["So23UIUserActivityRestoringP", "action"]
 - !private ["So23UIUserActivityRestoringP", "addChild"]
 - !private ["So23UIUserActivityRestoringP", "gridSize"]
@@ -567,6 +588,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "run"]
 - !private ["So23UIUserActivityRestoringP", "size"]
 - !private ["So23UIUserActivityRestoringP", "texture"]
+- !private ["So23UIUserActivityRestoringP", "zPosition"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s22_CVarArgPassedAsDoubleP", "init"]
@@ -583,6 +605,7 @@ depends-member:
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "x"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "y"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "zPosition"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s19_HasContiguousBytesP", "append"]
@@ -601,13 +624,13 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "run"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "size"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "texture"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "zPosition"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
 - !private ["s21_ObjectiveCBridgeableP", "x"]
 - !private ["s21_ObjectiveCBridgeableP", "y"]
-- !private ["6CnD_v113collisionTypeO", "INTERACTABLE"]
 - !private ["6CnD_v113collisionTypeO", "PLAYER"]
 - !private ["6CnD_v113collisionTypeO", "WORLD"]
 - !private ["6CnD_v113collisionTypeO", "deinit"]
@@ -646,6 +669,7 @@ depends-nominal:
 - !private "s6HasherV"
 - !private "Si"
 - !private "6CnD_v112InteractableC"
+- "6CnD_v19InventoryC"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "SM"
@@ -673,7 +697,7 @@ depends-nominal:
 - !private "ST"
 - !private "SZ"
 - !private "s13SignedNumericP"
-- !private "6CnD_v15StatsC"
+- "6CnD_v15StatsC"
 - !private "Sx"
 - !private "s27StringInterpolationProtocolP"
 - !private "s16TextOutputStreamP"
@@ -727,4 +751,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "faf04bc472adbfd7bfc11e727d668c3d"
+interface-hash: "75bdd1fb9151fa7ffa07c6e6cf0d3ce7"

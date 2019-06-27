@@ -20,7 +20,6 @@ depends-member:
 - ["SQ", ""]
 - !private ["SQ", "x"]
 - !private ["SQ", "y"]
-- !private ["SQ", "z"]
 - ["6CnD_v13PosC", "=="]
 - ["6CnD_v13PosC", "Bool"]
 - ["6CnD_v13PosC", "Int"]
@@ -29,7 +28,6 @@ depends-member:
 - ["6CnD_v13PosC", "init"]
 - ["6CnD_v13PosC", "x"]
 - ["6CnD_v13PosC", "y"]
-- ["6CnD_v13PosC", "z"]
 depends-nominal:
 - "SQ"
 - "6CnD_v13PosC"
@@ -66,4 +64,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "38786753a5d195554188c7594eabf94e"
+interface-hash: "ad4579eb1ed37aeb77d06f7ea6151d65"
