@@ -17,6 +17,10 @@
 		265C0D0F22C53C47001A471A /* Helmet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C0D0E22C53C47001A471A /* Helmet.swift */; };
 		26F9808B22A6FD1800E7B5FE /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9808A22A6FD1800E7B5FE /* Gear.swift */; };
 		26F99AB022A98CD800D0F879 /* Collectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F99AAF22A98CD800D0F879 /* Collectable.swift */; };
+		26FAFE7722C6878900E36901 /* LesserSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FAFE7622C6878900E36901 /* LesserSkeleton.swift */; };
+		26FAFE7922C6896800E36901 /* GreaterSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FAFE7822C6896800E36901 /* GreaterSkeleton.swift */; };
+		26FAFE7B22C68A1B00E36901 /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FAFE7A22C68A1B00E36901 /* Boss.swift */; };
+		26FAFE7E22C68BEB00E36901 /* SkeletonLord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FAFE7D22C68BEB00E36901 /* SkeletonLord.swift */; };
 		26FBAF0222A5965C00AEDCDC /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAEFB22A5965C00AEDCDC /* World.swift */; };
 		26FBAF0322A5965C00AEDCDC /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAEFC22A5965C00AEDCDC /* Button.swift */; };
 		26FBAF0422A5965C00AEDCDC /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAEFD22A5965C00AEDCDC /* Entity.swift */; };
@@ -70,6 +74,10 @@
 		265C0D0E22C53C47001A471A /* Helmet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helmet.swift; sourceTree = "<group>"; };
 		26F9808A22A6FD1800E7B5FE /* Gear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gear.swift; sourceTree = "<group>"; };
 		26F99AAF22A98CD800D0F879 /* Collectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collectable.swift; sourceTree = "<group>"; };
+		26FAFE7622C6878900E36901 /* LesserSkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LesserSkeleton.swift; sourceTree = "<group>"; };
+		26FAFE7822C6896800E36901 /* GreaterSkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreaterSkeleton.swift; sourceTree = "<group>"; };
+		26FAFE7A22C68A1B00E36901 /* Boss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boss.swift; sourceTree = "<group>"; };
+		26FAFE7D22C68BEB00E36901 /* SkeletonLord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLord.swift; sourceTree = "<group>"; };
 		26FBAEFB22A5965C00AEDCDC /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
 		26FBAEFC22A5965C00AEDCDC /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		26FBAEFD22A5965C00AEDCDC /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
@@ -126,19 +134,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26FAFE7322C67BCE00E36901 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				265C0D0E22C53C47001A471A /* Helmet.swift */,
+				265C0D0C22C53B3E001A471A /* Armour.swift */,
+				265C0D0A22C5334B001A471A /* Sword.swift */,
+				26F9808A22A6FD1800E7B5FE /* Gear.swift */,
+				A6216A4722B97AAD001DB637 /* Item.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		26FAFE7422C67DD800E36901 /* Enemy */ = {
+			isa = PBXGroup;
+			children = (
+				2601E8CB22C2AF77004EB047 /* Enemy.swift */,
+				26FAFE7D22C68BEB00E36901 /* SkeletonLord.swift */,
+				26FAFE7822C6896800E36901 /* GreaterSkeleton.swift */,
+				26FAFE7622C6878900E36901 /* LesserSkeleton.swift */,
+				26FAFE7A22C68A1B00E36901 /* Boss.swift */,
+			);
+			path = Enemy;
+			sourceTree = "<group>";
+		};
+		26FAFE7522C67DEF00E36901 /* Interactable */ = {
+			isa = PBXGroup;
+			children = (
+				262640D122C15120006CA69C /* Dais.swift */,
+				262640CF22C14EDE006CA69C /* Lever.swift */,
+				A6216A4922B97B6B001DB637 /* Door.swift */,
+				26F99AAF22A98CD800D0F879 /* Collectable.swift */,
+				26FBAEFE22A5965C00AEDCDC /* Interactable.swift */,
+			);
+			path = Interactable;
+			sourceTree = "<group>";
+		};
 		A658836A22B2C36F00F7F2CC /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				26FAFE7422C67DD800E36901 /* Enemy */,
 				26FBAEFD22A5965C00AEDCDC /* Entity.swift */,
 				26FBAF0022A5965C00AEDCDC /* Player.swift */,
-				26FBAEFE22A5965C00AEDCDC /* Interactable.swift */,
 				26FBAEFB22A5965C00AEDCDC /* World.swift */,
+				26FAFE7522C67DEF00E36901 /* Interactable */,
 				26FBAEFC22A5965C00AEDCDC /* Button.swift */,
-				26F99AAF22A98CD800D0F879 /* Collectable.swift */,
-				A6216A4922B97B6B001DB637 /* Door.swift */,
 				A611F0FC22BD4D8400F18221 /* PressPlates.swift */,
-				262640CF22C14EDE006CA69C /* Lever.swift */,
-				262640D122C15120006CA69C /* Dais.swift */,
 				262640D322C1530E006CA69C /* Adoor.swift */,
 			);
 			path = Entity;
@@ -173,22 +214,17 @@
 				A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */,
 				A659255C22BAB49F001ECE56 /* Main.storyboard */,
 				A686E4C022A45406004E1B64 /* LaunchScreen.storyboard */,
+				A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */,
+				A65DA19522C27BEF00F4F687 /* InventorySceneRef.sks */,
+				26FAFE7322C67BCE00E36901 /* Item */,
 				A658836A22B2C36F00F7F2CC /* Entity */,
 				A6FD168722B3E8420090D045 /* GameScene.swift */,
 				2601E8CD22C2B136004EB047 /* Inventory.swift */,
 				A659255F22BABB14001ECE56 /* Extensions.swift */,
 				A686E4B922A45405004E1B64 /* GameViewController.swift */,
 				26FBAEFF22A5965C00AEDCDC /* Pos.swift */,
-				A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */,
-				26F9808A22A6FD1800E7B5FE /* Gear.swift */,
-				A6216A4722B97AAD001DB637 /* Item.swift */,
 				26FEEBCF22BAC5A6006A1566 /* BSNode.swift */,
 				26FDCA8D22BBFFE200CEE077 /* Stats.swift */,
-				A65DA19522C27BEF00F4F687 /* InventorySceneRef.sks */,
-				2601E8CB22C2AF77004EB047 /* Enemy.swift */,
-				265C0D0A22C5334B001A471A /* Sword.swift */,
-				265C0D0C22C53B3E001A471A /* Armour.swift */,
-				265C0D0E22C53C47001A471A /* Helmet.swift */,
 			);
 			path = CnD_v1;
 			sourceTree = "<group>";
@@ -361,13 +397,17 @@
 				26FBAF0522A5965C00AEDCDC /* Interactable.swift in Sources */,
 				A6216A4A22B97B6B001DB637 /* Door.swift in Sources */,
 				262640D022C14EDE006CA69C /* Lever.swift in Sources */,
+				26FAFE7B22C68A1B00E36901 /* Boss.swift in Sources */,
+				26FAFE7722C6878900E36901 /* LesserSkeleton.swift in Sources */,
 				A659256022BABB14001ECE56 /* Extensions.swift in Sources */,
 				2601E8CC22C2AF77004EB047 /* Enemy.swift in Sources */,
 				262640D222C15120006CA69C /* Dais.swift in Sources */,
 				2601E8CE22C2B136004EB047 /* Inventory.swift in Sources */,
+				26FAFE7922C6896800E36901 /* GreaterSkeleton.swift in Sources */,
 				26F9808B22A6FD1800E7B5FE /* Gear.swift in Sources */,
 				26FBAF0622A5965C00AEDCDC /* Pos.swift in Sources */,
 				26FBAF0722A5965C00AEDCDC /* Player.swift in Sources */,
+				26FAFE7E22C68BEB00E36901 /* SkeletonLord.swift in Sources */,
 				262640D422C1530E006CA69C /* Adoor.swift in Sources */,
 				A686E4B222A45405004E1B64 /* AppDelegate.swift in Sources */,
 			);

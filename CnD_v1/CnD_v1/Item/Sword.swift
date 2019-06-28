@@ -21,13 +21,4 @@ class Sword : Gear
         player = p
         super.init(st : st, sp : sp)
     }
-    
-    func calcTotalDMG() -> Int
-    {
-        var dmg : Int
-        
-        dmg = player.stats.STR * self.stats.STR 
-        
-        return dmg
-    }
 }

@@ -125,10 +125,9 @@ class Player : Entity
 
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
         
-        
-        //self.sword = Sword(p : self, st : Stats(s : 0, d : 0, c : 0), sp : )
-        //self.armour = Armour(p : self, st : Stats(s : 0, d : 0, c : 0), sp : )
-        //self.sword = Sword(p : self, st : Stats(s : 0, d : 0, c : 0), sp : )
+        //self.sword = Sword(p : self, st : Stats(s : 1, d : 1, c : 1), sp : )
+        //self.armour = Armour(p : self, st : Stats(s : 1, d : 1, c : 1), sp : )
+        //self.sword = Sword(p : self, st : Stats(s : 1, d : 1, c : 1), sp : )
         
         GameScene.player = self
         setAnimations()
@@ -350,5 +349,67 @@ class Player : Entity
     func stopAnimation(animKey: String)
     {
         sprite!.removeAction(forKey: animKey)
+    }
+    
+    func calcTotalDMG() -> Int
+    {
+        var dmg = 0
+        
+        if let sword = self.sword
+        {
+            dmg = (self.stats.STR * sword.stats.STR) / (self.stats.CON * sword.stats.CON) + sword.baseDamage
+        }
+        
+        return dmg
+    }
+    
+    func calcTotalATS() -> Int
+    {
+        var s = 0
+        
+        if let sword = self.sword
+        {
+            s = (self.stats.DEX * sword.stats.DEX) / (self.stats.CON * sword.stats.CON) + sword.baseSpeed
+        }
+        
+        return s
+    }
+    
+    func calcTotalDEF() -> Int
+    {
+        var def = 0
+        
+        if let armour = self.armour ,
+            let helmet = self.helmet
+        {
+            def = (((self.stats.STR * armour.stats.STR) / (self.stats.CON * armour.stats.CON) + armour.baseDef)
+            + ((self.stats.STR * helmet.stats.STR) / (self.stats.CON * helmet.stats.CON) + helmet.baseDef))
+        }
+        
+        return def
+    }
+    
+    func calcTotalEVS() -> Int
+    {
+        var s = 0
+        
+        if let armour = self.armour
+        {
+            s = (self.stats.DEX * armour.stats.DEX) / (self.stats.CON * armour.stats.CON) + armour.baseEvasion
+        }
+        
+        return s
+    }
+    
+    func calcTotalPRS() -> Int
+    {
+        var s = 0
+        
+        if let helmet = self.helmet
+        {
+            s = (self.stats.DEX * helmet.stats.DEX) / (self.stats.CON * helmet.stats.CON) + helmet.basePrecision
+        }
+        
+        return s
     }
 }
