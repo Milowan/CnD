@@ -7,31 +7,96 @@ provides-member:
 - ["6CnD_v15EnemyC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "..."
+- !private "=="
+- "AssignmentPrecedence"
 - "Enemy"
 - "Entity"
-- !private "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
 - "SKSpriteNode"
-- !private "StringLiteralType"
 depends-member:
+- !private ["Sa", "subscript"]
+- !private ["SK", "subscript"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["Sl", "subscript"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["Se", "subscript"]
+- !private ["SE", "subscript"]
 - ["6CnD_v15EnemyC", "Int"]
 - ["6CnD_v15EnemyC", "SKSpriteNode"]
+- ["6CnD_v15EnemyC", "ats"]
+- ["6CnD_v15EnemyC", "def"]
+- ["6CnD_v15EnemyC", "deinit"]
+- ["6CnD_v15EnemyC", "dmg"]
+- ["6CnD_v15EnemyC", "evs"]
+- ["6CnD_v15EnemyC", "hp"]
 - ["6CnD_v15EnemyC", "init"]
+- ["6CnD_v15EnemyC", "prs"]
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "SKSpriteNode"]
 - ["6CnD_v16EntityC", ""]
+- ["6CnD_v16EntityC", "ats"]
+- ["6CnD_v16EntityC", "def"]
+- ["6CnD_v16EntityC", "dmg"]
+- ["6CnD_v16EntityC", "evs"]
+- ["6CnD_v16EntityC", "hp"]
 - ["6CnD_v16EntityC", "init"]
+- ["6CnD_v16EntityC", "prs"]
 - !private ["SQ", "ENEMY"]
 - ["SQ", ""]
+- !private ["SQ", "ats"]
+- !private ["SQ", "def"]
+- !private ["SQ", "dmg"]
+- !private ["SQ", "evs"]
+- !private ["SQ", "hp"]
 - !private ["SQ", "init"]
+- !private ["SQ", "prs"]
+- !private ["SQ", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["SH", "ENEMY"]
+- !private ["SH", "subscript"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "subscript"]
+- !private ["ST", "subscript"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["6CnD_v113collisionTypeO", "ENEMY"]
 depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
 - "6CnD_v15EnemyC"
 - "6CnD_v16EntityC"
 - "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
 - !private "SH"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
 - !private "6CnD_v113collisionTypeO"
 depends-dynamic-lookup:
 depends-external:
@@ -66,4 +131,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "6f0d4d5fe99e14b6769ad8a2ce54aa35"
+interface-hash: "907f4e91e279cb47fbdc10c2b9eff911"

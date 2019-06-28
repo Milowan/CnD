@@ -1,0 +1,501 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LevelGenerator"
+provides-nominal:
+- "6CnD_v114LevelGeneratorC"
+provides-member:
+- ["6CnD_v114LevelGeneratorC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!="
+- !private "+"
+- !private "+="
+- !private "-"
+- !private "..<"
+- !private "=="
+- !private "Adoor"
+- "AssignmentPrecedence"
+- "CGPoint"
+- "CastingPrecedence"
+- !private "Collectable"
+- !private "Door"
+- "GameScene"
+- "Int"
+- !private "Interactable"
+- "LevelGenerator"
+- !private "Lever"
+- !private "SKSpriteNode"
+- "SKTileDefinition"
+- "SKTileMapNode"
+- "SKTileSet"
+- !private "World"
+depends-member:
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["6CnD_v15AdoorC", "init"]
+- !private ["Sa", "append"]
+- !private ["Sa", "subscript"]
+- !private ["SK", "append"]
+- !private ["SK", "subscript"]
+- !private ["Sz", "init"]
+- !private ["So7CGPointV", "x"]
+- !private ["So7CGPointV", "y"]
+- !private ["s7CVarArgP", "addEntity"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "centerOfTile"]
+- !private ["s7CVarArgP", "childNode"]
+- !private ["s7CVarArgP", "currentLevel"]
+- !private ["s7CVarArgP", "doorArray"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "numberOfColumns"]
+- !private ["s7CVarArgP", "numberOfRows"]
+- !private ["s7CVarArgP", "removeFromParent"]
+- !private ["s7CVarArgP", "scaleMode"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "tileDefinition"]
+- !private ["6CnD_v111CollectableC", "init"]
+- !private ["Sl", "append"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "init"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "addEntity"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "centerOfTile"]
+- !private ["s28CustomDebugStringConvertibleP", "childNode"]
+- !private ["s28CustomDebugStringConvertibleP", "currentLevel"]
+- !private ["s28CustomDebugStringConvertibleP", "doorArray"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "numberOfColumns"]
+- !private ["s28CustomDebugStringConvertibleP", "numberOfRows"]
+- !private ["s28CustomDebugStringConvertibleP", "removeFromParent"]
+- !private ["s28CustomDebugStringConvertibleP", "scaleMode"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "tileDefinition"]
+- !private ["s28CustomDebugStringConvertibleP", "x"]
+- !private ["s28CustomDebugStringConvertibleP", "y"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "x"]
+- !private ["s17CustomReflectableP", "y"]
+- !private ["s23CustomStringConvertibleP", "addEntity"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "centerOfTile"]
+- !private ["s23CustomStringConvertibleP", "childNode"]
+- !private ["s23CustomStringConvertibleP", "currentLevel"]
+- !private ["s23CustomStringConvertibleP", "doorArray"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "numberOfColumns"]
+- !private ["s23CustomStringConvertibleP", "numberOfRows"]
+- !private ["s23CustomStringConvertibleP", "removeFromParent"]
+- !private ["s23CustomStringConvertibleP", "scaleMode"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "tileDefinition"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["Se", "append"]
+- !private ["Se", "init"]
+- !private ["Se", "subscript"]
+- !private ["Se", "x"]
+- !private ["Se", "y"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["6CnD_v14DoorC", "init"]
+- !private ["SE", "append"]
+- !private ["SE", "init"]
+- !private ["SE", "subscript"]
+- !private ["SE", "x"]
+- !private ["SE", "y"]
+- !private ["SQ", "addEntity"]
+- !private ["SQ", "append"]
+- !private ["SQ", "aspectFill"]
+- !private ["SQ", "centerOfTile"]
+- !private ["SQ", "childNode"]
+- !private ["SQ", "currentLevel"]
+- !private ["SQ", "doorArray"]
+- !private ["SQ", "init"]
+- !private ["SQ", "numberOfColumns"]
+- !private ["SQ", "numberOfRows"]
+- !private ["SQ", "removeFromParent"]
+- !private ["SQ", "scaleMode"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "tileDefinition"]
+- !private ["SQ", "x"]
+- !private ["SQ", "y"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["6CnD_v19GameSceneC", "addEntity"]
+- !private ["6CnD_v19GameSceneC", "childNode"]
+- !private ["6CnD_v19GameSceneC", "currentLevel"]
+- !private ["6CnD_v19GameSceneC", "deinit"]
+- !private ["6CnD_v19GameSceneC", "doorArray"]
+- !private ["6CnD_v19GameSceneC", "init"]
+- !private ["6CnD_v19GameSceneC", "scaleMode"]
+- !private ["SH", "addEntity"]
+- !private ["SH", "append"]
+- !private ["SH", "aspectFill"]
+- !private ["SH", "centerOfTile"]
+- !private ["SH", "childNode"]
+- !private ["SH", "currentLevel"]
+- !private ["SH", "doorArray"]
+- !private ["SH", "init"]
+- !private ["SH", "numberOfColumns"]
+- !private ["SH", "numberOfRows"]
+- !private ["SH", "removeFromParent"]
+- !private ["SH", "scaleMode"]
+- !private ["SH", "subscript"]
+- !private ["SH", "tileDefinition"]
+- !private ["Si", "init"]
+- !private ["6CnD_v112InteractableC", "init"]
+- !private ["6CnD_v114LevelGeneratorC", "Adoor"]
+- ["6CnD_v114LevelGeneratorC", "CGPoint"]
+- !private ["6CnD_v114LevelGeneratorC", "Collectable"]
+- !private ["6CnD_v114LevelGeneratorC", "Door"]
+- ["6CnD_v114LevelGeneratorC", "GameScene"]
+- ["6CnD_v114LevelGeneratorC", "Int"]
+- !private ["6CnD_v114LevelGeneratorC", "Interactable"]
+- !private ["6CnD_v114LevelGeneratorC", "Lever"]
+- !private ["6CnD_v114LevelGeneratorC", "SKSpriteNode"]
+- ["6CnD_v114LevelGeneratorC", "SKTileDefinition"]
+- ["6CnD_v114LevelGeneratorC", "SKTileMapNode"]
+- ["6CnD_v114LevelGeneratorC", "SKTileSet"]
+- ["6CnD_v114LevelGeneratorC", "TileCoordinates"]
+- !private ["6CnD_v114LevelGeneratorC", "World"]
+- ["6CnD_v114LevelGeneratorC", "createAlcoves"]
+- ["6CnD_v114LevelGeneratorC", "createChests"]
+- ["6CnD_v114LevelGeneratorC", "createDoors"]
+- ["6CnD_v114LevelGeneratorC", "createGemDias"]
+- ["6CnD_v114LevelGeneratorC", "createLever"]
+- ["6CnD_v114LevelGeneratorC", "createPressPlates"]
+- ["6CnD_v114LevelGeneratorC", "createWallCollisions"]
+- ["6CnD_v114LevelGeneratorC", "deinit"]
+- ["6CnD_v114LevelGeneratorC", "gameScene"]
+- ["6CnD_v114LevelGeneratorC", "generate"]
+- ["6CnD_v114LevelGeneratorC", "init"]
+- ["6CnD_v114LevelGeneratorC", "level"]
+- ["6CnD_v114LevelGeneratorC", "setupADoors"]
+- ["6CnD_v114LevelGeneratorC", "tempPoint"]
+- ["6CnD_v114LevelGeneratorC", "tempX"]
+- ["6CnD_v114LevelGeneratorC", "tempY"]
+- ["6CnD_v114LevelGeneratorC", "tile"]
+- ["6CnD_v114LevelGeneratorC", "tileSet"]
+- !private ["6CnD_v15LeverC", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "append"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["So8NSCodingP", "addEntity"]
+- !private ["So8NSCodingP", "centerOfTile"]
+- !private ["So8NSCodingP", "childNode"]
+- !private ["So8NSCodingP", "currentLevel"]
+- !private ["So8NSCodingP", "doorArray"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "numberOfColumns"]
+- !private ["So8NSCodingP", "numberOfRows"]
+- !private ["So8NSCodingP", "removeFromParent"]
+- !private ["So8NSCodingP", "scaleMode"]
+- !private ["So8NSCodingP", "tileDefinition"]
+- !private ["So9NSCopyingP", "addEntity"]
+- !private ["So9NSCopyingP", "centerOfTile"]
+- !private ["So9NSCopyingP", "childNode"]
+- !private ["So9NSCopyingP", "currentLevel"]
+- !private ["So9NSCopyingP", "doorArray"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "numberOfColumns"]
+- !private ["So9NSCopyingP", "numberOfRows"]
+- !private ["So9NSCopyingP", "removeFromParent"]
+- !private ["So9NSCopyingP", "scaleMode"]
+- !private ["So9NSCopyingP", "tileDefinition"]
+- !private ["So8NSObjectC", "addEntity"]
+- !private ["So8NSObjectC", "centerOfTile"]
+- !private ["So8NSObjectC", "childNode"]
+- !private ["So8NSObjectC", "currentLevel"]
+- !private ["So8NSObjectC", "doorArray"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "numberOfColumns"]
+- !private ["So8NSObjectC", "numberOfRows"]
+- !private ["So8NSObjectC", "removeFromParent"]
+- !private ["So8NSObjectC", "scaleMode"]
+- !private ["So8NSObjectC", "tileDefinition"]
+- !private ["So8NSObjectP", "addEntity"]
+- !private ["So8NSObjectP", "centerOfTile"]
+- !private ["So8NSObjectP", "childNode"]
+- !private ["So8NSObjectP", "currentLevel"]
+- !private ["So8NSObjectP", "doorArray"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "numberOfColumns"]
+- !private ["So8NSObjectP", "numberOfRows"]
+- !private ["So8NSObjectP", "removeFromParent"]
+- !private ["So8NSObjectP", "scaleMode"]
+- !private ["So8NSObjectP", "tileDefinition"]
+- !private ["So14NSSecureCodingP", "addEntity"]
+- !private ["So14NSSecureCodingP", "centerOfTile"]
+- !private ["So14NSSecureCodingP", "childNode"]
+- !private ["So14NSSecureCodingP", "currentLevel"]
+- !private ["So14NSSecureCodingP", "doorArray"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "numberOfColumns"]
+- !private ["So14NSSecureCodingP", "numberOfRows"]
+- !private ["So14NSSecureCodingP", "removeFromParent"]
+- !private ["So14NSSecureCodingP", "scaleMode"]
+- !private ["So14NSSecureCodingP", "tileDefinition"]
+- !private ["Sj", "init"]
+- !private ["Sk", "append"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "append"]
+- !private ["Sm", "subscript"]
+- !private ["SY", "aspectFill"]
+- !private ["s10SIMDScalarP", "init"]
+- !private ["So12SKEffectNodeC", "addEntity"]
+- !private ["So12SKEffectNodeC", "childNode"]
+- !private ["So12SKEffectNodeC", "currentLevel"]
+- !private ["So12SKEffectNodeC", "doorArray"]
+- !private ["So12SKEffectNodeC", "init"]
+- !private ["So12SKEffectNodeC", "scaleMode"]
+- !private ["So6SKNodeC", "addEntity"]
+- !private ["So6SKNodeC", "centerOfTile"]
+- !private ["So6SKNodeC", "childNode"]
+- !private ["So6SKNodeC", "currentLevel"]
+- !private ["So6SKNodeC", "doorArray"]
+- !private ["So6SKNodeC", "init"]
+- !private ["So6SKNodeC", "numberOfColumns"]
+- !private ["So6SKNodeC", "numberOfRows"]
+- !private ["So6SKNodeC", "removeFromParent"]
+- !private ["So6SKNodeC", "scaleMode"]
+- !private ["So6SKNodeC", "tileDefinition"]
+- !private ["So7SKSceneC", "addEntity"]
+- !private ["So7SKSceneC", "childNode"]
+- !private ["So7SKSceneC", "currentLevel"]
+- !private ["So7SKSceneC", "doorArray"]
+- !private ["So7SKSceneC", "init"]
+- !private ["So7SKSceneC", "scaleMode"]
+- !private ["So16SKSceneScaleModeV", "aspectFill"]
+- !private ["So12SKSpriteNodeC", "init"]
+- !private ["So13SKTileMapNodeC", "centerOfTile"]
+- !private ["So13SKTileMapNodeC", "numberOfColumns"]
+- !private ["So13SKTileMapNodeC", "numberOfRows"]
+- !private ["So13SKTileMapNodeC", "removeFromParent"]
+- !private ["So13SKTileMapNodeC", "tileDefinition"]
+- !private ["So10SKWarpableP", "addEntity"]
+- !private ["So10SKWarpableP", "childNode"]
+- !private ["So10SKWarpableP", "currentLevel"]
+- !private ["So10SKWarpableP", "doorArray"]
+- !private ["So10SKWarpableP", "init"]
+- !private ["So10SKWarpableP", "scaleMode"]
+- !private ["ST", "append"]
+- !private ["ST", "subscript"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["So18UIFocusEnvironmentP", "addEntity"]
+- !private ["So18UIFocusEnvironmentP", "centerOfTile"]
+- !private ["So18UIFocusEnvironmentP", "childNode"]
+- !private ["So18UIFocusEnvironmentP", "currentLevel"]
+- !private ["So18UIFocusEnvironmentP", "doorArray"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "numberOfColumns"]
+- !private ["So18UIFocusEnvironmentP", "numberOfRows"]
+- !private ["So18UIFocusEnvironmentP", "removeFromParent"]
+- !private ["So18UIFocusEnvironmentP", "scaleMode"]
+- !private ["So18UIFocusEnvironmentP", "tileDefinition"]
+- !private ["So11UIFocusItemP", "addEntity"]
+- !private ["So11UIFocusItemP", "centerOfTile"]
+- !private ["So11UIFocusItemP", "childNode"]
+- !private ["So11UIFocusItemP", "currentLevel"]
+- !private ["So11UIFocusItemP", "doorArray"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "numberOfColumns"]
+- !private ["So11UIFocusItemP", "numberOfRows"]
+- !private ["So11UIFocusItemP", "removeFromParent"]
+- !private ["So11UIFocusItemP", "scaleMode"]
+- !private ["So11UIFocusItemP", "tileDefinition"]
+- !private ["So30UIPasteConfigurationSupportingP", "addEntity"]
+- !private ["So30UIPasteConfigurationSupportingP", "centerOfTile"]
+- !private ["So30UIPasteConfigurationSupportingP", "childNode"]
+- !private ["So30UIPasteConfigurationSupportingP", "currentLevel"]
+- !private ["So30UIPasteConfigurationSupportingP", "doorArray"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "numberOfColumns"]
+- !private ["So30UIPasteConfigurationSupportingP", "numberOfRows"]
+- !private ["So30UIPasteConfigurationSupportingP", "removeFromParent"]
+- !private ["So30UIPasteConfigurationSupportingP", "scaleMode"]
+- !private ["So30UIPasteConfigurationSupportingP", "tileDefinition"]
+- !private ["So11UIResponderC", "addEntity"]
+- !private ["So11UIResponderC", "centerOfTile"]
+- !private ["So11UIResponderC", "childNode"]
+- !private ["So11UIResponderC", "currentLevel"]
+- !private ["So11UIResponderC", "doorArray"]
+- !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "numberOfColumns"]
+- !private ["So11UIResponderC", "numberOfRows"]
+- !private ["So11UIResponderC", "removeFromParent"]
+- !private ["So11UIResponderC", "scaleMode"]
+- !private ["So11UIResponderC", "tileDefinition"]
+- !private ["So30UIResponderStandardEditActionsP", "addEntity"]
+- !private ["So30UIResponderStandardEditActionsP", "centerOfTile"]
+- !private ["So30UIResponderStandardEditActionsP", "childNode"]
+- !private ["So30UIResponderStandardEditActionsP", "currentLevel"]
+- !private ["So30UIResponderStandardEditActionsP", "doorArray"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "numberOfColumns"]
+- !private ["So30UIResponderStandardEditActionsP", "numberOfRows"]
+- !private ["So30UIResponderStandardEditActionsP", "removeFromParent"]
+- !private ["So30UIResponderStandardEditActionsP", "scaleMode"]
+- !private ["So30UIResponderStandardEditActionsP", "tileDefinition"]
+- !private ["So23UIUserActivityRestoringP", "addEntity"]
+- !private ["So23UIUserActivityRestoringP", "centerOfTile"]
+- !private ["So23UIUserActivityRestoringP", "childNode"]
+- !private ["So23UIUserActivityRestoringP", "currentLevel"]
+- !private ["So23UIUserActivityRestoringP", "doorArray"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "numberOfColumns"]
+- !private ["So23UIUserActivityRestoringP", "numberOfRows"]
+- !private ["So23UIUserActivityRestoringP", "removeFromParent"]
+- !private ["So23UIUserActivityRestoringP", "scaleMode"]
+- !private ["So23UIUserActivityRestoringP", "tileDefinition"]
+- !private ["6CnD_v15WorldC", "init"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "x"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "y"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addEntity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "centerOfTile"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "childNode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "currentLevel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "doorArray"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "numberOfColumns"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "numberOfRows"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeFromParent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scaleMode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tileDefinition"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "x"]
+- !private ["s21_ObjectiveCBridgeableP", "y"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "6CnD_v15AdoorC"
+- !private "Sa"
+- !private "SK"
+- !private "Sz"
+- !private "So7CGPointV"
+- !private "s7CVarArgP"
+- !private "6CnD_v111CollectableC"
+- !private "Sl"
+- !private "SL"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "6CnD_v14DoorC"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "6CnD_v19GameSceneC"
+- !private "SH"
+- !private "Si"
+- !private "6CnD_v112InteractableC"
+- "6CnD_v114LevelGeneratorC"
+- !private "6CnD_v15LeverC"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sj"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "s10SIMDScalarP"
+- !private "So12SKEffectNodeC"
+- !private "So6SKNodeC"
+- !private "So7SKSceneC"
+- !private "So16SKSceneScaleModeV"
+- !private "So12SKSpriteNodeC"
+- !private "So13SKTileMapNodeC"
+- !private "So10SKWarpableP"
+- !private "ST"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So23UIUserActivityRestoringP"
+- !private "6CnD_v15WorldC"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SpriteKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "86a98d2ab0b9988681053f5adc12127a"

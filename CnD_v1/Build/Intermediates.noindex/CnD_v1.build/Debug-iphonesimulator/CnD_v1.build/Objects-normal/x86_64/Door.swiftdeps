@@ -10,66 +10,279 @@ depends-top-level:
 - !private "!"
 - !private "%="
 - !private "+="
+- !private "..."
 - !private "=="
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
 - "Door"
-- !private "FloatLiteralType"
+- "FloatLiteralType"
 - "Int"
 - !private "IntegerLiteralType"
 - "Interactable"
+- "SKAction"
 - "SKSpriteNode"
+- "SKTexture"
 - "String"
+- !private "StringLiteralType"
 depends-member:
+- !private ["Sa", "append"]
+- !private ["SK", "append"]
+- !private ["s7CVarArgP", "action"]
+- !private ["s7CVarArgP", "animate"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "removeAction"]
+- !private ["s7CVarArgP", "reversed"]
+- !private ["s7CVarArgP", "run"]
+- !private ["Sl", "append"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "action"]
+- !private ["s28CustomDebugStringConvertibleP", "animate"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "removeAction"]
+- !private ["s28CustomDebugStringConvertibleP", "reversed"]
+- !private ["s28CustomDebugStringConvertibleP", "run"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s23CustomStringConvertibleP", "action"]
+- !private ["s23CustomStringConvertibleP", "animate"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "removeAction"]
+- !private ["s23CustomStringConvertibleP", "reversed"]
+- !private ["s23CustomStringConvertibleP", "run"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["Se", "append"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - ["6CnD_v14DoorC", "Bool"]
 - ["6CnD_v14DoorC", "Int"]
+- ["6CnD_v14DoorC", "SKAction"]
 - ["6CnD_v14DoorC", "SKSpriteNode"]
+- ["6CnD_v14DoorC", "SKTexture"]
 - ["6CnD_v14DoorC", "String"]
 - ["6CnD_v14DoorC", "act"]
+- ["6CnD_v14DoorC", "animSpeed"]
 - !private ["6CnD_v14DoorC", "collisionMask"]
+- ["6CnD_v14DoorC", "doorClosed"]
+- ["6CnD_v14DoorC", "doorOpen"]
+- ["6CnD_v14DoorC", "doorTextures"]
 - ["6CnD_v14DoorC", "i"]
 - ["6CnD_v14DoorC", "init"]
 - ["6CnD_v14DoorC", "isOpen"]
-- ["6CnD_v14DoorC", "name"]
+- ["6CnD_v14DoorC", "setDoorAnims"]
+- !private ["6CnD_v14DoorC", "sprite"]
+- ["6CnD_v14DoorC", "startAnimation"]
+- ["6CnD_v14DoorC", "stopAnimation"]
+- !private ["SE", "append"]
 - ["6CnD_v16EntityC", "Bool"]
 - ["6CnD_v16EntityC", "Int"]
+- ["6CnD_v16EntityC", "SKAction"]
 - ["6CnD_v16EntityC", "SKSpriteNode"]
+- ["6CnD_v16EntityC", "SKTexture"]
 - ["6CnD_v16EntityC", "String"]
 - ["6CnD_v16EntityC", "act"]
+- ["6CnD_v16EntityC", "animSpeed"]
 - !private ["6CnD_v16EntityC", "collisionMask"]
+- ["6CnD_v16EntityC", "doorClosed"]
+- ["6CnD_v16EntityC", "doorOpen"]
+- ["6CnD_v16EntityC", "doorTextures"]
 - ["6CnD_v16EntityC", "i"]
 - ["6CnD_v16EntityC", "isOpen"]
-- ["6CnD_v16EntityC", "name"]
+- ["6CnD_v16EntityC", "setDoorAnims"]
+- !private ["6CnD_v16EntityC", "sprite"]
+- ["6CnD_v16EntityC", "startAnimation"]
+- ["6CnD_v16EntityC", "stopAnimation"]
 - !private ["SQ", "NONE"]
+- !private ["SQ", "SKAction"]
+- !private ["SQ", "SKTexture"]
 - !private ["SQ", "WORLD"]
 - ["SQ", ""]
+- !private ["SQ", "action"]
+- !private ["SQ", "animSpeed"]
+- !private ["SQ", "animate"]
+- !private ["SQ", "append"]
 - !private ["SQ", "collisionMask"]
+- !private ["SQ", "doorClosed"]
+- !private ["SQ", "doorOpen"]
+- !private ["SQ", "doorTextures"]
 - !private ["SQ", "i"]
 - !private ["SQ", "init"]
 - !private ["SQ", "isOpen"]
-- !private ["SQ", "name"]
+- !private ["SQ", "removeAction"]
+- !private ["SQ", "reversed"]
+- !private ["SQ", "run"]
+- !private ["SQ", "setDoorAnims"]
+- !private ["SQ", "sprite"]
+- !private ["SQ", "startAnimation"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["SH", "NONE"]
 - !private ["SH", "WORLD"]
+- !private ["SH", "action"]
+- !private ["SH", "animate"]
+- !private ["SH", "append"]
+- !private ["SH", "init"]
+- !private ["SH", "removeAction"]
+- !private ["SH", "reversed"]
+- !private ["SH", "run"]
 - ["6CnD_v112InteractableC", "Bool"]
 - ["6CnD_v112InteractableC", "Int"]
+- ["6CnD_v112InteractableC", "SKAction"]
 - ["6CnD_v112InteractableC", "SKSpriteNode"]
+- ["6CnD_v112InteractableC", "SKTexture"]
 - ["6CnD_v112InteractableC", "String"]
 - ["6CnD_v112InteractableC", ""]
 - ["6CnD_v112InteractableC", "act"]
+- ["6CnD_v112InteractableC", "animSpeed"]
 - !private ["6CnD_v112InteractableC", "collisionMask"]
+- ["6CnD_v112InteractableC", "doorClosed"]
+- ["6CnD_v112InteractableC", "doorOpen"]
+- ["6CnD_v112InteractableC", "doorTextures"]
 - ["6CnD_v112InteractableC", "i"]
 - ["6CnD_v112InteractableC", "init"]
 - ["6CnD_v112InteractableC", "isOpen"]
-- ["6CnD_v112InteractableC", "name"]
+- ["6CnD_v112InteractableC", "setDoorAnims"]
+- !private ["6CnD_v112InteractableC", "sprite"]
+- ["6CnD_v112InteractableC", "startAnimation"]
+- ["6CnD_v112InteractableC", "stopAnimation"]
+- !private ["SM", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["So8NSCodingP", "action"]
+- !private ["So8NSCodingP", "animate"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "removeAction"]
+- !private ["So8NSCodingP", "reversed"]
+- !private ["So8NSCodingP", "run"]
+- !private ["So9NSCopyingP", "action"]
+- !private ["So9NSCopyingP", "animate"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "removeAction"]
+- !private ["So9NSCopyingP", "reversed"]
+- !private ["So9NSCopyingP", "run"]
+- !private ["So8NSObjectC", "action"]
+- !private ["So8NSObjectC", "animate"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "removeAction"]
+- !private ["So8NSObjectC", "reversed"]
+- !private ["So8NSObjectC", "run"]
+- !private ["So8NSObjectP", "action"]
+- !private ["So8NSObjectP", "animate"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "removeAction"]
+- !private ["So8NSObjectP", "reversed"]
+- !private ["So8NSObjectP", "run"]
+- !private ["So14NSSecureCodingP", "action"]
+- !private ["So14NSSecureCodingP", "animate"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "removeAction"]
+- !private ["So14NSSecureCodingP", "reversed"]
+- !private ["So14NSSecureCodingP", "run"]
+- !private ["Sk", "append"]
+- !private ["Sm", "append"]
+- !private ["So8SKActionC", "animate"]
+- !private ["So8SKActionC", "reversed"]
+- !private ["So6SKNodeC", "action"]
+- !private ["So6SKNodeC", "removeAction"]
+- !private ["So6SKNodeC", "run"]
+- !private ["So12SKSpriteNodeC", "action"]
+- !private ["So12SKSpriteNodeC", "removeAction"]
+- !private ["So12SKSpriteNodeC", "run"]
+- !private ["So9SKTextureC", "init"]
+- !private ["So10SKWarpableP", "action"]
+- !private ["So10SKWarpableP", "removeAction"]
+- !private ["So10SKWarpableP", "run"]
+- !private ["ST", "append"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["So18UIFocusEnvironmentP", "action"]
+- !private ["So18UIFocusEnvironmentP", "removeAction"]
+- !private ["So18UIFocusEnvironmentP", "run"]
+- !private ["So11UIFocusItemP", "action"]
+- !private ["So11UIFocusItemP", "removeAction"]
+- !private ["So11UIFocusItemP", "run"]
+- !private ["So30UIPasteConfigurationSupportingP", "action"]
+- !private ["So30UIPasteConfigurationSupportingP", "removeAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "run"]
+- !private ["So11UIResponderC", "action"]
+- !private ["So11UIResponderC", "removeAction"]
+- !private ["So11UIResponderC", "run"]
+- !private ["So30UIResponderStandardEditActionsP", "action"]
+- !private ["So30UIResponderStandardEditActionsP", "removeAction"]
+- !private ["So30UIResponderStandardEditActionsP", "run"]
+- !private ["So23UIUserActivityRestoringP", "action"]
+- !private ["So23UIUserActivityRestoringP", "removeAction"]
+- !private ["So23UIUserActivityRestoringP", "run"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "action"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "removeAction"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "run"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "action"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "animate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reversed"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "run"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["6CnD_v113collisionTypeO", "NONE"]
 - !private ["6CnD_v113collisionTypeO", "WORLD"]
 depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
 - "6CnD_v14DoorC"
+- !private "SE"
 - "6CnD_v16EntityC"
 - "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
 - !private "SH"
 - "6CnD_v112InteractableC"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sk"
+- !private "Sm"
+- !private "So8SKActionC"
+- !private "So6SKNodeC"
+- !private "So12SKSpriteNodeC"
+- !private "So9SKTextureC"
+- !private "So10SKWarpableP"
+- !private "ST"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So23UIUserActivityRestoringP"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
 - !private "6CnD_v113collisionTypeO"
 depends-dynamic-lookup:
 depends-external:
@@ -104,4 +317,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "703a7c058f8ced723860c32a3e6e4c9a"
+interface-hash: "d849b1fb78ffab75e0ab740380de96e8"

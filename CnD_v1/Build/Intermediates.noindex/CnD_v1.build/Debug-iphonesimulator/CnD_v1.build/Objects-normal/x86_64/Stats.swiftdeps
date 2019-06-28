@@ -15,7 +15,6 @@ depends-member:
 - ["6CnD_v15StatsC", "DEX"]
 - ["6CnD_v15StatsC", "Int"]
 - ["6CnD_v15StatsC", "STR"]
-- ["6CnD_v15StatsC", "deinit"]
 - ["6CnD_v15StatsC", "init"]
 depends-nominal:
 - "6CnD_v15StatsC"

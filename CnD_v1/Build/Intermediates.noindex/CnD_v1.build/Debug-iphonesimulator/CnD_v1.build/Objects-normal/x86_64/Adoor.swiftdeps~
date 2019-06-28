@@ -180,7 +180,6 @@ depends-member:
 - !private ["Sm", "init"]
 - !private ["So8SKActionC", "animate"]
 - !private ["So8SKActionC", "reversed"]
-- !private ["So8SKActionC", "run"]
 - !private ["So6SKNodeC", "action"]
 - !private ["So6SKNodeC", "removeAction"]
 - !private ["So6SKNodeC", "run"]

@@ -7,56 +7,37 @@ provides-member:
 - ["6CnD_v15SwordC", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "*"
 - "AssignmentPrecedence"
 - "Gear"
-- "Int"
 - "Player"
 - "SKSpriteNode"
 - "Stats"
 - "Sword"
 depends-member:
-- !private ["6CnD_v16EntityC", "stats"]
-- !private ["SQ", "stats"]
-- ["6CnD_v14GearC", "Int"]
 - ["6CnD_v14GearC", "Player"]
 - ["6CnD_v14GearC", "SKSpriteNode"]
 - ["6CnD_v14GearC", "Stats"]
 - ["6CnD_v14GearC", ""]
 - ["6CnD_v14GearC", "baseDamage"]
 - ["6CnD_v14GearC", "baseSpeed"]
-- ["6CnD_v14GearC", "calcTotalDMG"]
 - ["6CnD_v14GearC", "init"]
 - ["6CnD_v14GearC", "player"]
-- !private ["6CnD_v14GearC", "stats"]
-- ["6CnD_v14ItemC", "Int"]
 - ["6CnD_v14ItemC", "Player"]
 - ["6CnD_v14ItemC", "SKSpriteNode"]
 - ["6CnD_v14ItemC", "Stats"]
 - ["6CnD_v14ItemC", "baseDamage"]
 - ["6CnD_v14ItemC", "baseSpeed"]
-- ["6CnD_v14ItemC", "calcTotalDMG"]
 - ["6CnD_v14ItemC", "player"]
-- !private ["6CnD_v14ItemC", "stats"]
-- !private ["6CnD_v16PlayerC", "stats"]
-- !private ["6CnD_v15StatsC", "STR"]
-- ["6CnD_v15SwordC", "Int"]
 - ["6CnD_v15SwordC", "Player"]
 - ["6CnD_v15SwordC", "SKSpriteNode"]
 - ["6CnD_v15SwordC", "Stats"]
 - ["6CnD_v15SwordC", "baseDamage"]
 - ["6CnD_v15SwordC", "baseSpeed"]
-- ["6CnD_v15SwordC", "calcTotalDMG"]
 - ["6CnD_v15SwordC", "init"]
 - ["6CnD_v15SwordC", "player"]
-- !private ["6CnD_v15SwordC", "stats"]
 depends-nominal:
-- !private "6CnD_v16EntityC"
-- !private "SQ"
 - "6CnD_v14GearC"
 - "6CnD_v14ItemC"
-- !private "6CnD_v16PlayerC"
-- !private "6CnD_v15StatsC"
 - "6CnD_v15SwordC"
 depends-dynamic-lookup:
 depends-external:
@@ -91,4 +72,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "41de84c15244eb9013ecb2039ad7c59c"
+interface-hash: "d7e4e9fd65ff45db1004d1e134c3a88d"

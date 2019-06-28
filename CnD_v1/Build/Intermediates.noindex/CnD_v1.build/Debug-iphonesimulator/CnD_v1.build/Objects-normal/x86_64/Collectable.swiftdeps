@@ -10,6 +10,7 @@ depends-top-level:
 - "Collectable"
 - "Interactable"
 depends-member:
+- ["6CnD_v111CollectableC", "deinit"]
 - ["6CnD_v111CollectableC", "init"]
 - ["SQ", ""]
 - !private ["SQ", "init"]
