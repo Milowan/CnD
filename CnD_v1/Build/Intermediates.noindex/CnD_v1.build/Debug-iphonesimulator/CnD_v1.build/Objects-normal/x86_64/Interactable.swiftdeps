@@ -12,10 +12,12 @@ depends-top-level:
 - "Interactable"
 - "Player"
 - "SKSpriteNode"
+- "String"
 depends-member:
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "Player"]
 - ["6CnD_v16EntityC", "SKSpriteNode"]
+- ["6CnD_v16EntityC", "String"]
 - ["6CnD_v16EntityC", ""]
 - ["6CnD_v16EntityC", "act"]
 - ["6CnD_v16EntityC", "init"]
@@ -27,8 +29,8 @@ depends-member:
 - ["6CnD_v112InteractableC", "Int"]
 - ["6CnD_v112InteractableC", "Player"]
 - ["6CnD_v112InteractableC", "SKSpriteNode"]
+- ["6CnD_v112InteractableC", "String"]
 - ["6CnD_v112InteractableC", "act"]
-- ["6CnD_v112InteractableC", "deinit"]
 - ["6CnD_v112InteractableC", "init"]
 - ["6CnD_v112InteractableC", "player"]
 - !private ["6CnD_v113collisionTypeO", "NONE"]
@@ -71,4 +73,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "03711137382071dd2003cda1ee26a606"
+interface-hash: "8e81b7dcdbb74f95097bb40ad3387c09"

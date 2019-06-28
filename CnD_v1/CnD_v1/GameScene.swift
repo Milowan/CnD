@@ -19,7 +19,7 @@ class GameScene: SKScene
     typealias TileCoordinates = (column: Int, row: Int)
     var tempPoint: CGPoint?
     
-    var doorArray: [Door]? = []
+    var doorArray: [Adoor]? = []
     var customBGColor = UIColor(red: (22/255), green: (19/255), blue: (24/255), alpha: 1)
     
     var edgeLimits = SKTileMapNode()

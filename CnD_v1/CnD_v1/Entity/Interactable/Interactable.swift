@@ -14,7 +14,7 @@ class Interactable : Entity
     
     var player : Player?
     
-    init (x : Int, y : Int, z: Int, s : SKSpriteNode)
+    init (x : Int, y : Int, z: Int, s : SKSpriteNode, n: String = "noName")
     {
         super.init(x: x, y: y, z: z, s: s, m: .NONE)
     }

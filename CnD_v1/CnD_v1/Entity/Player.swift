@@ -121,7 +121,7 @@ class Player : Entity
         miniMapButton.sprite!.texture!.filteringMode = .nearest
         inventoryButton = Button(x: (GameScene.gridSize! * 9) - (uiGap), y: (GameScene.gridSize! * -4), z: 5, s: BSNode(imageNamed: "inventoryIcon"))
         s.addChild(inventoryButton.sprite!)
-        inventoryButton.sprite!.texture!.filteringMode = .nearest        
+        inventoryButton.sprite!.texture!.filteringMode = .nearest
 
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
         

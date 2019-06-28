@@ -32,11 +32,9 @@ depends-top-level:
 - "CastingPrecedence"
 - "Direction"
 - "Entity"
-- "FloatLiteralType"
 - !private "GameScene"
 - "Helmet"
 - "Int"
-- "IntegerLiteralType"
 - !private "Interactable"
 - "Inventory"
 - "Player"
@@ -46,7 +44,6 @@ depends-top-level:
 - "SKTexture"
 - "Stats"
 - "String"
-- !private "StringLiteralType"
 - "Sword"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
@@ -444,6 +441,7 @@ depends-member:
 - ["6CnD_v16PlayerC", "animSpeed"]
 - ["6CnD_v16PlayerC", "armour"]
 - ["6CnD_v16PlayerC", "collision"]
+- ["6CnD_v16PlayerC", "deinit"]
 - ["6CnD_v16PlayerC", "direction"]
 - ["6CnD_v16PlayerC", "down"]
 - ["6CnD_v16PlayerC", "downLeft"]
