@@ -19,7 +19,7 @@ class GameScene: SKScene
     var tempX: Int?
     var tempY: Int?
     
-    var doorArray: [Door]? = []
+    var doorArray: [Adoor]? = []
     var customBGColor = UIColor(red: (22/255), green: (19/255), blue: (24/255), alpha: 1)
     
     var edgeLimits = SKTileMapNode()
@@ -60,13 +60,13 @@ class GameScene: SKScene
         let y = -200
         let z = 8
         
+        createDoors()
+        setupADoors()
         createLever()
         createPressPlates()
         createGemDias()
         createAlcoves()
         createChests()
-        createDoors()
-        setupADoors()
         createWallCollisions()
         addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0")))
         addEntity(entity : World(bottom: -64, left : -47, top : 50, right : 0))
@@ -153,7 +153,7 @@ class GameScene: SKScene
             for column in 0..<doorMap.numberOfColumns
             {
                 guard tile(in: doorMap, at: (column, row)) != nil else {continue}
-                let tempDoor = Door(x: tempX! + 8, y: tempY! + 24, z: 5, s: SKSpriteNode(imageNamed: "door_bg"))
+                let tempDoor = Adoor(x: tempX! + 8, y: tempY! + 24, z: 2, s: SKSpriteNode(imageNamed: "door_bg"))
                 addEntity(entity: tempDoor)
                 doorArray?.append(tempDoor)
                 i += 1
@@ -164,14 +164,14 @@ class GameScene: SKScene
     
     func createDoors()
     {
-        var i: Int = 0
+        var i = 0
         guard let doorMap = childNode(withName: "Interactable_Door") as? SKTileMapNode else {return}
         for row in 0..<doorMap.numberOfRows
         {
             for column in 0..<doorMap.numberOfColumns
             {
                 guard tile(in: doorMap, at: (column, row)) != nil else {continue}
-                let tempDoor = Door(x: tempX! + 8, y: tempY! + 24, z: 5, s: SKSpriteNode(imageNamed: "door_bg"))
+                let tempDoor = Door(x: tempX! + 8, y: tempY! + 24, z: 2, s: SKSpriteNode(imageNamed: "door_bg"), n: String(i))
                 addEntity(entity: tempDoor)
                 i += 1
                 doorMap.removeFromParent()
@@ -181,16 +181,28 @@ class GameScene: SKScene
     
     func createLever()
     {
+        var i = 0
         guard let leverMap = childNode(withName: "Interactable_wLever") as? SKTileMapNode else {return}
         for row in 0..<leverMap.numberOfRows
         {
             for column in 0..<leverMap.numberOfColumns
             {
                 guard tile(in: leverMap, at: (column, row)) != nil else {continue}
-                addEntity(entity: Interactable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "switch_wall_on")))
+                if i == 0
+                {
+                    let tempLever = Lever(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "switch_wall_on"), d: doorArray![1])
+                    addEntity(entity: tempLever)
+                }
+                else if i == 1
+                {
+                    let tempLever = Lever(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "switch_wall_on"), d: doorArray![0])
+                    addEntity(entity: tempLever)
+                }
+                i += 1
                 leverMap.removeFromParent()
             }
         }
+        
     }
     
     func createPressPlates()

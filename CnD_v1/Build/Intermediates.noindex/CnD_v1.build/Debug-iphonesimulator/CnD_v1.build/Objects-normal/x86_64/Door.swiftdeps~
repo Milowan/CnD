@@ -13,44 +13,79 @@ depends-top-level:
 - !private "=="
 - "AssignmentPrecedence"
 - "Bool"
+- !private "BooleanLiteralType"
 - "Door"
+- !private "FloatLiteralType"
 - "Int"
+- !private "IntegerLiteralType"
 - "Interactable"
 - "SKSpriteNode"
+- "String"
+- !private "doorClosed"
+- !private "doorOpen"
+- !private "setDoorAnims"
+- !private "startAnimation"
 depends-member:
 - ["6CnD_v14DoorC", "Bool"]
 - ["6CnD_v14DoorC", "Int"]
 - ["6CnD_v14DoorC", "SKSpriteNode"]
+- ["6CnD_v14DoorC", "String"]
 - ["6CnD_v14DoorC", "act"]
 - !private ["6CnD_v14DoorC", "collisionMask"]
+- !private ["6CnD_v14DoorC", "doorClosed"]
+- !private ["6CnD_v14DoorC", "doorOpen"]
 - ["6CnD_v14DoorC", "i"]
 - ["6CnD_v14DoorC", "init"]
 - ["6CnD_v14DoorC", "isOpen"]
+- ["6CnD_v14DoorC", "name"]
+- !private ["6CnD_v14DoorC", "setDoorAnims"]
+- !private ["6CnD_v14DoorC", "sprite"]
+- !private ["6CnD_v14DoorC", "startAnimation"]
 - ["6CnD_v16EntityC", "Bool"]
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "SKSpriteNode"]
+- ["6CnD_v16EntityC", "String"]
 - ["6CnD_v16EntityC", "act"]
 - !private ["6CnD_v16EntityC", "collisionMask"]
+- !private ["6CnD_v16EntityC", "doorClosed"]
+- !private ["6CnD_v16EntityC", "doorOpen"]
 - ["6CnD_v16EntityC", "i"]
 - ["6CnD_v16EntityC", "isOpen"]
+- ["6CnD_v16EntityC", "name"]
+- !private ["6CnD_v16EntityC", "setDoorAnims"]
+- !private ["6CnD_v16EntityC", "sprite"]
+- !private ["6CnD_v16EntityC", "startAnimation"]
 - !private ["SQ", "NONE"]
 - !private ["SQ", "WORLD"]
 - ["SQ", ""]
 - !private ["SQ", "collisionMask"]
+- !private ["SQ", "doorClosed"]
+- !private ["SQ", "doorOpen"]
 - !private ["SQ", "i"]
 - !private ["SQ", "init"]
 - !private ["SQ", "isOpen"]
+- !private ["SQ", "name"]
+- !private ["SQ", "setDoorAnims"]
+- !private ["SQ", "sprite"]
+- !private ["SQ", "startAnimation"]
 - !private ["SH", "NONE"]
 - !private ["SH", "WORLD"]
 - ["6CnD_v112InteractableC", "Bool"]
 - ["6CnD_v112InteractableC", "Int"]
 - ["6CnD_v112InteractableC", "SKSpriteNode"]
+- ["6CnD_v112InteractableC", "String"]
 - ["6CnD_v112InteractableC", ""]
 - ["6CnD_v112InteractableC", "act"]
 - !private ["6CnD_v112InteractableC", "collisionMask"]
+- !private ["6CnD_v112InteractableC", "doorClosed"]
+- !private ["6CnD_v112InteractableC", "doorOpen"]
 - ["6CnD_v112InteractableC", "i"]
 - ["6CnD_v112InteractableC", "init"]
 - ["6CnD_v112InteractableC", "isOpen"]
+- ["6CnD_v112InteractableC", "name"]
+- !private ["6CnD_v112InteractableC", "setDoorAnims"]
+- !private ["6CnD_v112InteractableC", "sprite"]
+- !private ["6CnD_v112InteractableC", "startAnimation"]
 - !private ["6CnD_v113collisionTypeO", "NONE"]
 - !private ["6CnD_v113collisionTypeO", "WORLD"]
 depends-nominal:
@@ -93,4 +128,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "01c7a8d1a86cf4c6ab7eb008109a280f"
+interface-hash: "703a7c058f8ced723860c32a3e6e4c9a"

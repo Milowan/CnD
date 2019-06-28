@@ -11,7 +11,6 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - "Bool"
-- !private "BooleanLiteralType"
 - "CastingPrecedence"
 - !private "GameScene"
 - "GameViewController"

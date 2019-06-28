@@ -135,11 +135,11 @@
 				26FBAEFB22A5965C00AEDCDC /* World.swift */,
 				26FBAEFC22A5965C00AEDCDC /* Button.swift */,
 				26F99AAF22A98CD800D0F879 /* Collectable.swift */,
+				262640D322C1530E006CA69C /* Adoor.swift */,
 				A6216A4922B97B6B001DB637 /* Door.swift */,
 				A611F0FC22BD4D8400F18221 /* PressPlates.swift */,
 				262640CF22C14EDE006CA69C /* Lever.swift */,
 				262640D122C15120006CA69C /* Dais.swift */,
-				262640D322C1530E006CA69C /* Adoor.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
