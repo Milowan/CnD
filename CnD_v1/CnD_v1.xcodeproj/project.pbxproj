@@ -21,6 +21,7 @@
 		26FAFE7922C6896800E36901 /* GreaterSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FAFE7822C6896800E36901 /* GreaterSkeleton.swift */; };
 		26FAFE7B22C68A1B00E36901 /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FAFE7A22C68A1B00E36901 /* Boss.swift */; };
 		26FAFE7E22C68BEB00E36901 /* SkeletonLord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FAFE7D22C68BEB00E36901 /* SkeletonLord.swift */; };
+		26FAFE8022C68FDA00E36901 /* LevelGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FAFE7F22C68FDA00E36901 /* LevelGenerator.swift */; };
 		26FBAF0222A5965C00AEDCDC /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAEFB22A5965C00AEDCDC /* World.swift */; };
 		26FBAF0322A5965C00AEDCDC /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAEFC22A5965C00AEDCDC /* Button.swift */; };
 		26FBAF0422A5965C00AEDCDC /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAEFD22A5965C00AEDCDC /* Entity.swift */; };
@@ -78,6 +79,7 @@
 		26FAFE7822C6896800E36901 /* GreaterSkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreaterSkeleton.swift; sourceTree = "<group>"; };
 		26FAFE7A22C68A1B00E36901 /* Boss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boss.swift; sourceTree = "<group>"; };
 		26FAFE7D22C68BEB00E36901 /* SkeletonLord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLord.swift; sourceTree = "<group>"; };
+		26FAFE7F22C68FDA00E36901 /* LevelGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelGenerator.swift; sourceTree = "<group>"; };
 		26FBAEFB22A5965C00AEDCDC /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
 		26FBAEFC22A5965C00AEDCDC /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		26FBAEFD22A5965C00AEDCDC /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				A659255C22BAB49F001ECE56 /* Main.storyboard */,
 				A686E4C022A45406004E1B64 /* LaunchScreen.storyboard */,
 				A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */,
+				26FAFE7F22C68FDA00E36901 /* LevelGenerator.swift */,
 				A65DA19522C27BEF00F4F687 /* InventorySceneRef.sks */,
 				26FAFE7322C67BCE00E36901 /* Item */,
 				A658836A22B2C36F00F7F2CC /* Entity */,
@@ -403,6 +406,7 @@
 				2601E8CC22C2AF77004EB047 /* Enemy.swift in Sources */,
 				262640D222C15120006CA69C /* Dais.swift in Sources */,
 				2601E8CE22C2B136004EB047 /* Inventory.swift in Sources */,
+				26FAFE8022C68FDA00E36901 /* LevelGenerator.swift in Sources */,
 				26FAFE7922C6896800E36901 /* GreaterSkeleton.swift in Sources */,
 				26F9808B22A6FD1800E7B5FE /* Gear.swift in Sources */,
 				26FBAF0622A5965C00AEDCDC /* Pos.swift in Sources */,
