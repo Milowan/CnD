@@ -28,20 +28,20 @@ class LevelGenerator
         scene.currentLevel = levelNum
         scene.scaleMode = .aspectFill
         
-        gameScene = scene
+        self.gameScene = scene
         
         return scene
     }
     
     func generate()
     {
+        createDoors()
+        setupADoors()
         createLever()
         createPressPlates()
         createGemDias()
         createAlcoves()
         createChests()
-        createDoors()
-        setupADoors()
         createWallCollisions()
     }
     
@@ -63,7 +63,7 @@ class LevelGenerator
             for column in 0..<doorMap.numberOfColumns
             {
                 guard tile(in: doorMap, at: (column, row)) != nil else {continue}
-                let tempDoor = Door(x: tempX! + 8, y: tempY! + 24, z: 5, s: SKSpriteNode(imageNamed: "door_bg"))
+                let tempDoor = Adoor(x: tempX! + 8, y: tempY! + 24, z: 5, s: SKSpriteNode(imageNamed: "door_bg"))
                 gameScene!.addEntity(entity: tempDoor)
                 gameScene!.doorArray?.append(tempDoor)
                 i += 1
@@ -81,7 +81,7 @@ class LevelGenerator
             for column in 0..<doorMap.numberOfColumns
             {
                 guard tile(in: doorMap, at: (column, row)) != nil else {continue}
-                let tempDoor = Door(x: tempX! + 8, y: tempY! + 24, z: 5, s: SKSpriteNode(imageNamed: "door_bg"))
+                let tempDoor = Door(x: tempX! + 8, y: tempY! + 24, z: 5, s: SKSpriteNode(imageNamed: "door_bg"), n : String(i))
                 gameScene!.addEntity(entity: tempDoor)
                 i += 1
                 doorMap.removeFromParent()
@@ -91,13 +91,25 @@ class LevelGenerator
     
     func createLever()
     {
+        var i = 0
+        
         guard let leverMap = gameScene!.childNode(withName: "Interactable_wLever") as? SKTileMapNode else {return}
         for row in 0..<leverMap.numberOfRows
         {
             for column in 0..<leverMap.numberOfColumns
             {
                 guard tile(in: leverMap, at: (column, row)) != nil else {continue}
-                gameScene!.addEntity(entity: Interactable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "switch_wall_on")))
+                if i == 0
+                {
+                    let tempLever = Lever(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "switch_wall_on"), d: gameScene!.doorArray![1])
+                    gameScene!.addEntity(entity: tempLever)
+                }
+                else if i == 1
+                {
+                    let tempLever = Lever(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "switch_wall_on"), d: gameScene!.doorArray![0])
+                    gameScene!.addEntity(entity: tempLever)
+                }
+                i += 1
                 leverMap.removeFromParent()
             }
         }
