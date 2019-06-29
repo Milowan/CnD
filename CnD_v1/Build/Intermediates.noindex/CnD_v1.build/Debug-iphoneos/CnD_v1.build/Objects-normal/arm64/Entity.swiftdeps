@@ -1,0 +1,215 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "collisionType"
+- "Entity"
+- "=="
+provides-nominal:
+- "6CnD_v113collisionTypeO"
+- "6CnD_v16EntityC"
+provides-member:
+- ["6CnD_v113collisionTypeO", ""]
+- ["6CnD_v16EntityC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "&&"
+- "=="
+- "AssignmentPrecedence"
+- "Bool"
+- !private "CGFloat"
+- !private "CGPoint"
+- "Entity"
+- "Equatable"
+- "Int"
+- "Pos"
+- "SKSpriteNode"
+- "collisionType"
+depends-member:
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["SB", "init"]
+- !private ["12CoreGraphics7CGFloatV", "init"]
+- !private ["So7CGPointV", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "position"]
+- !private ["s7CVarArgP", "zPosition"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "position"]
+- !private ["s28CustomDebugStringConvertibleP", "zPosition"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "position"]
+- !private ["s23CustomStringConvertibleP", "zPosition"]
+- !private ["Se", "init"]
+- !private ["SE", "init"]
+- ["6CnD_v16EntityC", "=="]
+- ["6CnD_v16EntityC", "Bool"]
+- !private ["6CnD_v16EntityC", "CGFloat"]
+- !private ["6CnD_v16EntityC", "CGPoint"]
+- ["6CnD_v16EntityC", "Entity"]
+- ["6CnD_v16EntityC", "Int"]
+- ["6CnD_v16EntityC", "Pos"]
+- ["6CnD_v16EntityC", "SKSpriteNode"]
+- ["6CnD_v16EntityC", "collision"]
+- ["6CnD_v16EntityC", "collisionMask"]
+- ["6CnD_v16EntityC", "collisionType"]
+- ["6CnD_v16EntityC", "deinit"]
+- ["6CnD_v16EntityC", "draw"]
+- ["6CnD_v16EntityC", "height"]
+- ["6CnD_v16EntityC", "init"]
+- ["6CnD_v16EntityC", "pos"]
+- ["6CnD_v16EntityC", "sprite"]
+- ["6CnD_v16EntityC", "update"]
+- ["6CnD_v16EntityC", "width"]
+- ["SQ", "=="]
+- !private ["SQ", "CGFloat"]
+- !private ["SQ", "CGPoint"]
+- !private ["SQ", "Pos"]
+- ["SQ", ""]
+- ["SQ", "_rawHashValue"]
+- !private ["SQ", "collisionMask"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "init"]
+- !private ["SQ", "pos"]
+- !private ["SQ", "position"]
+- !private ["SQ", "sprite"]
+- !private ["SQ", "zPosition"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["SF", "init"]
+- ["SH", "=="]
+- ["SH", ""]
+- ["SH", "_rawHashValue"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "init"]
+- !private ["SH", "position"]
+- !private ["SH", "zPosition"]
+- !private ["s6HasherV", "combine"]
+- !private ["So8NSCodingP", "position"]
+- !private ["So8NSCodingP", "zPosition"]
+- !private ["So9NSCopyingP", "position"]
+- !private ["So9NSCopyingP", "zPosition"]
+- !private ["So8NSObjectC", "position"]
+- !private ["So8NSObjectC", "zPosition"]
+- !private ["So8NSObjectP", "position"]
+- !private ["So8NSObjectP", "zPosition"]
+- !private ["So14NSSecureCodingP", "position"]
+- !private ["So14NSSecureCodingP", "zPosition"]
+- !private ["Sj", "init"]
+- !private ["6CnD_v13PosC", "init"]
+- !private ["So6SKNodeC", "position"]
+- !private ["So6SKNodeC", "zPosition"]
+- !private ["So12SKSpriteNodeC", "position"]
+- !private ["So12SKSpriteNodeC", "zPosition"]
+- !private ["So10SKWarpableP", "position"]
+- !private ["So10SKWarpableP", "zPosition"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
+- !private ["So18UIFocusEnvironmentP", "position"]
+- !private ["So18UIFocusEnvironmentP", "zPosition"]
+- !private ["So11UIFocusItemP", "position"]
+- !private ["So11UIFocusItemP", "zPosition"]
+- !private ["So30UIPasteConfigurationSupportingP", "position"]
+- !private ["So30UIPasteConfigurationSupportingP", "zPosition"]
+- !private ["So11UIResponderC", "position"]
+- !private ["So11UIResponderC", "zPosition"]
+- !private ["So30UIResponderStandardEditActionsP", "position"]
+- !private ["So30UIResponderStandardEditActionsP", "zPosition"]
+- !private ["So23UIUserActivityRestoringP", "position"]
+- !private ["So23UIUserActivityRestoringP", "zPosition"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "position"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "zPosition"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "position"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "zPosition"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- ["6CnD_v113collisionTypeO", "=="]
+- ["6CnD_v113collisionTypeO", "ENEMY"]
+- ["6CnD_v113collisionTypeO", "NONE"]
+- ["6CnD_v113collisionTypeO", "PLAYER"]
+- ["6CnD_v113collisionTypeO", "WORLD"]
+- ["6CnD_v113collisionTypeO", "__derived_enum_equals"]
+- ["6CnD_v113collisionTypeO", "_rawHashValue"]
+- ["6CnD_v113collisionTypeO", "deinit"]
+- ["6CnD_v113collisionTypeO", "hash"]
+- ["6CnD_v113collisionTypeO", "hashValue"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "SB"
+- !private "12CoreGraphics7CGFloatV"
+- !private "So7CGPointV"
+- !private "s7CVarArgP"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "6CnD_v16EntityC"
+- "SQ"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "SF"
+- "SH"
+- !private "s6HasherV"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sj"
+- !private "6CnD_v13PosC"
+- !private "So6SKNodeC"
+- !private "So12SKSpriteNodeC"
+- !private "So10SKWarpableP"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So23UIUserActivityRestoringP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- "6CnD_v113collisionTypeO"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ModelIO.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SpriteKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "3bb288b4681077d92580634ec6442242"

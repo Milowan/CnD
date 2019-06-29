@@ -117,6 +117,34 @@ class GameScene: SKScene
                 }
             }
         }
+        tileSet = SKTileSet(named: "UI Map Tiles")!
+        for tileGroup in tileSet!.tileGroups
+        {
+            for tileRule in tileGroup.rules
+            {
+                for tileDefinition in tileRule.tileDefinitions
+                {
+                    for texture in tileDefinition.textures
+                    {
+                        texture.filteringMode = .nearest
+                    }
+                }
+            }
+        }
+        tileSet = SKTileSet(named: "UiText")!
+        for tileGroup in tileSet!.tileGroups
+        {
+            for tileRule in tileGroup.rules
+            {
+                for tileDefinition in tileRule.tileDefinitions
+                {
+                    for texture in tileDefinition.textures
+                    {
+                        texture.filteringMode = .nearest
+                    }
+                }
+            }
+        }
     }
 
     func addEntity(entity : Entity)

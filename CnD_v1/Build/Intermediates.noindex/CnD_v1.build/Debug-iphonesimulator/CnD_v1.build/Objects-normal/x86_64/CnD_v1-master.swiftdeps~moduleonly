@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "68bada735cf5513398e2c3cc8de28cad"
-build_time: [1561763018, 265461000]
+build_time: [1561818216, 72874000]
 inputs:
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Entity/Interactable/Dais.swift": [1561746469, 845666495]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Item/Helmet.swift": [1561746469, 840890900]
@@ -13,7 +13,7 @@ inputs:
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Entity/World.swift": [1561146393, 616515097]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Stats.swift": [1561661827, 49285119]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/BSNode.swift": [1561052711, 757289691]
-  "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/GameScene.swift": [1561748747, 335580888]
+  "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/GameScene.swift": [1561818215, 364073266]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Item/Item.swift": [1561746469, 840491634]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Entity/Interactable/Door.swift": [1561757811, 211434600]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Entity/Interactable/Interactable.swift": [1561757684, 672133227]
