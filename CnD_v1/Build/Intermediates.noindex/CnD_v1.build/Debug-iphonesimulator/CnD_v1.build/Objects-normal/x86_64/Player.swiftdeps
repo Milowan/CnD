@@ -10,7 +10,9 @@ provides-member:
 - ["6CnD_v16PlayerC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!"
 - !private "!="
+- !private "%"
 - !private "&&"
 - !private "*"
 - !private "+"
@@ -25,12 +27,14 @@ depends-top-level:
 - "Armour"
 - "AssignmentPrecedence"
 - !private "BSNode"
+- "Bool"
 - "BooleanLiteralType"
 - "Button"
 - !private "CGFloat"
 - !private "CGSize"
 - "CastingPrecedence"
 - "Direction"
+- "Enemy"
 - "Entity"
 - "FloatLiteralType"
 - !private "GameScene"
@@ -52,6 +56,7 @@ depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
 - !private ["6CnD_v16ArmourC", "baseDef"]
 - !private ["6CnD_v16ArmourC", "baseEvasion"]
+- !private ["6CnD_v16ArmourC", "init"]
 - !private ["6CnD_v16ArmourC", "stats"]
 - !private ["Sa", "append"]
 - !private ["6CnD_v16BSNodeC", "deinit"]
@@ -158,12 +163,17 @@ depends-member:
 - !private ["SE", "width"]
 - !private ["SE", "x"]
 - !private ["SE", "y"]
+- !private ["6CnD_v15EnemyC", "def"]
+- !private ["6CnD_v15EnemyC", "hp"]
+- !private ["6CnD_v15EnemyC", "isAlive"]
 - ["6CnD_v16EntityC", "Armour"]
 - !private ["6CnD_v16EntityC", "BSNode"]
+- ["6CnD_v16EntityC", "Bool"]
 - ["6CnD_v16EntityC", "Button"]
 - !private ["6CnD_v16EntityC", "CGFloat"]
 - !private ["6CnD_v16EntityC", "CGSize"]
 - ["6CnD_v16EntityC", "Direction"]
+- ["6CnD_v16EntityC", "Enemy"]
 - ["6CnD_v16EntityC", "Entity"]
 - !private ["6CnD_v16EntityC", "GameScene"]
 - ["6CnD_v16EntityC", "Helmet"]
@@ -189,7 +199,9 @@ depends-member:
 - ["6CnD_v16EntityC", "calcTotalPRS"]
 - ["6CnD_v16EntityC", "collision"]
 - !private ["6CnD_v16EntityC", "collisionMask"]
+- ["6CnD_v16EntityC", "combatTimer"]
 - ["6CnD_v16EntityC", "dPadBG"]
+- !private ["6CnD_v16EntityC", "def"]
 - !private ["6CnD_v16EntityC", "deinit"]
 - ["6CnD_v16EntityC", "direction"]
 - ["6CnD_v16EntityC", "down"]
@@ -197,20 +209,27 @@ depends-member:
 - ["6CnD_v16EntityC", "downRight"]
 - !private ["6CnD_v16EntityC", "height"]
 - ["6CnD_v16EntityC", "helmet"]
+- !private ["6CnD_v16EntityC", "hp"]
+- ["6CnD_v16EntityC", "inCombat"]
 - ["6CnD_v16EntityC", "init"]
 - ["6CnD_v16EntityC", "interactButton"]
 - !private ["6CnD_v16EntityC", "interactable"]
 - ["6CnD_v16EntityC", "inventory"]
 - ["6CnD_v16EntityC", "inventoryButton"]
+- !private ["6CnD_v16EntityC", "isAlive"]
 - ["6CnD_v16EntityC", "isIdle"]
 - ["6CnD_v16EntityC", "lastDirection"]
 - ["6CnD_v16EntityC", "left"]
 - ["6CnD_v16EntityC", "miniMapButton"]
 - ["6CnD_v16EntityC", "movSpeed"]
+- ["6CnD_v16EntityC", "palTextures"]
+- ["6CnD_v16EntityC", "parTextures"]
 - ["6CnD_v16EntityC", "pdTextures"]
 - ["6CnD_v16EntityC", "piTextures"]
 - ["6CnD_v16EntityC", "plTextures"]
 - !private ["6CnD_v16EntityC", "player"]
+- ["6CnD_v16EntityC", "playerAtkLeft"]
+- ["6CnD_v16EntityC", "playerAtkRight"]
 - ["6CnD_v16EntityC", "playerDown"]
 - ["6CnD_v16EntityC", "playerIdle"]
 - ["6CnD_v16EntityC", "playerLeft"]
@@ -227,6 +246,7 @@ depends-member:
 - ["6CnD_v16EntityC", "stats"]
 - ["6CnD_v16EntityC", "stopAnimation"]
 - ["6CnD_v16EntityC", "sword"]
+- ["6CnD_v16EntityC", "target"]
 - ["6CnD_v16EntityC", "tempString"]
 - ["6CnD_v16EntityC", "uiBotMargin"]
 - ["6CnD_v16EntityC", "uiBuffer"]
@@ -235,14 +255,17 @@ depends-member:
 - ["6CnD_v16EntityC", "upLeft"]
 - ["6CnD_v16EntityC", "upRight"]
 - ["6CnD_v16EntityC", "update"]
+- ["6CnD_v16EntityC", "victory"]
 - !private ["6CnD_v16EntityC", "width"]
 - ["SQ", "=="]
+- !private ["SQ", "Armour"]
 - !private ["SQ", "BSNode"]
 - !private ["SQ", "Button"]
 - !private ["SQ", "CGFloat"]
 - !private ["SQ", "CGSize"]
 - !private ["SQ", "DOWN"]
 - !private ["SQ", "GameScene"]
+- !private ["SQ", "Helmet"]
 - !private ["SQ", "Int"]
 - !private ["SQ", "Inventory"]
 - !private ["SQ", "LEFT"]
@@ -254,6 +277,7 @@ depends-member:
 - !private ["SQ", "SKSpriteNode"]
 - !private ["SQ", "SKTexture"]
 - ["SQ", "Stats"]
+- !private ["SQ", "Sword"]
 - !private ["SQ", "UP"]
 - !private ["SQ", "WORLD"]
 - ["SQ", ""]
@@ -266,8 +290,12 @@ depends-member:
 - !private ["SQ", "animate"]
 - !private ["SQ", "append"]
 - !private ["SQ", "armour"]
+- !private ["SQ", "calcTotalATS"]
+- !private ["SQ", "calcTotalDMG"]
 - !private ["SQ", "collisionMask"]
+- !private ["SQ", "combatTimer"]
 - !private ["SQ", "dPadBG"]
+- !private ["SQ", "def"]
 - !private ["SQ", "direction"]
 - !private ["SQ", "down"]
 - !private ["SQ", "downLeft"]
@@ -278,21 +306,28 @@ depends-member:
 - ["SQ", "hashValue"]
 - !private ["SQ", "height"]
 - !private ["SQ", "helmet"]
+- !private ["SQ", "hp"]
+- !private ["SQ", "inCombat"]
 - !private ["SQ", "init"]
 - !private ["SQ", "interactButton"]
 - !private ["SQ", "interactable"]
 - !private ["SQ", "inventory"]
 - !private ["SQ", "inventoryButton"]
+- !private ["SQ", "isAlive"]
 - !private ["SQ", "isIdle"]
 - !private ["SQ", "lastDirection"]
 - !private ["SQ", "left"]
 - !private ["SQ", "miniMapButton"]
 - !private ["SQ", "movSpeed"]
 - !private ["SQ", "nearest"]
+- !private ["SQ", "palTextures"]
+- !private ["SQ", "parTextures"]
 - !private ["SQ", "pdTextures"]
 - !private ["SQ", "piTextures"]
 - !private ["SQ", "plTextures"]
 - !private ["SQ", "player"]
+- !private ["SQ", "playerAtkLeft"]
+- !private ["SQ", "playerAtkRight"]
 - !private ["SQ", "playerDown"]
 - !private ["SQ", "playerIdle"]
 - !private ["SQ", "playerLeft"]
@@ -314,6 +349,7 @@ depends-member:
 - !private ["SQ", "stats"]
 - !private ["SQ", "stopAnimation"]
 - !private ["SQ", "sword"]
+- !private ["SQ", "target"]
 - !private ["SQ", "tempString"]
 - !private ["SQ", "texture"]
 - !private ["SQ", "uiBotMargin"]
@@ -322,6 +358,7 @@ depends-member:
 - !private ["SQ", "up"]
 - !private ["SQ", "upLeft"]
 - !private ["SQ", "upRight"]
+- !private ["SQ", "victory"]
 - !private ["SQ", "width"]
 - !private ["SQ", "x"]
 - !private ["SQ", "y"]
@@ -371,6 +408,7 @@ depends-member:
 - !private ["s6HasherV", "combine"]
 - !private ["6CnD_v16HelmetC", "baseDef"]
 - !private ["6CnD_v16HelmetC", "basePrecision"]
+- !private ["6CnD_v16HelmetC", "init"]
 - !private ["6CnD_v16HelmetC", "stats"]
 - !private ["Si", "init"]
 - !private ["6CnD_v112InteractableC", "act"]
@@ -466,10 +504,12 @@ depends-member:
 - !private ["Sj", "init"]
 - ["6CnD_v16PlayerC", "Armour"]
 - !private ["6CnD_v16PlayerC", "BSNode"]
+- ["6CnD_v16PlayerC", "Bool"]
 - ["6CnD_v16PlayerC", "Button"]
 - !private ["6CnD_v16PlayerC", "CGFloat"]
 - !private ["6CnD_v16PlayerC", "CGSize"]
 - ["6CnD_v16PlayerC", "Direction"]
+- ["6CnD_v16PlayerC", "Enemy"]
 - ["6CnD_v16PlayerC", "Entity"]
 - !private ["6CnD_v16PlayerC", "GameScene"]
 - ["6CnD_v16PlayerC", "Helmet"]
@@ -491,12 +531,14 @@ depends-member:
 - ["6CnD_v16PlayerC", "calcTotalEVS"]
 - ["6CnD_v16PlayerC", "calcTotalPRS"]
 - ["6CnD_v16PlayerC", "collision"]
+- ["6CnD_v16PlayerC", "combatTimer"]
 - ["6CnD_v16PlayerC", "dPadBG"]
 - ["6CnD_v16PlayerC", "direction"]
 - ["6CnD_v16PlayerC", "down"]
 - ["6CnD_v16PlayerC", "downLeft"]
 - ["6CnD_v16PlayerC", "downRight"]
 - ["6CnD_v16PlayerC", "helmet"]
+- ["6CnD_v16PlayerC", "inCombat"]
 - ["6CnD_v16PlayerC", "init"]
 - ["6CnD_v16PlayerC", "interactButton"]
 - ["6CnD_v16PlayerC", "inventory"]
@@ -506,9 +548,13 @@ depends-member:
 - ["6CnD_v16PlayerC", "left"]
 - ["6CnD_v16PlayerC", "miniMapButton"]
 - ["6CnD_v16PlayerC", "movSpeed"]
+- ["6CnD_v16PlayerC", "palTextures"]
+- ["6CnD_v16PlayerC", "parTextures"]
 - ["6CnD_v16PlayerC", "pdTextures"]
 - ["6CnD_v16PlayerC", "piTextures"]
 - ["6CnD_v16PlayerC", "plTextures"]
+- ["6CnD_v16PlayerC", "playerAtkLeft"]
+- ["6CnD_v16PlayerC", "playerAtkRight"]
 - ["6CnD_v16PlayerC", "playerDown"]
 - ["6CnD_v16PlayerC", "playerIdle"]
 - ["6CnD_v16PlayerC", "playerLeft"]
@@ -525,6 +571,7 @@ depends-member:
 - ["6CnD_v16PlayerC", "stats"]
 - ["6CnD_v16PlayerC", "stopAnimation"]
 - ["6CnD_v16PlayerC", "sword"]
+- ["6CnD_v16PlayerC", "target"]
 - ["6CnD_v16PlayerC", "tempString"]
 - ["6CnD_v16PlayerC", "uiBotMargin"]
 - ["6CnD_v16PlayerC", "uiBuffer"]
@@ -533,6 +580,7 @@ depends-member:
 - ["6CnD_v16PlayerC", "upLeft"]
 - ["6CnD_v16PlayerC", "upRight"]
 - ["6CnD_v16PlayerC", "update"]
+- ["6CnD_v16PlayerC", "victory"]
 - !private ["6CnD_v13PosC", "init"]
 - !private ["6CnD_v13PosC", "x"]
 - !private ["6CnD_v13PosC", "y"]
@@ -593,6 +641,7 @@ depends-member:
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["6CnD_v15SwordC", "baseDamage"]
 - !private ["6CnD_v15SwordC", "baseSpeed"]
+- !private ["6CnD_v15SwordC", "init"]
 - !private ["6CnD_v15SwordC", "stats"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
@@ -732,6 +781,7 @@ depends-nominal:
 - !private "s26DefaultStringInterpolationV"
 - "6CnD_v19DirectionO"
 - !private "SE"
+- !private "6CnD_v15EnemyC"
 - "6CnD_v16EntityC"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
@@ -830,4 +880,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "8f1239a685ec62ac09dda26f7e9e84ad"
+interface-hash: "6ca943c1e5e7287abe148a38fe6e598a"

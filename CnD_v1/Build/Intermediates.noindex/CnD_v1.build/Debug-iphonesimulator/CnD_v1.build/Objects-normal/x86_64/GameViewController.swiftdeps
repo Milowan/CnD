@@ -11,11 +11,8 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - "Bool"
-- !private "BooleanLiteralType"
 - "CastingPrecedence"
-- !private "FloatLiteralType"
 - "GameViewController"
-- !private "IntegerLiteralType"
 - !private "LevelGenerator"
 - !private "SKView"
 - "UIViewController"
