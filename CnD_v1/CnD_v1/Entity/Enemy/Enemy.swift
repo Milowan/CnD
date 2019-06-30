@@ -17,6 +17,7 @@ class Enemy : Entity
     var evs = 0
     var prs = 0
     var hp = 0
+    var isAlive = true
     
     init(x : Int, y : Int, z : Int, s : SKSpriteNode, st : [Int])
     {
@@ -49,5 +50,13 @@ class Enemy : Entity
             }
         }
         super.init(x : x, y : y, z : z, s : s, m : .ENEMY)
+    }
+    
+    override func update()
+    {
+        if hp <= 0
+        {
+            isAlive = false
+        }
     }
 }
