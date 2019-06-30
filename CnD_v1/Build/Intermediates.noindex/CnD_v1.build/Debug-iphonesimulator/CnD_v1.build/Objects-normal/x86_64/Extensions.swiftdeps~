@@ -3,43 +3,75 @@ provides-top-level:
 provides-nominal:
 provides-member:
 - ["So9SKTextureC", ""]
+- ["So6SKNodeC", ""]
 - ["So9SKTextureC", "init"]
+- ["So6SKNodeC", "actionForKeyIsRunning"]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!="
 - "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "SKNode"
 - "SKTexture"
 - "String"
 depends-member:
+- !private ["s7CVarArgP", "actionForKey"]
 - !private ["s7CVarArgP", "filteringMode"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "actionForKey"]
 - !private ["s28CustomDebugStringConvertibleP", "filteringMode"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "actionForKey"]
 - !private ["s23CustomStringConvertibleP", "filteringMode"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["SQ", "actionForKey"]
 - !private ["SQ", "filteringMode"]
 - !private ["SQ", "init"]
 - !private ["SQ", "nearest"]
+- !private ["SH", "actionForKey"]
 - !private ["SH", "filteringMode"]
 - !private ["SH", "init"]
 - !private ["SH", "nearest"]
+- !private ["So8NSCodingP", "actionForKey"]
 - !private ["So8NSCodingP", "filteringMode"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "actionForKey"]
 - !private ["So9NSCopyingP", "filteringMode"]
 - !private ["So9NSCopyingP", "init"]
+- ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "actionForKey"]
+- ["So8NSObjectC", "actionForKeyIsRunning"]
 - !private ["So8NSObjectC", "filteringMode"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectP", "actionForKey"]
 - !private ["So8NSObjectP", "filteringMode"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So14NSSecureCodingP", "actionForKey"]
 - !private ["So14NSSecureCodingP", "filteringMode"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["SY", "nearest"]
+- ["So6SKNodeC", "Bool"]
+- ["So6SKNodeC", "String"]
+- !private ["So6SKNodeC", "actionForKey"]
+- ["So6SKNodeC", "actionForKeyIsRunning"]
 - ["So9SKTextureC", "String"]
 - !private ["So9SKTextureC", "filteringMode"]
 - ["So9SKTextureC", "init"]
 - !private ["So22SKTextureFilteringModeV", "nearest"]
+- !private ["So18UIFocusEnvironmentP", "actionForKey"]
+- !private ["So11UIFocusItemP", "actionForKey"]
+- !private ["So30UIPasteConfigurationSupportingP", "actionForKey"]
+- ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "actionForKey"]
+- ["So11UIResponderC", "actionForKeyIsRunning"]
+- !private ["So30UIResponderStandardEditActionsP", "actionForKey"]
+- !private ["So23UIUserActivityRestoringP", "actionForKey"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "filteringMode"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "actionForKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "filteringMode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 depends-nominal:
@@ -54,8 +86,15 @@ depends-nominal:
 - !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "SY"
+- "So6SKNodeC"
 - "So9SKTextureC"
 - !private "So22SKTextureFilteringModeV"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So23UIUserActivityRestoringP"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 depends-dynamic-lookup:
@@ -91,4 +130,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f7b68060db544128ec916d12f4106c3c"
+interface-hash: "e9e852a97d4147f1a8572d138470b2f5"

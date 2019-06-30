@@ -47,7 +47,6 @@ depends-member:
 - ["6CnD_v15AdoorC", "toggleState"]
 - !private ["Sa", "append"]
 - !private ["SK", "append"]
-- !private ["SK", "init"]
 - !private ["s7CVarArgP", "action"]
 - !private ["s7CVarArgP", "animate"]
 - !private ["s7CVarArgP", "append"]
@@ -56,8 +55,6 @@ depends-member:
 - !private ["s7CVarArgP", "reversed"]
 - !private ["s7CVarArgP", "run"]
 - !private ["Sl", "append"]
-- !private ["Sl", "init"]
-- !private ["SL", "init"]
 - !private ["10Foundation15ContiguousBytesP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "action"]
 - !private ["s28CustomDebugStringConvertibleP", "animate"]
@@ -67,7 +64,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "reversed"]
 - !private ["s28CustomDebugStringConvertibleP", "run"]
 - !private ["s17CustomReflectableP", "append"]
-- !private ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "action"]
 - !private ["s23CustomStringConvertibleP", "animate"]
 - !private ["s23CustomStringConvertibleP", "append"]
@@ -79,11 +75,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "run"]
 - !private ["10Foundation12DataProtocolP", "append"]
 - !private ["Se", "append"]
-- !private ["Se", "init"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "append"]
-- !private ["SE", "init"]
 - ["6CnD_v16EntityC", "Bool"]
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "SKAction"]
@@ -107,7 +101,6 @@ depends-member:
 - !private ["SQ", "NONE"]
 - !private ["SQ", "SKAction"]
 - !private ["SQ", "SKTexture"]
-- !private ["SQ", "String"]
 - !private ["SQ", "WORLD"]
 - ["SQ", ""]
 - !private ["SQ", "action"]
@@ -128,10 +121,6 @@ depends-member:
 - !private ["SQ", "sprite"]
 - !private ["SQ", "startAnimation"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s32ExpressibleByStringInterpolationP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["SH", "NONE"]
 - !private ["SH", "WORLD"]
 - !private ["SH", "action"]
@@ -141,8 +130,6 @@ depends-member:
 - !private ["SH", "removeAction"]
 - !private ["SH", "reversed"]
 - !private ["SH", "run"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s10MirrorPathP", "init"]
 - !private ["SM", "append"]
 - !private ["10Foundation19MutableDataProtocolP", "append"]
 - !private ["So8NSCodingP", "action"]
@@ -177,7 +164,6 @@ depends-member:
 - !private ["So14NSSecureCodingP", "run"]
 - !private ["Sk", "append"]
 - !private ["Sm", "append"]
-- !private ["Sm", "init"]
 - !private ["So8SKActionC", "animate"]
 - !private ["So8SKActionC", "reversed"]
 - !private ["So6SKNodeC", "action"]
@@ -191,15 +177,10 @@ depends-member:
 - !private ["So10SKWarpableP", "removeAction"]
 - !private ["So10SKWarpableP", "run"]
 - !private ["ST", "append"]
-- !private ["ST", "init"]
-- !private ["SS", "init"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
-- !private ["Sy", "init"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
 - !private ["So18UIFocusEnvironmentP", "action"]
 - !private ["So18UIFocusEnvironmentP", "removeAction"]
 - !private ["So18UIFocusEnvironmentP", "run"]
@@ -224,11 +205,7 @@ depends-member:
 - !private ["s30_CustomPlaygroundQuickLookableP", "removeAction"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "run"]
 - !private ["s24_DestructorSafeContainerP", "append"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s19_HasContiguousBytesP", "append"]
-- !private ["s19_HasContiguousBytesP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "action"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "animate"]
@@ -237,7 +214,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reversed"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "run"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["6CnD_v113collisionTypeO", "NONE"]
 - !private ["6CnD_v113collisionTypeO", "WORLD"]
 depends-nominal:
@@ -246,7 +222,6 @@ depends-nominal:
 - !private "SK"
 - !private "s7CVarArgP"
 - !private "Sl"
-- !private "SL"
 - !private "10Foundation15ContiguousBytesP"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
@@ -258,13 +233,7 @@ depends-nominal:
 - "6CnD_v16EntityC"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s32ExpressibleByStringInterpolationP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "SH"
-- !private "s25LosslessStringConvertibleP"
-- !private "s10MirrorPathP"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
 - !private "So8NSCodingP"
@@ -280,11 +249,8 @@ depends-nominal:
 - !private "So9SKTextureC"
 - !private "So10SKWarpableP"
 - !private "ST"
-- !private "SS"
 - !private "s27StringInterpolationProtocolP"
-- !private "Sy"
 - !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
 - !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
 - !private "So30UIPasteConfigurationSupportingP"
@@ -294,9 +260,6 @@ depends-nominal:
 - !private "s14_ArrayProtocolP"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
@@ -335,4 +298,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "16f91f4dda37876dfcf0e1ecb56eaab8"
+interface-hash: "0cdc2894f390a867a3cad1573bb6c868"

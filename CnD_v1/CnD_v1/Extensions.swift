@@ -18,3 +18,17 @@ extension SKTexture
     }
     
 }
+
+extension SKNode
+{
+    func actionForKeyIsRunning(key: String) -> Bool
+    {
+        if self.action(forKey: key) != nil
+        {
+            return true
+        } else
+        {
+            return false
+        }
+    }
+}

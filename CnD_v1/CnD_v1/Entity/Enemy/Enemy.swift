@@ -60,7 +60,6 @@ class Enemy : Entity
         if hp <= 0
         {
             isAlive = false
-            
         }
         if isAlive && inCombat
         {

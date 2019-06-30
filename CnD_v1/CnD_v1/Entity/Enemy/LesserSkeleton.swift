@@ -47,7 +47,7 @@ class LesserSkeleton : Enemy
         //prs
         stats.append(2)
         //hp
-        stats.append(10)
+        stats.append(30)
         
         super.init(x : x, y : y, z : z, s : s, st : stats)
         setAnimations()

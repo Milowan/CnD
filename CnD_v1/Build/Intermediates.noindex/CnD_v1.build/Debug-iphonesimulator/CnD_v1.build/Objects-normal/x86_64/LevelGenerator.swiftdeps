@@ -29,7 +29,6 @@ depends-top-level:
 - "SKTileDefinition"
 - "SKTileMapNode"
 - "SKTileSet"
-- !private "StringLiteralType"
 - !private "World"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]

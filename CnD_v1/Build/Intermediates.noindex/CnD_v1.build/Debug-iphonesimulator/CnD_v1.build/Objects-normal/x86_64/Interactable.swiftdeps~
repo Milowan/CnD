@@ -12,6 +12,7 @@ depends-top-level:
 - "Interactable"
 - "Player"
 - "SKSpriteNode"
+- !private "StringLiteralType"
 depends-member:
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "Player"]
@@ -28,7 +29,6 @@ depends-member:
 - ["6CnD_v112InteractableC", "Player"]
 - ["6CnD_v112InteractableC", "SKSpriteNode"]
 - ["6CnD_v112InteractableC", "act"]
-- ["6CnD_v112InteractableC", "deinit"]
 - ["6CnD_v112InteractableC", "init"]
 - ["6CnD_v112InteractableC", "player"]
 - !private ["6CnD_v113collisionTypeO", "NONE"]

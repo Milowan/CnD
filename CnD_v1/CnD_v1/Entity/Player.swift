@@ -41,6 +41,7 @@ class Player : Entity
     var victory : Bool
     var target : Enemy?
     var dmgTaken : Int
+    var cDir : Int?
 
     var interactButton : Button
     var miniMapButton : Button
@@ -253,16 +254,48 @@ class Player : Entity
             }
             else
             {
-                let atkCD = combatTimer % calcTotalATS()
-                if atkCD == 0
+                if cDir == 0
                 {
-                    target!.hp -= calcTotalDMG() / target!.def
+                    let atkCD = combatTimer % calcTotalATS()
+                    if atkCD == 0
+                    {
+                        if !sprite!.actionForKeyIsRunning(key: "atkLeft")
+                        {
+                            self.runAnimation(animAction: playerAtkLeft!, animKey: "atkLeft")
+                            self.target!.hp -= self.calcTotalDMG() / self.target!.def
+                        }
+                        else
+                        {
+                            combatTimer = 1
+                        }
+                    }
+                    if !target!.isAlive
+                    {
+                        victory = true
+                    }
+                    combatTimer += 1
                 }
-                if !target!.isAlive
+                if cDir == 1
                 {
-                    victory = true
+                    let atkCD = combatTimer % calcTotalATS()
+                    if atkCD == 0
+                    {
+                        if !sprite!.actionForKeyIsRunning(key: "atkRight")
+                        {
+                            self.runAnimation(animAction: playerAtkRight!, animKey: "atkRight")
+                            self.target!.hp -= self.calcTotalDMG() / self.target!.def
+                        }
+                        else
+                        {
+                            combatTimer = 1
+                        }
+                    }
+                    if !target!.isAlive
+                    {
+                        victory = true
+                    }
+                    combatTimer += 1
                 }
-                combatTimer += 1
             }
             
         }
@@ -273,6 +306,9 @@ class Player : Entity
         pos.x = Int(sprite!.position.x)
         pos.y = Int(sprite!.position.y)
     }
+    
+    //class func wait(forDuration duration: TimeInterval) -> SKAction
+
 
     override func collision(response : Entity)
     {
@@ -324,6 +360,14 @@ class Player : Entity
                     inCombat = true
                     target!.player = self
                     target!.inCombat = true
+                    if self.pos.x < enemy.pos.x
+                    {
+                        cDir = 0
+                    }
+                    if self.pos.x > enemy.pos.x
+                    {
+                        cDir = 1
+                    }
                 }
             }
                 
@@ -430,6 +474,14 @@ class Player : Entity
         if sprite!.action(forKey: animKey) == nil
         {
             sprite!.run(SKAction.repeatForever(animAction), withKey: animKey)
+        }
+    }
+    
+    func runAnimation(animAction: SKAction, animKey: String)
+    {
+        if sprite!.action(forKey: animKey) == nil
+        {
+            sprite!.run((animAction), withKey: animKey)
         }
     }
     

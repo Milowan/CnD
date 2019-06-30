@@ -156,12 +156,28 @@ class GameScene: SKScene
         }
     }
     
+    func removeEntity(entity : Entity)
+    {
+        if let index = pool.firstIndex(of: entity)
+        {
+            entity.sprite!.removeFromParent()
+            pool.remove(at: index)
+        }
+    }
+    
     
     override func update(_  currentTime : TimeInterval)
     {
         for entity in pool
         {
             entity.update()
+            if let enemy = entity as? Enemy
+            {
+                if !enemy.isAlive
+                {
+                    removeEntity(entity: enemy)
+                }
+            }
         }
         
         collision()

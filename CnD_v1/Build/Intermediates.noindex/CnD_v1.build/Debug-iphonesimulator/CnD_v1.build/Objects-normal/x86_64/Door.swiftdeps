@@ -14,13 +14,17 @@ depends-top-level:
 - !private "=="
 - "AssignmentPrecedence"
 - "Bool"
+- !private "BooleanLiteralType"
 - "Door"
+- "FloatLiteralType"
 - "Int"
+- !private "IntegerLiteralType"
 - "Interactable"
 - "SKAction"
 - "SKSpriteNode"
 - "SKTexture"
 - "String"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Sa", "append"]
 - !private ["SK", "append"]
