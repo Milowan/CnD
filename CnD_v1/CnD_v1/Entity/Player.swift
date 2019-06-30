@@ -42,6 +42,8 @@ class Player : Entity
     var target : Enemy?
     var dmgTaken : Int
     var cDir : Int?
+    
+    var plate : PressPlates?
 
     var interactButton : Button
     var miniMapButton : Button
@@ -235,9 +237,13 @@ class Player : Entity
                     
                     if interactButton.active
                     {
-                        if let interactable = interactButton.interactable
+                        if !interactButton.clear
                         {
-                            interactable.act()
+                            if let interactable = interactButton.interactable
+                            {
+                                interactable.act()
+                            }
+                            interactButton.clear = true
                         }
                     }
                     if inventoryButton.active
@@ -366,11 +372,27 @@ class Player : Entity
                 }
             }
                 
-            if response.collisionMask == .WORLD &&
-                aBottom <= bTop &&
-                aTop >= bBottom &&
-                aLeft <= bRight &&
-                aRight >= bLeft
+            
+        }
+        else if interactButton.interactable == response
+        {
+            interactButton.interactable!.player = nil
+            interactButton.interactable = nil
+        }
+        
+        if aBottom <= bTop &&
+            aTop >= bBottom &&
+            aLeft <= bRight &&
+            aRight >= bLeft
+        {
+            
+            if let plate = (response as? PressPlates)
+            {
+                plate.act()
+                self.plate = plate
+            }
+            
+            if response.collisionMask == .WORLD
             {
                 if direction == .NONE
                 {
@@ -412,10 +434,12 @@ class Player : Entity
                 }
             }
         }
-        else if interactButton.interactable == response
+        else if plate == response
         {
-            interactButton.interactable!.player = nil
-            interactButton.interactable = nil
+            plate!.stood = false
+            plate!.act()
+            plate!.stood = false
+            plate = nil
         }
         
         pos = Pos(xX : aPos.x, yY : aPos.y + Int(a.size.height / 4))
