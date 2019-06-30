@@ -162,6 +162,14 @@ class GameScene: SKScene
         for entity in pool
         {
             entity.update()
+            
+            if let collector = entity as? Collectable
+            {
+                if collector.item == nil
+                {
+                    removeEntity(entity : collector)
+                }
+            }
         }
         
         collision()
