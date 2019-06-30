@@ -88,6 +88,7 @@ depends-member:
 - !private ["Sl", "append"]
 - !private ["SL", "init"]
 - !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "act"]
 - !private ["s28CustomDebugStringConvertibleP", "action"]
 - !private ["s28CustomDebugStringConvertibleP", "addChild"]
 - !private ["s28CustomDebugStringConvertibleP", "animate"]
@@ -108,6 +109,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "x"]
 - !private ["s28CustomDebugStringConvertibleP", "y"]
 - !private ["s28CustomDebugStringConvertibleP", "zPosition"]
+- !private ["s17CustomReflectableP", "act"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "init"]
@@ -133,6 +135,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "texture"]
 - !private ["s23CustomStringConvertibleP", "zPosition"]
 - !private ["10Foundation12DataProtocolP", "append"]
+- !private ["Se", "act"]
 - !private ["Se", "append"]
 - !private ["Se", "height"]
 - !private ["Se", "init"]
@@ -152,6 +155,7 @@ depends-member:
 - ["6CnD_v19DirectionO", "deinit"]
 - ["6CnD_v19DirectionO", "hash"]
 - ["6CnD_v19DirectionO", "hashValue"]
+- !private ["SE", "act"]
 - !private ["SE", "append"]
 - !private ["SE", "height"]
 - !private ["SE", "init"]
@@ -244,7 +248,7 @@ depends-member:
 - !private ["SQ", "DOWN"]
 - !private ["SQ", "GameScene"]
 - !private ["SQ", "Int"]
-- ["SQ", "Inventory"]
+- !private ["SQ", "Inventory"]
 - !private ["SQ", "LEFT"]
 - !private ["SQ", "NONE"]
 - !private ["SQ", "PLAYER"]
@@ -281,6 +285,7 @@ depends-member:
 - !private ["SQ", "init"]
 - !private ["SQ", "interactButton"]
 - !private ["SQ", "interactable"]
+- !private ["SQ", "inventory"]
 - !private ["SQ", "inventoryButton"]
 - !private ["SQ", "isIdle"]
 - !private ["SQ", "lastDirection"]
@@ -328,6 +333,7 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "act"]
 - !private ["s17FixedWidthIntegerP", "init"]
 - !private ["SF", "init"]
 - !private ["6CnD_v19GameSceneC", "gridSize"]
@@ -348,6 +354,7 @@ depends-member:
 - !private ["SH", "WORLD"]
 - ["SH", ""]
 - ["SH", "_rawHashValue"]
+- !private ["SH", "act"]
 - !private ["SH", "action"]
 - !private ["SH", "addChild"]
 - !private ["SH", "animate"]
@@ -375,7 +382,8 @@ depends-member:
 - !private ["6CnD_v112InteractableC", "act"]
 - !private ["6CnD_v112InteractableC", "deinit"]
 - !private ["6CnD_v112InteractableC", "player"]
-- ["6CnD_v19InventoryC", "init"]
+- !private ["6CnD_v19InventoryC", "act"]
+- !private ["6CnD_v19InventoryC", "init"]
 - !private ["6CnD_v14ItemC", "baseDamage"]
 - !private ["6CnD_v14ItemC", "baseDef"]
 - !private ["6CnD_v14ItemC", "baseEvasion"]
@@ -462,6 +470,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "texture"]
 - !private ["So14NSSecureCodingP", "zPosition"]
 - !private ["Sj", "init"]
+- !private ["Sq", "act"]
 - ["6CnD_v16PlayerC", "Armour"]
 - !private ["6CnD_v16PlayerC", "BSNode"]
 - ["6CnD_v16PlayerC", "Button"]
@@ -697,6 +706,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "size"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "texture"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "zPosition"]
+- !private ["s21_ObjectiveCBridgeableP", "act"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
@@ -735,6 +745,7 @@ depends-nominal:
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - !private "s17FixedWidthIntegerP"
 - !private "SF"
 - !private "6CnD_v19GameSceneC"
@@ -744,7 +755,7 @@ depends-nominal:
 - !private "6CnD_v16HelmetC"
 - !private "Si"
 - !private "6CnD_v112InteractableC"
-- "6CnD_v19InventoryC"
+- !private "6CnD_v19InventoryC"
 - !private "6CnD_v14ItemC"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
@@ -756,6 +767,7 @@ depends-nominal:
 - "So8NSObjectP"
 - "So14NSSecureCodingP"
 - !private "Sj"
+- !private "Sq"
 - "6CnD_v16PlayerC"
 - !private "6CnD_v13PosC"
 - !private "Sk"
@@ -828,4 +840,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "73ce4e9255bc1d91ae81a69b8c743cc5"
+interface-hash: "89683eb7c9d7b6696bbdef0ec795fd30"

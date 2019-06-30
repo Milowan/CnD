@@ -45,7 +45,7 @@ class Player : Entity
     var lastDirection : Direction
     
     let stats = Stats(s : 5, d : 5, c : 5)
-    let inventory = Inventory()
+    var inventory: Inventory?
     
     let movSpeed = 5
     let animSpeed = 0.2
@@ -140,11 +140,11 @@ class Player : Entity
         //self.sword = Sword(p : self, st : Stats(s : 1, d : 1, c : 1), sp : )
         //self.armour = Armour(p : self, st : Stats(s : 1, d : 1, c : 1), sp : )
         //self.sword = Sword(p : self, st : Stats(s : 1, d : 1, c : 1), sp : )
-        
         GameScene.player = self
         setAnimations()
         let dim = CGSize(width: 32, height: 32)
         self.sprite?.size = dim
+        self.inventory = Inventory(p: GameScene.player!)
     }
     
     override func update()
@@ -212,6 +212,10 @@ class Player : Entity
                 {
                     interactable.act()
                 }
+            }
+            if inventoryButton.active
+            {
+                inventory!.act()
             }
         }
         

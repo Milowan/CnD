@@ -27,7 +27,7 @@ class GameScene: SKScene
     static var rows: Int?
     static var columns: Int?
     static var gridSize: Int?
-    
+    static var invChild: SKNode?
     static var player: Player?
     
     var pool = [Entity]()
@@ -43,6 +43,7 @@ class GameScene: SKScene
         GameScene.gridSize = Int(size.width / 50)
         GameScene.rows = Int(size.height) / GameScene.gridSize!
         GameScene.columns = Int(size.width) / GameScene.gridSize!
+        GameScene.invChild = childNode(withName: "Inventory")
         setPixelTextures()
     }
     
@@ -59,7 +60,6 @@ class GameScene: SKScene
         let x = -15
         let y = -200
         let z = 8
-        
         levelGenerator!.generate()
         addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0")))
         setupCamera(player: GameScene.player!.sprite!)

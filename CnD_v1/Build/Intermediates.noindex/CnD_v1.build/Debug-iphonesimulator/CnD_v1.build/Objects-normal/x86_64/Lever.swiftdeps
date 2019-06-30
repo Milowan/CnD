@@ -36,6 +36,7 @@ depends-member:
 - ["6CnD_v15LeverC", "Int"]
 - ["6CnD_v15LeverC", "SKSpriteNode"]
 - ["6CnD_v15LeverC", "act"]
+- ["6CnD_v15LeverC", "deinit"]
 - ["6CnD_v15LeverC", "door"]
 - ["6CnD_v15LeverC", "init"]
 depends-nominal:

@@ -7,14 +7,134 @@ provides-member:
 - ["6CnD_v19InventoryC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!"
+- !private "%="
+- !private "+="
+- !private "=="
+- "AssignmentPrecedence"
+- "BooleanLiteralType"
+- "CGFloat"
+- "FloatLiteralType"
+- !private "GameScene"
+- "Int"
+- "IntegerLiteralType"
 - "Inventory"
 - "Item"
+- "Player"
+- "SKNode"
 depends-member:
+- !private ["So7CGPointV", "x"]
+- !private ["So7CGPointV", "y"]
+- !private ["s7CVarArgP", "invChild"]
+- !private ["s7CVarArgP", "position"]
+- !private ["s28CustomDebugStringConvertibleP", "invChild"]
+- !private ["s28CustomDebugStringConvertibleP", "position"]
+- !private ["s28CustomDebugStringConvertibleP", "x"]
+- !private ["s28CustomDebugStringConvertibleP", "y"]
+- !private ["s17CustomReflectableP", "x"]
+- !private ["s17CustomReflectableP", "y"]
+- !private ["s23CustomStringConvertibleP", "invChild"]
+- !private ["s23CustomStringConvertibleP", "position"]
+- !private ["Se", "x"]
+- !private ["Se", "y"]
+- !private ["SE", "x"]
+- !private ["SE", "y"]
+- !private ["6CnD_v16EntityC", "sprite"]
+- !private ["SQ", "invChild"]
+- !private ["SQ", "position"]
+- !private ["SQ", "sprite"]
+- !private ["SQ", "x"]
+- !private ["SQ", "y"]
+- !private ["6CnD_v19GameSceneC", "invChild"]
+- !private ["SH", "invChild"]
+- !private ["SH", "position"]
+- ["6CnD_v19InventoryC", "CGFloat"]
+- !private ["6CnD_v19InventoryC", "GameScene"]
+- ["6CnD_v19InventoryC", "Int"]
 - ["6CnD_v19InventoryC", "Item"]
+- ["6CnD_v19InventoryC", "Player"]
+- ["6CnD_v19InventoryC", "SKNode"]
+- ["6CnD_v19InventoryC", "act"]
+- ["6CnD_v19InventoryC", "baseX"]
+- ["6CnD_v19InventoryC", "baseY"]
+- ["6CnD_v19InventoryC", "closeInv"]
 - ["6CnD_v19InventoryC", "contents"]
+- ["6CnD_v19InventoryC", "i"]
 - ["6CnD_v19InventoryC", "init"]
+- ["6CnD_v19InventoryC", "invScene"]
+- ["6CnD_v19InventoryC", "isOpen"]
+- ["6CnD_v19InventoryC", "openInv"]
+- ["6CnD_v19InventoryC", "playerRef"]
+- !private ["So8NSCodingP", "invChild"]
+- !private ["So8NSCodingP", "position"]
+- !private ["So9NSCopyingP", "invChild"]
+- !private ["So9NSCopyingP", "position"]
+- !private ["So8NSObjectC", "invChild"]
+- !private ["So8NSObjectC", "position"]
+- !private ["So8NSObjectP", "invChild"]
+- !private ["So8NSObjectP", "position"]
+- !private ["So14NSSecureCodingP", "invChild"]
+- !private ["So14NSSecureCodingP", "position"]
+- !private ["6CnD_v16PlayerC", "sprite"]
+- !private ["So12SKEffectNodeC", "invChild"]
+- !private ["So6SKNodeC", "invChild"]
+- !private ["So6SKNodeC", "position"]
+- !private ["So7SKSceneC", "invChild"]
+- !private ["So12SKSpriteNodeC", "position"]
+- !private ["So10SKWarpableP", "invChild"]
+- !private ["So10SKWarpableP", "position"]
+- !private ["So18UIFocusEnvironmentP", "invChild"]
+- !private ["So18UIFocusEnvironmentP", "position"]
+- !private ["So11UIFocusItemP", "invChild"]
+- !private ["So11UIFocusItemP", "position"]
+- !private ["So30UIPasteConfigurationSupportingP", "invChild"]
+- !private ["So30UIPasteConfigurationSupportingP", "position"]
+- !private ["So11UIResponderC", "invChild"]
+- !private ["So11UIResponderC", "position"]
+- !private ["So30UIResponderStandardEditActionsP", "invChild"]
+- !private ["So30UIResponderStandardEditActionsP", "position"]
+- !private ["So23UIUserActivityRestoringP", "invChild"]
+- !private ["So23UIUserActivityRestoringP", "position"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "position"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "x"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "y"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "invChild"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "position"]
+- !private ["s21_ObjectiveCBridgeableP", "x"]
+- !private ["s21_ObjectiveCBridgeableP", "y"]
 depends-nominal:
+- !private "So7CGPointV"
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "6CnD_v16EntityC"
+- !private "SQ"
+- !private "6CnD_v19GameSceneC"
+- !private "SH"
 - "6CnD_v19InventoryC"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "6CnD_v16PlayerC"
+- !private "So12SKEffectNodeC"
+- !private "So6SKNodeC"
+- !private "So7SKSceneC"
+- !private "So12SKSpriteNodeC"
+- !private "So10SKWarpableP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So23UIUserActivityRestoringP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -48,4 +168,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "71e642aafd6e13b8c89d971d80b8ba27"
+interface-hash: "59fe0fcf3b6e8bf7318433ea52998772"
