@@ -178,6 +178,13 @@ class GameScene: SKScene
                     removeEntity(entity: enemy)
                 }
             }
+            if let collector = entity as? Collectable
+            {
+                if collector.item == nil
+                {
+                    removeEntity(entity : collector)
+                }
+            }
         }
         
         collision()

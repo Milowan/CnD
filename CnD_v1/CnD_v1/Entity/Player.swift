@@ -262,7 +262,10 @@ class Player : Entity
                         if !sprite!.actionForKeyIsRunning(key: "atkLeft")
                         {
                             self.runAnimation(animAction: playerAtkLeft!, animKey: "atkLeft")
-                            self.target!.hp -= self.calcTotalDMG() / self.target!.def
+                            if arc4random_uniform( (UInt32(50))) > target!.evs / calcTotalPRS()
+                            {
+                                self.target!.hp -= self.calcTotalDMG() / self.target!.def
+                            }
                         }
                         else
                         {

@@ -12,10 +12,17 @@ import SpriteKit
 
 class Collectable : Interactable
 {
+    var item : Item?
     
+    init (x : Int, y : Int, z : Int, s : SKSpriteNode, i : Item)
+    {
+        item = i
+        super.init (x : x, y : y, z : z, s : s)
+    }
     
-//    init (x : Int, y : Int, s : SKSpriteNode)
-//    {
-//        super.init (x : x, y : y, s : s)
-//    }
+    override func act()
+    {
+        player!.inventory!.contents!.append(item!)
+        item = nil
+    }
 }
