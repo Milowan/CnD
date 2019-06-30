@@ -267,10 +267,6 @@ class Player : Entity
                                 self.target!.hp -= self.calcTotalDMG() / self.target!.def
                             }
                         }
-                        else
-                        {
-                            combatTimer = 1
-                        }
                     }
                     if !target!.isAlive
                     {
@@ -287,10 +283,6 @@ class Player : Entity
                         {
                             self.runAnimation(animAction: playerAtkRight!, animKey: "atkRight")
                             self.target!.hp -= self.calcTotalDMG() / self.target!.def
-                        }
-                        else
-                        {
-                            combatTimer = 1
                         }
                     }
                     if !target!.isAlive

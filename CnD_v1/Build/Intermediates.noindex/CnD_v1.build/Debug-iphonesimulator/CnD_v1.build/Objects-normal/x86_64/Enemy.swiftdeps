@@ -14,13 +14,19 @@ depends-top-level:
 - !private "/"
 - !private "<="
 - !private "=="
+- !private ">"
 - "AssignmentPrecedence"
 - "BooleanLiteralType"
 - "Enemy"
 - "Entity"
+- "FloatLiteralType"
 - "Int"
+- "IntegerLiteralType"
 - "Player"
 - "SKSpriteNode"
+- !private "StringLiteralType"
+- !private "UInt32"
+- !private "arc4random_uniform"
 depends-member:
 - !private ["Sa", "subscript"]
 - !private ["SK", "subscript"]
@@ -36,9 +42,10 @@ depends-member:
 - ["6CnD_v15EnemyC", "Int"]
 - ["6CnD_v15EnemyC", "Player"]
 - ["6CnD_v15EnemyC", "SKSpriteNode"]
+- !private ["6CnD_v15EnemyC", "UInt32"]
+- !private ["6CnD_v15EnemyC", "arc4random_uniform"]
 - ["6CnD_v15EnemyC", "ats"]
 - ["6CnD_v15EnemyC", "def"]
-- ["6CnD_v15EnemyC", "deinit"]
 - ["6CnD_v15EnemyC", "dmg"]
 - ["6CnD_v15EnemyC", "evs"]
 - ["6CnD_v15EnemyC", "hp"]
@@ -51,9 +58,12 @@ depends-member:
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "Player"]
 - ["6CnD_v16EntityC", "SKSpriteNode"]
+- !private ["6CnD_v16EntityC", "UInt32"]
 - ["6CnD_v16EntityC", ""]
+- !private ["6CnD_v16EntityC", "arc4random_uniform"]
 - ["6CnD_v16EntityC", "ats"]
 - !private ["6CnD_v16EntityC", "calcTotalDEF"]
+- !private ["6CnD_v16EntityC", "calcTotalEVS"]
 - !private ["6CnD_v16EntityC", "combatTimer"]
 - ["6CnD_v16EntityC", "def"]
 - ["6CnD_v16EntityC", "dmg"]
@@ -67,9 +77,12 @@ depends-member:
 - ["6CnD_v16EntityC", "prs"]
 - ["6CnD_v16EntityC", "update"]
 - !private ["SQ", "ENEMY"]
+- !private ["SQ", "UInt32"]
 - ["SQ", ""]
+- !private ["SQ", "arc4random_uniform"]
 - !private ["SQ", "ats"]
 - !private ["SQ", "calcTotalDEF"]
+- !private ["SQ", "calcTotalEVS"]
 - !private ["SQ", "combatTimer"]
 - !private ["SQ", "def"]
 - !private ["SQ", "dmg"]
@@ -88,6 +101,7 @@ depends-member:
 - !private ["SM", "subscript"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - !private ["6CnD_v16PlayerC", "calcTotalDEF"]
+- !private ["6CnD_v16PlayerC", "calcTotalEVS"]
 - !private ["6CnD_v16PlayerC", "combatTimer"]
 - !private ["6CnD_v16PlayerC", "dmgTaken"]
 - !private ["Sk", "subscript"]

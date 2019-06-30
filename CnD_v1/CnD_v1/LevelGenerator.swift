@@ -160,13 +160,15 @@ class LevelGenerator
     
     func createAlcoves()
     {
+        //let tempItemp = Item(s: SKSpriteNode(fileNamed: "gem_01c")
         guard let alcMap = gameScene!.childNode(withName: "Collectable_Alcove") as? SKTileMapNode else {return}
         for row in 0..<alcMap.numberOfRows
         {
             for column in 0..<alcMap.numberOfColumns
             {
                 guard tile(in: alcMap, at: (column, row)) != nil else {continue}
-                gameScene!.addEntity(entity: Collectable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "window_3_02")))
+                gameScene!.addEntity(entity: Collectable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "window_3_02"), i: Item(s: SKSpriteNode(imageNamed: "gem_01c"))))
+                    
                 alcMap.removeFromParent()
             }
         }

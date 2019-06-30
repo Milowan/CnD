@@ -22,6 +22,7 @@ depends-top-level:
 - "GameScene"
 - "Int"
 - !private "Interactable"
+- !private "Item"
 - !private "LesserSkeleton"
 - "LevelGenerator"
 - !private "Lever"
@@ -152,6 +153,7 @@ depends-member:
 - !private ["SH", "tileDefinition"]
 - !private ["Si", "init"]
 - !private ["6CnD_v112InteractableC", "init"]
+- !private ["6CnD_v14ItemC", "init"]
 - !private ["6CnD_v114LesserSkeletonC", "init"]
 - !private ["6CnD_v114LevelGeneratorC", "Adoor"]
 - ["6CnD_v114LevelGeneratorC", "CGPoint"]
@@ -160,6 +162,7 @@ depends-member:
 - ["6CnD_v114LevelGeneratorC", "GameScene"]
 - ["6CnD_v114LevelGeneratorC", "Int"]
 - !private ["6CnD_v114LevelGeneratorC", "Interactable"]
+- !private ["6CnD_v114LevelGeneratorC", "Item"]
 - !private ["6CnD_v114LevelGeneratorC", "LesserSkeleton"]
 - !private ["6CnD_v114LevelGeneratorC", "Lever"]
 - !private ["6CnD_v114LevelGeneratorC", "SKSpriteNode"]
@@ -176,6 +179,7 @@ depends-member:
 - ["6CnD_v114LevelGeneratorC", "createLever"]
 - ["6CnD_v114LevelGeneratorC", "createPressPlates"]
 - ["6CnD_v114LevelGeneratorC", "createWallCollisions"]
+- ["6CnD_v114LevelGeneratorC", "deinit"]
 - ["6CnD_v114LevelGeneratorC", "gameScene"]
 - ["6CnD_v114LevelGeneratorC", "generate"]
 - ["6CnD_v114LevelGeneratorC", "init"]
@@ -424,6 +428,7 @@ depends-nominal:
 - !private "SH"
 - !private "Si"
 - !private "6CnD_v112InteractableC"
+- !private "6CnD_v14ItemC"
 - !private "6CnD_v114LesserSkeletonC"
 - "6CnD_v114LevelGeneratorC"
 - !private "6CnD_v15LeverC"

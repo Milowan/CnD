@@ -12,11 +12,13 @@ depends-top-level:
 - !private "!"
 - !private "!="
 - "/"
+- !private "=="
 - "Adoor"
 - "AssignmentPrecedence"
 - "CGPoint"
 - "CGSize"
 - "CastingPrecedence"
+- !private "Collectable"
 - !private "Enemy"
 - "Entity"
 - "FloatLiteralType"
@@ -93,6 +95,7 @@ depends-member:
 - !private ["s7CVarArgP", "tileGroups"]
 - !private ["s7CVarArgP", "tileSet"]
 - !private ["s7CVarArgP", "view"]
+- !private ["6CnD_v111CollectableC", "item"]
 - !private ["Sl", "append"]
 - !private ["Sl", "firstIndex"]
 - ["Sl", "init"]
@@ -216,6 +219,7 @@ depends-member:
 - !private ["6CnD_v16EntityC", "collision"]
 - !private ["6CnD_v16EntityC", "deinit"]
 - !private ["6CnD_v16EntityC", "isAlive"]
+- !private ["6CnD_v16EntityC", "item"]
 - !private ["6CnD_v16EntityC", "sprite"]
 - !private ["6CnD_v16EntityC", "update"]
 - ["SQ", "Entity"]
@@ -247,6 +251,7 @@ depends-member:
 - ["SQ", "init"]
 - !private ["SQ", "invChild"]
 - !private ["SQ", "isAlive"]
+- !private ["SQ", "item"]
 - !private ["SQ", "levelGenerator"]
 - !private ["SQ", "nearest"]
 - !private ["SQ", "player"]
@@ -276,6 +281,7 @@ depends-member:
 - ["6CnD_v19GameSceneC", "Adoor"]
 - ["6CnD_v19GameSceneC", "CGPoint"]
 - ["6CnD_v19GameSceneC", "CGSize"]
+- !private ["6CnD_v19GameSceneC", "Collectable"]
 - !private ["6CnD_v19GameSceneC", "Enemy"]
 - ["6CnD_v19GameSceneC", "Entity"]
 - !private ["6CnD_v19GameSceneC", "GameScene"]
@@ -366,6 +372,7 @@ depends-member:
 - !private ["SH", "tileSet"]
 - !private ["SH", "view"]
 - !private ["Si", "init"]
+- !private ["6CnD_v112InteractableC", "item"]
 - !private ["6CnD_v114LevelGeneratorC", "generate"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
@@ -462,6 +469,7 @@ depends-member:
 - ["So8NSObjectC", "Adoor"]
 - ["So8NSObjectC", "CGPoint"]
 - ["So8NSObjectC", "CGSize"]
+- !private ["So8NSObjectC", "Collectable"]
 - !private ["So8NSObjectC", "Enemy"]
 - ["So8NSObjectC", "Entity"]
 - !private ["So8NSObjectC", "GameScene"]
@@ -611,6 +619,7 @@ depends-member:
 - ["So12SKEffectNodeC", "Adoor"]
 - ["So12SKEffectNodeC", "CGPoint"]
 - ["So12SKEffectNodeC", "CGSize"]
+- !private ["So12SKEffectNodeC", "Collectable"]
 - !private ["So12SKEffectNodeC", "Enemy"]
 - ["So12SKEffectNodeC", "Entity"]
 - !private ["So12SKEffectNodeC", "GameScene"]
@@ -657,6 +666,7 @@ depends-member:
 - ["So6SKNodeC", "Adoor"]
 - ["So6SKNodeC", "CGPoint"]
 - ["So6SKNodeC", "CGSize"]
+- !private ["So6SKNodeC", "Collectable"]
 - !private ["So6SKNodeC", "Enemy"]
 - ["So6SKNodeC", "Entity"]
 - !private ["So6SKNodeC", "GameScene"]
@@ -706,6 +716,7 @@ depends-member:
 - ["So7SKSceneC", "Adoor"]
 - ["So7SKSceneC", "CGPoint"]
 - ["So7SKSceneC", "CGSize"]
+- !private ["So7SKSceneC", "Collectable"]
 - !private ["So7SKSceneC", "Enemy"]
 - ["So7SKSceneC", "Entity"]
 - !private ["So7SKSceneC", "GameScene"]
@@ -906,6 +917,7 @@ depends-member:
 - ["So11UIResponderC", "Adoor"]
 - ["So11UIResponderC", "CGPoint"]
 - ["So11UIResponderC", "CGSize"]
+- !private ["So11UIResponderC", "Collectable"]
 - !private ["So11UIResponderC", "Enemy"]
 - ["So11UIResponderC", "Entity"]
 - !private ["So11UIResponderC", "GameScene"]
@@ -1095,6 +1107,7 @@ depends-nominal:
 - !private "Sz"
 - !private "So6CGSizeV"
 - "s7CVarArgP"
+- !private "6CnD_v111CollectableC"
 - "Sl"
 - !private "SL"
 - "10Foundation15ContiguousBytesP"
@@ -1113,6 +1126,7 @@ depends-nominal:
 - "6CnD_v19GameSceneC"
 - "SH"
 - !private "Si"
+- !private "6CnD_v112InteractableC"
 - !private "6CnD_v114LevelGeneratorC"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
