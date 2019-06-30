@@ -18,6 +18,9 @@ class Enemy : Entity
     var prs = 0
     var hp = 0
     var isAlive = true
+    var inCombat = false
+    
+    var player : Player?
     
     init(x : Int, y : Int, z : Int, s : SKSpriteNode, st : [Int])
     {
@@ -57,6 +60,14 @@ class Enemy : Entity
         if hp <= 0
         {
             isAlive = false
+        }
+        if isAlive && inCombat
+        {
+            let atkCD = player!.combatTimer % ats
+            if atkCD == 0
+            {
+                player!.dmgTaken += dmg / player!.calcTotalDEF()
+            }
         }
     }
 }

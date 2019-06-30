@@ -40,6 +40,7 @@ class Player : Entity
     var combatTimer : Int
     var victory : Bool
     var target : Enemy?
+    var dmgTaken : Int
 
     var interactButton : Button
     var miniMapButton : Button
@@ -84,6 +85,7 @@ class Player : Entity
         inCombat = false
         combatTimer = 0
         victory = false
+        dmgTaken =  0
     
         left = Button(x: (GameScene.gridSize! * -11),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 6, s: BSNode(imageNamed: "arrow_left"))
         s.addChild(left.sprite!)
@@ -146,9 +148,9 @@ class Player : Entity
 
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
         
-        self.sword = Sword(p : self, st : Stats(s : 1, d : 1, c : 1), sp : SKSpriteNode(imageNamed: "sword_01a"))
-        self.armour = Armour(p : self, st : Stats(s : 1, d : 1, c : 1), sp : SKSpriteNode(imageNamed: "sword_01a"))
-        self.helmet = Helmet(p : self, st : Stats(s : 1, d : 1, c : 1), sp : SKSpriteNode(imageNamed: "sword_01a"))
+        self.sword = Sword(p : self, st : Stats(s : 2, d : 2, c : 2), sp : SKSpriteNode(imageNamed: "sword_01a"))
+        self.armour = Armour(p : self, st : Stats(s : 2, d : 2, c : 2), sp : SKSpriteNode(imageNamed: "sword_01a"))
+        self.helmet = Helmet(p : self, st : Stats(s : 2, d : 2, c : 2), sp : SKSpriteNode(imageNamed: "sword_01a"))
         GameScene.player = self
         setAnimations()
         let dim = CGSize(width: 32, height: 32)
@@ -158,96 +160,110 @@ class Player : Entity
     
     override func update()
     {
-        if !inCombat
+        if dmgTaken < calcMaxHP()
         {
-            if left.active == false &&
-                right.active == false &&
-                up.active == false &&
-                down.active == false
+            if !inCombat
             {
-                lastDirection = direction
-                direction = .NONE
-                isIdle = true
-                if tempString != nil && tempString != "playerIdle"
+                
+                if dmgTaken > 0
                 {
-                    stopAnimation(animKey: tempString!)
-                }
-            }
-            else
-            {
-                isIdle = false
-            }
-            if isIdle && tempString != "playerIdle"
-            {
-                tempString = "playerIdle"
-                startAnimation(animAction: playerIdle!, animKey: tempString!)
-            }
-            else
-            {
-                if left.active
-                {
-                    tempString = "playerLeft"
-                    startAnimation(animAction: playerLeft!, animKey: tempString!)
-                    lastDirection = direction
-                    direction = .LEFT
-                    sprite!.position.x -= CGFloat(movSpeed)
-                }
-                if right.active
-                {
-                    tempString = "playerRight"
-                    startAnimation(animAction: playerRight!, animKey: tempString!)
-                    lastDirection = direction
-                    direction = .RIGHT
-                    sprite!.position.x += CGFloat(movSpeed)
-                }
-                if up.active
-                {
-                    tempString = "playerUp"
-                    startAnimation(animAction: playerUp!, animKey: tempString!)
-                    lastDirection = direction
-                    direction = .UP
-                    sprite!.position.y += CGFloat(movSpeed)
-                }
-                if down.active
-                {
-                    tempString = "playerDown"
-                    startAnimation(animAction: playerDown!, animKey: tempString!)
-                    lastDirection = direction
-                    direction = .DOWN
-                    sprite!.position.y -= CGFloat(movSpeed)
+                    dmgTaken -= 1
                 }
                 
-                if interactButton.active
+                if left.active == false &&
+                    right.active == false &&
+                    up.active == false &&
+                    down.active == false
                 {
-                    if let interactable = interactButton.interactable
+                    lastDirection = direction
+                    direction = .NONE
+                    isIdle = true
+                    if tempString != nil && tempString != "playerIdle"
                     {
-                        interactable.act()
+                        stopAnimation(animKey: tempString!)
                     }
                 }
-                if inventoryButton.active
+                else
                 {
-                    inventory!.act()
+                    isIdle = false
+                }
+                if isIdle && tempString != "playerIdle"
+                {
+                    tempString = "playerIdle"
+                    startAnimation(animAction: playerIdle!, animKey: tempString!)
+                }
+                else
+                {
+                    if left.active
+                    {
+                        tempString = "playerLeft"
+                        startAnimation(animAction: playerLeft!, animKey: tempString!)
+                        lastDirection = direction
+                        direction = .LEFT
+                        sprite!.position.x -= CGFloat(movSpeed)
+                    }
+                    if right.active
+                    {
+                        tempString = "playerRight"
+                        startAnimation(animAction: playerRight!, animKey: tempString!)
+                        lastDirection = direction
+                        direction = .RIGHT
+                        sprite!.position.x += CGFloat(movSpeed)
+                    }
+                    if up.active
+                    {
+                        tempString = "playerUp"
+                        startAnimation(animAction: playerUp!, animKey: tempString!)
+                        lastDirection = direction
+                        direction = .UP
+                        sprite!.position.y += CGFloat(movSpeed)
+                    }
+                    if down.active
+                    {
+                        tempString = "playerDown"
+                        startAnimation(animAction: playerDown!, animKey: tempString!)
+                        lastDirection = direction
+                        direction = .DOWN
+                        sprite!.position.y -= CGFloat(movSpeed)
+                    }
+                    
+                    if interactButton.active
+                    {
+                        if let interactable = interactButton.interactable
+                        {
+                            interactable.act()
+                        }
+                    }
+                    if inventoryButton.active
+                    {
+                        inventory!.act()
+                    }
                 }
             }
-        }
-        else if victory
-        {
-            inCombat = false
-            combatTimer = 0
-            victory = false
+            else if victory
+            {
+                inCombat = false
+                combatTimer = 0
+                victory = false
+            }
+            else
+            {
+                let atkCD = combatTimer % calcTotalATS()
+                if atkCD == 0
+                {
+                    target!.hp -= calcTotalDMG() / target!.def
+                }
+                if !target!.isAlive
+                {
+                    victory = true
+                }
+                combatTimer += 1
+            }
+            
         }
         else
         {
-            let atkCD = combatTimer % calcTotalATS()
-            if atkCD == 0
-            {
-                target!.hp -= calcTotalDMG() / target!.def
-            }
-            if !target!.isAlive
-            {
-                victory = true
-            }
-            combatTimer += 1
+            //lose condition
         }
         pos.x = Int(sprite!.position.x)
         pos.y = Int(sprite!.position.y)
@@ -301,7 +317,8 @@ class Player : Entity
                 {
                     target = enemy
                     inCombat = true
-                    
+                    target!.player = self
+                    target!.inCombat = true
                 }
             }
                 
@@ -463,6 +480,20 @@ class Player : Entity
         if let helmet = self.helmet
         {
             s = (self.stats.DEX * helmet.stats.DEX) / (self.stats.CON * helmet.stats.CON) + helmet.basePrecision
+        }
+        
+        return s
+    }
+    
+    func calcMaxHP() -> Int
+    {
+        var s = 0
+        
+        if let sword = self.sword,
+        let helmet = self.helmet,
+        let armour = self.armour
+        {
+            s = self.stats.CON + helmet.stats.CON + armour.stats.CON + sword.stats.CON
         }
         
         return s
