@@ -66,7 +66,10 @@ class Enemy : Entity
             let atkCD = player!.combatTimer % ats
             if atkCD == 0
             {
-                player!.dmgTaken += dmg / player!.calcTotalDEF()
+                if arc4random_uniform( (UInt32(50))) > player!.calcTotalEVS() / prs
+                {
+                    player!.dmgTaken += dmg / player!.calcTotalDEF()
+                }
             }
         }
     }

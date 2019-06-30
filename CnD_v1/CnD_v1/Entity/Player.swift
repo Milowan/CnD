@@ -256,7 +256,10 @@ class Player : Entity
                 let atkCD = combatTimer % calcTotalATS()
                 if atkCD == 0
                 {
-                    target!.hp -= calcTotalDMG() / target!.def
+                    if arc4random_uniform( (UInt32(50))) > target!.evs / calcTotalPRS()
+                    {
+                        target!.hp -= calcTotalDMG() / target!.def
+                    }
                 }
                 if !target!.isAlive
                 {
