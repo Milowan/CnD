@@ -42,6 +42,7 @@ class LevelGenerator
         createGemDias()
         createAlcoves()
         createChests()
+        createEnemies()
         createWallCollisions()
     }
     
@@ -139,6 +140,20 @@ class LevelGenerator
                 guard tile(in: gemMap, at: (column, row)) != nil else {continue}
                 gameScene!.addEntity(entity: Interactable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "switch_floor_on")))
                 gemMap.removeFromParent()
+            }
+        }
+    }
+    
+    func createEnemies()
+    {
+        guard let enemyMap = gameScene!.childNode(withName: "Interactable_Enemy") as? SKTileMapNode else {return}
+        for row in 0..<enemyMap.numberOfRows
+        {
+            for column in 0..<enemyMap.numberOfColumns
+            {
+                guard tile(in: enemyMap, at: (column, row)) != nil else {continue}
+                gameScene!.addEntity(entity: LesserSkeleton(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "Skeleton-Idle_01")))
+                enemyMap.removeFromParent()
             }
         }
     }

@@ -25,18 +25,15 @@ depends-top-level:
 - "Armour"
 - "AssignmentPrecedence"
 - !private "BSNode"
-- "BooleanLiteralType"
 - "Button"
 - !private "CGFloat"
 - !private "CGSize"
 - "CastingPrecedence"
 - "Direction"
 - "Entity"
-- "FloatLiteralType"
 - !private "GameScene"
 - "Helmet"
 - "Int"
-- "IntegerLiteralType"
 - !private "Interactable"
 - "Inventory"
 - "Player"
@@ -88,7 +85,6 @@ depends-member:
 - !private ["Sl", "append"]
 - !private ["SL", "init"]
 - !private ["10Foundation15ContiguousBytesP", "append"]
-- !private ["s28CustomDebugStringConvertibleP", "act"]
 - !private ["s28CustomDebugStringConvertibleP", "action"]
 - !private ["s28CustomDebugStringConvertibleP", "addChild"]
 - !private ["s28CustomDebugStringConvertibleP", "animate"]
@@ -109,7 +105,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "x"]
 - !private ["s28CustomDebugStringConvertibleP", "y"]
 - !private ["s28CustomDebugStringConvertibleP", "zPosition"]
-- !private ["s17CustomReflectableP", "act"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "init"]
@@ -135,7 +130,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "texture"]
 - !private ["s23CustomStringConvertibleP", "zPosition"]
 - !private ["10Foundation12DataProtocolP", "append"]
-- !private ["Se", "act"]
 - !private ["Se", "append"]
 - !private ["Se", "height"]
 - !private ["Se", "init"]
@@ -155,7 +149,6 @@ depends-member:
 - ["6CnD_v19DirectionO", "deinit"]
 - ["6CnD_v19DirectionO", "hash"]
 - ["6CnD_v19DirectionO", "hashValue"]
-- !private ["SE", "act"]
 - !private ["SE", "append"]
 - !private ["SE", "height"]
 - !private ["SE", "init"]
@@ -333,7 +326,6 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
-- !private ["s23ExpressibleByNilLiteralP", "act"]
 - !private ["s17FixedWidthIntegerP", "init"]
 - !private ["SF", "init"]
 - !private ["6CnD_v19GameSceneC", "gridSize"]
@@ -354,7 +346,6 @@ depends-member:
 - !private ["SH", "WORLD"]
 - ["SH", ""]
 - ["SH", "_rawHashValue"]
-- !private ["SH", "act"]
 - !private ["SH", "action"]
 - !private ["SH", "addChild"]
 - !private ["SH", "animate"]
@@ -470,7 +461,6 @@ depends-member:
 - !private ["So14NSSecureCodingP", "texture"]
 - !private ["So14NSSecureCodingP", "zPosition"]
 - !private ["Sj", "init"]
-- !private ["Sq", "act"]
 - ["6CnD_v16PlayerC", "Armour"]
 - !private ["6CnD_v16PlayerC", "BSNode"]
 - ["6CnD_v16PlayerC", "Button"]
@@ -499,6 +489,7 @@ depends-member:
 - ["6CnD_v16PlayerC", "calcTotalPRS"]
 - ["6CnD_v16PlayerC", "collision"]
 - ["6CnD_v16PlayerC", "dPadBG"]
+- ["6CnD_v16PlayerC", "deinit"]
 - ["6CnD_v16PlayerC", "direction"]
 - ["6CnD_v16PlayerC", "down"]
 - ["6CnD_v16PlayerC", "downLeft"]
@@ -706,7 +697,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "size"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "texture"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "zPosition"]
-- !private ["s21_ObjectiveCBridgeableP", "act"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
@@ -745,7 +735,6 @@ depends-nominal:
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
-- !private "s23ExpressibleByNilLiteralP"
 - !private "s17FixedWidthIntegerP"
 - !private "SF"
 - !private "6CnD_v19GameSceneC"
@@ -767,7 +756,6 @@ depends-nominal:
 - "So8NSObjectP"
 - "So14NSSecureCodingP"
 - !private "Sj"
-- !private "Sq"
 - "6CnD_v16PlayerC"
 - !private "6CnD_v13PosC"
 - !private "Sk"
@@ -840,4 +828,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "89683eb7c9d7b6696bbdef0ec795fd30"
+interface-hash: "8f1239a685ec62ac09dda26f7e9e84ad"

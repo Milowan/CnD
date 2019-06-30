@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "68bada735cf5513398e2c3cc8de28cad"
-build_time: [1561909977, 91912000]
+build_time: [1561914336, 919901000]
 inputs:
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Entity/Interactable/Dais.swift": [1561746469, 845666495]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Item/Helmet.swift": [1561746469, 840890900]
@@ -22,7 +22,7 @@ inputs:
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Extensions.swift": [1561083935, 20622967]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Entity/Enemy/Enemy.swift": [1561746469, 752750094]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Inventory.swift": [1561909722, 688982169]
-  "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/LevelGenerator.swift": [1561757708, 511960934]
+  "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/LevelGenerator.swift": [1561914333, 816879111]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Entity/Enemy/GreaterSkeleton.swift": [1561746469, 752882044]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Item/Gear.swift": [1561746469, 841301947]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Pos.swift": [1561146323, 390672120]
