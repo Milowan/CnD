@@ -27,6 +27,7 @@ class BSNode : SKSpriteNode
     override func touchesEnded(_ touches : Set<UITouch>, with event : UIEvent?)
     {
         self.button!.active = false
+        self.button!.clear = false
     }
     
 }

@@ -124,7 +124,7 @@ class LevelGenerator
             for column in 0..<plateMap.numberOfColumns
             {
                 guard tile(in: plateMap, at: (column, row)) != nil else {continue}
-                gameScene!.addEntity(entity: Interactable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "floor")))
+                gameScene!.addEntity(entity: PressPlates(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "floor"), d : (gameScene!.doorArray![2])))
                 plateMap.removeFromParent()
             }
         }

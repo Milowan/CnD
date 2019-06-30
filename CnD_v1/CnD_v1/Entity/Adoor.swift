@@ -30,22 +30,17 @@ class Adoor : Entity
     
     func toggleState()
     {
-        i %= 2
-        if i == 0
+        if isOpen
         {
-            if isOpen
-            {
-                collisionMask = .WORLD
-                startAnimation(animAction: doorClosed!, animKey: "close", sprite: sprite!)
-            }
-            else
-            {
-                collisionMask = .NONE
-                startAnimation(animAction: doorOpen!, animKey: "close", sprite: sprite!)
-            }
-            isOpen = !isOpen
+            collisionMask = .WORLD
+            startAnimation(animAction: doorClosed!, animKey: "close", sprite: sprite!)
         }
-        i += 1
+        else
+        {
+            collisionMask = .NONE
+            startAnimation(animAction: doorOpen!, animKey: "close", sprite: sprite!)
+        }
+        isOpen = !isOpen
     }
     
     func setDoorAnims()
