@@ -30,6 +30,7 @@ depends-top-level:
 - "SKTileDefinition"
 - "SKTileMapNode"
 - "SKTileSet"
+- !private "StringLiteralType"
 - !private "World"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
@@ -179,7 +180,6 @@ depends-member:
 - ["6CnD_v114LevelGeneratorC", "createLever"]
 - ["6CnD_v114LevelGeneratorC", "createPressPlates"]
 - ["6CnD_v114LevelGeneratorC", "createWallCollisions"]
-- ["6CnD_v114LevelGeneratorC", "deinit"]
 - ["6CnD_v114LevelGeneratorC", "gameScene"]
 - ["6CnD_v114LevelGeneratorC", "generate"]
 - ["6CnD_v114LevelGeneratorC", "init"]

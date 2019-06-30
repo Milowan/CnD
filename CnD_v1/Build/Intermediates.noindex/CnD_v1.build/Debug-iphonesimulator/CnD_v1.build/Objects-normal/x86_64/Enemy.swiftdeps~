@@ -7,20 +7,19 @@ provides-member:
 - ["6CnD_v15EnemyC", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "%"
-- !private "&&"
-- !private "+="
 - !private "..."
-- !private "/"
 - !private "<="
 - !private "=="
 - "AssignmentPrecedence"
 - "BooleanLiteralType"
 - "Enemy"
 - "Entity"
+- "FloatLiteralType"
 - "Int"
+- "IntegerLiteralType"
 - "Player"
 - "SKSpriteNode"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Sa", "subscript"]
 - !private ["SK", "subscript"]
@@ -38,7 +37,6 @@ depends-member:
 - ["6CnD_v15EnemyC", "SKSpriteNode"]
 - ["6CnD_v15EnemyC", "ats"]
 - ["6CnD_v15EnemyC", "def"]
-- ["6CnD_v15EnemyC", "deinit"]
 - ["6CnD_v15EnemyC", "dmg"]
 - ["6CnD_v15EnemyC", "evs"]
 - ["6CnD_v15EnemyC", "hp"]
@@ -53,11 +51,8 @@ depends-member:
 - ["6CnD_v16EntityC", "SKSpriteNode"]
 - ["6CnD_v16EntityC", ""]
 - ["6CnD_v16EntityC", "ats"]
-- !private ["6CnD_v16EntityC", "calcTotalDEF"]
-- !private ["6CnD_v16EntityC", "combatTimer"]
 - ["6CnD_v16EntityC", "def"]
 - ["6CnD_v16EntityC", "dmg"]
-- !private ["6CnD_v16EntityC", "dmgTaken"]
 - ["6CnD_v16EntityC", "evs"]
 - ["6CnD_v16EntityC", "hp"]
 - ["6CnD_v16EntityC", "inCombat"]
@@ -69,17 +64,12 @@ depends-member:
 - !private ["SQ", "ENEMY"]
 - ["SQ", ""]
 - !private ["SQ", "ats"]
-- !private ["SQ", "calcTotalDEF"]
-- !private ["SQ", "combatTimer"]
 - !private ["SQ", "def"]
 - !private ["SQ", "dmg"]
-- !private ["SQ", "dmgTaken"]
 - !private ["SQ", "evs"]
 - !private ["SQ", "hp"]
-- !private ["SQ", "inCombat"]
 - !private ["SQ", "init"]
 - !private ["SQ", "isAlive"]
-- !private ["SQ", "player"]
 - !private ["SQ", "prs"]
 - !private ["SQ", "subscript"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
@@ -87,9 +77,6 @@ depends-member:
 - !private ["SH", "subscript"]
 - !private ["SM", "subscript"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
-- !private ["6CnD_v16PlayerC", "calcTotalDEF"]
-- !private ["6CnD_v16PlayerC", "combatTimer"]
-- !private ["6CnD_v16PlayerC", "dmgTaken"]
 - !private ["Sk", "subscript"]
 - !private ["Sm", "subscript"]
 - !private ["ST", "subscript"]
@@ -118,7 +105,6 @@ depends-nominal:
 - !private "SH"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
-- !private "6CnD_v16PlayerC"
 - !private "Sk"
 - !private "Sm"
 - !private "ST"

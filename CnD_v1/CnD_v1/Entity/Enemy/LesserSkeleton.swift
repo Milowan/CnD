@@ -11,19 +11,16 @@ import SpriteKit
 
 class LesserSkeleton : Enemy
 {
-    
-    var enemyIdle : SKAction?
-    var eiTextures :[SKTexture] = []
+    var scale : SKAction?
+    var enemyIdleL : SKAction?
+    var eiLTextures : [SKTexture] = []
+    var enemyIdleR : SKAction?
+    var eiRTextures : [SKTexture] = []
     
     var enemyAtkR : SKAction?
     var eatkRTextures : [SKTexture] = []
     var enemyAtkL : SKAction?
     var eatkLTextures : [SKTexture] = []
-    
-    var enemyHitL : SKAction?
-    var ehLTextures : [SKTexture] = []
-    var enemyHitR : SKAction?
-    var ehRTextures : [SKTexture] = []
     
     var enemyDeathR : SKAction?
     var edRTextures : [SKTexture] = []
@@ -31,6 +28,7 @@ class LesserSkeleton : Enemy
     var edLTextures : [SKTexture] = []
     
     let animSpeed = 0.1
+    var newCombat = true
     
     init (x : Int, y : Int, z : Int, s : SKSpriteNode)
     {
@@ -51,74 +49,128 @@ class LesserSkeleton : Enemy
         
         super.init(x : x, y : y, z : z, s : s, st : stats)
         setAnimations()
-        startAnimation(animAction: enemyIdle!, animKey: "idle")
+        startAnimation(animAction: enemyIdleL!, animKey: "idleL")
     }
+    
+    override func update()
+    {
+        super.update()
+        if !isAlive && player!.cDir == 0
+        {
+            runAnimation(animAction: enemyDeathL!, animKey: "death")
+            if !sprite!.actionForKeyIsRunning(key: "death")
+            {
+                isDespawned = true
+            }
+        }
+        else
+        {
+            if inCombat && newCombat
+            {
+                startAnimation(animAction: enemyIdleL!, animKey: "idleL")
+                newCombat = false
+            }
+            if inCombat
+            {
+                let atkCD = player!.combatTimer % ats
+                if atkCD == 0
+                {
+                    if !sprite!.actionForKeyIsRunning(key: "atkLeft")
+                    {
+                        self.runAnimation(animAction: enemyAtkL!, animKey: "atkLeft")
+                        if arc4random_uniform( (UInt32(50))) > player!.calcTotalEVS() / prs
+                        {
+                            player!.dmgTaken += dmg / player!.calcTotalDEF()
+                            newCombat = true
+                        }
+                    }
+                }
+            }
+        }
+        if !isAlive && player!.cDir == 1
+        {
+            runAnimation(animAction: enemyDeathL!, animKey: "death")
+            if !sprite!.actionForKeyIsRunning(key: "death")
+            {
+                isDespawned = true
+            }
+        }
+        else
+        {
+            if inCombat && newCombat
+            {
+                    startAnimation(animAction: enemyIdleL!, animKey: "idleR")
+                    newCombat = false
+                }
+                if inCombat
+                {
+                    let atkCD = player!.combatTimer % ats
+                    if atkCD == 0
+                    {
+                        if !sprite!.actionForKeyIsRunning(key: "atkRight")
+                        {
+                            self.runAnimation(animAction: enemyAtkR!, animKey: "atkRight")
+                            if arc4random_uniform( (UInt32(50))) > player!.calcTotalEVS() / prs
+                            {
+                                player!.dmgTaken += dmg / player!.calcTotalDEF()
+                                newCombat = true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    
+    
+    
     
     func setAnimations()
     {
-        for i in 1...9
+        for i in 1...4
         {
-            eiTextures.append(SKTexture(pixelImageNamed: "Skeleton-Idle_0\(i)"))
+            eiRTextures.append(SKTexture(pixelImageNamed: "Skeleton-Idle_0\(i)"))
         }
-        for i in 10...11
+        for i in 1...4
         {
-            eiTextures.append(SKTexture(pixelImageNamed: "Skeleton-Idle_\(i)"))
+            eiLTextures.append(SKTexture(pixelImageNamed: "LSkeleton-Idle_0\(i)"))
         }
-        for i in 1...9
+        for i in 1...4
         {
             eatkRTextures.append(SKTexture(pixelImageNamed: "Skeleton-Attack_0\(i)"))
         }
-        for i in 10...18
-        {
-            eatkRTextures.append(SKTexture(pixelImageNamed: "Skeleton-Attack_\(i)"))
-        }
-        for i in 1...9
+        for i in 1...4
         {
             eatkLTextures.append(SKTexture(pixelImageNamed: "LSkeleton-Attack_0\(i)"))
         }
-        for i in 10...18
-        {
-            eatkLTextures.append(SKTexture(pixelImageNamed: "LSkeleton-Attack_\(i)"))
-        }
-        for i in 1...8
-        {
-            ehRTextures.append(SKTexture(pixelImageNamed: "Skeleton-Hit_0\(i)"))
-        }
-        for i in 1...8
-        {
-            ehLTextures.append(SKTexture(pixelImageNamed: "LSkeleton-Hit_0\(i)"))
-        }
-        for i in 1...9
+        for i in 1...5
         {
             edRTextures.append(SKTexture(pixelImageNamed: "Skeleton-Dead_0\(i)"))
         }
-        for i in 10...15
-        {
-            edRTextures.append(SKTexture(pixelImageNamed: "Skeleton-Dead_\(i)"))
-        }
-        for i in 1...9
+        for i in 1...5
         {
             edLTextures.append(SKTexture(pixelImageNamed: "LSkeleton-Dead_0\(i)"))
         }
-        for i in 10...15
-        {
-            edLTextures.append(SKTexture(pixelImageNamed: "LSkeleton-Dead_\(i)"))
-        }
         
-        enemyIdle = SKAction.animate(with: eiTextures, timePerFrame: animSpeed)
+        enemyIdleR = SKAction.animate(with: eiRTextures, timePerFrame: animSpeed)
+        enemyIdleL = SKAction.animate(with: eiLTextures, timePerFrame: animSpeed)
         
         enemyAtkR = SKAction.animate(with: eatkRTextures, timePerFrame: animSpeed)
         var tempAnim = SKAction.animate(with: eatkLTextures, timePerFrame: animSpeed)
         enemyAtkL = tempAnim.reversed()
         
-        enemyHitR = SKAction.animate(with: ehRTextures, timePerFrame: animSpeed)
-        tempAnim = SKAction.animate(with: ehLTextures, timePerFrame: animSpeed)
-        enemyHitL = tempAnim.reversed()
-        
         enemyDeathR = SKAction.animate(with: edRTextures, timePerFrame: animSpeed)
         tempAnim = SKAction.animate(with: edLTextures, timePerFrame: animSpeed)
         enemyDeathL = tempAnim.reversed()
         
+    }
+    
+    func runAnimation(animAction: SKAction, animKey: String)
+    {
+        if sprite!.action(forKey: animKey) == nil
+        {
+            sprite!.run((animAction), withKey: animKey)
+        }
     }
     
     func startAnimation(animAction: SKAction, animKey: String)
@@ -135,13 +187,6 @@ class LesserSkeleton : Enemy
     }
     
 }
-
-//playerIdle = SKAction.animate(with: piTextures, timePerFrame: animSpeed)
-//playerLeft = SKAction.animate(with: plTextures, timePerFrame: animSpeed)
-//playerRight = SKAction.animate(with: prTextures, timePerFrame: animSpeed)
-//playerUp = SKAction.animate(with: puTextures, timePerFrame: animSpeed)
-//playerDown = SKAction.animate(with: pdTextures, timePerFrame: animSpeed)
-//}
 
 
 

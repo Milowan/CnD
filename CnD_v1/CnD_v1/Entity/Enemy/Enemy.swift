@@ -18,6 +18,7 @@ class Enemy : Entity
     var prs = 0
     var hp = 0
     var isAlive = true
+    var isDespawned = false
     var inCombat = false
     
     var player : Player?
@@ -52,6 +53,7 @@ class Enemy : Entity
                 hp = val
             }
         }
+        
         super.init(x : x, y : y, z : z, s : s, m : .ENEMY)
     }
     
@@ -61,16 +63,6 @@ class Enemy : Entity
         {
             isAlive = false
         }
-        if isAlive && inCombat
-        {
-            let atkCD = player!.combatTimer % ats
-            if atkCD == 0
-            {
-                if arc4random_uniform( (UInt32(50))) > player!.calcTotalEVS() / prs
-                {
-                    player!.dmgTaken += dmg / player!.calcTotalDEF()
-                }
-            }
-        }
+
     }
 }
