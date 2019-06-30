@@ -8,12 +8,17 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "..."
+- !private "<="
 - !private "=="
 - "AssignmentPrecedence"
+- "BooleanLiteralType"
 - "Enemy"
 - "Entity"
+- "FloatLiteralType"
 - "Int"
+- "IntegerLiteralType"
 - "SKSpriteNode"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Sa", "subscript"]
 - !private ["SK", "subscript"]
@@ -30,12 +35,13 @@ depends-member:
 - ["6CnD_v15EnemyC", "SKSpriteNode"]
 - ["6CnD_v15EnemyC", "ats"]
 - ["6CnD_v15EnemyC", "def"]
-- ["6CnD_v15EnemyC", "deinit"]
 - ["6CnD_v15EnemyC", "dmg"]
 - ["6CnD_v15EnemyC", "evs"]
 - ["6CnD_v15EnemyC", "hp"]
 - ["6CnD_v15EnemyC", "init"]
+- ["6CnD_v15EnemyC", "isAlive"]
 - ["6CnD_v15EnemyC", "prs"]
+- ["6CnD_v15EnemyC", "update"]
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "SKSpriteNode"]
 - ["6CnD_v16EntityC", ""]
@@ -45,7 +51,9 @@ depends-member:
 - ["6CnD_v16EntityC", "evs"]
 - ["6CnD_v16EntityC", "hp"]
 - ["6CnD_v16EntityC", "init"]
+- ["6CnD_v16EntityC", "isAlive"]
 - ["6CnD_v16EntityC", "prs"]
+- ["6CnD_v16EntityC", "update"]
 - !private ["SQ", "ENEMY"]
 - ["SQ", ""]
 - !private ["SQ", "ats"]
@@ -54,6 +62,7 @@ depends-member:
 - !private ["SQ", "evs"]
 - !private ["SQ", "hp"]
 - !private ["SQ", "init"]
+- !private ["SQ", "isAlive"]
 - !private ["SQ", "prs"]
 - !private ["SQ", "subscript"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
@@ -131,4 +140,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "907f4e91e279cb47fbdc10c2b9eff911"
+interface-hash: "13169e8e4fb7776bae38870a84d36551"

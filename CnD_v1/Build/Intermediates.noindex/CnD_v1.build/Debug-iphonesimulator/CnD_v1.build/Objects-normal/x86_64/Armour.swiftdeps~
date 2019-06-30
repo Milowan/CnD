@@ -13,6 +13,7 @@ depends-top-level:
 - "Player"
 - "SKSpriteNode"
 - "Stats"
+- !private "StringLiteralType"
 depends-member:
 - ["6CnD_v16ArmourC", "Player"]
 - ["6CnD_v16ArmourC", "SKSpriteNode"]

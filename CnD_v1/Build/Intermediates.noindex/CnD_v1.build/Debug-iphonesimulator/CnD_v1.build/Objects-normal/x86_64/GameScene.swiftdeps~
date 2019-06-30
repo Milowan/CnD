@@ -17,8 +17,10 @@ depends-top-level:
 - "CGSize"
 - "CastingPrecedence"
 - "Entity"
+- "FloatLiteralType"
 - "GameScene"
 - "Int"
+- "IntegerLiteralType"
 - "LevelGenerator"
 - "NSCoder"
 - "Player"
@@ -30,6 +32,7 @@ depends-top-level:
 - "SKTileMapNode"
 - "SKTileSet"
 - "SKView"
+- !private "StringLiteralType"
 - "TimeInterval"
 - "UIColor"
 depends-member:

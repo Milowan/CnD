@@ -25,15 +25,18 @@ depends-top-level:
 - "Armour"
 - "AssignmentPrecedence"
 - !private "BSNode"
+- "BooleanLiteralType"
 - "Button"
 - !private "CGFloat"
 - !private "CGSize"
 - "CastingPrecedence"
 - "Direction"
 - "Entity"
+- "FloatLiteralType"
 - !private "GameScene"
 - "Helmet"
 - "Int"
+- "IntegerLiteralType"
 - !private "Interactable"
 - "Inventory"
 - "Player"
@@ -489,7 +492,6 @@ depends-member:
 - ["6CnD_v16PlayerC", "calcTotalPRS"]
 - ["6CnD_v16PlayerC", "collision"]
 - ["6CnD_v16PlayerC", "dPadBG"]
-- ["6CnD_v16PlayerC", "deinit"]
 - ["6CnD_v16PlayerC", "direction"]
 - ["6CnD_v16PlayerC", "down"]
 - ["6CnD_v16PlayerC", "downLeft"]
