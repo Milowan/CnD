@@ -19,15 +19,19 @@ depends-top-level:
 - "CastingPrecedence"
 - !private "Collectable"
 - !private "Door"
+- !private "FloatLiteralType"
 - "GameScene"
 - "Int"
+- !private "IntegerLiteralType"
 - !private "Interactable"
+- !private "LesserSkeleton"
 - "LevelGenerator"
 - !private "Lever"
 - !private "SKSpriteNode"
 - "SKTileDefinition"
 - "SKTileMapNode"
 - "SKTileSet"
+- !private "StringLiteralType"
 - !private "World"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
@@ -151,6 +155,7 @@ depends-member:
 - !private ["SH", "tileDefinition"]
 - !private ["Si", "init"]
 - !private ["6CnD_v112InteractableC", "init"]
+- !private ["6CnD_v114LesserSkeletonC", "init"]
 - !private ["6CnD_v114LevelGeneratorC", "Adoor"]
 - ["6CnD_v114LevelGeneratorC", "CGPoint"]
 - !private ["6CnD_v114LevelGeneratorC", "Collectable"]
@@ -158,6 +163,7 @@ depends-member:
 - ["6CnD_v114LevelGeneratorC", "GameScene"]
 - ["6CnD_v114LevelGeneratorC", "Int"]
 - !private ["6CnD_v114LevelGeneratorC", "Interactable"]
+- !private ["6CnD_v114LevelGeneratorC", "LesserSkeleton"]
 - !private ["6CnD_v114LevelGeneratorC", "Lever"]
 - !private ["6CnD_v114LevelGeneratorC", "SKSpriteNode"]
 - ["6CnD_v114LevelGeneratorC", "SKTileDefinition"]
@@ -168,6 +174,7 @@ depends-member:
 - ["6CnD_v114LevelGeneratorC", "createAlcoves"]
 - ["6CnD_v114LevelGeneratorC", "createChests"]
 - ["6CnD_v114LevelGeneratorC", "createDoors"]
+- ["6CnD_v114LevelGeneratorC", "createEnemies"]
 - ["6CnD_v114LevelGeneratorC", "createGemDias"]
 - ["6CnD_v114LevelGeneratorC", "createLever"]
 - ["6CnD_v114LevelGeneratorC", "createPressPlates"]
@@ -420,6 +427,7 @@ depends-nominal:
 - !private "SH"
 - !private "Si"
 - !private "6CnD_v112InteractableC"
+- !private "6CnD_v114LesserSkeletonC"
 - "6CnD_v114LevelGeneratorC"
 - !private "6CnD_v15LeverC"
 - !private "s25LosslessStringConvertibleP"
@@ -497,4 +505,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "86a98d2ab0b9988681053f5adc12127a"
+interface-hash: "ebd852eea5d920b9d7684978b1530883"

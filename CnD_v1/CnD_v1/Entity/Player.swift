@@ -72,6 +72,11 @@ class Player : Entity
     
     var playerDown: SKAction?
     var pdTextures:[SKTexture] = []
+    
+    var playerAtkLeft: SKAction?
+    var palTextures: [SKTexture] = []
+    var playerAtkRight: SKAction?
+    var parTextures: [SKTexture] = []
 
     let uiGap = 5
     let uiBuffer = 2
@@ -403,11 +408,21 @@ class Player : Entity
         {
             pdTextures.append(SKTexture(pixelImageNamed: "knight iso char_run down_\(i)"))
         }
+        for i in 0...1
+        {
+            palTextures.append(SKTexture(pixelImageNamed: "knight iso char_slice left_\(i)"))
+        }
+        for i in 0...1
+        {
+            parTextures.append(SKTexture(pixelImageNamed: "knight iso char_slice right_\(i)"))
+        }
         playerIdle = SKAction.animate(with: piTextures, timePerFrame: animSpeed)
         playerLeft = SKAction.animate(with: plTextures, timePerFrame: animSpeed)
         playerRight = SKAction.animate(with: prTextures, timePerFrame: animSpeed)
         playerUp = SKAction.animate(with: puTextures, timePerFrame: animSpeed)
         playerDown = SKAction.animate(with: pdTextures, timePerFrame: animSpeed)
+        playerAtkLeft = SKAction.animate(with: palTextures, timePerFrame: 0.4)
+        playerAtkRight = SKAction.animate(with: parTextures, timePerFrame: 0.4)
     }
     
     func startAnimation(animAction: SKAction, animKey: String)
