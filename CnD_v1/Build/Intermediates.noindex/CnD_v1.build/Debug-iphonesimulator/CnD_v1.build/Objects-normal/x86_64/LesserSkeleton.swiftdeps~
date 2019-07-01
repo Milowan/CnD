@@ -20,7 +20,7 @@ depends-top-level:
 - "Enemy"
 - "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
+- "IntegerLiteralType"
 - "LesserSkeleton"
 - "SKAction"
 - "SKSpriteNode"
@@ -29,6 +29,7 @@ depends-top-level:
 - !private "StringLiteralType"
 - !private "UInt32"
 - !private "arc4random_uniform"
+- !private "||"
 depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "init"]
@@ -41,7 +42,6 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "removeAction"]
 - !private ["s7CVarArgP", "repeatForever"]
-- !private ["s7CVarArgP", "reversed"]
 - !private ["s7CVarArgP", "run"]
 - !private ["Sl", "append"]
 - !private ["Sl", "init"]
@@ -54,7 +54,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "removeAction"]
 - !private ["s28CustomDebugStringConvertibleP", "repeatForever"]
-- !private ["s28CustomDebugStringConvertibleP", "reversed"]
 - !private ["s28CustomDebugStringConvertibleP", "run"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "init"]
@@ -67,7 +66,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "removeAction"]
 - !private ["s23CustomStringConvertibleP", "repeatForever"]
-- !private ["s23CustomStringConvertibleP", "reversed"]
 - !private ["s23CustomStringConvertibleP", "run"]
 - !private ["10Foundation12DataProtocolP", "append"]
 - !private ["10Foundation12DataProtocolP", "init"]
@@ -86,6 +84,7 @@ depends-member:
 - ["6CnD_v15EnemyC", ""]
 - ["6CnD_v15EnemyC", "animSpeed"]
 - !private ["6CnD_v15EnemyC", "arc4random_uniform"]
+- ["6CnD_v15EnemyC", "atkAnimSp"]
 - !private ["6CnD_v15EnemyC", "ats"]
 - !private ["6CnD_v15EnemyC", "dmg"]
 - ["6CnD_v15EnemyC", "eatkLTextures"]
@@ -113,6 +112,7 @@ depends-member:
 - !private ["6CnD_v15EnemyC", "sprite"]
 - ["6CnD_v15EnemyC", "startAnimation"]
 - ["6CnD_v15EnemyC", "stopAnimation"]
+- ["6CnD_v15EnemyC", "tempTimer"]
 - ["6CnD_v15EnemyC", "update"]
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "SKAction"]
@@ -122,6 +122,7 @@ depends-member:
 - !private ["6CnD_v16EntityC", "UInt32"]
 - ["6CnD_v16EntityC", "animSpeed"]
 - !private ["6CnD_v16EntityC", "arc4random_uniform"]
+- ["6CnD_v16EntityC", "atkAnimSp"]
 - !private ["6CnD_v16EntityC", "ats"]
 - !private ["6CnD_v16EntityC", "cDir"]
 - !private ["6CnD_v16EntityC", "calcTotalDEF"]
@@ -153,6 +154,7 @@ depends-member:
 - !private ["6CnD_v16EntityC", "sprite"]
 - ["6CnD_v16EntityC", "startAnimation"]
 - ["6CnD_v16EntityC", "stopAnimation"]
+- ["6CnD_v16EntityC", "tempTimer"]
 - ["6CnD_v16EntityC", "update"]
 - !private ["SQ", "Int"]
 - !private ["SQ", "SKAction"]
@@ -165,6 +167,7 @@ depends-member:
 - !private ["SQ", "animate"]
 - !private ["SQ", "append"]
 - !private ["SQ", "arc4random_uniform"]
+- !private ["SQ", "atkAnimSp"]
 - !private ["SQ", "ats"]
 - !private ["SQ", "cDir"]
 - !private ["SQ", "calcTotalDEF"]
@@ -188,17 +191,17 @@ depends-member:
 - !private ["SQ", "init"]
 - !private ["SQ", "isAlive"]
 - !private ["SQ", "isDespawned"]
-- !private ["SQ", "newCombat"]
 - !private ["SQ", "player"]
 - !private ["SQ", "prs"]
 - !private ["SQ", "removeAction"]
 - !private ["SQ", "repeatForever"]
-- !private ["SQ", "reversed"]
 - !private ["SQ", "run"]
 - !private ["SQ", "runAnimation"]
 - !private ["SQ", "setAnimations"]
 - !private ["SQ", "sprite"]
 - !private ["SQ", "startAnimation"]
+- !private ["SQ", "stopAnimation"]
+- !private ["SQ", "tempTimer"]
 - !private ["SQ", "update"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
@@ -209,7 +212,6 @@ depends-member:
 - !private ["SH", "init"]
 - !private ["SH", "removeAction"]
 - !private ["SH", "repeatForever"]
-- !private ["SH", "reversed"]
 - !private ["SH", "run"]
 - ["6CnD_v114LesserSkeletonC", "Int"]
 - ["6CnD_v114LesserSkeletonC", "SKAction"]
@@ -219,6 +221,7 @@ depends-member:
 - !private ["6CnD_v114LesserSkeletonC", "UInt32"]
 - ["6CnD_v114LesserSkeletonC", "animSpeed"]
 - !private ["6CnD_v114LesserSkeletonC", "arc4random_uniform"]
+- ["6CnD_v114LesserSkeletonC", "atkAnimSp"]
 - !private ["6CnD_v114LesserSkeletonC", "ats"]
 - !private ["6CnD_v114LesserSkeletonC", "dmg"]
 - ["6CnD_v114LesserSkeletonC", "eatkLTextures"]
@@ -246,6 +249,7 @@ depends-member:
 - !private ["6CnD_v114LesserSkeletonC", "sprite"]
 - ["6CnD_v114LesserSkeletonC", "startAnimation"]
 - ["6CnD_v114LesserSkeletonC", "stopAnimation"]
+- ["6CnD_v114LesserSkeletonC", "tempTimer"]
 - ["6CnD_v114LesserSkeletonC", "update"]
 - !private ["SM", "append"]
 - !private ["SM", "init"]
@@ -257,7 +261,6 @@ depends-member:
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "removeAction"]
 - !private ["So8NSCodingP", "repeatForever"]
-- !private ["So8NSCodingP", "reversed"]
 - !private ["So8NSCodingP", "run"]
 - !private ["So9NSCopyingP", "action"]
 - !private ["So9NSCopyingP", "actionForKeyIsRunning"]
@@ -265,7 +268,6 @@ depends-member:
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "removeAction"]
 - !private ["So9NSCopyingP", "repeatForever"]
-- !private ["So9NSCopyingP", "reversed"]
 - !private ["So9NSCopyingP", "run"]
 - !private ["So8NSObjectC", "action"]
 - !private ["So8NSObjectC", "actionForKeyIsRunning"]
@@ -273,7 +275,6 @@ depends-member:
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "removeAction"]
 - !private ["So8NSObjectC", "repeatForever"]
-- !private ["So8NSObjectC", "reversed"]
 - !private ["So8NSObjectC", "run"]
 - !private ["So8NSObjectP", "action"]
 - !private ["So8NSObjectP", "actionForKeyIsRunning"]
@@ -281,7 +282,6 @@ depends-member:
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "removeAction"]
 - !private ["So8NSObjectP", "repeatForever"]
-- !private ["So8NSObjectP", "reversed"]
 - !private ["So8NSObjectP", "run"]
 - !private ["So14NSSecureCodingP", "action"]
 - !private ["So14NSSecureCodingP", "actionForKeyIsRunning"]
@@ -289,7 +289,6 @@ depends-member:
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "removeAction"]
 - !private ["So14NSSecureCodingP", "repeatForever"]
-- !private ["So14NSSecureCodingP", "reversed"]
 - !private ["So14NSSecureCodingP", "run"]
 - !private ["6CnD_v16PlayerC", "cDir"]
 - !private ["6CnD_v16PlayerC", "calcTotalDEF"]
@@ -302,7 +301,6 @@ depends-member:
 - !private ["Sm", "init"]
 - !private ["So8SKActionC", "animate"]
 - !private ["So8SKActionC", "repeatForever"]
-- !private ["So8SKActionC", "reversed"]
 - !private ["So6SKNodeC", "action"]
 - !private ["So6SKNodeC", "actionForKeyIsRunning"]
 - !private ["So6SKNodeC", "removeAction"]
@@ -365,7 +363,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "removeAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "repeatForever"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "reversed"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "run"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
@@ -452,4 +449,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e49e9d58cd70425485ca5d26ccee8c66"
+interface-hash: "a59b87bc94f1e1b3dec5d895403e9191"

@@ -9,7 +9,6 @@ provides-dynamic-lookup:
 - "didMove"
 - "update"
 depends-top-level:
-- !private "!"
 - !private "!="
 - "/"
 - !private "=="

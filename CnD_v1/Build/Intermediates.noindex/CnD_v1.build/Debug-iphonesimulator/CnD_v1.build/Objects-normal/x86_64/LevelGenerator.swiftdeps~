@@ -19,13 +19,16 @@ depends-top-level:
 - "CastingPrecedence"
 - !private "Collectable"
 - !private "Door"
+- !private "FloatLiteralType"
 - "GameScene"
 - "Int"
+- !private "IntegerLiteralType"
 - !private "Interactable"
 - !private "Item"
 - !private "LesserSkeleton"
 - "LevelGenerator"
 - !private "Lever"
+- !private "PressPlates"
 - !private "SKSpriteNode"
 - "SKTileDefinition"
 - "SKTileMapNode"
@@ -166,6 +169,7 @@ depends-member:
 - !private ["6CnD_v114LevelGeneratorC", "Item"]
 - !private ["6CnD_v114LevelGeneratorC", "LesserSkeleton"]
 - !private ["6CnD_v114LevelGeneratorC", "Lever"]
+- !private ["6CnD_v114LevelGeneratorC", "PressPlates"]
 - !private ["6CnD_v114LevelGeneratorC", "SKSpriteNode"]
 - ["6CnD_v114LevelGeneratorC", "SKTileDefinition"]
 - ["6CnD_v114LevelGeneratorC", "SKTileMapNode"]
@@ -253,6 +257,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "scaleMode"]
 - !private ["So14NSSecureCodingP", "tileDefinition"]
 - !private ["Sj", "init"]
+- !private ["6CnD_v111PressPlatesC", "init"]
 - !private ["Sk", "append"]
 - !private ["Sk", "subscript"]
 - !private ["Sm", "append"]
@@ -442,6 +447,7 @@ depends-nominal:
 - !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "Sj"
+- !private "6CnD_v111PressPlatesC"
 - !private "Sk"
 - !private "Sm"
 - !private "SY"

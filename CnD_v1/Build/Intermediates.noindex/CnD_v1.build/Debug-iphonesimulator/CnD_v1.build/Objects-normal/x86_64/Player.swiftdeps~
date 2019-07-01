@@ -47,6 +47,7 @@ depends-top-level:
 - "Inventory"
 - "Player"
 - !private "Pos"
+- "PressPlates"
 - "SKAction"
 - "SKSpriteNode"
 - "SKTexture"
@@ -69,6 +70,7 @@ depends-member:
 - !private ["SB", "init"]
 - !private ["Sz", "init"]
 - !private ["6CnD_v16ButtonC", "active"]
+- !private ["6CnD_v16ButtonC", "clear"]
 - !private ["6CnD_v16ButtonC", "init"]
 - !private ["6CnD_v16ButtonC", "interactable"]
 - !private ["6CnD_v16ButtonC", "sprite"]
@@ -192,6 +194,7 @@ depends-member:
 - !private ["6CnD_v16EntityC", "Interactable"]
 - ["6CnD_v16EntityC", "Inventory"]
 - !private ["6CnD_v16EntityC", "Pos"]
+- ["6CnD_v16EntityC", "PressPlates"]
 - ["6CnD_v16EntityC", "SKAction"]
 - ["6CnD_v16EntityC", "SKSpriteNode"]
 - ["6CnD_v16EntityC", "SKTexture"]
@@ -212,6 +215,7 @@ depends-member:
 - ["6CnD_v16EntityC", "calcTotalDMG"]
 - ["6CnD_v16EntityC", "calcTotalEVS"]
 - ["6CnD_v16EntityC", "calcTotalPRS"]
+- !private ["6CnD_v16EntityC", "clear"]
 - ["6CnD_v16EntityC", "collision"]
 - !private ["6CnD_v16EntityC", "collisionMask"]
 - ["6CnD_v16EntityC", "combatTimer"]
@@ -244,6 +248,7 @@ depends-member:
 - ["6CnD_v16EntityC", "pdTextures"]
 - ["6CnD_v16EntityC", "piTextures"]
 - ["6CnD_v16EntityC", "plTextures"]
+- ["6CnD_v16EntityC", "plate"]
 - !private ["6CnD_v16EntityC", "player"]
 - ["6CnD_v16EntityC", "playerAtkLeft"]
 - ["6CnD_v16EntityC", "playerAtkRight"]
@@ -262,6 +267,7 @@ depends-member:
 - !private ["6CnD_v16EntityC", "sprite"]
 - ["6CnD_v16EntityC", "startAnimation"]
 - ["6CnD_v16EntityC", "stats"]
+- !private ["6CnD_v16EntityC", "stood"]
 - ["6CnD_v16EntityC", "stopAnimation"]
 - ["6CnD_v16EntityC", "sword"]
 - ["6CnD_v16EntityC", "target"]
@@ -316,6 +322,7 @@ depends-member:
 - !private ["SQ", "calcTotalATS"]
 - !private ["SQ", "calcTotalDMG"]
 - !private ["SQ", "calcTotalPRS"]
+- !private ["SQ", "clear"]
 - !private ["SQ", "collisionMask"]
 - !private ["SQ", "combatTimer"]
 - !private ["SQ", "dPadBG"]
@@ -351,6 +358,7 @@ depends-member:
 - !private ["SQ", "pdTextures"]
 - !private ["SQ", "piTextures"]
 - !private ["SQ", "plTextures"]
+- !private ["SQ", "plate"]
 - !private ["SQ", "player"]
 - !private ["SQ", "playerAtkLeft"]
 - !private ["SQ", "playerAtkRight"]
@@ -374,6 +382,7 @@ depends-member:
 - !private ["SQ", "sprite"]
 - !private ["SQ", "startAnimation"]
 - !private ["SQ", "stats"]
+- !private ["SQ", "stood"]
 - !private ["SQ", "stopAnimation"]
 - !private ["SQ", "sword"]
 - !private ["SQ", "target"]
@@ -550,6 +559,7 @@ depends-member:
 - !private ["6CnD_v16PlayerC", "Interactable"]
 - ["6CnD_v16PlayerC", "Inventory"]
 - !private ["6CnD_v16PlayerC", "Pos"]
+- ["6CnD_v16PlayerC", "PressPlates"]
 - ["6CnD_v16PlayerC", "SKAction"]
 - ["6CnD_v16PlayerC", "SKSpriteNode"]
 - ["6CnD_v16PlayerC", "SKTexture"]
@@ -591,6 +601,7 @@ depends-member:
 - ["6CnD_v16PlayerC", "pdTextures"]
 - ["6CnD_v16PlayerC", "piTextures"]
 - ["6CnD_v16PlayerC", "plTextures"]
+- ["6CnD_v16PlayerC", "plate"]
 - ["6CnD_v16PlayerC", "playerAtkLeft"]
 - ["6CnD_v16PlayerC", "playerAtkRight"]
 - ["6CnD_v16PlayerC", "playerDown"]
@@ -623,6 +634,9 @@ depends-member:
 - !private ["6CnD_v13PosC", "init"]
 - !private ["6CnD_v13PosC", "x"]
 - !private ["6CnD_v13PosC", "y"]
+- !private ["6CnD_v111PressPlatesC", "act"]
+- !private ["6CnD_v111PressPlatesC", "deinit"]
+- !private ["6CnD_v111PressPlatesC", "stood"]
 - !private ["Sk", "append"]
 - !private ["Sm", "append"]
 - !private ["SY", "nearest"]
@@ -860,6 +874,7 @@ depends-nominal:
 - !private "Sj"
 - "6CnD_v16PlayerC"
 - !private "6CnD_v13PosC"
+- !private "6CnD_v111PressPlatesC"
 - !private "Sk"
 - !private "Sm"
 - !private "SY"
@@ -930,4 +945,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "231edc6c84a8e64d2dedc7bed42b4d1b"
+interface-hash: "fe8622d9e73454ce9d494c9966a5401d"

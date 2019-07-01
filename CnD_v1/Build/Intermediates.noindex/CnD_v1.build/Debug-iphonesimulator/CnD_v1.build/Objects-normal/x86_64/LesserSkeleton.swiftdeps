@@ -20,7 +20,7 @@ depends-top-level:
 - "Enemy"
 - "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
+- "IntegerLiteralType"
 - "LesserSkeleton"
 - "SKAction"
 - "SKSpriteNode"
@@ -29,6 +29,7 @@ depends-top-level:
 - !private "StringLiteralType"
 - !private "UInt32"
 - !private "arc4random_uniform"
+- !private "||"
 depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "init"]
@@ -86,6 +87,7 @@ depends-member:
 - ["6CnD_v15EnemyC", ""]
 - ["6CnD_v15EnemyC", "animSpeed"]
 - !private ["6CnD_v15EnemyC", "arc4random_uniform"]
+- ["6CnD_v15EnemyC", "atkAnimSp"]
 - !private ["6CnD_v15EnemyC", "ats"]
 - !private ["6CnD_v15EnemyC", "dmg"]
 - ["6CnD_v15EnemyC", "eatkLTextures"]
@@ -113,6 +115,7 @@ depends-member:
 - !private ["6CnD_v15EnemyC", "sprite"]
 - ["6CnD_v15EnemyC", "startAnimation"]
 - ["6CnD_v15EnemyC", "stopAnimation"]
+- ["6CnD_v15EnemyC", "tempTimer"]
 - ["6CnD_v15EnemyC", "update"]
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "SKAction"]
@@ -122,6 +125,7 @@ depends-member:
 - !private ["6CnD_v16EntityC", "UInt32"]
 - ["6CnD_v16EntityC", "animSpeed"]
 - !private ["6CnD_v16EntityC", "arc4random_uniform"]
+- ["6CnD_v16EntityC", "atkAnimSp"]
 - !private ["6CnD_v16EntityC", "ats"]
 - !private ["6CnD_v16EntityC", "cDir"]
 - !private ["6CnD_v16EntityC", "calcTotalDEF"]
@@ -153,6 +157,7 @@ depends-member:
 - !private ["6CnD_v16EntityC", "sprite"]
 - ["6CnD_v16EntityC", "startAnimation"]
 - ["6CnD_v16EntityC", "stopAnimation"]
+- ["6CnD_v16EntityC", "tempTimer"]
 - ["6CnD_v16EntityC", "update"]
 - !private ["SQ", "Int"]
 - !private ["SQ", "SKAction"]
@@ -165,6 +170,7 @@ depends-member:
 - !private ["SQ", "animate"]
 - !private ["SQ", "append"]
 - !private ["SQ", "arc4random_uniform"]
+- !private ["SQ", "atkAnimSp"]
 - !private ["SQ", "ats"]
 - !private ["SQ", "cDir"]
 - !private ["SQ", "calcTotalDEF"]
@@ -188,7 +194,6 @@ depends-member:
 - !private ["SQ", "init"]
 - !private ["SQ", "isAlive"]
 - !private ["SQ", "isDespawned"]
-- !private ["SQ", "newCombat"]
 - !private ["SQ", "player"]
 - !private ["SQ", "prs"]
 - !private ["SQ", "removeAction"]
@@ -199,6 +204,8 @@ depends-member:
 - !private ["SQ", "setAnimations"]
 - !private ["SQ", "sprite"]
 - !private ["SQ", "startAnimation"]
+- !private ["SQ", "stopAnimation"]
+- !private ["SQ", "tempTimer"]
 - !private ["SQ", "update"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
@@ -219,6 +226,7 @@ depends-member:
 - !private ["6CnD_v114LesserSkeletonC", "UInt32"]
 - ["6CnD_v114LesserSkeletonC", "animSpeed"]
 - !private ["6CnD_v114LesserSkeletonC", "arc4random_uniform"]
+- ["6CnD_v114LesserSkeletonC", "atkAnimSp"]
 - !private ["6CnD_v114LesserSkeletonC", "ats"]
 - !private ["6CnD_v114LesserSkeletonC", "dmg"]
 - ["6CnD_v114LesserSkeletonC", "eatkLTextures"]
@@ -246,6 +254,7 @@ depends-member:
 - !private ["6CnD_v114LesserSkeletonC", "sprite"]
 - ["6CnD_v114LesserSkeletonC", "startAnimation"]
 - ["6CnD_v114LesserSkeletonC", "stopAnimation"]
+- ["6CnD_v114LesserSkeletonC", "tempTimer"]
 - ["6CnD_v114LesserSkeletonC", "update"]
 - !private ["SM", "append"]
 - !private ["SM", "init"]
@@ -452,4 +461,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e49e9d58cd70425485ca5d26ccee8c66"
+interface-hash: "a59b87bc94f1e1b3dec5d895403e9191"
