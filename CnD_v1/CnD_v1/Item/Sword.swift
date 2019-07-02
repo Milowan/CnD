@@ -16,7 +16,7 @@ class Sword : Gear
     
     var player : Player
     
-    init (p : Player, st : Stats, sp : SKSpriteNode)
+    init (p : Player, st : Stats, sp : ISNode)
     {
         player = p
         super.init(st : st, sp : sp)

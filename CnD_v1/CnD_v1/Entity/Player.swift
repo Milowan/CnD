@@ -40,7 +40,7 @@ class Player : Entity
     var combatTimer : Int
     var victory : Bool
     var target : Enemy?
-    var dmgTaken : Int
+    var dmgTaken : Float
     var cDir : Int?
     
     var plate : PressPlates?
@@ -156,9 +156,9 @@ class Player : Entity
 
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
         
-        self.sword = Sword(p : self, st : Stats(s : 2, d : 2, c : 2), sp : SKSpriteNode(imageNamed: "sword_01a"))
-        self.armour = Armour(p : self, st : Stats(s : 2, d : 2, c : 2), sp : SKSpriteNode(imageNamed: "sword_01a"))
-        self.helmet = Helmet(p : self, st : Stats(s : 2, d : 2, c : 2), sp : SKSpriteNode(imageNamed: "sword_01a"))
+        self.sword = Sword(p : self, st : Stats(s : 2, d : 2, c : 2), sp : ISNode(imageNamed: "sword_01a"))
+        self.armour = Armour(p : self, st : Stats(s : 2, d : 2, c : 2), sp : ISNode(imageNamed: "sword_01a"))
+        self.helmet = Helmet(p : self, st : Stats(s : 2, d : 2, c : 2), sp : ISNode(imageNamed: "sword_01a"))
         GameScene.player = self
         setAnimations()
         let dim = CGSize(width: 32, height: 32)
@@ -168,14 +168,14 @@ class Player : Entity
     
     override func update()
     {
-        if dmgTaken < calcMaxHP()
+        if Int(dmgTaken) < calcMaxHP()
         {
             if !inCombat
             {
                 
                 if dmgTaken > 0
                 {
-                    dmgTaken -= 1
+                    dmgTaken -= 0.1625
                 }
                 
                 if left.active == false &&
@@ -248,7 +248,17 @@ class Player : Entity
                     }
                     if inventoryButton.active
                     {
-                        inventory!.act()
+                        if !inventoryButton.clear
+                        {
+                            inventory!.act()
+                        }
+                    }
+                    if miniMapButton.active
+                    {
+                        if !miniMapButton.clear
+                        {
+                            
+                        }
                     }
                 }
             }
@@ -342,7 +352,7 @@ class Player : Entity
         }
         
         if aBottom <= bTop + 15 &&
-        aTop >= bBottom - 15 &&
+        aTop >= bBottom - 30 &&
         aLeft <= bRight + 15 &&
         aRight >= bLeft - 15
         {

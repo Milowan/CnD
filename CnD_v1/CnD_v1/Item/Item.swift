@@ -13,8 +13,14 @@ class Item
 {
     var sprite: SKSpriteNode
     
-    init(s: SKSpriteNode)
+    init(s: ISNode)
     {
         sprite = s
+        sprite.isUserInteractionEnabled = true
+    }
+    
+    func menu()
+    {
+        
     }
 }

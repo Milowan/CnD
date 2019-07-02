@@ -68,7 +68,7 @@ class Enemy : Entity
             {
                 if arc4random_uniform( (UInt32(50))) > player!.calcTotalEVS() / prs
                 {
-                    player!.dmgTaken += dmg / player!.calcTotalDEF()
+                    player!.dmgTaken += Float(dmg / player!.calcTotalDEF())
                 }
             }
         }

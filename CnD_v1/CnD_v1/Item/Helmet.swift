@@ -16,7 +16,7 @@ class Helmet : Gear
     
     var player : Player
     
-    init (p : Player, st : Stats, sp : SKSpriteNode)
+    init (p : Player, st : Stats, sp : ISNode)
     {
         player = p
         
