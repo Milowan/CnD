@@ -173,7 +173,7 @@ class GameScene: SKScene
             entity.update()
             if let enemy = entity as? Enemy
             {
-                if !enemy.isAlive
+                if enemy.isDespawned
                 {
                     removeEntity(entity: enemy)
                 }
@@ -186,7 +186,6 @@ class GameScene: SKScene
                 }
             }
         }
-        
         collision()
     }
     

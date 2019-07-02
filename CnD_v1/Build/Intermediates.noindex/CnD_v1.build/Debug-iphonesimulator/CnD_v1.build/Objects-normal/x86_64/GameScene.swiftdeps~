@@ -9,7 +9,6 @@ provides-dynamic-lookup:
 - "didMove"
 - "update"
 depends-top-level:
-- !private "!"
 - !private "!="
 - "/"
 - !private "=="
@@ -215,10 +214,10 @@ depends-member:
 - ["SE", "init"]
 - !private ["SE", "remove"]
 - !private ["SE", "width"]
-- !private ["6CnD_v15EnemyC", "isAlive"]
+- !private ["6CnD_v15EnemyC", "isDespawned"]
 - !private ["6CnD_v16EntityC", "collision"]
 - !private ["6CnD_v16EntityC", "deinit"]
-- !private ["6CnD_v16EntityC", "isAlive"]
+- !private ["6CnD_v16EntityC", "isDespawned"]
 - !private ["6CnD_v16EntityC", "item"]
 - !private ["6CnD_v16EntityC", "sprite"]
 - !private ["6CnD_v16EntityC", "update"]
@@ -250,7 +249,7 @@ depends-member:
 - !private ["SQ", "height"]
 - ["SQ", "init"]
 - !private ["SQ", "invChild"]
-- !private ["SQ", "isAlive"]
+- !private ["SQ", "isDespawned"]
 - !private ["SQ", "item"]
 - !private ["SQ", "levelGenerator"]
 - !private ["SQ", "nearest"]

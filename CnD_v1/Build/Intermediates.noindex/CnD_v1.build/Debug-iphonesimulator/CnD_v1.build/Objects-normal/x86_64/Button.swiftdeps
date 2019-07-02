@@ -26,6 +26,7 @@ depends-member:
 - ["6CnD_v16ButtonC", "Interactable"]
 - ["6CnD_v16ButtonC", "act"]
 - ["6CnD_v16ButtonC", "active"]
+- ["6CnD_v16ButtonC", "clear"]
 - ["6CnD_v16ButtonC", "init"]
 - ["6CnD_v16ButtonC", "interactable"]
 - !private ["6CnD_v16ButtonC", "sprite"]
@@ -43,6 +44,7 @@ depends-member:
 - ["6CnD_v16EntityC", ""]
 - ["6CnD_v16EntityC", "act"]
 - ["6CnD_v16EntityC", "active"]
+- ["6CnD_v16EntityC", "clear"]
 - ["6CnD_v16EntityC", "init"]
 - ["6CnD_v16EntityC", "interactable"]
 - !private ["6CnD_v16EntityC", "sprite"]
@@ -51,6 +53,7 @@ depends-member:
 - ["SQ", ""]
 - !private ["SQ", "active"]
 - !private ["SQ", "button"]
+- !private ["SQ", "clear"]
 - !private ["SQ", "init"]
 - !private ["SQ", "interactable"]
 - !private ["SQ", "isUserInteractionEnabled"]
@@ -150,4 +153,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "27e0465971ef1cf8d4e66fb367e75827"
+interface-hash: "afa9774db14a22ad14f0a8be95fae715"

@@ -152,7 +152,7 @@ class LevelGenerator
             for column in 0..<enemyMap.numberOfColumns
             {
                 guard tile(in: enemyMap, at: (column, row)) != nil else {continue}
-                gameScene!.addEntity(entity: LesserSkeleton(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "Skeleton-Idle_01")))
+                gameScene!.addEntity(entity: LesserSkeleton(x: tempX!, y: tempY!, z: 9, s: SKSpriteNode(imageNamed: "Skeleton-Idle_01")))
                 enemyMap.removeFromParent()
             }
         }

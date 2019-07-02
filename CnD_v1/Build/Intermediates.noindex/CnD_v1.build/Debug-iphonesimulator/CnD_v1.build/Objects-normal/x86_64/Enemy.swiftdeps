@@ -7,26 +7,16 @@ provides-member:
 - ["6CnD_v15EnemyC", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "%"
-- !private "&&"
-- !private "+="
 - !private "..."
-- !private "/"
 - !private "<="
 - !private "=="
-- !private ">"
 - "AssignmentPrecedence"
 - "BooleanLiteralType"
 - "Enemy"
 - "Entity"
-- "FloatLiteralType"
 - "Int"
-- "IntegerLiteralType"
 - "Player"
 - "SKSpriteNode"
-- !private "StringLiteralType"
-- !private "UInt32"
-- !private "arc4random_uniform"
 depends-member:
 - !private ["Sa", "subscript"]
 - !private ["SK", "subscript"]
@@ -42,57 +32,44 @@ depends-member:
 - ["6CnD_v15EnemyC", "Int"]
 - ["6CnD_v15EnemyC", "Player"]
 - ["6CnD_v15EnemyC", "SKSpriteNode"]
-- !private ["6CnD_v15EnemyC", "UInt32"]
-- !private ["6CnD_v15EnemyC", "arc4random_uniform"]
 - ["6CnD_v15EnemyC", "ats"]
 - ["6CnD_v15EnemyC", "def"]
+- ["6CnD_v15EnemyC", "deinit"]
 - ["6CnD_v15EnemyC", "dmg"]
 - ["6CnD_v15EnemyC", "evs"]
 - ["6CnD_v15EnemyC", "hp"]
 - ["6CnD_v15EnemyC", "inCombat"]
 - ["6CnD_v15EnemyC", "init"]
 - ["6CnD_v15EnemyC", "isAlive"]
+- ["6CnD_v15EnemyC", "isDespawned"]
 - ["6CnD_v15EnemyC", "player"]
 - ["6CnD_v15EnemyC", "prs"]
 - ["6CnD_v15EnemyC", "update"]
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "Player"]
 - ["6CnD_v16EntityC", "SKSpriteNode"]
-- !private ["6CnD_v16EntityC", "UInt32"]
 - ["6CnD_v16EntityC", ""]
-- !private ["6CnD_v16EntityC", "arc4random_uniform"]
 - ["6CnD_v16EntityC", "ats"]
-- !private ["6CnD_v16EntityC", "calcTotalDEF"]
-- !private ["6CnD_v16EntityC", "calcTotalEVS"]
-- !private ["6CnD_v16EntityC", "combatTimer"]
 - ["6CnD_v16EntityC", "def"]
 - ["6CnD_v16EntityC", "dmg"]
-- !private ["6CnD_v16EntityC", "dmgTaken"]
 - ["6CnD_v16EntityC", "evs"]
 - ["6CnD_v16EntityC", "hp"]
 - ["6CnD_v16EntityC", "inCombat"]
 - ["6CnD_v16EntityC", "init"]
 - ["6CnD_v16EntityC", "isAlive"]
+- ["6CnD_v16EntityC", "isDespawned"]
 - ["6CnD_v16EntityC", "player"]
 - ["6CnD_v16EntityC", "prs"]
 - ["6CnD_v16EntityC", "update"]
 - !private ["SQ", "ENEMY"]
-- !private ["SQ", "UInt32"]
 - ["SQ", ""]
-- !private ["SQ", "arc4random_uniform"]
 - !private ["SQ", "ats"]
-- !private ["SQ", "calcTotalDEF"]
-- !private ["SQ", "calcTotalEVS"]
-- !private ["SQ", "combatTimer"]
 - !private ["SQ", "def"]
 - !private ["SQ", "dmg"]
-- !private ["SQ", "dmgTaken"]
 - !private ["SQ", "evs"]
 - !private ["SQ", "hp"]
-- !private ["SQ", "inCombat"]
 - !private ["SQ", "init"]
 - !private ["SQ", "isAlive"]
-- !private ["SQ", "player"]
 - !private ["SQ", "prs"]
 - !private ["SQ", "subscript"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
@@ -100,10 +77,6 @@ depends-member:
 - !private ["SH", "subscript"]
 - !private ["SM", "subscript"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
-- !private ["6CnD_v16PlayerC", "calcTotalDEF"]
-- !private ["6CnD_v16PlayerC", "calcTotalEVS"]
-- !private ["6CnD_v16PlayerC", "combatTimer"]
-- !private ["6CnD_v16PlayerC", "dmgTaken"]
 - !private ["Sk", "subscript"]
 - !private ["Sm", "subscript"]
 - !private ["ST", "subscript"]
@@ -132,7 +105,6 @@ depends-nominal:
 - !private "SH"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
-- !private "6CnD_v16PlayerC"
 - !private "Sk"
 - !private "Sm"
 - !private "ST"
@@ -175,4 +147,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "975c0361d8034b9b37b1816d2c7ffcb9"
+interface-hash: "6fbedb52f9e8120a49ddc810cc0fa8b1"
