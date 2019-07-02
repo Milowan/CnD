@@ -8,13 +8,20 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "!"
-- !private "%="
 - !private "+="
-- !private "=="
+- !private "-"
+- !private "-="
+- !private "/"
+- !private "<"
+- !private ">"
 - "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
 - "CGFloat"
+- "FloatLiteralType"
 - !private "GameScene"
 - "Int"
+- "IntegerLiteralType"
 - "Inventory"
 - "Item"
 - "Player"
@@ -45,6 +52,7 @@ depends-member:
 - !private ["6CnD_v19GameSceneC", "invChild"]
 - !private ["SH", "invChild"]
 - !private ["SH", "position"]
+- ["6CnD_v19InventoryC", "Bool"]
 - ["6CnD_v19InventoryC", "CGFloat"]
 - !private ["6CnD_v19InventoryC", "GameScene"]
 - ["6CnD_v19InventoryC", "Int"]
@@ -52,16 +60,19 @@ depends-member:
 - ["6CnD_v19InventoryC", "Player"]
 - ["6CnD_v19InventoryC", "SKNode"]
 - ["6CnD_v19InventoryC", "act"]
-- ["6CnD_v19InventoryC", "baseX"]
+- ["6CnD_v19InventoryC", "animDone"]
+- ["6CnD_v19InventoryC", "animSpeed"]
 - ["6CnD_v19InventoryC", "baseY"]
 - ["6CnD_v19InventoryC", "closeInv"]
 - ["6CnD_v19InventoryC", "contents"]
+- ["6CnD_v19InventoryC", "deltaY"]
 - ["6CnD_v19InventoryC", "i"]
 - ["6CnD_v19InventoryC", "init"]
 - ["6CnD_v19InventoryC", "invScene"]
 - ["6CnD_v19InventoryC", "isOpen"]
 - ["6CnD_v19InventoryC", "openInv"]
 - ["6CnD_v19InventoryC", "playerRef"]
+- ["6CnD_v19InventoryC", "update"]
 - !private ["So8NSCodingP", "invChild"]
 - !private ["So8NSCodingP", "position"]
 - !private ["So9NSCopyingP", "invChild"]
@@ -165,4 +176,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "59fe0fcf3b6e8bf7318433ea52998772"
+interface-hash: "f4d7ac8781457031cebb9662a7f6fc2b"

@@ -53,7 +53,7 @@ class Player : Entity
     var direction : Direction
     var lastDirection : Direction
     
-    let stats = Stats(s : 5, d : 5, c : 5)
+    let stats = Stats(s : 12, d : 15, c : 10)
     var inventory: Inventory?
     
     let movSpeed = 5
@@ -156,9 +156,9 @@ class Player : Entity
 
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
         
-        self.sword = Sword(p : self, st : Stats(s : 2, d : 2, c : 2), sp : SKSpriteNode(imageNamed: "sword_01a"))
-        self.armour = Armour(p : self, st : Stats(s : 2, d : 2, c : 2), sp : SKSpriteNode(imageNamed: "sword_01a"))
-        self.helmet = Helmet(p : self, st : Stats(s : 2, d : 2, c : 2), sp : SKSpriteNode(imageNamed: "sword_01a"))
+        self.sword = Sword(p : self, st : Stats(s : 1, d : 1, c : 1), sp : SKSpriteNode(imageNamed: "sword_01a"))
+        self.armour = Armour(p : self, st : Stats(s : 1, d : 1, c : 1), sp : SKSpriteNode(imageNamed: "sword_01a"))
+        self.helmet = Helmet(p : self, st : Stats(s : 1, d : 1, c : 1), sp : SKSpriteNode(imageNamed: "sword_01a"))
         GameScene.player = self
         setAnimations()
         let dim = CGSize(width: 32, height: 32)
@@ -306,6 +306,7 @@ class Player : Entity
         }
         pos.x = Int(sprite!.position.x)
         pos.y = Int(sprite!.position.y)
+        inventory?.update()
     }
     
     //class func wait(forDuration duration: TimeInterval) -> SKAction
@@ -317,8 +318,8 @@ class Player : Entity
         let a = self.sprite!
         let aBottom = self.pos.y - Int(a.size.height / 2)
         let aTop = self.pos.y - Int(a.size.height / 4)
-        let aLeft = self.pos.x - Int((a.size.width / 3) / 2)
-        let aRight = self.pos.x + Int((a.size.width / 3) / 2)
+        let aLeft = self.pos.x - Int((a.size.width / 4) / 2)
+        let aRight = self.pos.x + Int((a.size.width / 4) / 2)
         
         let aPos = Pos(xX : Int(a.position.x), yY : aBottom + Int(a.size.height / 4))
         
@@ -343,8 +344,8 @@ class Player : Entity
         
         if aBottom <= bTop + 15 &&
         aTop >= bBottom - 15 &&
-        aLeft <= bRight + 15 &&
-        aRight >= bLeft - 15
+        aLeft <= bRight + 0 &&
+        aRight >= bLeft - 0
         {
             
             if let interactable = response as? Interactable
@@ -515,7 +516,7 @@ class Player : Entity
         
         if let sword = self.sword
         {
-            dmg = (self.stats.STR * sword.stats.STR) / (self.stats.CON * sword.stats.CON) + sword.baseDamage
+            dmg = (self.stats.STR + sword.stats.STR) / ((self.stats.CON + sword.stats.CON)/2) + sword.baseDamage
         }
         
         return dmg
@@ -527,7 +528,7 @@ class Player : Entity
         
         if let sword = self.sword
         {
-            s = (self.stats.DEX * sword.stats.DEX) / (self.stats.CON * sword.stats.CON) + sword.baseSpeed
+            s = (self.stats.DEX + sword.stats.DEX) / ((self.stats.CON + sword.stats.CON)/2) + sword.baseSpeed
         }
         
         return s
@@ -540,8 +541,8 @@ class Player : Entity
         if let armour = self.armour ,
             let helmet = self.helmet
         {
-            def = (((self.stats.STR * armour.stats.STR) / (self.stats.CON * armour.stats.CON) + armour.baseDef)
-            + ((self.stats.STR * helmet.stats.STR) / (self.stats.CON * helmet.stats.CON) + helmet.baseDef))
+            def = (((self.stats.STR + armour.stats.STR) / ((self.stats.CON + armour.stats.CON)/2) + armour.baseDef)
+            + ((self.stats.STR + helmet.stats.STR) / ((self.stats.CON + helmet.stats.CON)/2) + helmet.baseDef))
         }
         
         return def
@@ -553,7 +554,7 @@ class Player : Entity
         
         if let armour = self.armour
         {
-            s = (self.stats.DEX * armour.stats.DEX) / (self.stats.CON * armour.stats.CON) + armour.baseEvasion
+            s = (self.stats.DEX + armour.stats.DEX) / (self.stats.CON + armour.stats.CON) + armour.baseEvasion
         }
         
         return s
@@ -565,7 +566,7 @@ class Player : Entity
         
         if let helmet = self.helmet
         {
-            s = (self.stats.DEX * helmet.stats.DEX) / (self.stats.CON * helmet.stats.CON) + helmet.basePrecision
+            s = (self.stats.DEX + helmet.stats.DEX) / (self.stats.CON + helmet.stats.CON) + helmet.basePrecision
         }
         
         return s

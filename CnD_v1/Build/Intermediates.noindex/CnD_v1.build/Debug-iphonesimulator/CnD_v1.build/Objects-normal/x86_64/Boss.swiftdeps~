@@ -10,9 +10,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Boss"
 - "Enemy"
-- "FloatLiteralType"
 - "Int"
-- "IntegerLiteralType"
 - "SKSpriteNode"
 depends-member:
 - !private ["Sa", "subscript"]

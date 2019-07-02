@@ -102,12 +102,12 @@ class LevelGenerator
                 guard tile(in: leverMap, at: (column, row)) != nil else {continue}
                 if i == 0
                 {
-                    let tempLever = Lever(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "switch_wall_on"), d: gameScene!.doorArray![1])
+                    let tempLever = Lever(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "leverParent"), d: gameScene!.doorArray![1])
                     gameScene!.addEntity(entity: tempLever)
                 }
                 else if i == 1
                 {
-                    let tempLever = Lever(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "switch_wall_on"), d: gameScene!.doorArray![0])
+                    let tempLever = Lever(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "leverParent"), d: gameScene!.doorArray![0])
                     gameScene!.addEntity(entity: tempLever)
                 }
                 i += 1

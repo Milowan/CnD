@@ -19,10 +19,8 @@ depends-top-level:
 - "CastingPrecedence"
 - !private "Collectable"
 - !private "Door"
-- !private "FloatLiteralType"
 - "GameScene"
 - "Int"
-- !private "IntegerLiteralType"
 - !private "Interactable"
 - !private "Item"
 - !private "LesserSkeleton"
@@ -33,7 +31,6 @@ depends-top-level:
 - "SKTileDefinition"
 - "SKTileMapNode"
 - "SKTileSet"
-- !private "StringLiteralType"
 - !private "World"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]

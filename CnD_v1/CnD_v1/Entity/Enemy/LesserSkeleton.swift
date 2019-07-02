@@ -39,7 +39,7 @@ class LesserSkeleton : Enemy
         //dmg
         stats.append(3)
         //ats
-        stats.append(7)
+        stats.append(25)
         //def
         stats.append(2)
         //evs

@@ -30,7 +30,6 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "BSNode"
 - "Bool"
-- "BooleanLiteralType"
 - "Button"
 - !private "CGFloat"
 - !private "CGSize"
@@ -38,11 +37,9 @@ depends-top-level:
 - "Direction"
 - "Enemy"
 - "Entity"
-- "FloatLiteralType"
 - !private "GameScene"
 - "Helmet"
 - "Int"
-- "IntegerLiteralType"
 - !private "Interactable"
 - "Inventory"
 - "Player"
@@ -53,7 +50,6 @@ depends-top-level:
 - "SKTexture"
 - "Stats"
 - "String"
-- !private "StringLiteralType"
 - "Sword"
 - !private "UInt32"
 - !private "arc4random_uniform"
@@ -453,6 +449,7 @@ depends-member:
 - !private ["6CnD_v112InteractableC", "player"]
 - !private ["6CnD_v19InventoryC", "act"]
 - !private ["6CnD_v19InventoryC", "init"]
+- !private ["6CnD_v19InventoryC", "update"]
 - !private ["6CnD_v14ItemC", "baseDamage"]
 - !private ["6CnD_v14ItemC", "baseDef"]
 - !private ["6CnD_v14ItemC", "baseEvasion"]
@@ -580,6 +577,7 @@ depends-member:
 - ["6CnD_v16PlayerC", "collision"]
 - ["6CnD_v16PlayerC", "combatTimer"]
 - ["6CnD_v16PlayerC", "dPadBG"]
+- ["6CnD_v16PlayerC", "deinit"]
 - ["6CnD_v16PlayerC", "direction"]
 - ["6CnD_v16PlayerC", "dmgTaken"]
 - ["6CnD_v16PlayerC", "down"]
@@ -945,4 +943,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "fe8622d9e73454ce9d494c9966a5401d"
+interface-hash: "751babb20c9a458898b65be5507cf741"
