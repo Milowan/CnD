@@ -23,7 +23,6 @@ depends-member:
 - ["6CnD_v16BSNodeC", "UIEvent"]
 - ["6CnD_v16BSNodeC", "UITouch"]
 - ["6CnD_v16BSNodeC", "button"]
-- ["6CnD_v16BSNodeC", "deinit"]
 - ["6CnD_v16BSNodeC", "init"]
 - ["6CnD_v16BSNodeC", "touchesBegan"]
 - ["6CnD_v16BSNodeC", "touchesEnded"]

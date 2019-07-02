@@ -9,27 +9,27 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - "Gear"
+- "ISNode"
 - "Player"
-- "SKSpriteNode"
 - "Stats"
 - "Sword"
 depends-member:
+- ["6CnD_v14GearC", "ISNode"]
 - ["6CnD_v14GearC", "Player"]
-- ["6CnD_v14GearC", "SKSpriteNode"]
 - ["6CnD_v14GearC", "Stats"]
 - ["6CnD_v14GearC", ""]
 - ["6CnD_v14GearC", "baseDamage"]
 - ["6CnD_v14GearC", "baseSpeed"]
 - ["6CnD_v14GearC", "init"]
 - ["6CnD_v14GearC", "player"]
+- ["6CnD_v14ItemC", "ISNode"]
 - ["6CnD_v14ItemC", "Player"]
-- ["6CnD_v14ItemC", "SKSpriteNode"]
 - ["6CnD_v14ItemC", "Stats"]
 - ["6CnD_v14ItemC", "baseDamage"]
 - ["6CnD_v14ItemC", "baseSpeed"]
 - ["6CnD_v14ItemC", "player"]
+- ["6CnD_v15SwordC", "ISNode"]
 - ["6CnD_v15SwordC", "Player"]
-- ["6CnD_v15SwordC", "SKSpriteNode"]
 - ["6CnD_v15SwordC", "Stats"]
 - ["6CnD_v15SwordC", "baseDamage"]
 - ["6CnD_v15SwordC", "baseSpeed"]
@@ -72,4 +72,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d7e4e9fd65ff45db1004d1e134c3a88d"
+interface-hash: "efb46eef5565ea7cfaa9151e769c63c2"

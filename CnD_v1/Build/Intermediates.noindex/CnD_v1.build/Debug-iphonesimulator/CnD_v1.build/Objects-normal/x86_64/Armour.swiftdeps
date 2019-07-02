@@ -10,27 +10,27 @@ depends-top-level:
 - "Armour"
 - "AssignmentPrecedence"
 - "Gear"
+- "ISNode"
 - "Player"
-- "SKSpriteNode"
 - "Stats"
 depends-member:
+- ["6CnD_v16ArmourC", "ISNode"]
 - ["6CnD_v16ArmourC", "Player"]
-- ["6CnD_v16ArmourC", "SKSpriteNode"]
 - ["6CnD_v16ArmourC", "Stats"]
 - ["6CnD_v16ArmourC", "baseDef"]
 - ["6CnD_v16ArmourC", "baseEvasion"]
 - ["6CnD_v16ArmourC", "init"]
 - ["6CnD_v16ArmourC", "player"]
+- ["6CnD_v14GearC", "ISNode"]
 - ["6CnD_v14GearC", "Player"]
-- ["6CnD_v14GearC", "SKSpriteNode"]
 - ["6CnD_v14GearC", "Stats"]
 - ["6CnD_v14GearC", ""]
 - ["6CnD_v14GearC", "baseDef"]
 - ["6CnD_v14GearC", "baseEvasion"]
 - ["6CnD_v14GearC", "init"]
 - ["6CnD_v14GearC", "player"]
+- ["6CnD_v14ItemC", "ISNode"]
 - ["6CnD_v14ItemC", "Player"]
-- ["6CnD_v14ItemC", "SKSpriteNode"]
 - ["6CnD_v14ItemC", "Stats"]
 - ["6CnD_v14ItemC", "baseDef"]
 - ["6CnD_v14ItemC", "baseEvasion"]
@@ -72,4 +72,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "27e07d3a01305af4e4318d76bd9a09b0"
+interface-hash: "f70f88c93659ec27a396f5dbe2fc6321"

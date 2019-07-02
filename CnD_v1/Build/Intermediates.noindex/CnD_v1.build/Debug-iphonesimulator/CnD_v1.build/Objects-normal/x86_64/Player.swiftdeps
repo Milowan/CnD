@@ -37,8 +37,10 @@ depends-top-level:
 - "Direction"
 - "Enemy"
 - "Entity"
+- "Float"
 - !private "GameScene"
 - "Helmet"
+- !private "ISNode"
 - "Int"
 - !private "Interactable"
 - "Inventory"
@@ -184,8 +186,10 @@ depends-member:
 - ["6CnD_v16EntityC", "Direction"]
 - ["6CnD_v16EntityC", "Enemy"]
 - ["6CnD_v16EntityC", "Entity"]
+- ["6CnD_v16EntityC", "Float"]
 - !private ["6CnD_v16EntityC", "GameScene"]
 - ["6CnD_v16EntityC", "Helmet"]
+- !private ["6CnD_v16EntityC", "ISNode"]
 - ["6CnD_v16EntityC", "Int"]
 - !private ["6CnD_v16EntityC", "Interactable"]
 - ["6CnD_v16EntityC", "Inventory"]
@@ -550,8 +554,10 @@ depends-member:
 - ["6CnD_v16PlayerC", "Direction"]
 - ["6CnD_v16PlayerC", "Enemy"]
 - ["6CnD_v16PlayerC", "Entity"]
+- ["6CnD_v16PlayerC", "Float"]
 - !private ["6CnD_v16PlayerC", "GameScene"]
 - ["6CnD_v16PlayerC", "Helmet"]
+- !private ["6CnD_v16PlayerC", "ISNode"]
 - ["6CnD_v16PlayerC", "Int"]
 - !private ["6CnD_v16PlayerC", "Interactable"]
 - ["6CnD_v16PlayerC", "Inventory"]
@@ -577,7 +583,6 @@ depends-member:
 - ["6CnD_v16PlayerC", "collision"]
 - ["6CnD_v16PlayerC", "combatTimer"]
 - ["6CnD_v16PlayerC", "dPadBG"]
-- ["6CnD_v16PlayerC", "deinit"]
 - ["6CnD_v16PlayerC", "direction"]
 - ["6CnD_v16PlayerC", "dmgTaken"]
 - ["6CnD_v16PlayerC", "down"]
@@ -943,4 +948,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "751babb20c9a458898b65be5507cf741"
+interface-hash: "8e9b390c48b51421db37fd875f3f687e"
