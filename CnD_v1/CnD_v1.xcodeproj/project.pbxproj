@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2601E8CC22C2AF77004EB047 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2601E8CB22C2AF77004EB047 /* Enemy.swift */; };
 		2601E8CE22C2B136004EB047 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2601E8CD22C2B136004EB047 /* Inventory.swift */; };
+		2607FB3122C9746600D86D58 /* ISNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607FB3022C9746600D86D58 /* ISNode.swift */; };
+		2607FB3322C975F400D86D58 /* Gem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607FB3222C975F400D86D58 /* Gem.swift */; };
 		262640D422C1530E006CA69C /* Adoor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262640D322C1530E006CA69C /* Adoor.swift */; };
 		265C0D0B22C5334B001A471A /* Sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C0D0A22C5334B001A471A /* Sword.swift */; };
 		265C0D0D22C53B3E001A471A /* Armour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C0D0C22C53B3E001A471A /* Armour.swift */; };
@@ -67,6 +69,8 @@
 /* Begin PBXFileReference section */
 		2601E8CB22C2AF77004EB047 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		2601E8CD22C2B136004EB047 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		2607FB3022C9746600D86D58 /* ISNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISNode.swift; sourceTree = "<group>"; };
+		2607FB3222C975F400D86D58 /* Gem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gem.swift; sourceTree = "<group>"; };
 		262640D322C1530E006CA69C /* Adoor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adoor.swift; sourceTree = "<group>"; };
 		265C0D0A22C5334B001A471A /* Sword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sword.swift; sourceTree = "<group>"; };
 		265C0D0C22C53B3E001A471A /* Armour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armour.swift; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				265C0D0E22C53C47001A471A /* Helmet.swift */,
+				2607FB3222C975F400D86D58 /* Gem.swift */,
 				265C0D0C22C53B3E001A471A /* Armour.swift */,
 				265C0D0A22C5334B001A471A /* Sword.swift */,
 				26F9808A22A6FD1800E7B5FE /* Gear.swift */,
@@ -220,6 +225,7 @@
 				26FAFE7F22C68FDA00E36901 /* LevelGenerator.swift */,
 				A65DA19522C27BEF00F4F687 /* InventorySceneRef.sks */,
 				26FAFE7322C67BCE00E36901 /* Item */,
+				2607FB3022C9746600D86D58 /* ISNode.swift */,
 				A658836A22B2C36F00F7F2CC /* Entity */,
 				A6FD168722B3E8420090D045 /* GameScene.swift */,
 				2601E8CD22C2B136004EB047 /* Inventory.swift */,
@@ -412,6 +418,8 @@
 				26FBAF0722A5965C00AEDCDC /* Player.swift in Sources */,
 				26FAFE7E22C68BEB00E36901 /* SkeletonLord.swift in Sources */,
 				262640D422C1530E006CA69C /* Adoor.swift in Sources */,
+				2607FB3122C9746600D86D58 /* ISNode.swift in Sources */,
+				2607FB3322C975F400D86D58 /* Gem.swift in Sources */,
 				26FAFE8422C69BBB00E36901 /* Collectable.swift in Sources */,
 				A686E4B222A45405004E1B64 /* AppDelegate.swift in Sources */,
 			);

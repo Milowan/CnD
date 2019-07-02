@@ -63,6 +63,5 @@ class Enemy : Entity
         {
             isAlive = false
         }
-
     }
 }

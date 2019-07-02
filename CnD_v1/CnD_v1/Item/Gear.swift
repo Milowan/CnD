@@ -13,7 +13,7 @@ class Gear : Item
 {
     var stats : Stats
     
-    init (st : Stats, sp : SKSpriteNode)
+    init (st : Stats, sp : ISNode)
     {
         stats = st
         super.init(s : sp)
