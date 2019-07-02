@@ -16,17 +16,13 @@ depends-top-level:
 - !private "=="
 - !private ">"
 - "AssignmentPrecedence"
-- "BooleanLiteralType"
 - "Enemy"
-- "FloatLiteralType"
 - "Int"
-- "IntegerLiteralType"
 - "LesserSkeleton"
 - "SKAction"
 - "SKSpriteNode"
 - "SKTexture"
 - "String"
-- !private "StringLiteralType"
 - !private "UInt32"
 - !private "arc4random_uniform"
 - !private "||"
@@ -42,6 +38,7 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "removeAction"]
 - !private ["s7CVarArgP", "repeatForever"]
+- !private ["s7CVarArgP", "reversed"]
 - !private ["s7CVarArgP", "run"]
 - !private ["Sl", "append"]
 - !private ["Sl", "init"]
@@ -54,6 +51,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "removeAction"]
 - !private ["s28CustomDebugStringConvertibleP", "repeatForever"]
+- !private ["s28CustomDebugStringConvertibleP", "reversed"]
 - !private ["s28CustomDebugStringConvertibleP", "run"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "init"]
@@ -66,6 +64,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "removeAction"]
 - !private ["s23CustomStringConvertibleP", "repeatForever"]
+- !private ["s23CustomStringConvertibleP", "reversed"]
 - !private ["s23CustomStringConvertibleP", "run"]
 - !private ["10Foundation12DataProtocolP", "append"]
 - !private ["10Foundation12DataProtocolP", "init"]
@@ -195,6 +194,7 @@ depends-member:
 - !private ["SQ", "prs"]
 - !private ["SQ", "removeAction"]
 - !private ["SQ", "repeatForever"]
+- !private ["SQ", "reversed"]
 - !private ["SQ", "run"]
 - !private ["SQ", "runAnimation"]
 - !private ["SQ", "setAnimations"]
@@ -212,6 +212,7 @@ depends-member:
 - !private ["SH", "init"]
 - !private ["SH", "removeAction"]
 - !private ["SH", "repeatForever"]
+- !private ["SH", "reversed"]
 - !private ["SH", "run"]
 - ["6CnD_v114LesserSkeletonC", "Int"]
 - ["6CnD_v114LesserSkeletonC", "SKAction"]
@@ -261,6 +262,7 @@ depends-member:
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "removeAction"]
 - !private ["So8NSCodingP", "repeatForever"]
+- !private ["So8NSCodingP", "reversed"]
 - !private ["So8NSCodingP", "run"]
 - !private ["So9NSCopyingP", "action"]
 - !private ["So9NSCopyingP", "actionForKeyIsRunning"]
@@ -268,6 +270,7 @@ depends-member:
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "removeAction"]
 - !private ["So9NSCopyingP", "repeatForever"]
+- !private ["So9NSCopyingP", "reversed"]
 - !private ["So9NSCopyingP", "run"]
 - !private ["So8NSObjectC", "action"]
 - !private ["So8NSObjectC", "actionForKeyIsRunning"]
@@ -275,6 +278,7 @@ depends-member:
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "removeAction"]
 - !private ["So8NSObjectC", "repeatForever"]
+- !private ["So8NSObjectC", "reversed"]
 - !private ["So8NSObjectC", "run"]
 - !private ["So8NSObjectP", "action"]
 - !private ["So8NSObjectP", "actionForKeyIsRunning"]
@@ -282,6 +286,7 @@ depends-member:
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "removeAction"]
 - !private ["So8NSObjectP", "repeatForever"]
+- !private ["So8NSObjectP", "reversed"]
 - !private ["So8NSObjectP", "run"]
 - !private ["So14NSSecureCodingP", "action"]
 - !private ["So14NSSecureCodingP", "actionForKeyIsRunning"]
@@ -289,6 +294,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "removeAction"]
 - !private ["So14NSSecureCodingP", "repeatForever"]
+- !private ["So14NSSecureCodingP", "reversed"]
 - !private ["So14NSSecureCodingP", "run"]
 - !private ["6CnD_v16PlayerC", "cDir"]
 - !private ["6CnD_v16PlayerC", "calcTotalDEF"]
@@ -301,6 +307,7 @@ depends-member:
 - !private ["Sm", "init"]
 - !private ["So8SKActionC", "animate"]
 - !private ["So8SKActionC", "repeatForever"]
+- !private ["So8SKActionC", "reversed"]
 - !private ["So6SKNodeC", "action"]
 - !private ["So6SKNodeC", "actionForKeyIsRunning"]
 - !private ["So6SKNodeC", "removeAction"]
@@ -363,6 +370,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "removeAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "repeatForever"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reversed"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "run"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]

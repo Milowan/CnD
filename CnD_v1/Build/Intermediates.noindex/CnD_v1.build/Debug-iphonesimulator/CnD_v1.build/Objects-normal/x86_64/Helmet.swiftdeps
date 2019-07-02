@@ -11,29 +11,29 @@ depends-top-level:
 - "FloatLiteralType"
 - "Gear"
 - "Helmet"
+- "ISNode"
 - "IntegerLiteralType"
 - "Player"
-- "SKSpriteNode"
 - "Stats"
 - !private "StringLiteralType"
 depends-member:
+- ["6CnD_v14GearC", "ISNode"]
 - ["6CnD_v14GearC", "Player"]
-- ["6CnD_v14GearC", "SKSpriteNode"]
 - ["6CnD_v14GearC", "Stats"]
 - ["6CnD_v14GearC", ""]
 - ["6CnD_v14GearC", "baseDef"]
 - ["6CnD_v14GearC", "basePrecision"]
 - ["6CnD_v14GearC", "init"]
 - ["6CnD_v14GearC", "player"]
+- ["6CnD_v16HelmetC", "ISNode"]
 - ["6CnD_v16HelmetC", "Player"]
-- ["6CnD_v16HelmetC", "SKSpriteNode"]
 - ["6CnD_v16HelmetC", "Stats"]
 - ["6CnD_v16HelmetC", "baseDef"]
 - ["6CnD_v16HelmetC", "basePrecision"]
 - ["6CnD_v16HelmetC", "init"]
 - ["6CnD_v16HelmetC", "player"]
+- ["6CnD_v14ItemC", "ISNode"]
 - ["6CnD_v14ItemC", "Player"]
-- ["6CnD_v14ItemC", "SKSpriteNode"]
 - ["6CnD_v14ItemC", "Stats"]
 - ["6CnD_v14ItemC", "baseDef"]
 - ["6CnD_v14ItemC", "basePrecision"]
@@ -75,4 +75,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "83d675cf91d99a103d06b02ac318f01a"
+interface-hash: "3a79fba88d3743e717614d6443982e75"

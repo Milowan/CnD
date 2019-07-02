@@ -30,7 +30,6 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "BSNode"
 - "Bool"
-- "BooleanLiteralType"
 - "Button"
 - !private "CGFloat"
 - !private "CGSize"
@@ -38,11 +37,10 @@ depends-top-level:
 - "Direction"
 - "Enemy"
 - "Entity"
-- "FloatLiteralType"
+- "Float"
 - !private "GameScene"
 - "Helmet"
 - "Int"
-- "IntegerLiteralType"
 - !private "Interactable"
 - "Inventory"
 - "Player"
@@ -53,7 +51,6 @@ depends-top-level:
 - "SKTexture"
 - "Stats"
 - "String"
-- !private "StringLiteralType"
 - "Sword"
 - !private "UInt32"
 - !private "arc4random_uniform"
@@ -61,7 +58,7 @@ depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
 - !private ["6CnD_v16ArmourC", "baseDef"]
 - !private ["6CnD_v16ArmourC", "baseEvasion"]
-- !private ["6CnD_v16ArmourC", "init"]
+- ["6CnD_v16ArmourC", "init"]
 - !private ["6CnD_v16ArmourC", "stats"]
 - !private ["Sa", "append"]
 - !private ["6CnD_v16BSNodeC", "deinit"]
@@ -188,6 +185,7 @@ depends-member:
 - ["6CnD_v16EntityC", "Direction"]
 - ["6CnD_v16EntityC", "Enemy"]
 - ["6CnD_v16EntityC", "Entity"]
+- ["6CnD_v16EntityC", "Float"]
 - !private ["6CnD_v16EntityC", "GameScene"]
 - ["6CnD_v16EntityC", "Helmet"]
 - ["6CnD_v16EntityC", "Int"]
@@ -445,7 +443,7 @@ depends-member:
 - !private ["s6HasherV", "combine"]
 - !private ["6CnD_v16HelmetC", "baseDef"]
 - !private ["6CnD_v16HelmetC", "basePrecision"]
-- !private ["6CnD_v16HelmetC", "init"]
+- ["6CnD_v16HelmetC", "init"]
 - !private ["6CnD_v16HelmetC", "stats"]
 - !private ["Si", "init"]
 - !private ["6CnD_v112InteractableC", "act"]
@@ -453,6 +451,7 @@ depends-member:
 - !private ["6CnD_v112InteractableC", "player"]
 - !private ["6CnD_v19InventoryC", "act"]
 - !private ["6CnD_v19InventoryC", "init"]
+- !private ["6CnD_v19InventoryC", "update"]
 - !private ["6CnD_v14ItemC", "baseDamage"]
 - !private ["6CnD_v14ItemC", "baseDef"]
 - !private ["6CnD_v14ItemC", "baseEvasion"]
@@ -553,6 +552,7 @@ depends-member:
 - ["6CnD_v16PlayerC", "Direction"]
 - ["6CnD_v16PlayerC", "Enemy"]
 - ["6CnD_v16PlayerC", "Entity"]
+- ["6CnD_v16PlayerC", "Float"]
 - !private ["6CnD_v16PlayerC", "GameScene"]
 - ["6CnD_v16PlayerC", "Helmet"]
 - ["6CnD_v16PlayerC", "Int"]
@@ -697,7 +697,7 @@ depends-member:
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["6CnD_v15SwordC", "baseDamage"]
 - !private ["6CnD_v15SwordC", "baseSpeed"]
-- !private ["6CnD_v15SwordC", "init"]
+- ["6CnD_v15SwordC", "init"]
 - !private ["6CnD_v15SwordC", "stats"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
@@ -823,7 +823,7 @@ depends-member:
 - !private ["6CnD_v113collisionTypeO", "deinit"]
 depends-nominal:
 - !private "s18AdditiveArithmeticP"
-- !private "6CnD_v16ArmourC"
+- "6CnD_v16ArmourC"
 - !private "Sa"
 - !private "6CnD_v16BSNodeC"
 - !private "SK"
@@ -857,7 +857,7 @@ depends-nominal:
 - !private "6CnD_v14GearC"
 - "SH"
 - !private "s6HasherV"
-- !private "6CnD_v16HelmetC"
+- "6CnD_v16HelmetC"
 - !private "Si"
 - !private "6CnD_v112InteractableC"
 - !private "6CnD_v19InventoryC"
@@ -893,7 +893,7 @@ depends-nominal:
 - "6CnD_v15StatsC"
 - !private "Sx"
 - !private "s27StringInterpolationProtocolP"
-- !private "6CnD_v15SwordC"
+- "6CnD_v15SwordC"
 - !private "s16TextOutputStreamP"
 - !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
@@ -945,4 +945,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "fe8622d9e73454ce9d494c9966a5401d"
+interface-hash: "8e9b390c48b51421db37fd875f3f687e"

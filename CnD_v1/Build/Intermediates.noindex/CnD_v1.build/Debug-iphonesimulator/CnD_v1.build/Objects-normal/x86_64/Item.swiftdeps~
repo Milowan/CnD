@@ -8,14 +8,60 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- "ISNode"
 - "Item"
 - "SKSpriteNode"
 depends-member:
+- !private ["s7CVarArgP", "isUserInteractionEnabled"]
+- !private ["s28CustomDebugStringConvertibleP", "isUserInteractionEnabled"]
+- !private ["s23CustomStringConvertibleP", "isUserInteractionEnabled"]
+- !private ["SQ", "isUserInteractionEnabled"]
+- !private ["SH", "isUserInteractionEnabled"]
+- ["6CnD_v14ItemC", "ISNode"]
 - ["6CnD_v14ItemC", "SKSpriteNode"]
 - ["6CnD_v14ItemC", "init"]
+- ["6CnD_v14ItemC", "menu"]
 - ["6CnD_v14ItemC", "sprite"]
+- !private ["So8NSCodingP", "isUserInteractionEnabled"]
+- !private ["So9NSCopyingP", "isUserInteractionEnabled"]
+- !private ["So8NSObjectC", "isUserInteractionEnabled"]
+- !private ["So8NSObjectP", "isUserInteractionEnabled"]
+- !private ["So14NSSecureCodingP", "isUserInteractionEnabled"]
+- !private ["So6SKNodeC", "isUserInteractionEnabled"]
+- !private ["So12SKSpriteNodeC", "isUserInteractionEnabled"]
+- !private ["So10SKWarpableP", "isUserInteractionEnabled"]
+- !private ["So18UIFocusEnvironmentP", "isUserInteractionEnabled"]
+- !private ["So11UIFocusItemP", "isUserInteractionEnabled"]
+- !private ["So30UIPasteConfigurationSupportingP", "isUserInteractionEnabled"]
+- !private ["So11UIResponderC", "isUserInteractionEnabled"]
+- !private ["So30UIResponderStandardEditActionsP", "isUserInteractionEnabled"]
+- !private ["So23UIUserActivityRestoringP", "isUserInteractionEnabled"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "isUserInteractionEnabled"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isUserInteractionEnabled"]
 depends-nominal:
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "SQ"
+- !private "SH"
 - "6CnD_v14ItemC"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So6SKNodeC"
+- !private "So12SKSpriteNodeC"
+- !private "So10SKWarpableP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So23UIUserActivityRestoringP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -49,4 +95,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e28a3cc5638b772f08217e319baf2a91"
+interface-hash: "b93392fe5a3e9edfe6e293e66cd8777d"

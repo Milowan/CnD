@@ -12,7 +12,6 @@ depends-top-level:
 - "Interactable"
 - "Player"
 - "SKSpriteNode"
-- !private "StringLiteralType"
 depends-member:
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "Player"]

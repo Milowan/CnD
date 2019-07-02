@@ -19,12 +19,11 @@ depends-top-level:
 - "CastingPrecedence"
 - !private "Collectable"
 - !private "Door"
-- !private "FloatLiteralType"
 - "GameScene"
+- !private "Gem"
+- !private "ISNode"
 - "Int"
-- !private "IntegerLiteralType"
 - !private "Interactable"
-- !private "Item"
 - !private "LesserSkeleton"
 - "LevelGenerator"
 - !private "Lever"
@@ -33,7 +32,6 @@ depends-top-level:
 - "SKTileDefinition"
 - "SKTileMapNode"
 - "SKTileSet"
-- !private "StringLiteralType"
 - !private "World"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
@@ -141,6 +139,7 @@ depends-member:
 - !private ["6CnD_v19GameSceneC", "doorArray"]
 - !private ["6CnD_v19GameSceneC", "init"]
 - !private ["6CnD_v19GameSceneC", "scaleMode"]
+- !private ["6CnD_v13GemC", "init"]
 - !private ["SH", "addEntity"]
 - !private ["SH", "append"]
 - !private ["SH", "aspectFill"]
@@ -155,6 +154,8 @@ depends-member:
 - !private ["SH", "scaleMode"]
 - !private ["SH", "subscript"]
 - !private ["SH", "tileDefinition"]
+- !private ["6CnD_v16ISNodeC", "deinit"]
+- !private ["6CnD_v16ISNodeC", "init"]
 - !private ["Si", "init"]
 - !private ["6CnD_v112InteractableC", "init"]
 - !private ["6CnD_v14ItemC", "init"]
@@ -164,9 +165,10 @@ depends-member:
 - !private ["6CnD_v114LevelGeneratorC", "Collectable"]
 - !private ["6CnD_v114LevelGeneratorC", "Door"]
 - ["6CnD_v114LevelGeneratorC", "GameScene"]
+- !private ["6CnD_v114LevelGeneratorC", "Gem"]
+- !private ["6CnD_v114LevelGeneratorC", "ISNode"]
 - ["6CnD_v114LevelGeneratorC", "Int"]
 - !private ["6CnD_v114LevelGeneratorC", "Interactable"]
-- !private ["6CnD_v114LevelGeneratorC", "Item"]
 - !private ["6CnD_v114LevelGeneratorC", "LesserSkeleton"]
 - !private ["6CnD_v114LevelGeneratorC", "Lever"]
 - !private ["6CnD_v114LevelGeneratorC", "PressPlates"]
@@ -430,7 +432,9 @@ depends-nominal:
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s17FixedWidthIntegerP"
 - !private "6CnD_v19GameSceneC"
+- !private "6CnD_v13GemC"
 - !private "SH"
+- !private "6CnD_v16ISNodeC"
 - !private "Si"
 - !private "6CnD_v112InteractableC"
 - !private "6CnD_v14ItemC"

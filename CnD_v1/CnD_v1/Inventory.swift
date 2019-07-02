@@ -14,26 +14,31 @@ class Inventory
     var contents : [Item]?
     var invScene: SKNode
     var i : Int
-    var isOpen = false
+    var isOpen : Bool?
+    var animDone : Bool?
     var playerRef : Player
-    let baseX = CGFloat(0)
-    let baseY = CGFloat(500)
+    var deltaY : CGFloat
+    var animSpeed : CGFloat
+    let baseY = CGFloat(400)
     
     init(p: Player)
     {
         invScene = GameScene.invChild!
         playerRef = p
         i = 0
-        invScene.position.x = baseX
+        invScene.position.x = playerRef.sprite!.position.x
         invScene.position.y = baseY
+        deltaY = invScene.position.y - playerRef.sprite!.position.y
+        animSpeed = deltaY / 10
+        isOpen = true
+        animDone = true
     }
     
-    func act()
+    func update()
     {
-        i %= 2
-        if i == 0
+        if !animDone!
         {
-            if isOpen
+            if isOpen!
             {
                 closeInv()
             }
@@ -41,20 +46,36 @@ class Inventory
             {
                 openInv()
             }
-            isOpen = !isOpen
         }
-        i += 1
+    }
+    
+    func act()
+    {
+        animDone = false
+        isOpen = !isOpen!
     }
     
     func openInv()
     {
-        invScene.position.x = playerRef.sprite!.position.x
-        invScene.position.y = playerRef.sprite!.position.y
+        if invScene.position.y > playerRef.sprite!.position.y
+        {
+            invScene.position.y -= animSpeed
+        }
+        else
+        {
+            animDone = true
+        }
     }
     
     func closeInv()
     {
-        invScene.position.x = baseX
-        invScene.position.y = baseY
+        if invScene.position.y < baseY
+        {
+            invScene.position.y += animSpeed
+        }
+        else
+        {
+            animDone = true
+        }
     }
 }

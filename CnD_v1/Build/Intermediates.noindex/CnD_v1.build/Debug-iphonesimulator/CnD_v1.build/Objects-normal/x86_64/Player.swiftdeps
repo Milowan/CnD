@@ -30,7 +30,6 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "BSNode"
 - "Bool"
-- "BooleanLiteralType"
 - "Button"
 - !private "CGFloat"
 - !private "CGSize"
@@ -38,11 +37,11 @@ depends-top-level:
 - "Direction"
 - "Enemy"
 - "Entity"
-- "FloatLiteralType"
+- "Float"
 - !private "GameScene"
 - "Helmet"
+- !private "ISNode"
 - "Int"
-- "IntegerLiteralType"
 - !private "Interactable"
 - "Inventory"
 - "Player"
@@ -53,7 +52,6 @@ depends-top-level:
 - "SKTexture"
 - "Stats"
 - "String"
-- !private "StringLiteralType"
 - "Sword"
 - !private "UInt32"
 - !private "arc4random_uniform"
@@ -188,8 +186,10 @@ depends-member:
 - ["6CnD_v16EntityC", "Direction"]
 - ["6CnD_v16EntityC", "Enemy"]
 - ["6CnD_v16EntityC", "Entity"]
+- ["6CnD_v16EntityC", "Float"]
 - !private ["6CnD_v16EntityC", "GameScene"]
 - ["6CnD_v16EntityC", "Helmet"]
+- !private ["6CnD_v16EntityC", "ISNode"]
 - ["6CnD_v16EntityC", "Int"]
 - !private ["6CnD_v16EntityC", "Interactable"]
 - ["6CnD_v16EntityC", "Inventory"]
@@ -453,6 +453,7 @@ depends-member:
 - !private ["6CnD_v112InteractableC", "player"]
 - !private ["6CnD_v19InventoryC", "act"]
 - !private ["6CnD_v19InventoryC", "init"]
+- !private ["6CnD_v19InventoryC", "update"]
 - !private ["6CnD_v14ItemC", "baseDamage"]
 - !private ["6CnD_v14ItemC", "baseDef"]
 - !private ["6CnD_v14ItemC", "baseEvasion"]
@@ -553,8 +554,10 @@ depends-member:
 - ["6CnD_v16PlayerC", "Direction"]
 - ["6CnD_v16PlayerC", "Enemy"]
 - ["6CnD_v16PlayerC", "Entity"]
+- ["6CnD_v16PlayerC", "Float"]
 - !private ["6CnD_v16PlayerC", "GameScene"]
 - ["6CnD_v16PlayerC", "Helmet"]
+- !private ["6CnD_v16PlayerC", "ISNode"]
 - ["6CnD_v16PlayerC", "Int"]
 - !private ["6CnD_v16PlayerC", "Interactable"]
 - ["6CnD_v16PlayerC", "Inventory"]
@@ -945,4 +948,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "fe8622d9e73454ce9d494c9966a5401d"
+interface-hash: "8e9b390c48b51421db37fd875f3f687e"

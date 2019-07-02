@@ -13,33 +13,30 @@ depends-top-level:
 - "Interactable"
 - "Lever"
 - "SKSpriteNode"
+- !private "door"
 depends-member:
-- !private ["6CnD_v15AdoorC", "toggleState"]
 - ["6CnD_v16EntityC", "Adoor"]
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "SKSpriteNode"]
 - ["6CnD_v16EntityC", "act"]
-- ["6CnD_v16EntityC", "door"]
-- !private ["6CnD_v16EntityC", "toggleState"]
+- !private ["6CnD_v16EntityC", "door"]
 - ["SQ", ""]
 - !private ["SQ", "door"]
 - !private ["SQ", "init"]
-- !private ["SQ", "toggleState"]
 - ["6CnD_v112InteractableC", "Adoor"]
 - ["6CnD_v112InteractableC", "Int"]
 - ["6CnD_v112InteractableC", "SKSpriteNode"]
 - ["6CnD_v112InteractableC", ""]
 - ["6CnD_v112InteractableC", "act"]
-- ["6CnD_v112InteractableC", "door"]
+- !private ["6CnD_v112InteractableC", "door"]
 - ["6CnD_v112InteractableC", "init"]
 - ["6CnD_v15LeverC", "Adoor"]
 - ["6CnD_v15LeverC", "Int"]
 - ["6CnD_v15LeverC", "SKSpriteNode"]
 - ["6CnD_v15LeverC", "act"]
-- ["6CnD_v15LeverC", "door"]
+- !private ["6CnD_v15LeverC", "door"]
 - ["6CnD_v15LeverC", "init"]
 depends-nominal:
-- !private "6CnD_v15AdoorC"
 - "6CnD_v16EntityC"
 - "SQ"
 - "6CnD_v112InteractableC"
@@ -77,4 +74,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "1d3cd455399a94060241121dd99a1aaa"
+interface-hash: "e553af91656df0f43033a9d8ed82f4ed"

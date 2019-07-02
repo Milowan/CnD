@@ -170,12 +170,12 @@
 		26FAFE7522C67DEF00E36901 /* Interactable */ = {
 			isa = PBXGroup;
 			children = (
+				26FBAEFE22A5965C00AEDCDC /* Interactable.swift */,
 				26FAFE8522C69BCB00E36901 /* Dais.swift */,
 				26FAFE8622C69BCB00E36901 /* Lever.swift */,
 				26FAFE8322C69BBB00E36901 /* Collectable.swift */,
 				26FAFE8122C69BA800E36901 /* Door.swift */,
 				A611F0FC22BD4D8400F18221 /* PressPlates.swift */,
-				26FBAEFE22A5965C00AEDCDC /* Interactable.swift */,
 			);
 			path = Interactable;
 			sourceTree = "<group>";

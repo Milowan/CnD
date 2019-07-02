@@ -11,15 +11,11 @@ depends-top-level:
 - !private "<="
 - !private "=="
 - "AssignmentPrecedence"
-- "BooleanLiteralType"
 - "Enemy"
 - "Entity"
-- "FloatLiteralType"
 - "Int"
-- "IntegerLiteralType"
 - "Player"
 - "SKSpriteNode"
-- !private "StringLiteralType"
 depends-member:
 - !private ["Sa", "subscript"]
 - !private ["SK", "subscript"]

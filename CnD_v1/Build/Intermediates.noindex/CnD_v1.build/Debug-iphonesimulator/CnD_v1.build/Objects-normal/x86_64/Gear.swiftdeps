@@ -9,15 +9,15 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - "Gear"
+- "ISNode"
 - "Item"
-- "SKSpriteNode"
 - "Stats"
 depends-member:
-- ["6CnD_v14GearC", "SKSpriteNode"]
+- ["6CnD_v14GearC", "ISNode"]
 - ["6CnD_v14GearC", "Stats"]
 - ["6CnD_v14GearC", "init"]
 - ["6CnD_v14GearC", "stats"]
-- ["6CnD_v14ItemC", "SKSpriteNode"]
+- ["6CnD_v14ItemC", "ISNode"]
 - ["6CnD_v14ItemC", "Stats"]
 - ["6CnD_v14ItemC", ""]
 - ["6CnD_v14ItemC", "init"]
@@ -58,4 +58,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c3a6c3fff63f433286f8a25ebb1715c2"
+interface-hash: "a3e98df860e8b6407ab50f1975a3cf25"
