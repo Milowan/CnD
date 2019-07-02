@@ -16,7 +16,7 @@ class Gem : Item
         
     }
     
-    func place()
+    func place(d : Dais)
     {
         
     }

@@ -32,6 +32,7 @@
 		26FBAF0622A5965C00AEDCDC /* Pos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAEFF22A5965C00AEDCDC /* Pos.swift */; };
 		26FBAF0722A5965C00AEDCDC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAF0022A5965C00AEDCDC /* Player.swift */; };
 		26FDCA8E22BBFFE200CEE077 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FDCA8D22BBFFE200CEE077 /* Stats.swift */; };
+		26FE913A22CBE839003AB70A /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FE913922CBE839003AB70A /* HUD.swift */; };
 		26FEEBD022BAC5A6006A1566 /* BSNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FEEBCF22BAC5A6006A1566 /* BSNode.swift */; };
 		A611F0FD22BD4D8400F18221 /* PressPlates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611F0FC22BD4D8400F18221 /* PressPlates.swift */; };
 		A61C3F5E22AF05ED0031B4B7 /* MapTiles.sks in Resources */ = {isa = PBXBuildFile; fileRef = A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */; };
@@ -92,6 +93,7 @@
 		26FBAEFF22A5965C00AEDCDC /* Pos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pos.swift; sourceTree = "<group>"; };
 		26FBAF0022A5965C00AEDCDC /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		26FDCA8D22BBFFE200CEE077 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		26FE913922CBE839003AB70A /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		26FEEBCF22BAC5A6006A1566 /* BSNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSNode.swift; sourceTree = "<group>"; };
 		A611F0FC22BD4D8400F18221 /* PressPlates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressPlates.swift; sourceTree = "<group>"; };
 		A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MapTiles.sks; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				A658836A22B2C36F00F7F2CC /* Entity */,
 				A6FD168722B3E8420090D045 /* GameScene.swift */,
 				2601E8CD22C2B136004EB047 /* Inventory.swift */,
+				26FE913922CBE839003AB70A /* HUD.swift */,
 				A659255F22BABB14001ECE56 /* Extensions.swift */,
 				A686E4B922A45405004E1B64 /* GameViewController.swift */,
 				26FBAEFF22A5965C00AEDCDC /* Pos.swift */,
@@ -396,6 +399,7 @@
 				26FBAF0322A5965C00AEDCDC /* Button.swift in Sources */,
 				26FBAF0422A5965C00AEDCDC /* Entity.swift in Sources */,
 				A611F0FD22BD4D8400F18221 /* PressPlates.swift in Sources */,
+				26FE913A22CBE839003AB70A /* HUD.swift in Sources */,
 				A686E4BA22A45405004E1B64 /* GameViewController.swift in Sources */,
 				265C0D0D22C53B3E001A471A /* Armour.swift in Sources */,
 				26FBAF0222A5965C00AEDCDC /* World.swift in Sources */,
