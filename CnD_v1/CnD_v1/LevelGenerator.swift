@@ -133,13 +133,38 @@ class LevelGenerator
     func createGemDias()
     {
         guard let gemMap = gameScene!.childNode(withName: "Interactable_GemDias") as? SKTileMapNode else {return}
+        
+        var dais = [Dais]()
+        var i = 0
         for row in 0..<gemMap.numberOfRows
         {
             for column in 0..<gemMap.numberOfColumns
             {
                 guard tile(in: gemMap, at: (column, row)) != nil else {continue}
-                gameScene!.addEntity(entity: Interactable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "switch_floor_on")))
+                dais.append( Dais(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "switch_floor_on")))
+                gameScene!.addEntity(entity: dais[i])
                 gemMap.removeFromParent()
+                i += 1
+            }
+        }
+        linkDaii(d : dais)
+    }
+    
+    func linkDaii(d : [Dais])
+    {
+        var i = 0
+        for _ in d
+        {
+            i += 1
+        }
+        for object in d
+        {
+            for j in 0 ... i
+            {
+                if object != d[j]
+                {
+                    object.oDais.append(d[j])
+                }
             }
         }
     }
