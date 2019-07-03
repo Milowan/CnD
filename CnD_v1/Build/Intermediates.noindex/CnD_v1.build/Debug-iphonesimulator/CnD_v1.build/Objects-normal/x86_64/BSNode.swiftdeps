@@ -12,7 +12,6 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - "BSNode"
-- !private "BooleanLiteralType"
 - "Button"
 - "SKSpriteNode"
 - "Set"

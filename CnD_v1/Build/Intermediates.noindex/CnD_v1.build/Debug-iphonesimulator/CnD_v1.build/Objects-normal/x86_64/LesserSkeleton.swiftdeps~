@@ -17,6 +17,7 @@ depends-top-level:
 - !private ">"
 - "AssignmentPrecedence"
 - "Enemy"
+- !private "Float"
 - "Int"
 - "LesserSkeleton"
 - "SKAction"
@@ -27,10 +28,12 @@ depends-top-level:
 - !private "arc4random_uniform"
 - !private "||"
 depends-member:
+- !private ["s18AdditiveArithmeticP", "init"]
 - !private ["Sa", "append"]
 - !private ["Sa", "init"]
 - !private ["SK", "append"]
 - !private ["SK", "init"]
+- !private ["SB", "init"]
 - !private ["s7CVarArgP", "action"]
 - !private ["s7CVarArgP", "actionForKeyIsRunning"]
 - !private ["s7CVarArgP", "animate"]
@@ -42,6 +45,7 @@ depends-member:
 - !private ["s7CVarArgP", "run"]
 - !private ["Sl", "append"]
 - !private ["Sl", "init"]
+- !private ["SL", "init"]
 - !private ["10Foundation15ContiguousBytesP", "append"]
 - !private ["10Foundation15ContiguousBytesP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "action"]
@@ -74,6 +78,7 @@ depends-member:
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "append"]
 - !private ["SE", "init"]
+- !private ["6CnD_v15EnemyC", "Float"]
 - ["6CnD_v15EnemyC", "Int"]
 - ["6CnD_v15EnemyC", "SKAction"]
 - ["6CnD_v15EnemyC", "SKSpriteNode"]
@@ -113,6 +118,7 @@ depends-member:
 - ["6CnD_v15EnemyC", "stopAnimation"]
 - ["6CnD_v15EnemyC", "tempTimer"]
 - ["6CnD_v15EnemyC", "update"]
+- !private ["6CnD_v16EntityC", "Float"]
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "SKAction"]
 - ["6CnD_v16EntityC", "SKSpriteNode"]
@@ -155,6 +161,7 @@ depends-member:
 - ["6CnD_v16EntityC", "stopAnimation"]
 - ["6CnD_v16EntityC", "tempTimer"]
 - ["6CnD_v16EntityC", "update"]
+- !private ["SQ", "Float"]
 - !private ["SQ", "Int"]
 - !private ["SQ", "SKAction"]
 - !private ["SQ", "SKTexture"]
@@ -205,6 +212,10 @@ depends-member:
 - !private ["SQ", "update"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["Sf", "init"]
+- !private ["SF", "init"]
 - !private ["SH", "action"]
 - !private ["SH", "actionForKeyIsRunning"]
 - !private ["SH", "animate"]
@@ -214,6 +225,7 @@ depends-member:
 - !private ["SH", "repeatForever"]
 - !private ["SH", "reversed"]
 - !private ["SH", "run"]
+- !private ["6CnD_v114LesserSkeletonC", "Float"]
 - ["6CnD_v114LesserSkeletonC", "Int"]
 - ["6CnD_v114LesserSkeletonC", "SKAction"]
 - ["6CnD_v114LesserSkeletonC", "SKSpriteNode"]
@@ -252,6 +264,7 @@ depends-member:
 - ["6CnD_v114LesserSkeletonC", "stopAnimation"]
 - ["6CnD_v114LesserSkeletonC", "tempTimer"]
 - ["6CnD_v114LesserSkeletonC", "update"]
+- !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["SM", "append"]
 - !private ["SM", "init"]
 - !private ["10Foundation19MutableDataProtocolP", "append"]
@@ -296,6 +309,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "repeatForever"]
 - !private ["So14NSSecureCodingP", "reversed"]
 - !private ["So14NSSecureCodingP", "run"]
+- !private ["Sj", "init"]
 - !private ["6CnD_v16PlayerC", "cDir"]
 - !private ["6CnD_v16PlayerC", "calcTotalDEF"]
 - !private ["6CnD_v16PlayerC", "calcTotalEVS"]
@@ -305,6 +319,7 @@ depends-member:
 - !private ["Sk", "init"]
 - !private ["Sm", "append"]
 - !private ["Sm", "init"]
+- !private ["s10SIMDScalarP", "init"]
 - !private ["So8SKActionC", "animate"]
 - !private ["So8SKActionC", "repeatForever"]
 - !private ["So8SKActionC", "reversed"]
@@ -323,10 +338,13 @@ depends-member:
 - !private ["So10SKWarpableP", "run"]
 - !private ["ST", "append"]
 - !private ["ST", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["So18UIFocusEnvironmentP", "action"]
 - !private ["So18UIFocusEnvironmentP", "actionForKeyIsRunning"]
 - !private ["So18UIFocusEnvironmentP", "removeAction"]
@@ -353,6 +371,8 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "run"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "init"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "action"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "actionForKeyIsRunning"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
@@ -360,6 +380,8 @@ depends-member:
 - !private ["s30_CustomPlaygroundQuickLookableP", "run"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s19_HasContiguousBytesP", "append"]
 - !private ["s19_HasContiguousBytesP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
@@ -375,10 +397,13 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 depends-nominal:
+- !private "s18AdditiveArithmeticP"
 - !private "Sa"
 - !private "SK"
+- !private "SB"
 - !private "s7CVarArgP"
 - !private "Sl"
+- !private "SL"
 - !private "10Foundation15ContiguousBytesP"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
@@ -391,8 +416,13 @@ depends-nominal:
 - "6CnD_v16EntityC"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "Sf"
+- !private "SF"
 - !private "SH"
 - "6CnD_v114LesserSkeletonC"
+- !private "s25LosslessStringConvertibleP"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
 - !private "So8NSCodingP"
@@ -400,17 +430,22 @@ depends-nominal:
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
+- !private "Sj"
 - !private "6CnD_v16PlayerC"
 - !private "Sk"
 - !private "Sm"
+- !private "s10SIMDScalarP"
 - !private "So8SKActionC"
 - !private "So6SKNodeC"
 - !private "So12SKSpriteNodeC"
 - !private "So9SKTextureC"
 - !private "So10SKWarpableP"
 - !private "ST"
+- !private "s13SignedNumericP"
+- !private "Sx"
 - !private "s27StringInterpolationProtocolP"
 - !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
 - !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
 - !private "So30UIPasteConfigurationSupportingP"
@@ -418,8 +453,12 @@ depends-nominal:
 - !private "So30UIResponderStandardEditActionsP"
 - !private "So23UIUserActivityRestoringP"
 - !private "s14_ArrayProtocolP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"

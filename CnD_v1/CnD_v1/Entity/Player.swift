@@ -254,6 +254,7 @@ class Player : Entity
                         {
                             inventory.act()
                         }
+                        inventoryButton.clear = true
                     }
                     if miniMapButton.active
                     {

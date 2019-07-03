@@ -290,6 +290,7 @@ depends-member:
 - !private ["SQ", "DOWN"]
 - !private ["SQ", "GameScene"]
 - !private ["SQ", "Helmet"]
+- !private ["SQ", "ISNode"]
 - !private ["SQ", "Int"]
 - !private ["SQ", "Inventory"]
 - !private ["SQ", "LEFT"]
@@ -447,6 +448,8 @@ depends-member:
 - !private ["6CnD_v16HelmetC", "basePrecision"]
 - !private ["6CnD_v16HelmetC", "init"]
 - !private ["6CnD_v16HelmetC", "stats"]
+- !private ["6CnD_v16ISNodeC", "deinit"]
+- !private ["6CnD_v16ISNodeC", "init"]
 - !private ["Si", "init"]
 - !private ["6CnD_v112InteractableC", "act"]
 - !private ["6CnD_v112InteractableC", "deinit"]
@@ -583,6 +586,7 @@ depends-member:
 - ["6CnD_v16PlayerC", "collision"]
 - ["6CnD_v16PlayerC", "combatTimer"]
 - ["6CnD_v16PlayerC", "dPadBG"]
+- ["6CnD_v16PlayerC", "deinit"]
 - ["6CnD_v16PlayerC", "direction"]
 - ["6CnD_v16PlayerC", "dmgTaken"]
 - ["6CnD_v16PlayerC", "down"]
@@ -861,6 +865,7 @@ depends-nominal:
 - "SH"
 - !private "s6HasherV"
 - !private "6CnD_v16HelmetC"
+- !private "6CnD_v16ISNodeC"
 - !private "Si"
 - !private "6CnD_v112InteractableC"
 - !private "6CnD_v19InventoryC"

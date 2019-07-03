@@ -36,6 +36,7 @@ depends-member:
 - ["6CnD_v16ISNodeC", "Set"]
 - ["6CnD_v16ISNodeC", "UIEvent"]
 - ["6CnD_v16ISNodeC", "UITouch"]
+- ["6CnD_v16ISNodeC", "deinit"]
 - ["6CnD_v16ISNodeC", "init"]
 - ["6CnD_v16ISNodeC", "item"]
 - ["6CnD_v16ISNodeC", "touchesBegan"]

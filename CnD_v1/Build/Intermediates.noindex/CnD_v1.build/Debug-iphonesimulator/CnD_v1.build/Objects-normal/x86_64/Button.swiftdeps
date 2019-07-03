@@ -16,6 +16,7 @@ depends-top-level:
 - "Entity"
 - "Int"
 - "Interactable"
+- !private "StringLiteralType"
 depends-member:
 - !private ["6CnD_v16BSNodeC", "button"]
 - !private ["6CnD_v16BSNodeC", "isUserInteractionEnabled"]
