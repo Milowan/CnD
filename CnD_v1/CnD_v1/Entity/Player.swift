@@ -156,9 +156,9 @@ class Player : Entity
 
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
         
-        self.sword = Sword(p : self, st : Stats(s : 1, d : 1, c : 1), sp : SKSpriteNode(imageNamed: "sword_01a") as! ISNode)
-        self.armour = Armour(p : self, st : Stats(s : 1, d : 1, c : 1), sp : SKSpriteNode(imageNamed: "sword_01a") as! ISNode)
-        self.helmet = Helmet(p : self, st : Stats(s : 1, d : 1, c : 1), sp : SKSpriteNode(imageNamed: "sword_01a") as! ISNode)
+        self.sword = Sword(p : self, st : Stats(s : 1, d : 1, c : 1), sp : ISNode(imageNamed: "sword_01a"))
+        self.armour = Armour(p : self, st : Stats(s : 1, d : 1, c : 1), sp : ISNode(imageNamed: "sword_01a"))
+        self.helmet = Helmet(p : self, st : Stats(s : 1, d : 1, c : 1), sp : ISNode(imageNamed: "sword_01a"))
         GameScene.player = self
         setAnimations()
         let dim = CGSize(width: 32, height: 32)
@@ -252,6 +252,7 @@ class Player : Entity
                         {
                             inventory!.act()
                         }
+                        inventoryButton.clear = true
                     }
                     if miniMapButton.active
                     {

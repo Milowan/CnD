@@ -33,6 +33,7 @@
 		26FBAF0722A5965C00AEDCDC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBAF0022A5965C00AEDCDC /* Player.swift */; };
 		26FDCA8E22BBFFE200CEE077 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FDCA8D22BBFFE200CEE077 /* Stats.swift */; };
 		26FEEBD022BAC5A6006A1566 /* BSNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FEEBCF22BAC5A6006A1566 /* BSNode.swift */; };
+		A604CF8422CCFB5400841D2C /* MiniMapRef.sks in Resources */ = {isa = PBXBuildFile; fileRef = A604CF8322CCFB5400841D2C /* MiniMapRef.sks */; };
 		A611F0FD22BD4D8400F18221 /* PressPlates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611F0FC22BD4D8400F18221 /* PressPlates.swift */; };
 		A61C3F5E22AF05ED0031B4B7 /* MapTiles.sks in Resources */ = {isa = PBXBuildFile; fileRef = A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */; };
 		A61C3F6022B025320031B4B7 /* LevelScene_1.sks in Resources */ = {isa = PBXBuildFile; fileRef = A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */; };
@@ -93,7 +94,9 @@
 		26FBAF0022A5965C00AEDCDC /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		26FDCA8D22BBFFE200CEE077 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		26FEEBCF22BAC5A6006A1566 /* BSNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSNode.swift; sourceTree = "<group>"; };
+		A604CF8322CCFB5400841D2C /* MiniMapRef.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MiniMapRef.sks; sourceTree = "<group>"; };
 		A611F0FC22BD4D8400F18221 /* PressPlates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressPlates.swift; sourceTree = "<group>"; };
+		A619003522CD1B10009628AB /* Pixeled.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Pixeled.ttf; path = ../../../../../Downloads/Pixeled.ttf; sourceTree = "<group>"; };
 		A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MapTiles.sks; sourceTree = "<group>"; };
 		A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelScene_1.sks; sourceTree = "<group>"; };
 		A6216A4722B97AAD001DB637 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -215,6 +218,7 @@
 		A686E4B022A45405004E1B64 /* CnD_v1 */ = {
 			isa = PBXGroup;
 			children = (
+				A619003522CD1B10009628AB /* Pixeled.ttf */,
 				A686E4C322A45406004E1B64 /* Info.plist */,
 				A686E4B122A45405004E1B64 /* AppDelegate.swift */,
 				A686E4BE22A45406004E1B64 /* Assets.xcassets */,
@@ -224,6 +228,7 @@
 				A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */,
 				26FAFE7F22C68FDA00E36901 /* LevelGenerator.swift */,
 				A65DA19522C27BEF00F4F687 /* InventorySceneRef.sks */,
+				A604CF8322CCFB5400841D2C /* MiniMapRef.sks */,
 				26FAFE7322C67BCE00E36901 /* Item */,
 				2607FB3022C9746600D86D58 /* ISNode.swift */,
 				A658836A22B2C36F00F7F2CC /* Entity */,
@@ -361,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A686E4BF22A45406004E1B64 /* Assets.xcassets in Resources */,
+				A604CF8422CCFB5400841D2C /* MiniMapRef.sks in Resources */,
 				A659255E22BAB49F001ECE56 /* Main.storyboard in Resources */,
 				A61C3F5E22AF05ED0031B4B7 /* MapTiles.sks in Resources */,
 				A686E4C222A45406004E1B64 /* LaunchScreen.storyboard in Resources */,

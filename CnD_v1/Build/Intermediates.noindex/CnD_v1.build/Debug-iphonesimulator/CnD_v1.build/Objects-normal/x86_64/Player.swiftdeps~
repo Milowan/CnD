@@ -40,6 +40,7 @@ depends-top-level:
 - "Float"
 - !private "GameScene"
 - "Helmet"
+- !private "ISNode"
 - "Int"
 - !private "Interactable"
 - "Inventory"
@@ -58,7 +59,7 @@ depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
 - !private ["6CnD_v16ArmourC", "baseDef"]
 - !private ["6CnD_v16ArmourC", "baseEvasion"]
-- ["6CnD_v16ArmourC", "init"]
+- !private ["6CnD_v16ArmourC", "init"]
 - !private ["6CnD_v16ArmourC", "stats"]
 - !private ["Sa", "append"]
 - !private ["6CnD_v16BSNodeC", "deinit"]
@@ -188,6 +189,7 @@ depends-member:
 - ["6CnD_v16EntityC", "Float"]
 - !private ["6CnD_v16EntityC", "GameScene"]
 - ["6CnD_v16EntityC", "Helmet"]
+- !private ["6CnD_v16EntityC", "ISNode"]
 - ["6CnD_v16EntityC", "Int"]
 - !private ["6CnD_v16EntityC", "Interactable"]
 - ["6CnD_v16EntityC", "Inventory"]
@@ -288,6 +290,7 @@ depends-member:
 - !private ["SQ", "DOWN"]
 - !private ["SQ", "GameScene"]
 - !private ["SQ", "Helmet"]
+- !private ["SQ", "ISNode"]
 - !private ["SQ", "Int"]
 - !private ["SQ", "Inventory"]
 - !private ["SQ", "LEFT"]
@@ -443,8 +446,10 @@ depends-member:
 - !private ["s6HasherV", "combine"]
 - !private ["6CnD_v16HelmetC", "baseDef"]
 - !private ["6CnD_v16HelmetC", "basePrecision"]
-- ["6CnD_v16HelmetC", "init"]
+- !private ["6CnD_v16HelmetC", "init"]
 - !private ["6CnD_v16HelmetC", "stats"]
+- !private ["6CnD_v16ISNodeC", "deinit"]
+- !private ["6CnD_v16ISNodeC", "init"]
 - !private ["Si", "init"]
 - !private ["6CnD_v112InteractableC", "act"]
 - !private ["6CnD_v112InteractableC", "deinit"]
@@ -555,6 +560,7 @@ depends-member:
 - ["6CnD_v16PlayerC", "Float"]
 - !private ["6CnD_v16PlayerC", "GameScene"]
 - ["6CnD_v16PlayerC", "Helmet"]
+- !private ["6CnD_v16PlayerC", "ISNode"]
 - ["6CnD_v16PlayerC", "Int"]
 - !private ["6CnD_v16PlayerC", "Interactable"]
 - ["6CnD_v16PlayerC", "Inventory"]
@@ -580,6 +586,7 @@ depends-member:
 - ["6CnD_v16PlayerC", "collision"]
 - ["6CnD_v16PlayerC", "combatTimer"]
 - ["6CnD_v16PlayerC", "dPadBG"]
+- ["6CnD_v16PlayerC", "deinit"]
 - ["6CnD_v16PlayerC", "direction"]
 - ["6CnD_v16PlayerC", "dmgTaken"]
 - ["6CnD_v16PlayerC", "down"]
@@ -697,7 +704,7 @@ depends-member:
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["6CnD_v15SwordC", "baseDamage"]
 - !private ["6CnD_v15SwordC", "baseSpeed"]
-- ["6CnD_v15SwordC", "init"]
+- !private ["6CnD_v15SwordC", "init"]
 - !private ["6CnD_v15SwordC", "stats"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
@@ -823,7 +830,7 @@ depends-member:
 - !private ["6CnD_v113collisionTypeO", "deinit"]
 depends-nominal:
 - !private "s18AdditiveArithmeticP"
-- "6CnD_v16ArmourC"
+- !private "6CnD_v16ArmourC"
 - !private "Sa"
 - !private "6CnD_v16BSNodeC"
 - !private "SK"
@@ -857,7 +864,8 @@ depends-nominal:
 - !private "6CnD_v14GearC"
 - "SH"
 - !private "s6HasherV"
-- "6CnD_v16HelmetC"
+- !private "6CnD_v16HelmetC"
+- !private "6CnD_v16ISNodeC"
 - !private "Si"
 - !private "6CnD_v112InteractableC"
 - !private "6CnD_v19InventoryC"
@@ -893,7 +901,7 @@ depends-nominal:
 - "6CnD_v15StatsC"
 - !private "Sx"
 - !private "s27StringInterpolationProtocolP"
-- "6CnD_v15SwordC"
+- !private "6CnD_v15SwordC"
 - !private "s16TextOutputStreamP"
 - !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"

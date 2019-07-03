@@ -19,7 +19,8 @@ class Inventory
     var playerRef : Player
     var deltaY : CGFloat
     var animSpeed : CGFloat
-    let baseY = CGFloat(400)
+    var baseY : CGFloat = 400
+    //var isClosed : Bool?
     
     init(p: Player)
     {
@@ -57,6 +58,7 @@ class Inventory
     
     func openInv()
     {
+        invScene.position.x = playerRef.sprite!.position.x
         if invScene.position.y > playerRef.sprite!.position.y
         {
             invScene.position.y -= animSpeed
@@ -64,11 +66,13 @@ class Inventory
         else
         {
             animDone = true
+            invScene.position.y = playerRef.sprite!.position.y
         }
     }
     
     func closeInv()
     {
+        invScene.position.x = playerRef.sprite!.position.x
         if invScene.position.y < baseY
         {
             invScene.position.y += animSpeed
