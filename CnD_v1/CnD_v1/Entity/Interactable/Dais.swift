@@ -27,8 +27,7 @@ class Dais : Interactable
     
     override func act()
     {
-        //remove gem from player inventory
-        //change Dais sprite
+        player!.inventory.openInv()
     }
     
     override func update()
@@ -54,5 +53,10 @@ class Dais : Interactable
             
             acted = true
         }
+    }
+    
+    func activate()
+    {
+        hasGem = true
     }
 }

@@ -10,11 +10,12 @@ import Foundation
 import SpriteKit
 
 
-class Button : Entity
+class Button
 {
     var interactable : Interactable?
     var active : Bool
     var clear : Bool
+    var sprite : SKSpriteNode
     
     init(x : Int, y : Int, z : Int, s : BSNode)
     {
@@ -22,17 +23,9 @@ class Button : Entity
         clear = false
         interactable = nil
         s.isUserInteractionEnabled = true
-        super.init(x : x, y : y, z : z, s : s, m : .NONE)
+        s.zPosition = CGFloat(z)
+        sprite = s
+        sprite.position = CGPoint(x : x, y : y)
         (self.sprite as! BSNode).button = self
-    }
-    
-    override func update()
-    {
-        
-    }
-    
-    func act()
-    {
-        
     }
 }

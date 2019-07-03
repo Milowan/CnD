@@ -14,12 +14,11 @@ class Armour : Gear
     let baseDef = 5
     let baseEvasion = 3
     
-    var player : Player
-    
     init (p : Player, st : Stats, sp : ISNode)
     {
-        player = p
         
         super.init(st : st, sp : sp)
+        
+        self.player = p
     }
 }

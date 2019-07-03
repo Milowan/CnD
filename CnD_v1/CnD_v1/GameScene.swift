@@ -203,7 +203,10 @@ class GameScene: SKScene
             {
                 if entity != response
                 {
-                    entity.collision(response : response)
+                    if let player = entity as? Player
+                    {
+                        player.collision(response : response)
+                    }
                 }
             }
         }
