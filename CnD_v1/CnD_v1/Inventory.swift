@@ -14,7 +14,7 @@ class Inventory
     var contents : [Item]?
     var invScene: SKNode
     var i : Int
-    var isOpen : Bool?
+    var isOpen : Bool
     var animDone : Bool?
     var playerRef : Player
     var deltaY : CGFloat
@@ -38,7 +38,7 @@ class Inventory
     {
         if !animDone!
         {
-            if isOpen!
+            if isOpen
             {
                 closeInv()
             }
@@ -52,7 +52,7 @@ class Inventory
     func act()
     {
         animDone = false
-        isOpen = !isOpen!
+        isOpen = !isOpen
     }
     
     func openInv()

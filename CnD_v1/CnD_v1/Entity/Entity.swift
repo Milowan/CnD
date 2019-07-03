@@ -44,9 +44,6 @@ class Entity
         pos = Pos(xX : x, yY : y)
     }
     
-    func draw()
-    {}
-    
     func update()
     {}
     

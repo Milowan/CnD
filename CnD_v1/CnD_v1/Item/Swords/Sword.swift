@@ -14,11 +14,9 @@ class Sword : Gear
     let baseDamage = 5
     let baseSpeed = 2
     
-    var player : Player
-    
     init (p : Player, st : Stats, sp : ISNode)
     {
-        player = p
         super.init(st : st, sp : sp)
+        self.player = p
     }
 }

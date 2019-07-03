@@ -12,6 +12,7 @@ import SpriteKit
 class Item
 {
     var sprite: SKSpriteNode
+    var player : Player?
     
     init(s: ISNode)
     {

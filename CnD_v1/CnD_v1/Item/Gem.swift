@@ -13,12 +13,20 @@ class Gem : Item
 {
     override func menu()
     {
-        
+        // if let dais = player.interact.interactable! as? Dais
+        // {
+        //      place gem option
+        // }
     }
     
     func place(d : Dais)
     {
-        
+        if !d.hasGem
+        {
+            player!.removeGem()
+            
+            d.activate()
+        }
     }
     
     func examine()

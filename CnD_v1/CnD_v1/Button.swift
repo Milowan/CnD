@@ -15,17 +15,26 @@ class Button
     var interactable : Interactable?
     var active : Bool
     var clear : Bool
-    var sprite : SKSpriteNode
+    var sprite : BSNode
     
     init(x : Int, y : Int, z : Int, s : BSNode)
     {
         active = false
         clear = false
         interactable = nil
-        s.isUserInteractionEnabled = true
-        s.zPosition = CGFloat(z)
+        s.isUserInteractionEnabled = trues.zPosition = CGFloat(z)
         sprite = s
         sprite.position = CGPoint(x : x, y : y)
         (self.sprite as! BSNode).button = self
+    }
+    
+    override func update()
+    {
+        
+    }
+    
+    func act()
+    {
+        
     }
 }
