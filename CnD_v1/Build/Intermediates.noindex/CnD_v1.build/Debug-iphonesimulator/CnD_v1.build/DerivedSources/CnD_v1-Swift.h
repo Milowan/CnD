@@ -239,6 +239,14 @@ SWIFT_CLASS("_TtC6CnD_v118GameViewController")
 @end
 
 
+SWIFT_CLASS("_TtC6CnD_v13HUD")
+@interface HUD : SKNode
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC6CnD_v16ISNode")
 @interface ISNode : SKSpriteNode
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;

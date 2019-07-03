@@ -13,16 +13,12 @@ depends-top-level:
 - "Adoor"
 - "AssignmentPrecedence"
 - "Bool"
-- !private "BooleanLiteralType"
 - "Entity"
-- "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
 - "SKAction"
 - "SKSpriteNode"
 - "SKTexture"
 - "String"
-- !private "StringLiteralType"
 depends-member:
 - ["6CnD_v15AdoorC", "Bool"]
 - ["6CnD_v15AdoorC", "Int"]
@@ -32,6 +28,7 @@ depends-member:
 - ["6CnD_v15AdoorC", "String"]
 - ["6CnD_v15AdoorC", "animSpeed"]
 - !private ["6CnD_v15AdoorC", "collisionMask"]
+- ["6CnD_v15AdoorC", "deinit"]
 - ["6CnD_v15AdoorC", "doorClosed"]
 - ["6CnD_v15AdoorC", "doorOpen"]
 - ["6CnD_v15AdoorC", "doorTextures"]

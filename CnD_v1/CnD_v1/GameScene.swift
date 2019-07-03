@@ -22,6 +22,12 @@ class GameScene: SKScene
     var doorArray: [Adoor]? = []
     var customBGColor = UIColor(red: (22/255), green: (19/255), blue: (24/255), alpha: 1)
     
+    var room1:[Entity] = []
+    var room2:[Entity] = []
+    var room3:[Entity] = []
+    var room4:[Entity] = []
+    var room5:[Entity] = []
+    
     var edgeLimits = SKTileMapNode()
     static var view: SKView?
     static var rows: Int?

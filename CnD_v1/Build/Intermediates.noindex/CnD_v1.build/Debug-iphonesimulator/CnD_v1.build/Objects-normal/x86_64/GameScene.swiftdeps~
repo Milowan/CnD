@@ -20,10 +20,8 @@ depends-top-level:
 - !private "Collectable"
 - !private "Enemy"
 - "Entity"
-- "FloatLiteralType"
 - "GameScene"
 - "Int"
-- "IntegerLiteralType"
 - "LevelGenerator"
 - "NSCoder"
 - "Player"
@@ -35,7 +33,6 @@ depends-top-level:
 - "SKTileMapNode"
 - "SKTileSet"
 - "SKView"
-- !private "StringLiteralType"
 - "TimeInterval"
 - "UIColor"
 depends-member:
@@ -318,6 +315,11 @@ depends-member:
 - ["6CnD_v19GameSceneC", "player"]
 - ["6CnD_v19GameSceneC", "pool"]
 - ["6CnD_v19GameSceneC", "removeEntity"]
+- ["6CnD_v19GameSceneC", "room1"]
+- ["6CnD_v19GameSceneC", "room2"]
+- ["6CnD_v19GameSceneC", "room3"]
+- ["6CnD_v19GameSceneC", "room4"]
+- ["6CnD_v19GameSceneC", "room5"]
 - ["6CnD_v19GameSceneC", "rows"]
 - ["6CnD_v19GameSceneC", "setPixelTextures"]
 - ["6CnD_v19GameSceneC", "setupCamera"]
@@ -508,6 +510,11 @@ depends-member:
 - ["So8NSObjectC", "pool"]
 - ["So8NSObjectC", "removeEntity"]
 - !private ["So8NSObjectC", "removeFromParent"]
+- ["So8NSObjectC", "room1"]
+- ["So8NSObjectC", "room2"]
+- ["So8NSObjectC", "room3"]
+- ["So8NSObjectC", "room4"]
+- ["So8NSObjectC", "room5"]
 - ["So8NSObjectC", "rows"]
 - !private ["So8NSObjectC", "rules"]
 - ["So8NSObjectC", "setPixelTextures"]
@@ -654,6 +661,11 @@ depends-member:
 - ["So12SKEffectNodeC", "player"]
 - ["So12SKEffectNodeC", "pool"]
 - ["So12SKEffectNodeC", "removeEntity"]
+- ["So12SKEffectNodeC", "room1"]
+- ["So12SKEffectNodeC", "room2"]
+- ["So12SKEffectNodeC", "room3"]
+- ["So12SKEffectNodeC", "room4"]
+- ["So12SKEffectNodeC", "room5"]
 - ["So12SKEffectNodeC", "rows"]
 - ["So12SKEffectNodeC", "setPixelTextures"]
 - ["So12SKEffectNodeC", "setupCamera"]
@@ -703,6 +715,11 @@ depends-member:
 - ["So6SKNodeC", "pool"]
 - ["So6SKNodeC", "removeEntity"]
 - !private ["So6SKNodeC", "removeFromParent"]
+- ["So6SKNodeC", "room1"]
+- ["So6SKNodeC", "room2"]
+- ["So6SKNodeC", "room3"]
+- ["So6SKNodeC", "room4"]
+- ["So6SKNodeC", "room5"]
 - ["So6SKNodeC", "rows"]
 - ["So6SKNodeC", "setPixelTextures"]
 - ["So6SKNodeC", "setupCamera"]
@@ -752,6 +769,11 @@ depends-member:
 - ["So7SKSceneC", "player"]
 - ["So7SKSceneC", "pool"]
 - ["So7SKSceneC", "removeEntity"]
+- ["So7SKSceneC", "room1"]
+- ["So7SKSceneC", "room2"]
+- ["So7SKSceneC", "room3"]
+- ["So7SKSceneC", "room4"]
+- ["So7SKSceneC", "room5"]
 - ["So7SKSceneC", "rows"]
 - ["So7SKSceneC", "setPixelTextures"]
 - ["So7SKSceneC", "setupCamera"]
@@ -954,6 +976,11 @@ depends-member:
 - ["So11UIResponderC", "pool"]
 - ["So11UIResponderC", "removeEntity"]
 - !private ["So11UIResponderC", "removeFromParent"]
+- ["So11UIResponderC", "room1"]
+- ["So11UIResponderC", "room2"]
+- ["So11UIResponderC", "room3"]
+- ["So11UIResponderC", "room4"]
+- ["So11UIResponderC", "room5"]
 - ["So11UIResponderC", "rows"]
 - ["So11UIResponderC", "setPixelTextures"]
 - ["So11UIResponderC", "setupCamera"]
@@ -1212,4 +1239,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "9e9e9c60a761abbc9f51ce66f2fbf29c"
+interface-hash: "241a88df2ceb68e962475120bc53b5d8"

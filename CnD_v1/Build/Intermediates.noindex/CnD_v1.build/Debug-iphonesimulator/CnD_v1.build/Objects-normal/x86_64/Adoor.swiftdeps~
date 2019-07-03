@@ -8,23 +8,17 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "!"
-- !private "%="
-- !private "+="
 - !private "..."
 - !private "=="
 - "Adoor"
 - "AssignmentPrecedence"
 - "Bool"
-- !private "BooleanLiteralType"
 - "Entity"
-- "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
 - "SKAction"
 - "SKSpriteNode"
 - "SKTexture"
 - "String"
-- !private "StringLiteralType"
 depends-member:
 - ["6CnD_v15AdoorC", "Bool"]
 - ["6CnD_v15AdoorC", "Int"]

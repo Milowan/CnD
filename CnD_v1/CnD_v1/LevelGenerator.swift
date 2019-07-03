@@ -35,6 +35,7 @@ class LevelGenerator
     
     func generate()
     {
+        createFog()
         createDoors()
         setupADoors()
         createLever()
@@ -54,6 +55,79 @@ class LevelGenerator
         return tileMap.tileDefinition(atColumn: coordinates.column, row: coordinates.row)
     }
     
+    func createFog()
+    {
+        var i: Int = 0
+        guard let fogMap1 = gameScene!.childNode(withName: "Room1") as? SKTileMapNode else {return}
+        for row in 0..<fogMap1.numberOfRows
+        {
+            for column in 0..<fogMap1.numberOfColumns
+            {
+                guard tile(in: fogMap1, at: (column, row)) != nil else {continue}
+                let tempFog = Fog(x: tempX!, y: tempY!, z: 10, s: SKSpriteNode(imageNamed: "ceiling_fill"), m: .WORLD)
+                gameScene!.addEntity(entity: tempFog)
+                gameScene!.room1.append(tempFog)
+                i += 1
+                fogMap1.removeFromParent()
+            }
+        }
+        i = 0
+        guard let fogMap2 = gameScene!.childNode(withName: "Room2") as? SKTileMapNode else {return}
+        for row in 0..<fogMap2.numberOfRows
+        {
+            for column in 0..<fogMap2.numberOfColumns
+            {
+                guard tile(in: fogMap2, at: (column, row)) != nil else {continue}
+                let tempFog = Fog(x: tempX!, y: tempY!, z: 10, s: SKSpriteNode(imageNamed: "ceiling_fill"), m: .WORLD)
+                gameScene!.addEntity(entity: tempFog)
+                gameScene!.room1.append(tempFog)
+                i += 1
+                fogMap2.removeFromParent()
+            }
+        }
+        i = 0
+        guard let fogMap3 = gameScene!.childNode(withName: "Room3") as? SKTileMapNode else {return}
+        for row in 0..<fogMap2.numberOfRows
+        {
+            for column in 0..<fogMap3.numberOfColumns
+            {
+                guard tile(in: fogMap3, at: (column, row)) != nil else {continue}
+                let tempFog = Fog(x: tempX!, y: tempY!, z: 10, s: SKSpriteNode(imageNamed: "ceiling_fill"), m: .WORLD)
+                gameScene!.addEntity(entity: tempFog)
+                gameScene!.room1.append(tempFog)
+                i += 1
+                fogMap3.removeFromParent()
+            }
+        }
+        i = 0
+        guard let fogMap4 = gameScene!.childNode(withName: "Room4") as? SKTileMapNode else {return}
+        for row in 0..<fogMap4.numberOfRows
+        {
+            for column in 0..<fogMap4.numberOfColumns
+            {
+                guard tile(in: fogMap4, at: (column, row)) != nil else {continue}
+                let tempFog = Fog(x: tempX!, y: tempY!, z: 10, s: SKSpriteNode(imageNamed: "ceiling_fill"), m: .WORLD)
+                gameScene!.addEntity(entity: tempFog)
+                gameScene!.room1.append(tempFog)
+                i += 1
+                fogMap4.removeFromParent()
+            }
+        }
+        i = 0
+        guard let fogMap5 = gameScene!.childNode(withName: "Room5") as? SKTileMapNode else {return}
+        for row in 0..<fogMap5.numberOfRows
+        {
+            for column in 0..<fogMap5.numberOfColumns
+            {
+                guard tile(in: fogMap5, at: (column, row)) != nil else {continue}
+                let tempFog = Fog(x: tempX!, y: tempY!, z: 10, s: SKSpriteNode(imageNamed: "ceiling_fill"), m: .WORLD)
+                gameScene!.addEntity(entity: tempFog)
+                gameScene!.room1.append(tempFog)
+                i += 1
+                fogMap5.removeFromParent()
+            }
+        }
+    }
     
     func setupADoors()
     {
@@ -141,7 +215,7 @@ class LevelGenerator
             for column in 0..<gemMap.numberOfColumns
             {
                 guard tile(in: gemMap, at: (column, row)) != nil else {continue}
-                dais.append( Dais(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "switch_floor_on")))
+                dais.append( Dais(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "switch_floor_on"), d: gameScene!.doorArray![3]))
                 gameScene!.addEntity(entity: dais[i])
                 gemMap.removeFromParent()
                 i += 1
@@ -152,7 +226,7 @@ class LevelGenerator
     
     func linkDaii(d : [Dais])
     {
-        var i = 0
+        var i = -1
         for _ in d
         {
             i += 1

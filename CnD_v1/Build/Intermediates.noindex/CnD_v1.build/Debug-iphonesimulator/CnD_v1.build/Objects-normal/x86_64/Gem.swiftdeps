@@ -7,13 +7,16 @@ provides-member:
 - ["6CnD_v13GemC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "Dais"
 - "Gem"
 - "Item"
 depends-member:
+- ["6CnD_v13GemC", "Dais"]
 - ["6CnD_v13GemC", "examine"]
 - ["6CnD_v13GemC", "init"]
 - ["6CnD_v13GemC", "menu"]
 - ["6CnD_v13GemC", "place"]
+- ["6CnD_v14ItemC", "Dais"]
 - ["6CnD_v14ItemC", ""]
 - ["6CnD_v14ItemC", "examine"]
 - ["6CnD_v14ItemC", "init"]
@@ -55,4 +58,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "88d21fd265510e79d7390fd855a4e258"
+interface-hash: "34172694084ba169f533e38217c06d85"

@@ -36,6 +36,7 @@
 		26FEEBD022BAC5A6006A1566 /* BSNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FEEBCF22BAC5A6006A1566 /* BSNode.swift */; };
 		A604CF8422CCFB5400841D2C /* MiniMapRef.sks in Resources */ = {isa = PBXBuildFile; fileRef = A604CF8322CCFB5400841D2C /* MiniMapRef.sks */; };
 		A611F0FD22BD4D8400F18221 /* PressPlates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611F0FC22BD4D8400F18221 /* PressPlates.swift */; };
+		A619003722CD3AE3009628AB /* Fog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A619003622CD3AE3009628AB /* Fog.swift */; };
 		A61C3F5E22AF05ED0031B4B7 /* MapTiles.sks in Resources */ = {isa = PBXBuildFile; fileRef = A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */; };
 		A61C3F6022B025320031B4B7 /* LevelScene_1.sks in Resources */ = {isa = PBXBuildFile; fileRef = A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */; };
 		A6216A4822B97AAD001DB637 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6216A4722B97AAD001DB637 /* Item.swift */; };
@@ -99,6 +100,7 @@
 		A604CF8322CCFB5400841D2C /* MiniMapRef.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MiniMapRef.sks; sourceTree = "<group>"; };
 		A611F0FC22BD4D8400F18221 /* PressPlates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressPlates.swift; sourceTree = "<group>"; };
 		A619003522CD1B10009628AB /* Pixeled.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Pixeled.ttf; path = ../../../../../Downloads/Pixeled.ttf; sourceTree = "<group>"; };
+		A619003622CD3AE3009628AB /* Fog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fog.swift; sourceTree = "<group>"; };
 		A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MapTiles.sks; sourceTree = "<group>"; };
 		A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelScene_1.sks; sourceTree = "<group>"; };
 		A6216A4722B97AAD001DB637 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				26FAFE8322C69BBB00E36901 /* Collectable.swift */,
 				26FAFE8122C69BA800E36901 /* Door.swift */,
 				A611F0FC22BD4D8400F18221 /* PressPlates.swift */,
+				262640D322C1530E006CA69C /* Adoor.swift */,
 			);
 			path = Interactable;
 			sourceTree = "<group>";
@@ -186,13 +189,12 @@
 		A658836A22B2C36F00F7F2CC /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				26FAFE7422C67DD800E36901 /* Enemy */,
 				26FBAEFD22A5965C00AEDCDC /* Entity.swift */,
 				26FBAF0022A5965C00AEDCDC /* Player.swift */,
 				26FBAEFB22A5965C00AEDCDC /* World.swift */,
+				A619003622CD3AE3009628AB /* Fog.swift */,
+				26FAFE7422C67DD800E36901 /* Enemy */,
 				26FAFE7522C67DEF00E36901 /* Interactable */,
-				26FBAEFC22A5965C00AEDCDC /* Button.swift */,
-				262640D322C1530E006CA69C /* Adoor.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -234,6 +236,7 @@
 				26FAFE7322C67BCE00E36901 /* Item */,
 				2607FB3022C9746600D86D58 /* ISNode.swift */,
 				A658836A22B2C36F00F7F2CC /* Entity */,
+				26FBAEFC22A5965C00AEDCDC /* Button.swift */,
 				A6FD168722B3E8420090D045 /* GameScene.swift */,
 				2601E8CD22C2B136004EB047 /* Inventory.swift */,
 				26FE913922CBE839003AB70A /* HUD.swift */,
@@ -421,6 +424,7 @@
 				2601E8CC22C2AF77004EB047 /* Enemy.swift in Sources */,
 				2601E8CE22C2B136004EB047 /* Inventory.swift in Sources */,
 				26FAFE8022C68FDA00E36901 /* LevelGenerator.swift in Sources */,
+				A619003722CD3AE3009628AB /* Fog.swift in Sources */,
 				26FAFE7922C6896800E36901 /* GreaterSkeleton.swift in Sources */,
 				26F9808B22A6FD1800E7B5FE /* Gear.swift in Sources */,
 				26FBAF0622A5965C00AEDCDC /* Pos.swift in Sources */,

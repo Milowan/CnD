@@ -11,12 +11,12 @@ depends-top-level:
 - !private "<="
 - !private "=="
 - "AssignmentPrecedence"
-- "BooleanLiteralType"
 - "Enemy"
 - "Entity"
 - "Int"
 - "Player"
 - "SKSpriteNode"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Sa", "subscript"]
 - !private ["SK", "subscript"]
@@ -34,7 +34,6 @@ depends-member:
 - ["6CnD_v15EnemyC", "SKSpriteNode"]
 - ["6CnD_v15EnemyC", "ats"]
 - ["6CnD_v15EnemyC", "def"]
-- ["6CnD_v15EnemyC", "deinit"]
 - ["6CnD_v15EnemyC", "dmg"]
 - ["6CnD_v15EnemyC", "evs"]
 - ["6CnD_v15EnemyC", "hp"]

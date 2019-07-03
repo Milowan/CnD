@@ -12,7 +12,10 @@ depends-top-level:
 - !private "/"
 - "AssignmentPrecedence"
 - "Entity"
+- !private "FloatLiteralType"
 - "Int"
+- !private "IntegerLiteralType"
+- !private "StringLiteralType"
 - "World"
 depends-member:
 - ["6CnD_v16EntityC", "Int"]
