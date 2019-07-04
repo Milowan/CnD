@@ -24,4 +24,9 @@ class Item
     {
         
     }
+    
+    func handleInput()
+    {
+        
+    }
 }

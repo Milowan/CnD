@@ -19,6 +19,12 @@ class Rock : Item
     
     override func menu()
     {
+        let place = Options()
+        player!.inventory!.invScene.addChild(place)
+    }
+    
+    override func handleInput()
+    {
         
     }
     
