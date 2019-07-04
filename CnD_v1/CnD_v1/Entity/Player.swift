@@ -367,9 +367,9 @@ class Player : Entity
         }
         
         if aBottom <= bTop + 15 &&
-        aTop >= bBottom - 15 &&
-        aLeft <= bRight + 0 &&
-        aRight >= bLeft - 0
+        aTop >= bBottom - 25 &&
+        aLeft <= bRight &&
+        aRight >= bLeft
         {
             
             if let interactable = response as? Interactable

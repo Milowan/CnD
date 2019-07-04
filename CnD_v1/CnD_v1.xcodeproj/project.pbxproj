@@ -14,6 +14,7 @@
 		265C0D0B22C5334B001A471A /* Sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C0D0A22C5334B001A471A /* Sword.swift */; };
 		265C0D0D22C53B3E001A471A /* Armour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C0D0C22C53B3E001A471A /* Armour.swift */; };
 		265C0D0F22C53C47001A471A /* Helmet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C0D0E22C53C47001A471A /* Helmet.swift */; };
+		2671DEA522CE7DF200CCF77C /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2671DEA422CE7DF200CCF77C /* Options.swift */; };
 		26F9808B22A6FD1800E7B5FE /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9808A22A6FD1800E7B5FE /* Gear.swift */; };
 		26FAFE7722C6878900E36901 /* LesserSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FAFE7622C6878900E36901 /* LesserSkeleton.swift */; };
 		26FAFE7922C6896800E36901 /* GreaterSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FAFE7822C6896800E36901 /* GreaterSkeleton.swift */; };
@@ -82,6 +83,7 @@
 		265C0D0A22C5334B001A471A /* Sword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sword.swift; sourceTree = "<group>"; };
 		265C0D0C22C53B3E001A471A /* Armour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armour.swift; sourceTree = "<group>"; };
 		265C0D0E22C53C47001A471A /* Helmet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helmet.swift; sourceTree = "<group>"; };
+		2671DEA422CE7DF200CCF77C /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
 		26F9808A22A6FD1800E7B5FE /* Gear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gear.swift; sourceTree = "<group>"; };
 		26FAFE7622C6878900E36901 /* LesserSkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LesserSkeleton.swift; sourceTree = "<group>"; };
 		26FAFE7822C6896800E36901 /* GreaterSkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreaterSkeleton.swift; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 				26FBAEFF22A5965C00AEDCDC /* Pos.swift */,
 				26FEEBCF22BAC5A6006A1566 /* BSNode.swift */,
 				26FDCA8D22BBFFE200CEE077 /* Stats.swift */,
+				2671DEA422CE7DF200CCF77C /* Options.swift */,
 			);
 			path = CnD_v1;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				26FAFE8822C69BCB00E36901 /* Lever.swift in Sources */,
 				26FBAF0722A5965C00AEDCDC /* Player.swift in Sources */,
 				26FAFE7E22C68BEB00E36901 /* SkeletonLord.swift in Sources */,
+				2671DEA522CE7DF200CCF77C /* Options.swift in Sources */,
 				2607FB3122C9746600D86D58 /* ISNode.swift in Sources */,
 				2607FB3322C975F400D86D58 /* Gem.swift in Sources */,
 				A61318F422CE7CC600408957 /* GameMenu.swift in Sources */,

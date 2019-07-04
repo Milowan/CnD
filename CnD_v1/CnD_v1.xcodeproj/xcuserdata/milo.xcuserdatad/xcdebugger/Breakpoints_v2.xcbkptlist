@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CnD_v1/Entity/Player.swift"
-            timestampString = "583783097.271651"
+            filePath = "CnD_v1/Entity/Interactable/Collectable.swift"
+            timestampString = "583962354.787518"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "390"
-            endingLineNumber = "390"
-            landmarkName = "collision(response:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "act()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
