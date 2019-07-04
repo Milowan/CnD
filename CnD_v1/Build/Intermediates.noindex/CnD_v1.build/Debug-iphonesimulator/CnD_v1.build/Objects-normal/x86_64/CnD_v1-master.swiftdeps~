@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "68bada735cf5513398e2c3cc8de28cad"
-build_time: [1562271301, 180847000]
+build_time: [1562271395, 135651000]
 inputs:
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Entity/Interactable/Dais.swift": [1562266490, 164757802]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Item/Helmet.swift": [1562185363, 355366278]
@@ -11,6 +11,7 @@ inputs:
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/HUD.swift": [1562263633, 417732952]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/GameViewController.swift": [1562267870, 540037987]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Item/Swords/WoodenSword.swift": [1562185363, 356018266]
+  "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Entity/Interactable/Chest.swift": [9223372036, 854775807]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Item/Armours/Armour.swift": [1562185363, 447492683]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Entity/World.swift": [1561146393, 616515097]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Stats.swift": [1561661827, 49285119]

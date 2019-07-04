@@ -1,11 +1,151 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "Chest"
 provides-nominal:
+- "6CnD_v15ChestC"
 provides-member:
+- ["6CnD_v15ChestC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "AssignmentPrecedence"
+- "Chest"
+- "Collectable"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- !private "SKSpriteNode"
+- !private "String"
+- !private "StringLiteralType"
 depends-member:
+- !private ["Sa", "append"]
+- !private ["SK", "append"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "init"]
+- !private ["6CnD_v15ChestC", "SKSpriteNode"]
+- !private ["6CnD_v15ChestC", "String"]
+- ["6CnD_v15ChestC", "act"]
+- ["6CnD_v15ChestC", "init"]
+- !private ["6CnD_v15ChestC", "item"]
+- !private ["6CnD_v15ChestC", "player"]
+- !private ["6CnD_v15ChestC", "sprite"]
+- !private ["6CnD_v111CollectableC", "SKSpriteNode"]
+- !private ["6CnD_v111CollectableC", "String"]
+- ["6CnD_v111CollectableC", ""]
+- ["6CnD_v111CollectableC", "act"]
+- ["6CnD_v111CollectableC", "init"]
+- !private ["6CnD_v111CollectableC", "item"]
+- !private ["6CnD_v111CollectableC", "player"]
+- !private ["6CnD_v111CollectableC", "sprite"]
+- !private ["Sl", "append"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["Se", "append"]
+- !private ["SE", "append"]
+- !private ["6CnD_v16EntityC", "SKSpriteNode"]
+- !private ["6CnD_v16EntityC", "String"]
+- ["6CnD_v16EntityC", "act"]
+- !private ["6CnD_v16EntityC", "inventory"]
+- !private ["6CnD_v16EntityC", "item"]
+- !private ["6CnD_v16EntityC", "player"]
+- !private ["6CnD_v16EntityC", "sprite"]
+- !private ["SQ", "SKSpriteNode"]
+- ["SQ", ""]
+- !private ["SQ", "append"]
+- !private ["SQ", "init"]
+- !private ["SQ", "inventory"]
+- !private ["SQ", "item"]
+- !private ["SQ", "player"]
+- !private ["SQ", "sprite"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["6CnD_v18GameMenuC", "contents"]
+- !private ["SH", "append"]
+- !private ["SH", "init"]
+- !private ["6CnD_v112InteractableC", "SKSpriteNode"]
+- !private ["6CnD_v112InteractableC", "String"]
+- ["6CnD_v112InteractableC", "act"]
+- !private ["6CnD_v112InteractableC", "item"]
+- !private ["6CnD_v112InteractableC", "player"]
+- !private ["6CnD_v112InteractableC", "sprite"]
+- !private ["6CnD_v19InventoryC", "contents"]
+- !private ["SM", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["6CnD_v16PlayerC", "inventory"]
+- !private ["Sk", "append"]
+- !private ["Sm", "append"]
+- !private ["So6SKNodeC", "init"]
+- !private ["So12SKSpriteNodeC", "init"]
+- !private ["So10SKWarpableP", "init"]
+- !private ["ST", "append"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So11UIResponderC", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
 depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "s7CVarArgP"
+- "6CnD_v15ChestC"
+- "6CnD_v111CollectableC"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
+- "6CnD_v16EntityC"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "6CnD_v18GameMenuC"
+- !private "SH"
+- "6CnD_v112InteractableC"
+- !private "6CnD_v19InventoryC"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "6CnD_v16PlayerC"
+- !private "Sk"
+- !private "Sm"
+- !private "So6SKNodeC"
+- !private "So12SKSpriteNodeC"
+- !private "So10SKWarpableP"
+- !private "ST"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So23UIUserActivityRestoringP"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -39,4 +179,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5bf39d8b5f0094ca83c744a0da4fb204"
+interface-hash: "dabdf4b91099885629caea609bf22fdc"

@@ -10,53 +10,84 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "ISNode"
 - "Item"
+- !private "Options"
 - "Rock"
+- !private "StringLiteralType"
 depends-member:
+- !private ["s7CVarArgP", "addChild"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "addChild"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "addChild"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["6CnD_v16EntityC", "inventory"]
 - !private ["6CnD_v16EntityC", "onPlate"]
 - !private ["6CnD_v16EntityC", "plate"]
 - !private ["6CnD_v16EntityC", "removeRock"]
 - !private ["6CnD_v16EntityC", "rocked"]
+- !private ["SQ", "addChild"]
 - !private ["SQ", "init"]
+- !private ["SQ", "inventory"]
 - !private ["SQ", "onPlate"]
 - !private ["SQ", "plate"]
 - !private ["SQ", "removeRock"]
 - !private ["SQ", "rocked"]
+- !private ["6CnD_v18GameMenuC", "invScene"]
+- !private ["SH", "addChild"]
 - !private ["SH", "init"]
 - !private ["6CnD_v16ISNodeC", "deinit"]
 - !private ["6CnD_v16ISNodeC", "init"]
+- !private ["6CnD_v19InventoryC", "invScene"]
 - !private ["6CnD_v14ItemC", "ISNode"]
+- !private ["6CnD_v14ItemC", "Options"]
 - ["6CnD_v14ItemC", ""]
+- ["6CnD_v14ItemC", "handleInput"]
 - ["6CnD_v14ItemC", "init"]
 - ["6CnD_v14ItemC", "menu"]
 - ["6CnD_v14ItemC", "place"]
 - !private ["6CnD_v14ItemC", "player"]
+- !private ["So8NSCodingP", "addChild"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "addChild"]
 - !private ["So9NSCopyingP", "init"]
+- !private ["So8NSObjectC", "addChild"]
 - !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectP", "addChild"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So14NSSecureCodingP", "addChild"]
 - !private ["So14NSSecureCodingP", "init"]
+- !private ["6CnD_v17OptionsC", "deinit"]
+- !private ["6CnD_v17OptionsC", "init"]
+- !private ["6CnD_v16PlayerC", "inventory"]
 - !private ["6CnD_v16PlayerC", "onPlate"]
 - !private ["6CnD_v16PlayerC", "plate"]
 - !private ["6CnD_v16PlayerC", "removeRock"]
 - !private ["6CnD_v111PressPlatesC", "rocked"]
 - !private ["6CnD_v14RockC", "ISNode"]
+- !private ["6CnD_v14RockC", "Options"]
+- ["6CnD_v14RockC", "handleInput"]
 - ["6CnD_v14RockC", "init"]
 - ["6CnD_v14RockC", "menu"]
 - ["6CnD_v14RockC", "place"]
 - !private ["6CnD_v14RockC", "player"]
+- !private ["So6SKNodeC", "addChild"]
 - !private ["So6SKNodeC", "init"]
 - !private ["So12SKSpriteNodeC", "init"]
 - !private ["So10SKWarpableP", "init"]
+- !private ["So18UIFocusEnvironmentP", "addChild"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So11UIFocusItemP", "addChild"]
 - !private ["So11UIFocusItemP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "addChild"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So11UIResponderC", "addChild"]
 - !private ["So11UIResponderC", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "addChild"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So23UIUserActivityRestoringP", "addChild"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addChild"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 depends-nominal:
 - !private "s7CVarArgP"
@@ -64,14 +95,17 @@ depends-nominal:
 - !private "s23CustomStringConvertibleP"
 - !private "6CnD_v16EntityC"
 - !private "SQ"
+- !private "6CnD_v18GameMenuC"
 - !private "SH"
 - !private "6CnD_v16ISNodeC"
+- !private "6CnD_v19InventoryC"
 - "6CnD_v14ItemC"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
+- !private "6CnD_v17OptionsC"
 - !private "6CnD_v16PlayerC"
 - !private "6CnD_v111PressPlatesC"
 - "6CnD_v14RockC"
@@ -119,4 +153,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "1306b65099562159bdf05e6a077bce8a"
+interface-hash: "f1c09aeaeb33ade4c24c050283c0dd5c"
