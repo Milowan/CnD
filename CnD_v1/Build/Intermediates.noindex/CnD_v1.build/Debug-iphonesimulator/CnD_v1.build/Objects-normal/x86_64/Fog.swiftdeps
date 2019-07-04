@@ -16,26 +16,24 @@ depends-top-level:
 - !private ">="
 - "AssignmentPrecedence"
 - "Entity"
-- !private "FloatLiteralType"
 - "Fog"
 - !private "Int"
-- !private "IntegerLiteralType"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
 - !private ["Sz", "init"]
-- !private ["So6CGSizeV", "height"]
-- !private ["So6CGSizeV", "width"]
+- !private ["So6CGRectV", "height"]
+- !private ["So6CGRectV", "width"]
+- !private ["s7CVarArgP", "frame"]
 - !private ["s7CVarArgP", "init"]
-- !private ["s7CVarArgP", "size"]
 - !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "frame"]
 - !private ["s28CustomDebugStringConvertibleP", "height"]
-- !private ["s28CustomDebugStringConvertibleP", "size"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "width"]
+- !private ["s23CustomStringConvertibleP", "frame"]
 - !private ["s23CustomStringConvertibleP", "init"]
-- !private ["s23CustomStringConvertibleP", "size"]
 - !private ["Se", "height"]
 - !private ["Se", "init"]
 - !private ["Se", "width"]
@@ -54,10 +52,10 @@ depends-member:
 - !private ["SQ", "PLAYER"]
 - ["SQ", ""]
 - !private ["SQ", "collisionMask"]
+- !private ["SQ", "frame"]
 - !private ["SQ", "height"]
 - !private ["SQ", "init"]
 - !private ["SQ", "pos"]
-- !private ["SQ", "size"]
 - !private ["SQ", "sprite"]
 - !private ["SQ", "width"]
 - !private ["SQ", "x"]
@@ -67,43 +65,41 @@ depends-member:
 - ["6CnD_v13FogC", "Entity"]
 - !private ["6CnD_v13FogC", "Int"]
 - ["6CnD_v13FogC", "collision"]
+- ["6CnD_v13FogC", "deinit"]
 - ["6CnD_v13FogC", "init"]
 - !private ["6CnD_v13FogC", "pos"]
 - !private ["6CnD_v13FogC", "sprite"]
 - !private ["SH", "PLAYER"]
+- !private ["SH", "frame"]
 - !private ["SH", "init"]
-- !private ["SH", "size"]
 - !private ["Si", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["So8NSCodingP", "size"]
-- !private ["So9NSCopyingP", "size"]
-- !private ["So8NSObjectC", "size"]
-- !private ["So8NSObjectP", "size"]
-- !private ["So14NSSecureCodingP", "size"]
+- !private ["So8NSCodingP", "frame"]
+- !private ["So9NSCopyingP", "frame"]
+- !private ["So8NSObjectC", "frame"]
+- !private ["So8NSObjectP", "frame"]
+- !private ["So14NSSecureCodingP", "frame"]
 - !private ["Sj", "init"]
 - !private ["6CnD_v13PosC", "x"]
 - !private ["6CnD_v13PosC", "y"]
 - !private ["s10SIMDScalarP", "init"]
-- !private ["So6SKNodeC", "size"]
-- !private ["So12SKSpriteNodeC", "size"]
-- !private ["So10SKWarpableP", "size"]
+- !private ["So6SKNodeC", "frame"]
 - !private ["SZ", "init"]
 - !private ["s13SignedNumericP", "init"]
 - !private ["Sx", "init"]
-- !private ["So18UIFocusEnvironmentP", "size"]
-- !private ["So11UIFocusItemP", "size"]
-- !private ["So30UIPasteConfigurationSupportingP", "size"]
-- !private ["So11UIResponderC", "size"]
-- !private ["So30UIResponderStandardEditActionsP", "size"]
-- !private ["So23UIUserActivityRestoringP", "size"]
+- !private ["So18UIFocusEnvironmentP", "frame"]
+- !private ["So11UIFocusItemP", "frame"]
+- !private ["So30UIPasteConfigurationSupportingP", "frame"]
+- !private ["So11UIResponderC", "frame"]
+- !private ["So30UIResponderStandardEditActionsP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "frame"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "height"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "size"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "size"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
@@ -112,7 +108,7 @@ depends-member:
 depends-nominal:
 - !private "s18AdditiveArithmeticP"
 - !private "Sz"
-- !private "So6CGSizeV"
+- !private "So6CGRectV"
 - !private "s7CVarArgP"
 - !private "SL"
 - !private "s28CustomDebugStringConvertibleP"
@@ -138,8 +134,6 @@ depends-nominal:
 - !private "6CnD_v13PosC"
 - !private "s10SIMDScalarP"
 - !private "So6SKNodeC"
-- !private "So12SKSpriteNodeC"
-- !private "So10SKWarpableP"
 - !private "SZ"
 - !private "s13SignedNumericP"
 - !private "Sx"

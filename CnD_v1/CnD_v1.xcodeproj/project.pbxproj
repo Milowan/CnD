@@ -11,7 +11,6 @@
 		2601E8CE22C2B136004EB047 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2601E8CD22C2B136004EB047 /* Inventory.swift */; };
 		2607FB3122C9746600D86D58 /* ISNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607FB3022C9746600D86D58 /* ISNode.swift */; };
 		2607FB3322C975F400D86D58 /* Gem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607FB3222C975F400D86D58 /* Gem.swift */; };
-		262640D422C1530E006CA69C /* Adoor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262640D322C1530E006CA69C /* Adoor.swift */; };
 		265C0D0B22C5334B001A471A /* Sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C0D0A22C5334B001A471A /* Sword.swift */; };
 		265C0D0D22C53B3E001A471A /* Armour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C0D0C22C53B3E001A471A /* Armour.swift */; };
 		265C0D0F22C53C47001A471A /* Helmet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C0D0E22C53C47001A471A /* Helmet.swift */; };
@@ -40,6 +39,7 @@
 		A604CF8422CCFB5400841D2C /* MiniMapRef.sks in Resources */ = {isa = PBXBuildFile; fileRef = A604CF8322CCFB5400841D2C /* MiniMapRef.sks */; };
 		A611F0FD22BD4D8400F18221 /* PressPlates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611F0FC22BD4D8400F18221 /* PressPlates.swift */; };
 		A619003722CD3AE3009628AB /* Fog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A619003622CD3AE3009628AB /* Fog.swift */; };
+		A619003922CD4756009628AB /* Adoor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A619003822CD4756009628AB /* Adoor.swift */; };
 		A61C3F5E22AF05ED0031B4B7 /* MapTiles.sks in Resources */ = {isa = PBXBuildFile; fileRef = A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */; };
 		A61C3F6022B025320031B4B7 /* LevelScene_1.sks in Resources */ = {isa = PBXBuildFile; fileRef = A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */; };
 		A6216A4822B97AAD001DB637 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6216A4722B97AAD001DB637 /* Item.swift */; };
@@ -77,7 +77,6 @@
 		2601E8CD22C2B136004EB047 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
 		2607FB3022C9746600D86D58 /* ISNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISNode.swift; sourceTree = "<group>"; };
 		2607FB3222C975F400D86D58 /* Gem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gem.swift; sourceTree = "<group>"; };
-		262640D322C1530E006CA69C /* Adoor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adoor.swift; sourceTree = "<group>"; };
 		265C0D0A22C5334B001A471A /* Sword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sword.swift; sourceTree = "<group>"; };
 		265C0D0C22C53B3E001A471A /* Armour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armour.swift; sourceTree = "<group>"; };
 		265C0D0E22C53C47001A471A /* Helmet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helmet.swift; sourceTree = "<group>"; };
@@ -107,6 +106,7 @@
 		A611F0FC22BD4D8400F18221 /* PressPlates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressPlates.swift; sourceTree = "<group>"; };
 		A619003522CD1B10009628AB /* Pixeled.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Pixeled.ttf; path = ../../../../../Downloads/Pixeled.ttf; sourceTree = "<group>"; };
 		A619003622CD3AE3009628AB /* Fog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fog.swift; sourceTree = "<group>"; };
+		A619003822CD4756009628AB /* Adoor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Adoor.swift; path = Interactable/Adoor.swift; sourceTree = "<group>"; };
 		A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MapTiles.sks; sourceTree = "<group>"; };
 		A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelScene_1.sks; sourceTree = "<group>"; };
 		A6216A4722B97AAD001DB637 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -187,8 +187,6 @@
 				26FAFE8622C69BCB00E36901 /* Lever.swift */,
 				26FAFE8322C69BBB00E36901 /* Collectable.swift */,
 				26FAFE8122C69BA800E36901 /* Door.swift */,
-				A611F0FC22BD4D8400F18221 /* PressPlates.swift */,
-				262640D322C1530E006CA69C /* Adoor.swift */,
 			);
 			path = Interactable;
 			sourceTree = "<group>";
@@ -215,13 +213,13 @@
 			isa = PBXGroup;
 			children = (
 				26FBAEFD22A5965C00AEDCDC /* Entity.swift */,
+				A619003822CD4756009628AB /* Adoor.swift */,
 				26FBAF0022A5965C00AEDCDC /* Player.swift */,
 				26FBAEFB22A5965C00AEDCDC /* World.swift */,
 				A619003622CD3AE3009628AB /* Fog.swift */,
 				26FAFE7422C67DD800E36901 /* Enemy */,
 				26FAFE7522C67DEF00E36901 /* Interactable */,
 				A611F0FC22BD4D8400F18221 /* PressPlates.swift */,
-				262640D322C1530E006CA69C /* Adoor.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -263,7 +261,6 @@
 				26FAFE7322C67BCE00E36901 /* Item */,
 				2607FB3022C9746600D86D58 /* ISNode.swift */,
 				A658836A22B2C36F00F7F2CC /* Entity */,
-				26FBAEFC22A5965C00AEDCDC /* Button.swift */,
 				A6FD168722B3E8420090D045 /* GameScene.swift */,
 				26FBAEFC22A5965C00AEDCDC /* Button.swift */,
 				2601E8CD22C2B136004EB047 /* Inventory.swift */,
@@ -462,10 +459,10 @@
 				26FAFE8822C69BCB00E36901 /* Lever.swift in Sources */,
 				26FBAF0722A5965C00AEDCDC /* Player.swift in Sources */,
 				26FAFE7E22C68BEB00E36901 /* SkeletonLord.swift in Sources */,
-				262640D422C1530E006CA69C /* Adoor.swift in Sources */,
 				2607FB3122C9746600D86D58 /* ISNode.swift in Sources */,
 				2607FB3322C975F400D86D58 /* Gem.swift in Sources */,
 				26FAFE8422C69BBB00E36901 /* Collectable.swift in Sources */,
+				A619003922CD4756009628AB /* Adoor.swift in Sources */,
 				A686E4B222A45405004E1B64 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

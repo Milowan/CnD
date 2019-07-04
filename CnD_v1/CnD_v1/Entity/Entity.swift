@@ -22,13 +22,13 @@ class Entity
     
     var collisionMask : collisionType
     var pos : Pos
-    var sprite : SKSpriteNode?
+    var sprite : SKNode?
     
     var width : Int?
     var height : Int?
     
     
-    init(x : Int, y : Int, z : Int, s : SKSpriteNode, m : collisionType)
+    init(x : Int, y : Int, z : Int, s : SKNode, m : collisionType)
     {
         collisionMask = m
         s.zPosition = CGFloat(z)

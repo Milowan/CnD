@@ -21,7 +21,7 @@ depends-top-level:
 - "Equatable"
 - "Int"
 - "Pos"
-- "SKSpriteNode"
+- "SKNode"
 - "collisionType"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
@@ -48,12 +48,11 @@ depends-member:
 - ["6CnD_v16EntityC", "Entity"]
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "Pos"]
-- ["6CnD_v16EntityC", "SKSpriteNode"]
+- ["6CnD_v16EntityC", "SKNode"]
 - ["6CnD_v16EntityC", "collision"]
 - ["6CnD_v16EntityC", "collisionMask"]
 - ["6CnD_v16EntityC", "collisionType"]
 - ["6CnD_v16EntityC", "deinit"]
-- ["6CnD_v16EntityC", "draw"]
 - ["6CnD_v16EntityC", "height"]
 - ["6CnD_v16EntityC", "init"]
 - ["6CnD_v16EntityC", "pos"]
@@ -100,10 +99,6 @@ depends-member:
 - !private ["6CnD_v13PosC", "init"]
 - !private ["So6SKNodeC", "position"]
 - !private ["So6SKNodeC", "zPosition"]
-- !private ["So12SKSpriteNodeC", "position"]
-- !private ["So12SKSpriteNodeC", "zPosition"]
-- !private ["So10SKWarpableP", "position"]
-- !private ["So10SKWarpableP", "zPosition"]
 - !private ["s13SignedNumericP", "init"]
 - !private ["Sx", "init"]
 - !private ["So18UIFocusEnvironmentP", "position"]
@@ -121,8 +116,6 @@ depends-member:
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s22_CVarArgPassedAsDoubleP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "position"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "zPosition"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "position"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "zPosition"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
@@ -163,8 +156,6 @@ depends-nominal:
 - !private "Sj"
 - !private "6CnD_v13PosC"
 - !private "So6SKNodeC"
-- !private "So12SKSpriteNodeC"
-- !private "So10SKWarpableP"
 - !private "s13SignedNumericP"
 - !private "Sx"
 - !private "So18UIFocusEnvironmentP"
@@ -212,4 +203,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "3bb288b4681077d92580634ec6442242"
+interface-hash: "0dbe4fa218f1f4cc51fa88158e03f063"

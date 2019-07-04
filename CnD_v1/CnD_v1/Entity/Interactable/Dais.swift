@@ -27,7 +27,7 @@ class Dais : Interactable
     
     override func act()
     {
-        player!.inventory.openInv()
+        player!.inventory!.openInv()
     }
     
     override func update()

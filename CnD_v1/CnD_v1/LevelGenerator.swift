@@ -57,76 +57,135 @@ class LevelGenerator
     
     func createFog()
     {
-        var i: Int = 0
         guard let fogMap1 = gameScene!.childNode(withName: "Room1") as? SKTileMapNode else {return}
         for row in 0..<fogMap1.numberOfRows
         {
             for column in 0..<fogMap1.numberOfColumns
             {
-                guard tile(in: fogMap1, at: (column, row)) != nil else {continue}
-                let tempFog = Fog(x: tempX!, y: tempY!, z: 10, s: SKSpriteNode(imageNamed: "ceiling_fill"), m: .WORLD)
-                gameScene!.addEntity(entity: tempFog)
-                gameScene!.room1.append(tempFog)
-                i += 1
-                fogMap1.removeFromParent()
+                guard self.tile(in: fogMap1, at: (column, row)) != nil else {continue}
+                self.gameScene!.roomFog_1 = Fog(x: self.tempX!, y: self.tempY!, z: 20, s: self.gameScene!.childNode(withName: "Room1")!, m: .NONE)
+                self.gameScene!.addEntity(entity: self.gameScene!.roomFog_1!)
             }
         }
-        i = 0
         guard let fogMap2 = gameScene!.childNode(withName: "Room2") as? SKTileMapNode else {return}
         for row in 0..<fogMap2.numberOfRows
         {
             for column in 0..<fogMap2.numberOfColumns
             {
-                guard tile(in: fogMap2, at: (column, row)) != nil else {continue}
-                let tempFog = Fog(x: tempX!, y: tempY!, z: 10, s: SKSpriteNode(imageNamed: "ceiling_fill"), m: .WORLD)
-                gameScene!.addEntity(entity: tempFog)
-                gameScene!.room1.append(tempFog)
-                i += 1
-                fogMap2.removeFromParent()
+                guard self.tile(in: fogMap2, at: (column, row)) != nil else {continue}
+                self.gameScene!.roomFog_2 = Fog(x: self.tempX!, y: self.tempY!, z: 20, s: self.gameScene!.childNode(withName: "Room2")!, m: .NONE)
+                self.gameScene!.addEntity(entity: self.gameScene!.roomFog_2!)
+                
             }
         }
-        i = 0
+        guard let fogMap2b = gameScene!.childNode(withName: "Room2.5") as? SKTileMapNode else {return}
+        for row in 0..<fogMap2b.numberOfRows
+        {
+            for column in 0..<fogMap2b.numberOfColumns
+            {
+                guard self.tile(in: fogMap2b, at: (column, row)) != nil else {continue}
+                self.gameScene!.roomFog_2b = Fog(x: self.tempX!, y: self.tempY!, z: 20, s: self.gameScene!.childNode(withName: "Room2.5")!, m: .NONE)
+                self.gameScene!.addEntity(entity: self.gameScene!.roomFog_2b!)
+                
+            }
+        }
         guard let fogMap3 = gameScene!.childNode(withName: "Room3") as? SKTileMapNode else {return}
-        for row in 0..<fogMap2.numberOfRows
+        for row in 0..<fogMap3.numberOfRows
         {
             for column in 0..<fogMap3.numberOfColumns
             {
-                guard tile(in: fogMap3, at: (column, row)) != nil else {continue}
-                let tempFog = Fog(x: tempX!, y: tempY!, z: 10, s: SKSpriteNode(imageNamed: "ceiling_fill"), m: .WORLD)
-                gameScene!.addEntity(entity: tempFog)
-                gameScene!.room1.append(tempFog)
-                i += 1
-                fogMap3.removeFromParent()
+                guard self.tile(in: fogMap3, at: (column, row)) != nil else {continue}
+                self.gameScene!.roomFog_3 = Fog(x: self.tempX!, y: self.tempY!, z: 20, s: self.gameScene!.childNode(withName: "Room3")!, m: .NONE)
+                self.gameScene!.addEntity(entity: self.gameScene!.roomFog_3!)
+                
             }
         }
-        i = 0
         guard let fogMap4 = gameScene!.childNode(withName: "Room4") as? SKTileMapNode else {return}
         for row in 0..<fogMap4.numberOfRows
         {
             for column in 0..<fogMap4.numberOfColumns
             {
-                guard tile(in: fogMap4, at: (column, row)) != nil else {continue}
-                let tempFog = Fog(x: tempX!, y: tempY!, z: 10, s: SKSpriteNode(imageNamed: "ceiling_fill"), m: .WORLD)
-                gameScene!.addEntity(entity: tempFog)
-                gameScene!.room1.append(tempFog)
-                i += 1
-                fogMap4.removeFromParent()
+                guard self.tile(in: fogMap4, at: (column, row)) != nil else {continue}
+                self.gameScene!.roomFog_4 = Fog(x: self.tempX!, y: self.tempY!, z: 20, s: self.gameScene!.childNode(withName: "Room4")!, m: .NONE)
+                self.gameScene!.addEntity(entity: self.gameScene!.roomFog_4!)
+                
             }
         }
-        i = 0
         guard let fogMap5 = gameScene!.childNode(withName: "Room5") as? SKTileMapNode else {return}
         for row in 0..<fogMap5.numberOfRows
         {
             for column in 0..<fogMap5.numberOfColumns
             {
-                guard tile(in: fogMap5, at: (column, row)) != nil else {continue}
-                let tempFog = Fog(x: tempX!, y: tempY!, z: 10, s: SKSpriteNode(imageNamed: "ceiling_fill"), m: .WORLD)
-                gameScene!.addEntity(entity: tempFog)
-                gameScene!.room1.append(tempFog)
-                i += 1
-                fogMap5.removeFromParent()
+                guard self.tile(in: fogMap5, at: (column, row)) != nil else {continue}
+                self.gameScene!.roomFog_5 = Fog(x: self.tempX!, y: self.tempY!, z: 20, s: self.gameScene!.childNode(withName: "Room5")!, m: .NONE)
+                self.gameScene!.addEntity(entity: self.gameScene!.roomFog_5!)
+                
             }
         }
+        
+        
+        
+        
+//
+//
+//        gameScene!.roomFog_2 = Fog(x: tempX!, y: tempY!, z: 20, s: gameScene!.childNode(withName: "Room2")!, m: .NONE)
+//        gameScene!.addEntity(entity: gameScene!.roomFog_2!)
+//
+//        gameScene!.roomFog_2b = Fog(x: tempX!, y: tempY!, z: 20, s: gameScene!.childNode(withName: "Room2.5")!, m: .NONE)
+//        gameScene!.addEntity(entity: gameScene!.roomFog_2b!)
+//
+//        gameScene!.roomFog_3 = Fog(x: tempX!, y: tempY!, z: 20, s: gameScene!.childNode(withName: "Room3")!, m: .NONE)
+//        gameScene!.addEntity(entity: gameScene!.roomFog_3!)
+//
+//        gameScene!.roomFog_4 = Fog(x: tempX!, y: tempY!, z: 20, s: gameScene!.childNode(withName: "Room4")!, m: .NONE)
+//        gameScene!.addEntity(entity: gameScene!.roomFog_4!)
+//
+//        gameScene!.roomFog_5 = Fog(x: tempX!, y: tempY!, z: 20, s: gameScene!.childNode(withName: "Room5")!, m: .NONE)
+//        gameScene!.addEntity(entity: gameScene!.roomFog_5!)
+//
+//
+//        let i = 0
+//        guard let fogMap2 = gameScene!.childNode(withName: "Room2") as? SKTileMapNode else {return}
+//        for row in 0..<fogMap2.numberOfRows
+//        {
+//            for column in 0..<fogMap2.numberOfColumns
+//            {
+//                guard tile(in: fogMap2, at: (column, row)) != nil else {continue}
+//                let tempFog = Fog(x: tempX!, y: tempY!, z: 20, s: SKSpriteNode(imageNamed: "ceiling_fill"), m: .NONE)
+//                gameScene!.addEntity(entity: tempFog)
+//            }
+//        }
+//        i = 0
+//        guard let fogMap3 = gameScene!.childNode(withName: "Room3") as? SKTileMapNode else {return}
+//        for row in 0..<fogMap2.numberOfRows
+//        {
+//            for column in 0..<fogMap3.numberOfColumns
+//            {
+//                guard tile(in: fogMap3, at: (column, row)) != nil else {continue}
+//                let tempFog = Fog(x: tempX!, y: tempY!, z: 20, s: SKSpriteNode(imageNamed: "ceiling_fill"), m: .NONE)
+//                gameScene!.addEntity(entity: tempFog)
+//            }
+//        }
+//        i = 0
+//        guard let fogMap4 = gameScene!.childNode(withName: "Room4") as? SKTileMapNode else {return}
+//        for row in 0..<fogMap4.numberOfRows
+//        {
+//            for column in 0..<fogMap4.numberOfColumns
+//            {
+//                guard tile(in: fogMap4, at: (column, row)) != nil else {continue}
+//                let tempFog = Fog(x: tempX!, y: tempY!, z: 20, s: SKSpriteNode(imageNamed: "ceiling_fill"), m: .NONE)
+//                gameScene!.addEntity(entity: tempFog)
+//            }
+//        }
+//        i = 0
+//        guard let fogMap5 = gameScene!.childNode(withName: "Room5") as? SKTileMapNode else {return}
+//        for row in 0..<fogMap5.numberOfRows
+//        {
+//            for column in 0..<fogMap5.numberOfColumns
+//            {
+//                guard tile(in: fogMap5, at: (column, row)) != nil else {continue}
+//                let tempFog = Fog(x: tempX!, y: tempY!, z: 20, s: SKSpriteNode(imageNamed: "ceiling_fill"), m: .NONE)
+//                gameScene!.addEntity(entity: tempFog)
     }
     
     func setupADoors()

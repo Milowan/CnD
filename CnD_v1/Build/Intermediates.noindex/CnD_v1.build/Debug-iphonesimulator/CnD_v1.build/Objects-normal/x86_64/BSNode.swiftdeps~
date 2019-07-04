@@ -12,7 +12,6 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - "BSNode"
-- !private "BooleanLiteralType"
 - "Button"
 - "SKSpriteNode"
 - "Set"
@@ -40,12 +39,8 @@ depends-member:
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "button"]
 - !private ["s23CustomStringConvertibleP", "init"]
-- !private ["6CnD_v16EntityC", "active"]
-- !private ["6CnD_v16EntityC", "clear"]
 - ["SQ", ""]
-- !private ["SQ", "active"]
 - !private ["SQ", "button"]
-- !private ["SQ", "clear"]
 - !private ["SQ", "init"]
 - ["SH", ""]
 - !private ["SH", "button"]
@@ -129,7 +124,6 @@ depends-nominal:
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
-- !private "6CnD_v16EntityC"
 - "SQ"
 - "SH"
 - "So8NSCodingP"

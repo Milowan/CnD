@@ -15,6 +15,7 @@ depends-top-level:
 depends-member:
 - ["6CnD_v14GearC", "ISNode"]
 - ["6CnD_v14GearC", "Stats"]
+- ["6CnD_v14GearC", "deinit"]
 - ["6CnD_v14GearC", "init"]
 - ["6CnD_v14GearC", "stats"]
 - ["6CnD_v14ItemC", "ISNode"]

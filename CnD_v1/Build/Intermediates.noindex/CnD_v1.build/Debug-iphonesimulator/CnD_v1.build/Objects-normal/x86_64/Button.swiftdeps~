@@ -10,114 +10,178 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "BSNode"
 - "Bool"
+- !private "BooleanLiteralType"
 - "Button"
+- !private "CGFloat"
+- !private "CGPoint"
 - "CastingPrecedence"
-- "Entity"
 - "Int"
 - "Interactable"
+- "SKSpriteNode"
 depends-member:
+- !private ["s18AdditiveArithmeticP", "init"]
 - !private ["6CnD_v16BSNodeC", "button"]
 - !private ["6CnD_v16BSNodeC", "isUserInteractionEnabled"]
+- !private ["6CnD_v16BSNodeC", "zPosition"]
+- !private ["SB", "init"]
 - ["6CnD_v16ButtonC", "BSNode"]
 - ["6CnD_v16ButtonC", "Bool"]
+- !private ["6CnD_v16ButtonC", "CGFloat"]
+- !private ["6CnD_v16ButtonC", "CGPoint"]
 - ["6CnD_v16ButtonC", "Int"]
 - ["6CnD_v16ButtonC", "Interactable"]
-- ["6CnD_v16ButtonC", "act"]
+- ["6CnD_v16ButtonC", "SKSpriteNode"]
 - ["6CnD_v16ButtonC", "active"]
 - ["6CnD_v16ButtonC", "clear"]
 - ["6CnD_v16ButtonC", "init"]
 - ["6CnD_v16ButtonC", "interactable"]
-- !private ["6CnD_v16ButtonC", "sprite"]
-- ["6CnD_v16ButtonC", "update"]
+- ["6CnD_v16ButtonC", "sprite"]
+- !private ["12CoreGraphics7CGFloatV", "init"]
+- !private ["So7CGPointV", "init"]
 - !private ["s7CVarArgP", "button"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isUserInteractionEnabled"]
+- !private ["s7CVarArgP", "position"]
+- !private ["s7CVarArgP", "zPosition"]
+- !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "button"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isUserInteractionEnabled"]
+- !private ["s28CustomDebugStringConvertibleP", "position"]
+- !private ["s28CustomDebugStringConvertibleP", "zPosition"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "button"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isUserInteractionEnabled"]
-- ["6CnD_v16EntityC", "BSNode"]
-- ["6CnD_v16EntityC", "Bool"]
-- ["6CnD_v16EntityC", "Int"]
-- ["6CnD_v16EntityC", "Interactable"]
-- ["6CnD_v16EntityC", ""]
-- ["6CnD_v16EntityC", "act"]
-- ["6CnD_v16EntityC", "active"]
-- ["6CnD_v16EntityC", "clear"]
-- ["6CnD_v16EntityC", "init"]
-- ["6CnD_v16EntityC", "interactable"]
-- !private ["6CnD_v16EntityC", "sprite"]
-- ["6CnD_v16EntityC", "update"]
-- !private ["SQ", "NONE"]
-- ["SQ", ""]
-- !private ["SQ", "active"]
+- !private ["s23CustomStringConvertibleP", "position"]
+- !private ["s23CustomStringConvertibleP", "zPosition"]
+- !private ["Se", "init"]
+- !private ["SE", "init"]
 - !private ["SQ", "button"]
-- !private ["SQ", "clear"]
 - !private ["SQ", "init"]
-- !private ["SQ", "interactable"]
 - !private ["SQ", "isUserInteractionEnabled"]
-- !private ["SQ", "sprite"]
-- !private ["SH", "NONE"]
+- !private ["SQ", "position"]
+- !private ["SQ", "zPosition"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["SF", "init"]
 - !private ["SH", "button"]
+- !private ["SH", "init"]
 - !private ["SH", "isUserInteractionEnabled"]
+- !private ["SH", "position"]
+- !private ["SH", "zPosition"]
 - !private ["So8NSCodingP", "button"]
 - !private ["So8NSCodingP", "isUserInteractionEnabled"]
+- !private ["So8NSCodingP", "position"]
+- !private ["So8NSCodingP", "zPosition"]
 - !private ["So9NSCopyingP", "button"]
 - !private ["So9NSCopyingP", "isUserInteractionEnabled"]
+- !private ["So9NSCopyingP", "position"]
+- !private ["So9NSCopyingP", "zPosition"]
 - !private ["So8NSObjectC", "button"]
 - !private ["So8NSObjectC", "isUserInteractionEnabled"]
+- !private ["So8NSObjectC", "position"]
+- !private ["So8NSObjectC", "zPosition"]
 - !private ["So8NSObjectP", "button"]
 - !private ["So8NSObjectP", "isUserInteractionEnabled"]
+- !private ["So8NSObjectP", "position"]
+- !private ["So8NSObjectP", "zPosition"]
 - !private ["So14NSSecureCodingP", "button"]
 - !private ["So14NSSecureCodingP", "isUserInteractionEnabled"]
+- !private ["So14NSSecureCodingP", "position"]
+- !private ["So14NSSecureCodingP", "zPosition"]
+- !private ["Sj", "init"]
 - !private ["So6SKNodeC", "button"]
 - !private ["So6SKNodeC", "isUserInteractionEnabled"]
+- !private ["So6SKNodeC", "position"]
+- !private ["So6SKNodeC", "zPosition"]
 - !private ["So12SKSpriteNodeC", "button"]
 - !private ["So12SKSpriteNodeC", "isUserInteractionEnabled"]
+- !private ["So12SKSpriteNodeC", "position"]
+- !private ["So12SKSpriteNodeC", "zPosition"]
 - !private ["So10SKWarpableP", "button"]
 - !private ["So10SKWarpableP", "isUserInteractionEnabled"]
+- !private ["So10SKWarpableP", "position"]
+- !private ["So10SKWarpableP", "zPosition"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
 - !private ["So18UIFocusEnvironmentP", "button"]
 - !private ["So18UIFocusEnvironmentP", "isUserInteractionEnabled"]
+- !private ["So18UIFocusEnvironmentP", "position"]
+- !private ["So18UIFocusEnvironmentP", "zPosition"]
 - !private ["So11UIFocusItemP", "button"]
 - !private ["So11UIFocusItemP", "isUserInteractionEnabled"]
+- !private ["So11UIFocusItemP", "position"]
+- !private ["So11UIFocusItemP", "zPosition"]
 - !private ["So30UIPasteConfigurationSupportingP", "button"]
 - !private ["So30UIPasteConfigurationSupportingP", "isUserInteractionEnabled"]
+- !private ["So30UIPasteConfigurationSupportingP", "position"]
+- !private ["So30UIPasteConfigurationSupportingP", "zPosition"]
 - !private ["So11UIResponderC", "button"]
 - !private ["So11UIResponderC", "isUserInteractionEnabled"]
+- !private ["So11UIResponderC", "position"]
+- !private ["So11UIResponderC", "zPosition"]
 - !private ["So30UIResponderStandardEditActionsP", "button"]
 - !private ["So30UIResponderStandardEditActionsP", "isUserInteractionEnabled"]
+- !private ["So30UIResponderStandardEditActionsP", "position"]
+- !private ["So30UIResponderStandardEditActionsP", "zPosition"]
 - !private ["So23UIUserActivityRestoringP", "button"]
 - !private ["So23UIUserActivityRestoringP", "isUserInteractionEnabled"]
+- !private ["So23UIUserActivityRestoringP", "position"]
+- !private ["So23UIUserActivityRestoringP", "zPosition"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "button"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "isUserInteractionEnabled"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "position"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "zPosition"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "button"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isUserInteractionEnabled"]
-- !private ["6CnD_v113collisionTypeO", "NONE"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "position"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "zPosition"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 depends-nominal:
+- !private "s18AdditiveArithmeticP"
 - !private "6CnD_v16BSNodeC"
+- !private "SB"
 - "6CnD_v16ButtonC"
+- !private "12CoreGraphics7CGFloatV"
+- !private "So7CGPointV"
 - !private "s7CVarArgP"
+- !private "SL"
 - !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
-- "6CnD_v16EntityC"
-- "SQ"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "SF"
 - !private "SH"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
+- !private "Sj"
 - !private "So6SKNodeC"
 - !private "So12SKSpriteNodeC"
 - !private "So10SKWarpableP"
+- !private "s13SignedNumericP"
+- !private "Sx"
 - !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
 - !private "So30UIPasteConfigurationSupportingP"
 - !private "So11UIResponderC"
 - !private "So30UIResponderStandardEditActionsP"
 - !private "So23UIUserActivityRestoringP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "6CnD_v113collisionTypeO"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -151,4 +215,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "afa9774db14a22ad14f0a8be95fae715"
+interface-hash: "efc3dda5cc6d01b3b3417a1a0ad49580"

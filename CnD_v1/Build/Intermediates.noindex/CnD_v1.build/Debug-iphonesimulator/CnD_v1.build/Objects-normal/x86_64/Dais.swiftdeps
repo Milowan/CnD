@@ -13,7 +13,6 @@ depends-top-level:
 - "BooleanLiteralType"
 - "Dais"
 - "Int"
-- !private "IntegerLiteralType"
 - "Interactable"
 - "SKSpriteNode"
 - !private "StringLiteralType"
@@ -34,10 +33,12 @@ depends-member:
 - ["6CnD_v14DaisC", "SKSpriteNode"]
 - ["6CnD_v14DaisC", "act"]
 - ["6CnD_v14DaisC", "acted"]
+- ["6CnD_v14DaisC", "activate"]
 - ["6CnD_v14DaisC", "door"]
 - ["6CnD_v14DaisC", "hasGem"]
 - ["6CnD_v14DaisC", "init"]
 - ["6CnD_v14DaisC", "oDais"]
+- !private ["6CnD_v14DaisC", "player"]
 - ["6CnD_v14DaisC", "update"]
 - ["10Foundation12DataProtocolP", "init"]
 - ["Se", "init"]
@@ -48,9 +49,12 @@ depends-member:
 - ["6CnD_v16EntityC", "SKSpriteNode"]
 - ["6CnD_v16EntityC", "act"]
 - ["6CnD_v16EntityC", "acted"]
+- ["6CnD_v16EntityC", "activate"]
 - ["6CnD_v16EntityC", "door"]
 - ["6CnD_v16EntityC", "hasGem"]
+- !private ["6CnD_v16EntityC", "inventory"]
 - ["6CnD_v16EntityC", "oDais"]
+- !private ["6CnD_v16EntityC", "player"]
 - !private ["6CnD_v16EntityC", "toggleState"]
 - ["6CnD_v16EntityC", "update"]
 - ["SQ", "Dais"]
@@ -59,7 +63,9 @@ depends-member:
 - !private ["SQ", "door"]
 - !private ["SQ", "hasGem"]
 - ["SQ", "init"]
+- !private ["SQ", "inventory"]
 - !private ["SQ", "oDais"]
+- !private ["SQ", "player"]
 - !private ["SQ", "toggleState"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
 - ["SH", "init"]
@@ -70,13 +76,17 @@ depends-member:
 - ["6CnD_v112InteractableC", ""]
 - ["6CnD_v112InteractableC", "act"]
 - ["6CnD_v112InteractableC", "acted"]
+- ["6CnD_v112InteractableC", "activate"]
 - ["6CnD_v112InteractableC", "door"]
 - ["6CnD_v112InteractableC", "hasGem"]
 - ["6CnD_v112InteractableC", "init"]
 - ["6CnD_v112InteractableC", "oDais"]
+- !private ["6CnD_v112InteractableC", "player"]
 - ["6CnD_v112InteractableC", "update"]
+- !private ["6CnD_v19InventoryC", "openInv"]
 - ["SM", "init"]
 - ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["6CnD_v16PlayerC", "inventory"]
 - ["Sk", "init"]
 - ["Sm", "init"]
 - ["ST", "init"]
@@ -104,8 +114,10 @@ depends-nominal:
 - "s25ExpressibleByArrayLiteralP"
 - "SH"
 - "6CnD_v112InteractableC"
+- !private "6CnD_v19InventoryC"
 - "SM"
 - "10Foundation19MutableDataProtocolP"
+- !private "6CnD_v16PlayerC"
 - "Sk"
 - "Sm"
 - "ST"
@@ -147,4 +159,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e784c6f48bc2792709a6c610e9d33cbb"
+interface-hash: "986c5d93650ce024e675ef6bab45bafc"

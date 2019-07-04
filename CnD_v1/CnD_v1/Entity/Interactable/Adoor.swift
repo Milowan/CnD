@@ -33,12 +33,12 @@ class Adoor : Entity
         if isOpen
         {
             collisionMask = .WORLD
-            startAnimation(animAction: doorClosed!, animKey: "close", sprite: sprite!)
+            startAnimation(animAction: doorClosed!, animKey: "close", sprite: sprite! as! SKSpriteNode)
         }
         else
         {
             collisionMask = .NONE
-            startAnimation(animAction: doorOpen!, animKey: "close", sprite: sprite!)
+            startAnimation(animAction: doorOpen!, animKey: "close", sprite: sprite! as! SKSpriteNode)
         }
         isOpen = !isOpen
     }

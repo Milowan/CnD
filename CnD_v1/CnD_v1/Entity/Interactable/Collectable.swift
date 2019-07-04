@@ -22,7 +22,7 @@ class Collectable : Interactable
     
     override func act()
     {
-        player!.inventory.contents!.append(item!)
+        player!.inventory!.contents!.append(item!)
         item = nil
     }
 }

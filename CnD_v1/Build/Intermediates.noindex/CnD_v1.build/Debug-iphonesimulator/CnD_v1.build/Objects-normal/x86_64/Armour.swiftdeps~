@@ -20,7 +20,7 @@ depends-member:
 - ["6CnD_v16ArmourC", "baseDef"]
 - ["6CnD_v16ArmourC", "baseEvasion"]
 - ["6CnD_v16ArmourC", "init"]
-- ["6CnD_v16ArmourC", "player"]
+- !private ["6CnD_v16ArmourC", "player"]
 - ["6CnD_v14GearC", "ISNode"]
 - ["6CnD_v14GearC", "Player"]
 - ["6CnD_v14GearC", "Stats"]
@@ -28,13 +28,13 @@ depends-member:
 - ["6CnD_v14GearC", "baseDef"]
 - ["6CnD_v14GearC", "baseEvasion"]
 - ["6CnD_v14GearC", "init"]
-- ["6CnD_v14GearC", "player"]
+- !private ["6CnD_v14GearC", "player"]
 - ["6CnD_v14ItemC", "ISNode"]
 - ["6CnD_v14ItemC", "Player"]
 - ["6CnD_v14ItemC", "Stats"]
 - ["6CnD_v14ItemC", "baseDef"]
 - ["6CnD_v14ItemC", "baseEvasion"]
-- ["6CnD_v14ItemC", "player"]
+- !private ["6CnD_v14ItemC", "player"]
 depends-nominal:
 - "6CnD_v16ArmourC"
 - "6CnD_v14GearC"
@@ -72,4 +72,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f70f88c93659ec27a396f5dbe2fc6321"
+interface-hash: "f42a9b208db8885888fba60a3c3b118f"

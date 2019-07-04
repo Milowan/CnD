@@ -55,7 +55,7 @@ class Player : Entity
     var lastDirection : Direction
     
     let stats = Stats(s : 12, d : 15, c : 10)
-    var inventory: Inventory
+    var inventory: Inventory?
     
     let movSpeed = 5
     let animSpeed = 0.2
@@ -155,17 +155,18 @@ class Player : Entity
         s.addChild(interactButton.sprite)
         interactButton.sprite.texture!.filteringMode = .nearest
         
-        inventory = Inventory(p: GameScene.player!)
 
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
         
+        inventory = Inventory(p: self)
         self.sword = WoodenSword(p : self)
         self.armour = Armour(p : self, st : Stats(s : 1, d : 1, c : 1), sp : ISNode(imageNamed: "sword_01a"))
         self.helmet = Helmet(p : self, st : Stats(s : 1, d : 1, c : 1), sp : ISNode(imageNamed: "sword_01a"))
-        GameScene.player = self
         setAnimations()
-        let dim = CGSize(width: 32, height: 32)
-        self.sprite?.size = dim
+        //self.sprite!.setScale(CGFloat(0.5))
+//        let dim = CGSize(width: 32, height: 32)
+//        self.sprite!.size.height = dim
+//        self.sprite!.size.width = dim
     }
     
     override func update()
@@ -252,7 +253,7 @@ class Player : Entity
                     {
                         if !inventoryButton.clear
                         {
-                            inventory.act()
+                            inventory!.act()
                         }
                         inventoryButton.clear = true
                     }
@@ -319,7 +320,7 @@ class Player : Entity
         }
         pos.x = Int(sprite!.position.x)
         pos.y = Int(sprite!.position.y)
-        inventory.update()
+        inventory!.update()
     }
     
     //class func wait(forDuration duration: TimeInterval) -> SKAction
@@ -329,12 +330,12 @@ class Player : Entity
     {
         
         let a = self.sprite!
-        let aBottom = self.pos.y - Int(a.size.height / 2)
-        let aTop = self.pos.y - Int(a.size.height / 4)
-        let aLeft = self.pos.x - Int((a.size.width / 4) / 2)
-        let aRight = self.pos.x + Int((a.size.width / 4) / 2)
+        let aBottom = self.pos.y - Int(a.frame.height / 2)
+        let aTop = self.pos.y - Int(a.frame.height / 4)
+        let aLeft = self.pos.x - Int((a.frame.width / 4) / 2)
+        let aRight = self.pos.x + Int((a.frame.width / 4) / 2)
         
-        let aPos = Pos(xX : Int(a.position.x), yY : aBottom + Int(a.size.height / 4))
+        let aPos = Pos(xX : Int(a.position.x), yY : aBottom + Int(a.frame.height / 4))
         
         var bBottom : Int
         var bTop : Int
@@ -342,10 +343,10 @@ class Player : Entity
         var bRight : Int
         if let b = response.sprite
         {
-             bBottom = response.pos.y - Int(b.size.height / 2)
-             bTop = response.pos.y + Int(b.size.height / 2)
-             bLeft = response.pos.x - Int(b.size.width / 2)
-             bRight = response.pos.x + Int(b.size.width / 2)
+             bBottom = response.pos.y - Int(b.frame.height / 2)
+             bTop = response.pos.y + Int(b.frame.height / 2)
+             bLeft = response.pos.x - Int(b.frame.width / 2)
+             bRight = response.pos.x + Int(b.frame.width / 2)
         }
         else
         {
@@ -459,7 +460,7 @@ class Player : Entity
             onPlate = false
         }
         
-        pos = Pos(xX : aPos.x, yY : aPos.y + Int(a.size.height / 4))
+        pos = Pos(xX : aPos.x, yY : aPos.y + Int(a.frame.size.height / 4))
         
         sprite!.position.x = CGFloat(pos.x)
         sprite!.position.y = CGFloat(pos.y)
@@ -605,11 +606,11 @@ class Player : Entity
     func removeRock()
     {
         var i = 0
-        for item in inventory.contents!
+        for item in inventory!.contents!
         {
             if let rock = item as? Rock
             {
-                inventory.contents!.remove(at : i)
+                inventory!.contents!.remove(at : i)
                 break
             }
             i += 1
@@ -619,11 +620,11 @@ class Player : Entity
     func removeGem()
     {
         var i = 0
-        for item in inventory.contents!
+        for item in inventory!.contents!
         {
             if let gem = item as? Gem
             {
-                inventory.contents!.remove(at : i)
+                inventory!.contents!.remove(at : i)
                 break
             }
             i += 1
