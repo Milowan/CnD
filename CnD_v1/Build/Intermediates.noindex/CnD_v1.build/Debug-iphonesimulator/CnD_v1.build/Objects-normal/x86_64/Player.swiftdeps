@@ -43,7 +43,6 @@ depends-top-level:
 - "Helmet"
 - !private "ISNode"
 - "Int"
-- "IntegerLiteralType"
 - !private "Interactable"
 - "Inventory"
 - "Map"

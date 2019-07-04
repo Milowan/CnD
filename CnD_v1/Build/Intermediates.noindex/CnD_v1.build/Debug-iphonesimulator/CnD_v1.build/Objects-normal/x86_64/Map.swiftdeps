@@ -7,12 +7,13 @@ provides-member:
 - ["6CnD_v13MapC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "+"
 - !private "+="
 - !private "-"
 - !private "-="
 - !private "/"
 - !private "<"
-- !private ">"
+- !private ">="
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - "CGFloat"

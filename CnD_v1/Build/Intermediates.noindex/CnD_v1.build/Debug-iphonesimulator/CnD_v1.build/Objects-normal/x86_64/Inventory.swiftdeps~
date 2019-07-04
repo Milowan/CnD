@@ -17,7 +17,6 @@ depends-top-level:
 - "CGFloat"
 - "GameMenu"
 - !private "GameScene"
-- "Int"
 - "Inventory"
 - "Player"
 - "SKNode"
@@ -46,7 +45,6 @@ depends-member:
 - !private ["SQ", "y"]
 - ["6CnD_v18GameMenuC", "CGFloat"]
 - !private ["6CnD_v18GameMenuC", "GameScene"]
-- ["6CnD_v18GameMenuC", "Int"]
 - ["6CnD_v18GameMenuC", "Player"]
 - ["6CnD_v18GameMenuC", "SKNode"]
 - ["6CnD_v18GameMenuC", ""]
@@ -55,7 +53,6 @@ depends-member:
 - ["6CnD_v18GameMenuC", "baseY"]
 - ["6CnD_v18GameMenuC", "closeMenu"]
 - ["6CnD_v18GameMenuC", "deltaY"]
-- ["6CnD_v18GameMenuC", "i"]
 - ["6CnD_v18GameMenuC", "init"]
 - ["6CnD_v18GameMenuC", "invScene"]
 - ["6CnD_v18GameMenuC", "openMenu"]
@@ -65,7 +62,6 @@ depends-member:
 - !private ["SH", "position"]
 - ["6CnD_v19InventoryC", "CGFloat"]
 - !private ["6CnD_v19InventoryC", "GameScene"]
-- ["6CnD_v19InventoryC", "Int"]
 - ["6CnD_v19InventoryC", "Player"]
 - ["6CnD_v19InventoryC", "SKNode"]
 - !private ["6CnD_v19InventoryC", "animDone"]
@@ -73,7 +69,6 @@ depends-member:
 - ["6CnD_v19InventoryC", "baseY"]
 - ["6CnD_v19InventoryC", "closeMenu"]
 - ["6CnD_v19InventoryC", "deltaY"]
-- ["6CnD_v19InventoryC", "i"]
 - ["6CnD_v19InventoryC", "init"]
 - ["6CnD_v19InventoryC", "invScene"]
 - ["6CnD_v19InventoryC", "openMenu"]
@@ -178,4 +173,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "31677cccaf4c4305b39617e0a3c84806"
+interface-hash: "a7e5efe4fe1a52b1414a74f35ac7c9ad"

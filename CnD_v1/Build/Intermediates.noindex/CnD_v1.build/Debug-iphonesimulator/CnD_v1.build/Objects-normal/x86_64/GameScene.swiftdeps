@@ -20,8 +20,10 @@ depends-top-level:
 - !private "Collectable"
 - !private "Enemy"
 - "Entity"
+- "FloatLiteralType"
 - "GameScene"
 - "Int"
+- "IntegerLiteralType"
 - "LevelGenerator"
 - "NSCoder"
 - !private "Player"
@@ -33,6 +35,7 @@ depends-top-level:
 - "SKTileMapNode"
 - "SKTileSet"
 - "SKView"
+- !private "StringLiteralType"
 - "TimeInterval"
 - "UIColor"
 depends-member:

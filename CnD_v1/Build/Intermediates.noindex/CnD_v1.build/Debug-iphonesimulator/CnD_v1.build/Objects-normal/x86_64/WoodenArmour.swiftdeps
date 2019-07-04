@@ -11,7 +11,6 @@ depends-top-level:
 - !private "ISNode"
 - "Player"
 - !private "Stats"
-- !private "StringLiteralType"
 - "WoodenArmour"
 depends-member:
 - !private ["6CnD_v16ArmourC", "ISNode"]

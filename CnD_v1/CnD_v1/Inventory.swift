@@ -30,14 +30,14 @@ class Inventory : GameMenu
      override func openMenu()
     {
         invScene!.position.x = playerRef.sprite!.position.x
-        if invScene!.position.y > playerRef.sprite!.position.y
+        if invScene!.position.y >= (playerRef.sprite!.position.y + 10)
         {
             invScene!.position.y -= animSpeed!
         }
         else
         {
             animDone = true
-            invScene!.position.y = playerRef.sprite!.position.y
+            invScene!.position.y = (playerRef.sprite!.position.y + 10)
         }
     }
     

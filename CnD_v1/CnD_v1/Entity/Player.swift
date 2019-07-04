@@ -271,6 +271,7 @@ class Player : Entity
                         {
                             map!.act()
                         }
+                        miniMapButton.clear = true
                     }
                 }
             }
@@ -615,11 +616,11 @@ class Player : Entity
     func removeRock()
     {
         var i = 0
-        for item in inventory!.contents!
+        for item in inventory!.contents
         {
             if let rock = item as? Rock
             {
-                inventory!.contents!.remove(at : i)
+                inventory!.contents.remove(at : i)
                 break
             }
             i += 1
@@ -629,11 +630,11 @@ class Player : Entity
     func removeGem()
     {
         var i = 0
-        for item in inventory!.contents!
+        for item in inventory!.contents
         {
             if let gem = item as? Gem
             {
-                inventory!.contents!.remove(at : i)
+                inventory!.contents.remove(at : i)
                 break
             }
             i += 1

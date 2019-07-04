@@ -30,14 +30,14 @@ class Map : GameMenu
     override func openMenu()
     {
         mapScene!.position.x = playerRef.sprite!.position.x
-        if mapScene!.position.y > playerRef.sprite!.position.y
+        if mapScene!.position.y >= ((playerRef.sprite!.position.y + 20))
         {
             mapScene!.position.y -= animSpeed!
         }
         else
         {
             animDone = true
-            mapScene!.position.y = playerRef.sprite!.position.y
+            mapScene!.position.y = (playerRef.sprite!.position.y + 20)
         }
     }
     
