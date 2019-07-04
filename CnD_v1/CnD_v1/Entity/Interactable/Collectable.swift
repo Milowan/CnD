@@ -12,7 +12,7 @@ import SpriteKit
 
 class Collectable : Interactable
 {
-    var item : Item?
+    var item : Item
     
     init (x : Int, y : Int, z : Int, s : SKSpriteNode, i : Item)
     {
@@ -22,7 +22,9 @@ class Collectable : Interactable
     
     override func act()
     {
-        player!.inventory!.contents!.append(item!)
-        item = nil
+        item.player = player
+        player!.inventory!.contents.append(item)
+        
+        collisionMask = .NONE
     }
 }

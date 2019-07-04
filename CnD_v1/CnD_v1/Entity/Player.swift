@@ -366,9 +366,9 @@ class Player : Entity
         }
         
         if aBottom <= bTop + 15 &&
-        aTop >= bBottom - 15 &&
-        aLeft <= bRight + 0 &&
-        aRight >= bLeft - 0
+        aTop >= bBottom - 25 &&
+        aLeft <= bRight &&
+        aRight >= bLeft
         {
             
             if let interactable = response as? Interactable
@@ -615,11 +615,11 @@ class Player : Entity
     func removeRock()
     {
         var i = 0
-        for item in inventory!.contents!
+        for item in inventory!.contents
         {
             if let rock = item as? Rock
             {
-                inventory!.contents!.remove(at : i)
+                inventory!.contents.remove(at : i)
                 break
             }
             i += 1
@@ -629,11 +629,11 @@ class Player : Entity
     func removeGem()
     {
         var i = 0
-        for item in inventory!.contents!
+        for item in inventory!.contents
         {
             if let gem = item as? Gem
             {
-                inventory!.contents!.remove(at : i)
+                inventory!.contents.remove(at : i)
                 break
             }
             i += 1
