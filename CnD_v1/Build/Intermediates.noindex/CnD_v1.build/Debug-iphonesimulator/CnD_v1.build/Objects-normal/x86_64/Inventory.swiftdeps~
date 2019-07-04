@@ -7,7 +7,6 @@ provides-member:
 - ["6CnD_v19InventoryC", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "!"
 - !private "+="
 - !private "-"
 - !private "-="
@@ -15,12 +14,11 @@ depends-top-level:
 - !private "<"
 - !private ">"
 - "AssignmentPrecedence"
-- "Bool"
 - "CGFloat"
+- "GameMenu"
 - !private "GameScene"
 - "Int"
 - "Inventory"
-- "Item"
 - "Player"
 - "SKNode"
 depends-member:
@@ -46,31 +44,40 @@ depends-member:
 - !private ["SQ", "sprite"]
 - !private ["SQ", "x"]
 - !private ["SQ", "y"]
+- ["6CnD_v18GameMenuC", "CGFloat"]
+- !private ["6CnD_v18GameMenuC", "GameScene"]
+- ["6CnD_v18GameMenuC", "Int"]
+- ["6CnD_v18GameMenuC", "Player"]
+- ["6CnD_v18GameMenuC", "SKNode"]
+- ["6CnD_v18GameMenuC", ""]
+- !private ["6CnD_v18GameMenuC", "animDone"]
+- ["6CnD_v18GameMenuC", "animSpeed"]
+- ["6CnD_v18GameMenuC", "baseY"]
+- ["6CnD_v18GameMenuC", "closeMenu"]
+- ["6CnD_v18GameMenuC", "deltaY"]
+- ["6CnD_v18GameMenuC", "i"]
+- ["6CnD_v18GameMenuC", "init"]
+- ["6CnD_v18GameMenuC", "invScene"]
+- ["6CnD_v18GameMenuC", "openMenu"]
+- !private ["6CnD_v18GameMenuC", "playerRef"]
 - !private ["6CnD_v19GameSceneC", "invChild"]
 - !private ["SH", "invChild"]
 - !private ["SH", "position"]
-- ["6CnD_v19InventoryC", "Bool"]
 - ["6CnD_v19InventoryC", "CGFloat"]
 - !private ["6CnD_v19InventoryC", "GameScene"]
 - ["6CnD_v19InventoryC", "Int"]
-- ["6CnD_v19InventoryC", "Item"]
 - ["6CnD_v19InventoryC", "Player"]
 - ["6CnD_v19InventoryC", "SKNode"]
-- ["6CnD_v19InventoryC", "act"]
-- ["6CnD_v19InventoryC", "animDone"]
+- !private ["6CnD_v19InventoryC", "animDone"]
 - ["6CnD_v19InventoryC", "animSpeed"]
 - ["6CnD_v19InventoryC", "baseY"]
-- ["6CnD_v19InventoryC", "closeInv"]
-- ["6CnD_v19InventoryC", "contents"]
-- ["6CnD_v19InventoryC", "deinit"]
+- ["6CnD_v19InventoryC", "closeMenu"]
 - ["6CnD_v19InventoryC", "deltaY"]
 - ["6CnD_v19InventoryC", "i"]
 - ["6CnD_v19InventoryC", "init"]
 - ["6CnD_v19InventoryC", "invScene"]
-- ["6CnD_v19InventoryC", "isOpen"]
-- ["6CnD_v19InventoryC", "openInv"]
-- ["6CnD_v19InventoryC", "playerRef"]
-- ["6CnD_v19InventoryC", "update"]
+- ["6CnD_v19InventoryC", "openMenu"]
+- !private ["6CnD_v19InventoryC", "playerRef"]
 - !private ["So8NSCodingP", "invChild"]
 - !private ["So8NSCodingP", "position"]
 - !private ["So9NSCopyingP", "invChild"]
@@ -115,6 +122,7 @@ depends-nominal:
 - !private "SE"
 - !private "6CnD_v16EntityC"
 - !private "SQ"
+- "6CnD_v18GameMenuC"
 - !private "6CnD_v19GameSceneC"
 - !private "SH"
 - "6CnD_v19InventoryC"
@@ -170,4 +178,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "346e05e9f1795f25375169a49e7f047a"
+interface-hash: "31677cccaf4c4305b39617e0a3c84806"

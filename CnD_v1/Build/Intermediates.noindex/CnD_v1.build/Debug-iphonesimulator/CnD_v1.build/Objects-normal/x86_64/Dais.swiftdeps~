@@ -68,6 +68,7 @@ depends-member:
 - !private ["SQ", "player"]
 - !private ["SQ", "toggleState"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["6CnD_v18GameMenuC", "openMenu"]
 - ["SH", "init"]
 - ["6CnD_v112InteractableC", "Adoor"]
 - ["6CnD_v112InteractableC", "Dais"]
@@ -83,7 +84,7 @@ depends-member:
 - ["6CnD_v112InteractableC", "oDais"]
 - !private ["6CnD_v112InteractableC", "player"]
 - ["6CnD_v112InteractableC", "update"]
-- !private ["6CnD_v19InventoryC", "openInv"]
+- !private ["6CnD_v19InventoryC", "openMenu"]
 - ["SM", "init"]
 - ["10Foundation19MutableDataProtocolP", "init"]
 - !private ["6CnD_v16PlayerC", "inventory"]
@@ -112,6 +113,7 @@ depends-nominal:
 - "6CnD_v16EntityC"
 - "SQ"
 - "s25ExpressibleByArrayLiteralP"
+- !private "6CnD_v18GameMenuC"
 - "SH"
 - "6CnD_v112InteractableC"
 - !private "6CnD_v19InventoryC"

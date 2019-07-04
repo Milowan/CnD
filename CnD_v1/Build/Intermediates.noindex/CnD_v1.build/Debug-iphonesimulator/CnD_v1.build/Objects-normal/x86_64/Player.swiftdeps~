@@ -33,6 +33,7 @@ depends-top-level:
 - "BooleanLiteralType"
 - "Button"
 - !private "CGFloat"
+- !private "CGSize"
 - "CastingPrecedence"
 - "Direction"
 - "Enemy"
@@ -47,6 +48,7 @@ depends-top-level:
 - "IntegerLiteralType"
 - !private "Interactable"
 - "Inventory"
+- "Map"
 - "Player"
 - !private "Pos"
 - "PressPlates"
@@ -87,6 +89,7 @@ depends-member:
 - !private ["So6CGRectV", "size"]
 - !private ["So6CGRectV", "width"]
 - !private ["So6CGSizeV", "height"]
+- !private ["So6CGSizeV", "init"]
 - !private ["s7CVarArgP", "action"]
 - !private ["s7CVarArgP", "actionForKeyIsRunning"]
 - !private ["s7CVarArgP", "addChild"]
@@ -102,7 +105,7 @@ depends-member:
 - !private ["s7CVarArgP", "repeatForever"]
 - !private ["s7CVarArgP", "run"]
 - ["s7CVarArgP", "scale"]
-- !private ["s7CVarArgP", "setScale"]
+- !private ["s7CVarArgP", "size"]
 - !private ["s7CVarArgP", "texture"]
 - !private ["s7CVarArgP", "zPosition"]
 - !private ["Sl", "append"]
@@ -126,7 +129,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "repeatForever"]
 - !private ["s28CustomDebugStringConvertibleP", "run"]
 - ["s28CustomDebugStringConvertibleP", "scale"]
-- !private ["s28CustomDebugStringConvertibleP", "setScale"]
 - !private ["s28CustomDebugStringConvertibleP", "size"]
 - !private ["s28CustomDebugStringConvertibleP", "texture"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
@@ -158,7 +160,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "repeatForever"]
 - !private ["s23CustomStringConvertibleP", "run"]
 - ["s23CustomStringConvertibleP", "scale"]
-- !private ["s23CustomStringConvertibleP", "setScale"]
+- !private ["s23CustomStringConvertibleP", "size"]
 - !private ["s23CustomStringConvertibleP", "texture"]
 - !private ["s23CustomStringConvertibleP", "zPosition"]
 - !private ["10Foundation12DataProtocolP", "append"]
@@ -204,6 +206,7 @@ depends-member:
 - ["6CnD_v16EntityC", "Bool"]
 - ["6CnD_v16EntityC", "Button"]
 - !private ["6CnD_v16EntityC", "CGFloat"]
+- !private ["6CnD_v16EntityC", "CGSize"]
 - ["6CnD_v16EntityC", "Direction"]
 - ["6CnD_v16EntityC", "Enemy"]
 - ["6CnD_v16EntityC", "Entity"]
@@ -215,6 +218,7 @@ depends-member:
 - ["6CnD_v16EntityC", "Int"]
 - !private ["6CnD_v16EntityC", "Interactable"]
 - ["6CnD_v16EntityC", "Inventory"]
+- ["6CnD_v16EntityC", "Map"]
 - !private ["6CnD_v16EntityC", "Pos"]
 - ["6CnD_v16EntityC", "PressPlates"]
 - !private ["6CnD_v16EntityC", "Rock"]
@@ -245,6 +249,7 @@ depends-member:
 - !private ["6CnD_v16EntityC", "def"]
 - !private ["6CnD_v16EntityC", "deinit"]
 - ["6CnD_v16EntityC", "direction"]
+- ["6CnD_v16EntityC", "dmTextBar"]
 - ["6CnD_v16EntityC", "dmgTaken"]
 - ["6CnD_v16EntityC", "down"]
 - ["6CnD_v16EntityC", "downLeft"]
@@ -262,6 +267,7 @@ depends-member:
 - ["6CnD_v16EntityC", "isIdle"]
 - ["6CnD_v16EntityC", "lastDirection"]
 - ["6CnD_v16EntityC", "left"]
+- ["6CnD_v16EntityC", "map"]
 - ["6CnD_v16EntityC", "miniMapButton"]
 - ["6CnD_v16EntityC", "movSpeed"]
 - ["6CnD_v16EntityC", "onPlate"]
@@ -310,6 +316,7 @@ depends-member:
 - !private ["SQ", "BSNode"]
 - !private ["SQ", "Button"]
 - !private ["SQ", "CGFloat"]
+- !private ["SQ", "CGSize"]
 - !private ["SQ", "DOWN"]
 - !private ["SQ", "GameScene"]
 - !private ["SQ", "Helmet"]
@@ -317,6 +324,7 @@ depends-member:
 - !private ["SQ", "Int"]
 - !private ["SQ", "Inventory"]
 - !private ["SQ", "LEFT"]
+- !private ["SQ", "Map"]
 - !private ["SQ", "NONE"]
 - !private ["SQ", "PLAYER"]
 - !private ["SQ", "Pos"]
@@ -350,6 +358,7 @@ depends-member:
 - !private ["SQ", "dPadBG"]
 - !private ["SQ", "def"]
 - !private ["SQ", "direction"]
+- !private ["SQ", "dmTextBar"]
 - !private ["SQ", "dmgTaken"]
 - !private ["SQ", "down"]
 - !private ["SQ", "downLeft"]
@@ -372,6 +381,7 @@ depends-member:
 - !private ["SQ", "isIdle"]
 - !private ["SQ", "lastDirection"]
 - !private ["SQ", "left"]
+- !private ["SQ", "map"]
 - !private ["SQ", "miniMapButton"]
 - !private ["SQ", "movSpeed"]
 - !private ["SQ", "nearest"]
@@ -402,7 +412,6 @@ depends-member:
 - !private ["SQ", "runAnimation"]
 - ["SQ", "scale"]
 - !private ["SQ", "setAnimations"]
-- !private ["SQ", "setScale"]
 - !private ["SQ", "size"]
 - !private ["SQ", "sprite"]
 - !private ["SQ", "startAnimation"]
@@ -430,6 +439,10 @@ depends-member:
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s17FixedWidthIntegerP", "init"]
 - !private ["SF", "init"]
+- !private ["6CnD_v18GameMenuC", "act"]
+- !private ["6CnD_v18GameMenuC", "contents"]
+- !private ["6CnD_v18GameMenuC", "init"]
+- !private ["6CnD_v18GameMenuC", "update"]
 - !private ["6CnD_v19GameSceneC", "gridSize"]
 - !private ["6CnD_v14GearC", "baseDamage"]
 - !private ["6CnD_v14GearC", "baseDef"]
@@ -465,7 +478,7 @@ depends-member:
 - !private ["SH", "repeatForever"]
 - !private ["SH", "run"]
 - ["SH", "scale"]
-- !private ["SH", "setScale"]
+- !private ["SH", "size"]
 - !private ["SH", "texture"]
 - !private ["SH", "zPosition"]
 - !private ["s6HasherV", "combine"]
@@ -490,6 +503,9 @@ depends-member:
 - !private ["6CnD_v14ItemC", "baseSpeed"]
 - !private ["6CnD_v14ItemC", "stats"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["6CnD_v13MapC", "act"]
+- !private ["6CnD_v13MapC", "init"]
+- !private ["6CnD_v13MapC", "update"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["SM", "append"]
 - !private ["SM", "remove"]
@@ -508,7 +524,7 @@ depends-member:
 - !private ["So8NSCodingP", "repeatForever"]
 - !private ["So8NSCodingP", "run"]
 - ["So8NSCodingP", "scale"]
-- !private ["So8NSCodingP", "setScale"]
+- !private ["So8NSCodingP", "size"]
 - !private ["So8NSCodingP", "texture"]
 - !private ["So8NSCodingP", "zPosition"]
 - !private ["So9NSCopyingP", "action"]
@@ -524,7 +540,7 @@ depends-member:
 - !private ["So9NSCopyingP", "repeatForever"]
 - !private ["So9NSCopyingP", "run"]
 - ["So9NSCopyingP", "scale"]
-- !private ["So9NSCopyingP", "setScale"]
+- !private ["So9NSCopyingP", "size"]
 - !private ["So9NSCopyingP", "texture"]
 - !private ["So9NSCopyingP", "zPosition"]
 - !private ["So8NSObjectC", "action"]
@@ -540,7 +556,7 @@ depends-member:
 - !private ["So8NSObjectC", "repeatForever"]
 - !private ["So8NSObjectC", "run"]
 - ["So8NSObjectC", "scale"]
-- !private ["So8NSObjectC", "setScale"]
+- !private ["So8NSObjectC", "size"]
 - !private ["So8NSObjectC", "texture"]
 - !private ["So8NSObjectC", "zPosition"]
 - !private ["So8NSObjectP", "action"]
@@ -556,7 +572,7 @@ depends-member:
 - !private ["So8NSObjectP", "repeatForever"]
 - !private ["So8NSObjectP", "run"]
 - ["So8NSObjectP", "scale"]
-- !private ["So8NSObjectP", "setScale"]
+- !private ["So8NSObjectP", "size"]
 - !private ["So8NSObjectP", "texture"]
 - !private ["So8NSObjectP", "zPosition"]
 - !private ["So14NSSecureCodingP", "action"]
@@ -572,7 +588,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "repeatForever"]
 - !private ["So14NSSecureCodingP", "run"]
 - ["So14NSSecureCodingP", "scale"]
-- !private ["So14NSSecureCodingP", "setScale"]
+- !private ["So14NSSecureCodingP", "size"]
 - !private ["So14NSSecureCodingP", "texture"]
 - !private ["So14NSSecureCodingP", "zPosition"]
 - !private ["Sj", "init"]
@@ -581,6 +597,7 @@ depends-member:
 - ["6CnD_v16PlayerC", "Bool"]
 - ["6CnD_v16PlayerC", "Button"]
 - !private ["6CnD_v16PlayerC", "CGFloat"]
+- !private ["6CnD_v16PlayerC", "CGSize"]
 - ["6CnD_v16PlayerC", "Direction"]
 - ["6CnD_v16PlayerC", "Enemy"]
 - ["6CnD_v16PlayerC", "Entity"]
@@ -592,6 +609,7 @@ depends-member:
 - ["6CnD_v16PlayerC", "Int"]
 - !private ["6CnD_v16PlayerC", "Interactable"]
 - ["6CnD_v16PlayerC", "Inventory"]
+- ["6CnD_v16PlayerC", "Map"]
 - !private ["6CnD_v16PlayerC", "Pos"]
 - ["6CnD_v16PlayerC", "PressPlates"]
 - !private ["6CnD_v16PlayerC", "Rock"]
@@ -617,6 +635,7 @@ depends-member:
 - ["6CnD_v16PlayerC", "combatTimer"]
 - ["6CnD_v16PlayerC", "dPadBG"]
 - ["6CnD_v16PlayerC", "direction"]
+- ["6CnD_v16PlayerC", "dmTextBar"]
 - ["6CnD_v16PlayerC", "dmgTaken"]
 - ["6CnD_v16PlayerC", "down"]
 - ["6CnD_v16PlayerC", "downLeft"]
@@ -630,6 +649,7 @@ depends-member:
 - ["6CnD_v16PlayerC", "isIdle"]
 - ["6CnD_v16PlayerC", "lastDirection"]
 - ["6CnD_v16PlayerC", "left"]
+- ["6CnD_v16PlayerC", "map"]
 - ["6CnD_v16PlayerC", "miniMapButton"]
 - ["6CnD_v16PlayerC", "movSpeed"]
 - ["6CnD_v16PlayerC", "onPlate"]
@@ -695,7 +715,7 @@ depends-member:
 - !private ["So6SKNodeC", "position"]
 - !private ["So6SKNodeC", "removeAction"]
 - !private ["So6SKNodeC", "run"]
-- !private ["So6SKNodeC", "setScale"]
+- !private ["So6SKNodeC", "size"]
 - !private ["So6SKNodeC", "texture"]
 - !private ["So6SKNodeC", "zPosition"]
 - !private ["So7SKSceneC", "gridSize"]
@@ -703,7 +723,7 @@ depends-member:
 - !private ["So12SKSpriteNodeC", "init"]
 - !private ["So12SKSpriteNodeC", "position"]
 - !private ["So12SKSpriteNodeC", "run"]
-- !private ["So12SKSpriteNodeC", "setScale"]
+- !private ["So12SKSpriteNodeC", "size"]
 - !private ["So12SKSpriteNodeC", "texture"]
 - !private ["So12SKSpriteNodeC", "zPosition"]
 - !private ["So9SKTextureC", "filteringMode"]
@@ -714,7 +734,7 @@ depends-member:
 - !private ["So10SKWarpableP", "init"]
 - !private ["So10SKWarpableP", "position"]
 - !private ["So10SKWarpableP", "run"]
-- !private ["So10SKWarpableP", "setScale"]
+- !private ["So10SKWarpableP", "size"]
 - !private ["So10SKWarpableP", "texture"]
 - !private ["So10SKWarpableP", "zPosition"]
 - !private ["ST", "append"]
@@ -742,7 +762,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "position"]
 - !private ["So18UIFocusEnvironmentP", "removeAction"]
 - !private ["So18UIFocusEnvironmentP", "run"]
-- !private ["So18UIFocusEnvironmentP", "setScale"]
+- !private ["So18UIFocusEnvironmentP", "size"]
 - !private ["So18UIFocusEnvironmentP", "texture"]
 - !private ["So18UIFocusEnvironmentP", "zPosition"]
 - !private ["So11UIFocusItemP", "action"]
@@ -754,7 +774,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "position"]
 - !private ["So11UIFocusItemP", "removeAction"]
 - !private ["So11UIFocusItemP", "run"]
-- !private ["So11UIFocusItemP", "setScale"]
+- !private ["So11UIFocusItemP", "size"]
 - !private ["So11UIFocusItemP", "texture"]
 - !private ["So11UIFocusItemP", "zPosition"]
 - !private ["So30UIPasteConfigurationSupportingP", "action"]
@@ -766,7 +786,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "position"]
 - !private ["So30UIPasteConfigurationSupportingP", "removeAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "run"]
-- !private ["So30UIPasteConfigurationSupportingP", "setScale"]
+- !private ["So30UIPasteConfigurationSupportingP", "size"]
 - !private ["So30UIPasteConfigurationSupportingP", "texture"]
 - !private ["So30UIPasteConfigurationSupportingP", "zPosition"]
 - !private ["So11UIResponderC", "action"]
@@ -778,7 +798,7 @@ depends-member:
 - !private ["So11UIResponderC", "position"]
 - !private ["So11UIResponderC", "removeAction"]
 - !private ["So11UIResponderC", "run"]
-- !private ["So11UIResponderC", "setScale"]
+- !private ["So11UIResponderC", "size"]
 - !private ["So11UIResponderC", "texture"]
 - !private ["So11UIResponderC", "zPosition"]
 - !private ["So30UIResponderStandardEditActionsP", "action"]
@@ -790,7 +810,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "position"]
 - !private ["So30UIResponderStandardEditActionsP", "removeAction"]
 - !private ["So30UIResponderStandardEditActionsP", "run"]
-- !private ["So30UIResponderStandardEditActionsP", "setScale"]
+- !private ["So30UIResponderStandardEditActionsP", "size"]
 - !private ["So30UIResponderStandardEditActionsP", "texture"]
 - !private ["So30UIResponderStandardEditActionsP", "zPosition"]
 - !private ["So23UIUserActivityRestoringP", "action"]
@@ -802,7 +822,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "position"]
 - !private ["So23UIUserActivityRestoringP", "removeAction"]
 - !private ["So23UIUserActivityRestoringP", "run"]
-- !private ["So23UIUserActivityRestoringP", "setScale"]
+- !private ["So23UIUserActivityRestoringP", "size"]
 - !private ["So23UIUserActivityRestoringP", "texture"]
 - !private ["So23UIUserActivityRestoringP", "zPosition"]
 - !private ["6CnD_v111WoodenSwordC", "init"]
@@ -816,7 +836,6 @@ depends-member:
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "position"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "run"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "setScale"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "size"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "texture"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "width"]
@@ -844,7 +863,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "repeatForever"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "run"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scale"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "setScale"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "size"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "texture"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "zPosition"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
@@ -891,6 +910,7 @@ depends-nominal:
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s17FixedWidthIntegerP"
 - !private "SF"
+- !private "6CnD_v18GameMenuC"
 - !private "6CnD_v19GameSceneC"
 - !private "6CnD_v14GearC"
 - "SH"
@@ -902,6 +922,7 @@ depends-nominal:
 - !private "6CnD_v19InventoryC"
 - !private "6CnD_v14ItemC"
 - !private "s25LosslessStringConvertibleP"
+- !private "6CnD_v13MapC"
 - !private "s10MirrorPathP"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
@@ -985,4 +1006,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ac7b0b9a03a4979c17fac4b096c21515"
+interface-hash: "d160d06d223718f19406d0bf435164ca"

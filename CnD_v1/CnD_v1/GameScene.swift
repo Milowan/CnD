@@ -36,6 +36,7 @@ class GameScene: SKScene
     static var columns: Int?
     static var gridSize: Int?
     static var invChild: SKNode?
+    static var mapChild: SKNode?
     
     var pool = [Entity]()
     
@@ -51,6 +52,7 @@ class GameScene: SKScene
         GameScene.rows = Int(size.height) / GameScene.gridSize!
         GameScene.columns = Int(size.width) / GameScene.gridSize!
         GameScene.invChild = childNode(withName: "Inventory")
+        GameScene.mapChild = childNode(withName: "Map")
         setPixelTextures()
     }
     
@@ -68,12 +70,14 @@ class GameScene: SKScene
         let y = -200
         let z = 8
         levelGenerator!.generate()
-//        let tempSprite = SKSpriteNode(imageNamed: "knight iso char_idle_0")
-//        tempSprite.size.width = tempSprite.size.width / 2
-//        tempSprite.size.height = tempSprite.size.height / 2
-//        let tempPlayer = Player(x: x, y: y, z: z, s: tempSprite)
+////        let tempSprite = SKSpriteNode(imageNamed: "knight iso char_idle_0")
+////        tempSprite.size.width = tempSprite.size.width / 2
+////        tempSprite.size.height = tempSprite.size.height / 2
+////        let tempPlayer = Player(x: x, y: y, z: z, s: tempSprite)
         let tempPlayer = Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0"))
         addEntity(entity : tempPlayer)
+
+        
         setupCamera(player: tempPlayer.sprite!)
     }
     
@@ -217,10 +221,6 @@ class GameScene: SKScene
                     if let player = entity as? Player
                     {
                         player.collision(response : response)
-                    }
-                    if let fog = entity as? Fog
-                    {
-                        fog.collision(response: response)
                     }
                 }
             }

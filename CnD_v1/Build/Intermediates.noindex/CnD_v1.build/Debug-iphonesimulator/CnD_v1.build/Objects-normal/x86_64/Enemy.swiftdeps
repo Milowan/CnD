@@ -11,6 +11,7 @@ depends-top-level:
 - !private "<="
 - !private "=="
 - "AssignmentPrecedence"
+- "BooleanLiteralType"
 - "Enemy"
 - "Entity"
 - "Int"

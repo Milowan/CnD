@@ -16,6 +16,7 @@ depends-top-level:
 - "Int"
 - "PressPlates"
 - "SKSpriteNode"
+- !private "StringLiteralType"
 depends-member:
 - !private ["6CnD_v15AdoorC", "toggleState"]
 - !private ["s7CVarArgP", "addChild"]

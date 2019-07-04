@@ -31,6 +31,7 @@ class Player : Entity
     var upLeft : SKSpriteNode
     var downRight : SKSpriteNode
     var downLeft : SKSpriteNode
+    var dmTextBar : SKSpriteNode
     
     var sword : Sword?
     var armour : Armour?
@@ -55,9 +56,10 @@ class Player : Entity
     var lastDirection : Direction
     
     let stats = Stats(s : 12, d : 15, c : 10)
-    var inventory: Inventory?
+    var inventory : Inventory?
+    var map : Map?
     
-    let movSpeed = 5
+    let movSpeed = 3
     let animSpeed = 0.2
     var isIdle = true
     var tempString: String?
@@ -142,6 +144,13 @@ class Player : Entity
         upRight.zPosition = CGFloat(6)
         upRight.texture!.filteringMode = .nearest
         s.addChild(upRight)
+        dmTextBar = SKSpriteNode(imageNamed: "dmTextBar")
+        dmTextBar.position.x = CGFloat(GameScene.gridSize! / 2) //- uiBotMargin)
+        dmTextBar.position.y = CGFloat((GameScene.gridSize! * -5) - (uiGap * 2) - uiBuffer)
+        dmTextBar.zPosition = CGFloat(6)
+        dmTextBar.size.height = (dmTextBar.size.height / 2)
+        dmTextBar.texture?.filteringMode = .nearest
+        s.addChild(dmTextBar)
         
         miniMapButton = Button(x: (GameScene.gridSize! * 11), y: (GameScene.gridSize! * -2) + uiBuffer, z: 5, s: BSNode(imageNamed: "mapIcon"))
         s.addChild(miniMapButton.sprite)
@@ -155,18 +164,17 @@ class Player : Entity
         s.addChild(interactButton.sprite)
         interactButton.sprite.texture!.filteringMode = .nearest
         
-
+        
+        let dim = CGSize(width: 32, height: 32)
+        s.size = dim
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
         
         inventory = Inventory(p: self)
+        map = Map(p: self)
         self.sword = WoodenSword(p : self)
         self.armour = Armour(p : self, st : Stats(s : 1, d : 1, c : 1), sp : ISNode(imageNamed: "sword_01a"))
         self.helmet = Helmet(p : self, st : Stats(s : 1, d : 1, c : 1), sp : ISNode(imageNamed: "sword_01a"))
         setAnimations()
-        //self.sprite!.setScale(CGFloat(0.5))
-//        let dim = CGSize(width: 32, height: 32)
-//        self.sprite!.size.height = dim
-//        self.sprite!.size.width = dim
     }
     
     override func update()
@@ -261,7 +269,7 @@ class Player : Entity
                     {
                         if !miniMapButton.clear
                         {
-                            
+                            map!.act()
                         }
                     }
                 }
@@ -321,6 +329,7 @@ class Player : Entity
         pos.x = Int(sprite!.position.x)
         pos.y = Int(sprite!.position.y)
         inventory!.update()
+        map!.update()
     }
     
     //class func wait(forDuration duration: TimeInterval) -> SKAction

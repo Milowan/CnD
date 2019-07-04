@@ -38,7 +38,8 @@
 		26FEEBD022BAC5A6006A1566 /* BSNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FEEBCF22BAC5A6006A1566 /* BSNode.swift */; };
 		A604CF8422CCFB5400841D2C /* MiniMapRef.sks in Resources */ = {isa = PBXBuildFile; fileRef = A604CF8322CCFB5400841D2C /* MiniMapRef.sks */; };
 		A611F0FD22BD4D8400F18221 /* PressPlates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611F0FC22BD4D8400F18221 /* PressPlates.swift */; };
-		A619003722CD3AE3009628AB /* Fog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A619003622CD3AE3009628AB /* Fog.swift */; };
+		A61318F422CE7CC600408957 /* GameMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61318F322CE7CC600408957 /* GameMenu.swift */; };
+		A61318F622CE7E9100408957 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61318F522CE7E9100408957 /* Map.swift */; };
 		A619003922CD4756009628AB /* Adoor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A619003822CD4756009628AB /* Adoor.swift */; };
 		A61C3F5E22AF05ED0031B4B7 /* MapTiles.sks in Resources */ = {isa = PBXBuildFile; fileRef = A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */; };
 		A61C3F6022B025320031B4B7 /* LevelScene_1.sks in Resources */ = {isa = PBXBuildFile; fileRef = A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */; };
@@ -104,8 +105,9 @@
 		26FEEBCF22BAC5A6006A1566 /* BSNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSNode.swift; sourceTree = "<group>"; };
 		A604CF8322CCFB5400841D2C /* MiniMapRef.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MiniMapRef.sks; sourceTree = "<group>"; };
 		A611F0FC22BD4D8400F18221 /* PressPlates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressPlates.swift; sourceTree = "<group>"; };
+		A61318F322CE7CC600408957 /* GameMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMenu.swift; sourceTree = "<group>"; };
+		A61318F522CE7E9100408957 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		A619003522CD1B10009628AB /* Pixeled.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Pixeled.ttf; path = ../../../../../Downloads/Pixeled.ttf; sourceTree = "<group>"; };
-		A619003622CD3AE3009628AB /* Fog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fog.swift; sourceTree = "<group>"; };
 		A619003822CD4756009628AB /* Adoor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Adoor.swift; path = Interactable/Adoor.swift; sourceTree = "<group>"; };
 		A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MapTiles.sks; sourceTree = "<group>"; };
 		A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelScene_1.sks; sourceTree = "<group>"; };
@@ -216,7 +218,6 @@
 				A619003822CD4756009628AB /* Adoor.swift */,
 				26FBAF0022A5965C00AEDCDC /* Player.swift */,
 				26FBAEFB22A5965C00AEDCDC /* World.swift */,
-				A619003622CD3AE3009628AB /* Fog.swift */,
 				26FAFE7422C67DD800E36901 /* Enemy */,
 				26FAFE7522C67DEF00E36901 /* Interactable */,
 				A611F0FC22BD4D8400F18221 /* PressPlates.swift */,
@@ -263,6 +264,8 @@
 				A658836A22B2C36F00F7F2CC /* Entity */,
 				A6FD168722B3E8420090D045 /* GameScene.swift */,
 				26FBAEFC22A5965C00AEDCDC /* Button.swift */,
+				A61318F322CE7CC600408957 /* GameMenu.swift */,
+				A61318F522CE7E9100408957 /* Map.swift */,
 				2601E8CD22C2B136004EB047 /* Inventory.swift */,
 				26FE913922CBE839003AB70A /* HUD.swift */,
 				A659255F22BABB14001ECE56 /* Extensions.swift */,
@@ -451,16 +454,17 @@
 				2601E8CC22C2AF77004EB047 /* Enemy.swift in Sources */,
 				2601E8CE22C2B136004EB047 /* Inventory.swift in Sources */,
 				26FAFE8022C68FDA00E36901 /* LevelGenerator.swift in Sources */,
-				A619003722CD3AE3009628AB /* Fog.swift in Sources */,
 				26FAFE7922C6896800E36901 /* GreaterSkeleton.swift in Sources */,
 				26F9808B22A6FD1800E7B5FE /* Gear.swift in Sources */,
 				26FB096922CD19A90022271E /* Rock.swift in Sources */,
+				A61318F622CE7E9100408957 /* Map.swift in Sources */,
 				26FBAF0622A5965C00AEDCDC /* Pos.swift in Sources */,
 				26FAFE8822C69BCB00E36901 /* Lever.swift in Sources */,
 				26FBAF0722A5965C00AEDCDC /* Player.swift in Sources */,
 				26FAFE7E22C68BEB00E36901 /* SkeletonLord.swift in Sources */,
 				2607FB3122C9746600D86D58 /* ISNode.swift in Sources */,
 				2607FB3322C975F400D86D58 /* Gem.swift in Sources */,
+				A61318F422CE7CC600408957 /* GameMenu.swift in Sources */,
 				26FAFE8422C69BBB00E36901 /* Collectable.swift in Sources */,
 				A619003922CD4756009628AB /* Adoor.swift in Sources */,
 				A686E4B222A45405004E1B64 /* AppDelegate.swift in Sources */,
