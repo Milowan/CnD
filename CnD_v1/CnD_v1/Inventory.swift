@@ -9,73 +9,44 @@
 import Foundation
 import SpriteKit
 
-class Inventory
+class Inventory : GameMenu
 {
-    var contents : [Item]?
-    var invScene: SKNode
-    var i : Int
-    var isOpen : Bool
-    var animDone : Bool?
-    var playerRef : Player
-    var deltaY : CGFloat
-    var animSpeed : CGFloat
-    var baseY : CGFloat = 400
-    //var isClosed : Bool?
+    var invScene : SKNode?
     
-    init(p: Player)
+    var deltaY : CGFloat?
+    var animSpeed : CGFloat?
+    var baseY : CGFloat = 400
+    
+    override init(p: Player)
     {
         invScene = GameScene.invChild!
-        playerRef = p
-        i = 0
-        invScene.position.x = playerRef.sprite!.position.x
-        invScene.position.y = baseY
-        deltaY = invScene.position.y - playerRef.sprite!.position.y
-        animSpeed = deltaY / 10
-        isOpen = true
-        animDone = true
+        super.init(p: p)
+        invScene!.position.x = playerRef.sprite!.position.x
+        invScene!.position.y = baseY
+        deltaY = invScene!.position.y - playerRef.sprite!.position.y
+        animSpeed = deltaY! / 10
     }
     
-    func update()
+     override func openMenu()
     {
-        if !animDone!
+        invScene!.position.x = playerRef.sprite!.position.x
+        if invScene!.position.y > playerRef.sprite!.position.y
         {
-            if isOpen
-            {
-                closeInv()
-            }
-            else
-            {
-                openInv()
-            }
-        }
-    }
-    
-    func act()
-    {
-        animDone = false
-        isOpen = !isOpen
-    }
-    
-    func openInv()
-    {
-        invScene.position.x = playerRef.sprite!.position.x
-        if invScene.position.y > playerRef.sprite!.position.y
-        {
-            invScene.position.y -= animSpeed
+            invScene!.position.y -= animSpeed!
         }
         else
         {
             animDone = true
-            invScene.position.y = playerRef.sprite!.position.y
+            invScene!.position.y = playerRef.sprite!.position.y
         }
     }
     
-    func closeInv()
+    override func closeMenu()
     {
-        invScene.position.x = playerRef.sprite!.position.x
-        if invScene.position.y < baseY
+        invScene!.position.x = playerRef.sprite!.position.x
+        if invScene!.position.y < baseY
         {
-            invScene.position.y += animSpeed
+            invScene!.position.y += animSpeed!
         }
         else
         {

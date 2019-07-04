@@ -21,7 +21,6 @@ depends-member:
 - ["6CnD_v14ItemC", "ISNode"]
 - ["6CnD_v14ItemC", "Player"]
 - ["6CnD_v14ItemC", "SKSpriteNode"]
-- ["6CnD_v14ItemC", "deinit"]
 - ["6CnD_v14ItemC", "init"]
 - ["6CnD_v14ItemC", "menu"]
 - ["6CnD_v14ItemC", "player"]

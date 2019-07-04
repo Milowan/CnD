@@ -11,19 +11,15 @@ import SpriteKit
 
 class HUD : SKNode
 {
-    var myText : String?
-    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func aTextField()
+    func aTextField(t: String)
     {
         let myLabel:SKLabelNode = SKLabelNode(fontNamed: "Pixeled")
         myLabel.fontSize = 25
-        myLabel.text = String (myText!)
+        myLabel.text = t
         self.addChild(myLabel)
     }
-    
-    
 }

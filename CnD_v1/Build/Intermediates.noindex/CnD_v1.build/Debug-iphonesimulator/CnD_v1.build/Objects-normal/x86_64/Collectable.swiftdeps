@@ -21,6 +21,7 @@ depends-member:
 - ["6CnD_v111CollectableC", "Item"]
 - ["6CnD_v111CollectableC", "SKSpriteNode"]
 - ["6CnD_v111CollectableC", "act"]
+- ["6CnD_v111CollectableC", "deinit"]
 - ["6CnD_v111CollectableC", "init"]
 - ["6CnD_v111CollectableC", "item"]
 - !private ["6CnD_v111CollectableC", "player"]
@@ -46,6 +47,7 @@ depends-member:
 - !private ["SQ", "item"]
 - !private ["SQ", "player"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["6CnD_v18GameMenuC", "contents"]
 - !private ["SH", "append"]
 - ["6CnD_v112InteractableC", "Int"]
 - ["6CnD_v112InteractableC", "Item"]
@@ -83,6 +85,7 @@ depends-nominal:
 - "6CnD_v16EntityC"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
+- !private "6CnD_v18GameMenuC"
 - !private "SH"
 - "6CnD_v112InteractableC"
 - !private "6CnD_v19InventoryC"

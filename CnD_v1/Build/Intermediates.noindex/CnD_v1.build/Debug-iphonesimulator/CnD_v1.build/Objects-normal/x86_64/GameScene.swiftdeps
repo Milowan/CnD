@@ -20,11 +20,8 @@ depends-top-level:
 - !private "Collectable"
 - !private "Enemy"
 - "Entity"
-- "FloatLiteralType"
-- !private "Fog"
 - "GameScene"
 - "Int"
-- "IntegerLiteralType"
 - "LevelGenerator"
 - "NSCoder"
 - !private "Player"
@@ -36,7 +33,6 @@ depends-top-level:
 - "SKTileMapNode"
 - "SKTileSet"
 - "SKView"
-- !private "StringLiteralType"
 - "TimeInterval"
 - "UIColor"
 depends-member:
@@ -80,6 +76,7 @@ depends-member:
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "invChild"]
 - !private ["s7CVarArgP", "levelGenerator"]
+- !private ["s7CVarArgP", "mapChild"]
 - !private ["s7CVarArgP", "pool"]
 - !private ["s7CVarArgP", "remove"]
 - !private ["s7CVarArgP", "removeEntity"]
@@ -133,6 +130,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "invChild"]
 - !private ["s28CustomDebugStringConvertibleP", "levelGenerator"]
+- !private ["s28CustomDebugStringConvertibleP", "mapChild"]
 - !private ["s28CustomDebugStringConvertibleP", "pool"]
 - !private ["s28CustomDebugStringConvertibleP", "remove"]
 - !private ["s28CustomDebugStringConvertibleP", "removeEntity"]
@@ -182,6 +180,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "invChild"]
 - !private ["s23CustomStringConvertibleP", "levelGenerator"]
+- !private ["s23CustomStringConvertibleP", "mapChild"]
 - !private ["s23CustomStringConvertibleP", "pool"]
 - !private ["s23CustomStringConvertibleP", "remove"]
 - !private ["s23CustomStringConvertibleP", "removeEntity"]
@@ -251,6 +250,7 @@ depends-member:
 - !private ["SQ", "isDespawned"]
 - !private ["SQ", "item"]
 - !private ["SQ", "levelGenerator"]
+- !private ["SQ", "mapChild"]
 - !private ["SQ", "nearest"]
 - !private ["SQ", "pool"]
 - !private ["SQ", "remove"]
@@ -275,14 +275,12 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "remove"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s17FixedWidthIntegerP", "init"]
-- !private ["6CnD_v13FogC", "collision"]
 - ["6CnD_v19GameSceneC", "Adoor"]
 - ["6CnD_v19GameSceneC", "CGPoint"]
 - ["6CnD_v19GameSceneC", "CGSize"]
 - !private ["6CnD_v19GameSceneC", "Collectable"]
 - !private ["6CnD_v19GameSceneC", "Enemy"]
 - ["6CnD_v19GameSceneC", "Entity"]
-- !private ["6CnD_v19GameSceneC", "Fog"]
 - !private ["6CnD_v19GameSceneC", "GameScene"]
 - ["6CnD_v19GameSceneC", "Int"]
 - ["6CnD_v19GameSceneC", "LevelGenerator"]
@@ -315,6 +313,7 @@ depends-member:
 - ["6CnD_v19GameSceneC", "init"]
 - ["6CnD_v19GameSceneC", "invChild"]
 - ["6CnD_v19GameSceneC", "levelGenerator"]
+- ["6CnD_v19GameSceneC", "mapChild"]
 - ["6CnD_v19GameSceneC", "pool"]
 - ["6CnD_v19GameSceneC", "removeEntity"]
 - ["6CnD_v19GameSceneC", "roomFog_1"]
@@ -359,6 +358,7 @@ depends-member:
 - ["SH", "init"]
 - !private ["SH", "invChild"]
 - !private ["SH", "levelGenerator"]
+- !private ["SH", "mapChild"]
 - !private ["SH", "nearest"]
 - !private ["SH", "pool"]
 - !private ["SH", "remove"]
@@ -413,6 +413,7 @@ depends-member:
 - ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "invChild"]
 - !private ["So8NSCodingP", "levelGenerator"]
+- !private ["So8NSCodingP", "mapChild"]
 - !private ["So8NSCodingP", "pool"]
 - !private ["So8NSCodingP", "removeEntity"]
 - !private ["So8NSCodingP", "removeFromParent"]
@@ -452,6 +453,7 @@ depends-member:
 - ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "invChild"]
 - !private ["So9NSCopyingP", "levelGenerator"]
+- !private ["So9NSCopyingP", "mapChild"]
 - !private ["So9NSCopyingP", "pool"]
 - !private ["So9NSCopyingP", "removeEntity"]
 - !private ["So9NSCopyingP", "removeFromParent"]
@@ -473,7 +475,6 @@ depends-member:
 - !private ["So8NSObjectC", "Collectable"]
 - !private ["So8NSObjectC", "Enemy"]
 - ["So8NSObjectC", "Entity"]
-- !private ["So8NSObjectC", "Fog"]
 - !private ["So8NSObjectC", "GameScene"]
 - ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "LevelGenerator"]
@@ -507,6 +508,7 @@ depends-member:
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "invChild"]
 - ["So8NSObjectC", "levelGenerator"]
+- ["So8NSObjectC", "mapChild"]
 - ["So8NSObjectC", "pool"]
 - ["So8NSObjectC", "removeEntity"]
 - !private ["So8NSObjectC", "removeFromParent"]
@@ -554,6 +556,7 @@ depends-member:
 - ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "invChild"]
 - !private ["So8NSObjectP", "levelGenerator"]
+- !private ["So8NSObjectP", "mapChild"]
 - !private ["So8NSObjectP", "pool"]
 - !private ["So8NSObjectP", "removeEntity"]
 - !private ["So8NSObjectP", "removeFromParent"]
@@ -593,6 +596,7 @@ depends-member:
 - ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "invChild"]
 - !private ["So14NSSecureCodingP", "levelGenerator"]
+- !private ["So14NSSecureCodingP", "mapChild"]
 - !private ["So14NSSecureCodingP", "pool"]
 - !private ["So14NSSecureCodingP", "removeEntity"]
 - !private ["So14NSSecureCodingP", "removeFromParent"]
@@ -629,7 +633,6 @@ depends-member:
 - !private ["So12SKEffectNodeC", "Collectable"]
 - !private ["So12SKEffectNodeC", "Enemy"]
 - ["So12SKEffectNodeC", "Entity"]
-- !private ["So12SKEffectNodeC", "Fog"]
 - !private ["So12SKEffectNodeC", "GameScene"]
 - ["So12SKEffectNodeC", "Int"]
 - ["So12SKEffectNodeC", "LevelGenerator"]
@@ -660,6 +663,7 @@ depends-member:
 - ["So12SKEffectNodeC", "init"]
 - ["So12SKEffectNodeC", "invChild"]
 - ["So12SKEffectNodeC", "levelGenerator"]
+- ["So12SKEffectNodeC", "mapChild"]
 - ["So12SKEffectNodeC", "pool"]
 - ["So12SKEffectNodeC", "removeEntity"]
 - ["So12SKEffectNodeC", "roomFog_1"]
@@ -682,7 +686,6 @@ depends-member:
 - !private ["So6SKNodeC", "Collectable"]
 - !private ["So6SKNodeC", "Enemy"]
 - ["So6SKNodeC", "Entity"]
-- !private ["So6SKNodeC", "Fog"]
 - !private ["So6SKNodeC", "GameScene"]
 - ["So6SKNodeC", "Int"]
 - ["So6SKNodeC", "LevelGenerator"]
@@ -714,6 +717,7 @@ depends-member:
 - ["So6SKNodeC", "init"]
 - ["So6SKNodeC", "invChild"]
 - ["So6SKNodeC", "levelGenerator"]
+- ["So6SKNodeC", "mapChild"]
 - ["So6SKNodeC", "pool"]
 - ["So6SKNodeC", "removeEntity"]
 - !private ["So6SKNodeC", "removeFromParent"]
@@ -738,7 +742,6 @@ depends-member:
 - !private ["So7SKSceneC", "Collectable"]
 - !private ["So7SKSceneC", "Enemy"]
 - ["So7SKSceneC", "Entity"]
-- !private ["So7SKSceneC", "Fog"]
 - !private ["So7SKSceneC", "GameScene"]
 - ["So7SKSceneC", "Int"]
 - ["So7SKSceneC", "LevelGenerator"]
@@ -770,6 +773,7 @@ depends-member:
 - ["So7SKSceneC", "init"]
 - ["So7SKSceneC", "invChild"]
 - ["So7SKSceneC", "levelGenerator"]
+- ["So7SKSceneC", "mapChild"]
 - ["So7SKSceneC", "pool"]
 - ["So7SKSceneC", "removeEntity"]
 - ["So7SKSceneC", "roomFog_1"]
@@ -818,6 +822,7 @@ depends-member:
 - !private ["So10SKWarpableP", "init"]
 - !private ["So10SKWarpableP", "invChild"]
 - !private ["So10SKWarpableP", "levelGenerator"]
+- !private ["So10SKWarpableP", "mapChild"]
 - !private ["So10SKWarpableP", "pool"]
 - !private ["So10SKWarpableP", "removeEntity"]
 - !private ["So10SKWarpableP", "rows"]
@@ -858,6 +863,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "invChild"]
 - !private ["So18UIFocusEnvironmentP", "levelGenerator"]
+- !private ["So18UIFocusEnvironmentP", "mapChild"]
 - !private ["So18UIFocusEnvironmentP", "pool"]
 - !private ["So18UIFocusEnvironmentP", "removeEntity"]
 - !private ["So18UIFocusEnvironmentP", "removeFromParent"]
@@ -891,6 +897,7 @@ depends-member:
 - ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "invChild"]
 - !private ["So11UIFocusItemP", "levelGenerator"]
+- !private ["So11UIFocusItemP", "mapChild"]
 - !private ["So11UIFocusItemP", "pool"]
 - !private ["So11UIFocusItemP", "removeEntity"]
 - !private ["So11UIFocusItemP", "removeFromParent"]
@@ -924,6 +931,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "invChild"]
 - !private ["So30UIPasteConfigurationSupportingP", "levelGenerator"]
+- !private ["So30UIPasteConfigurationSupportingP", "mapChild"]
 - !private ["So30UIPasteConfigurationSupportingP", "pool"]
 - !private ["So30UIPasteConfigurationSupportingP", "removeEntity"]
 - !private ["So30UIPasteConfigurationSupportingP", "removeFromParent"]
@@ -939,7 +947,6 @@ depends-member:
 - !private ["So11UIResponderC", "Collectable"]
 - !private ["So11UIResponderC", "Enemy"]
 - ["So11UIResponderC", "Entity"]
-- !private ["So11UIResponderC", "Fog"]
 - !private ["So11UIResponderC", "GameScene"]
 - ["So11UIResponderC", "Int"]
 - ["So11UIResponderC", "LevelGenerator"]
@@ -971,6 +978,7 @@ depends-member:
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "invChild"]
 - ["So11UIResponderC", "levelGenerator"]
+- ["So11UIResponderC", "mapChild"]
 - ["So11UIResponderC", "pool"]
 - ["So11UIResponderC", "removeEntity"]
 - !private ["So11UIResponderC", "removeFromParent"]
@@ -1012,6 +1020,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "invChild"]
 - !private ["So30UIResponderStandardEditActionsP", "levelGenerator"]
+- !private ["So30UIResponderStandardEditActionsP", "mapChild"]
 - !private ["So30UIResponderStandardEditActionsP", "pool"]
 - !private ["So30UIResponderStandardEditActionsP", "removeEntity"]
 - !private ["So30UIResponderStandardEditActionsP", "removeFromParent"]
@@ -1045,6 +1054,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "invChild"]
 - !private ["So23UIUserActivityRestoringP", "levelGenerator"]
+- !private ["So23UIUserActivityRestoringP", "mapChild"]
 - !private ["So23UIUserActivityRestoringP", "pool"]
 - !private ["So23UIUserActivityRestoringP", "removeEntity"]
 - !private ["So23UIUserActivityRestoringP", "removeFromParent"]
@@ -1102,6 +1112,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "invChild"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "levelGenerator"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mapChild"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "pool"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "removeEntity"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "removeFromParent"]
@@ -1144,7 +1155,6 @@ depends-nominal:
 - "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s17FixedWidthIntegerP"
-- !private "6CnD_v13FogC"
 - "6CnD_v19GameSceneC"
 - "SH"
 - !private "Si"
@@ -1235,4 +1245,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "165328d805a2cc7b84bafbad99b9cdfe"
+interface-hash: "963d8c1f8cae55198265e12b6b536d12"

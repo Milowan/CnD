@@ -15,7 +15,6 @@ depends-top-level:
 - "Bool"
 - "CastingPrecedence"
 - "Entity"
-- "FloatLiteralType"
 - "Int"
 - "SKAction"
 - "SKSpriteNode"
