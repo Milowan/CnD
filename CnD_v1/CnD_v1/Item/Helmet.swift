@@ -14,12 +14,11 @@ class Helmet : Gear
     let baseDef = 2
     let basePrecision = 3
     
-    var player : Player
-    
     init (p : Player, st : Stats, sp : ISNode)
     {
-        player = p
         
         super.init(st : st, sp : sp)
+        
+        self.player = p
     }
 }

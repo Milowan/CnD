@@ -7,22 +7,125 @@ provides-member:
 - ["6CnD_v14DaisC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!"
+- "Adoor"
+- "AssignmentPrecedence"
+- "BooleanLiteralType"
 - "Dais"
+- "Int"
 - "Interactable"
+- "SKSpriteNode"
+- !private "StringLiteralType"
+- !private "||"
 depends-member:
+- !private ["6CnD_v15AdoorC", "toggleState"]
+- ["Sa", "init"]
+- ["SK", "init"]
+- ["s7CVarArgP", "init"]
+- ["Sl", "init"]
+- ["10Foundation15ContiguousBytesP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["6CnD_v14DaisC", "Adoor"]
+- ["6CnD_v14DaisC", "Dais"]
+- ["6CnD_v14DaisC", "Int"]
+- ["6CnD_v14DaisC", "SKSpriteNode"]
 - ["6CnD_v14DaisC", "act"]
+- ["6CnD_v14DaisC", "acted"]
+- ["6CnD_v14DaisC", "activate"]
+- ["6CnD_v14DaisC", "door"]
+- ["6CnD_v14DaisC", "hasGem"]
 - ["6CnD_v14DaisC", "init"]
+- ["6CnD_v14DaisC", "oDais"]
+- !private ["6CnD_v14DaisC", "player"]
+- ["6CnD_v14DaisC", "update"]
+- ["10Foundation12DataProtocolP", "init"]
+- ["Se", "init"]
+- ["SE", "init"]
+- ["6CnD_v16EntityC", "Adoor"]
+- ["6CnD_v16EntityC", "Dais"]
+- ["6CnD_v16EntityC", "Int"]
+- ["6CnD_v16EntityC", "SKSpriteNode"]
 - ["6CnD_v16EntityC", "act"]
+- ["6CnD_v16EntityC", "acted"]
+- ["6CnD_v16EntityC", "activate"]
+- ["6CnD_v16EntityC", "door"]
+- ["6CnD_v16EntityC", "hasGem"]
+- !private ["6CnD_v16EntityC", "inventory"]
+- ["6CnD_v16EntityC", "oDais"]
+- !private ["6CnD_v16EntityC", "player"]
+- !private ["6CnD_v16EntityC", "toggleState"]
+- ["6CnD_v16EntityC", "update"]
+- ["SQ", "Dais"]
 - ["SQ", ""]
-- !private ["SQ", "init"]
+- !private ["SQ", "acted"]
+- !private ["SQ", "door"]
+- !private ["SQ", "hasGem"]
+- ["SQ", "init"]
+- !private ["SQ", "inventory"]
+- !private ["SQ", "oDais"]
+- !private ["SQ", "player"]
+- !private ["SQ", "toggleState"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- ["SH", "init"]
+- ["6CnD_v112InteractableC", "Adoor"]
+- ["6CnD_v112InteractableC", "Dais"]
+- ["6CnD_v112InteractableC", "Int"]
+- ["6CnD_v112InteractableC", "SKSpriteNode"]
 - ["6CnD_v112InteractableC", ""]
 - ["6CnD_v112InteractableC", "act"]
+- ["6CnD_v112InteractableC", "acted"]
+- ["6CnD_v112InteractableC", "activate"]
+- ["6CnD_v112InteractableC", "door"]
+- ["6CnD_v112InteractableC", "hasGem"]
 - ["6CnD_v112InteractableC", "init"]
+- ["6CnD_v112InteractableC", "oDais"]
+- !private ["6CnD_v112InteractableC", "player"]
+- ["6CnD_v112InteractableC", "update"]
+- !private ["6CnD_v19InventoryC", "openInv"]
+- ["SM", "init"]
+- ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["6CnD_v16PlayerC", "inventory"]
+- ["Sk", "init"]
+- ["Sm", "init"]
+- ["ST", "init"]
+- ["s14_ArrayProtocolP", "init"]
+- ["s24_DestructorSafeContainerP", "init"]
+- ["s19_HasContiguousBytesP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
 depends-nominal:
+- !private "6CnD_v15AdoorC"
+- "Sa"
+- "SK"
+- "s7CVarArgP"
+- "Sl"
+- "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
 - "6CnD_v14DaisC"
+- "10Foundation12DataProtocolP"
+- "Se"
+- "SE"
 - "6CnD_v16EntityC"
 - "SQ"
+- "s25ExpressibleByArrayLiteralP"
+- "SH"
 - "6CnD_v112InteractableC"
+- !private "6CnD_v19InventoryC"
+- "SM"
+- "10Foundation19MutableDataProtocolP"
+- !private "6CnD_v16PlayerC"
+- "Sk"
+- "Sm"
+- "ST"
+- "s14_ArrayProtocolP"
+- "s24_DestructorSafeContainerP"
+- "s19_HasContiguousBytesP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -56,4 +159,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "0af3caaccc0e50f6079cf34f5bb14941"
+interface-hash: "986c5d93650ce024e675ef6bab45bafc"

@@ -10,6 +10,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "ISNode"
 - "Item"
+- "Player"
 - "SKSpriteNode"
 depends-member:
 - !private ["s7CVarArgP", "isUserInteractionEnabled"]
@@ -18,9 +19,12 @@ depends-member:
 - !private ["SQ", "isUserInteractionEnabled"]
 - !private ["SH", "isUserInteractionEnabled"]
 - ["6CnD_v14ItemC", "ISNode"]
+- ["6CnD_v14ItemC", "Player"]
 - ["6CnD_v14ItemC", "SKSpriteNode"]
+- ["6CnD_v14ItemC", "deinit"]
 - ["6CnD_v14ItemC", "init"]
 - ["6CnD_v14ItemC", "menu"]
+- ["6CnD_v14ItemC", "player"]
 - ["6CnD_v14ItemC", "sprite"]
 - !private ["So8NSCodingP", "isUserInteractionEnabled"]
 - !private ["So9NSCopyingP", "isUserInteractionEnabled"]
@@ -94,4 +98,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b93392fe5a3e9edfe6e293e66cd8777d"
+interface-hash: "b5d72098a18adec67840a9637b3f6771"

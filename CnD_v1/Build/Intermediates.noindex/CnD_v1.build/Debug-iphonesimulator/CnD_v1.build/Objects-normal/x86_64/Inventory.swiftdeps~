@@ -16,12 +16,9 @@ depends-top-level:
 - !private ">"
 - "AssignmentPrecedence"
 - "Bool"
-- !private "BooleanLiteralType"
 - "CGFloat"
-- "FloatLiteralType"
 - !private "GameScene"
 - "Int"
-- "IntegerLiteralType"
 - "Inventory"
 - "Item"
 - "Player"
@@ -65,6 +62,7 @@ depends-member:
 - ["6CnD_v19InventoryC", "baseY"]
 - ["6CnD_v19InventoryC", "closeInv"]
 - ["6CnD_v19InventoryC", "contents"]
+- ["6CnD_v19InventoryC", "deinit"]
 - ["6CnD_v19InventoryC", "deltaY"]
 - ["6CnD_v19InventoryC", "i"]
 - ["6CnD_v19InventoryC", "init"]
@@ -88,9 +86,7 @@ depends-member:
 - !private ["So6SKNodeC", "invChild"]
 - !private ["So6SKNodeC", "position"]
 - !private ["So7SKSceneC", "invChild"]
-- !private ["So12SKSpriteNodeC", "position"]
 - !private ["So10SKWarpableP", "invChild"]
-- !private ["So10SKWarpableP", "position"]
 - !private ["So18UIFocusEnvironmentP", "invChild"]
 - !private ["So18UIFocusEnvironmentP", "position"]
 - !private ["So11UIFocusItemP", "invChild"]
@@ -103,7 +99,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "position"]
 - !private ["So23UIUserActivityRestoringP", "invChild"]
 - !private ["So23UIUserActivityRestoringP", "position"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "position"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "x"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "y"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "invChild"]
@@ -132,7 +127,6 @@ depends-nominal:
 - !private "So12SKEffectNodeC"
 - !private "So6SKNodeC"
 - !private "So7SKSceneC"
-- !private "So12SKSpriteNodeC"
 - !private "So10SKWarpableP"
 - !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
@@ -176,4 +170,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c070a24259ab260f38f83f06b1791a48"
+interface-hash: "346e05e9f1795f25375169a49e7f047a"

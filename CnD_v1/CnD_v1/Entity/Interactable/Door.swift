@@ -35,12 +35,12 @@ class Door: Interactable
             if isOpen
             {
                 collisionMask = .WORLD
-                startAnimation(animAction: doorClosed!, animKey: "close", sprite: sprite!)
+                startAnimation(animAction: doorClosed!, animKey: "close", sprite: sprite! as! SKSpriteNode)
             }
             else
             {
                 collisionMask = .NONE
-                startAnimation(animAction: doorOpen!, animKey: "open", sprite: sprite!)
+                startAnimation(animAction: doorOpen!, animKey: "open", sprite: sprite! as! SKSpriteNode)
             }
             
             isOpen = !isOpen

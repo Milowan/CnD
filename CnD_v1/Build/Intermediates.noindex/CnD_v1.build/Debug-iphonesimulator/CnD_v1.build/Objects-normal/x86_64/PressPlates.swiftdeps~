@@ -7,31 +7,142 @@ provides-member:
 - ["6CnD_v111PressPlatesC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!"
+- "Adoor"
+- "AssignmentPrecedence"
+- "Bool"
+- "CGFloat"
 - "Entity"
-- !private "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
 - "PressPlates"
 - "SKSpriteNode"
-- !private "StringLiteralType"
 depends-member:
+- !private ["6CnD_v15AdoorC", "toggleState"]
+- !private ["s7CVarArgP", "addChild"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "zPosition"]
+- !private ["s28CustomDebugStringConvertibleP", "addChild"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "zPosition"]
+- !private ["s23CustomStringConvertibleP", "addChild"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "zPosition"]
+- ["6CnD_v16EntityC", "Adoor"]
+- ["6CnD_v16EntityC", "Bool"]
+- ["6CnD_v16EntityC", "CGFloat"]
 - ["6CnD_v16EntityC", "Int"]
 - ["6CnD_v16EntityC", "SKSpriteNode"]
 - ["6CnD_v16EntityC", ""]
+- ["6CnD_v16EntityC", "act"]
+- ["6CnD_v16EntityC", "altSprite"]
+- ["6CnD_v16EntityC", "door"]
 - ["6CnD_v16EntityC", "init"]
+- ["6CnD_v16EntityC", "rocked"]
+- !private ["6CnD_v16EntityC", "sprite"]
+- ["6CnD_v16EntityC", "stood"]
+- ["6CnD_v16EntityC", "tmpz"]
+- !private ["6CnD_v16EntityC", "toggleState"]
 - !private ["SQ", "NONE"]
+- !private ["SQ", "SKSpriteNode"]
 - ["SQ", ""]
+- !private ["SQ", "addChild"]
+- !private ["SQ", "altSprite"]
+- !private ["SQ", "door"]
 - !private ["SQ", "init"]
+- !private ["SQ", "rocked"]
+- !private ["SQ", "sprite"]
+- !private ["SQ", "stood"]
+- !private ["SQ", "tmpz"]
+- !private ["SQ", "toggleState"]
+- !private ["SQ", "zPosition"]
 - !private ["SH", "NONE"]
+- !private ["SH", "addChild"]
+- !private ["SH", "init"]
+- !private ["SH", "zPosition"]
+- !private ["So8NSCodingP", "addChild"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "zPosition"]
+- !private ["So9NSCopyingP", "addChild"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "zPosition"]
+- !private ["So8NSObjectC", "addChild"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "zPosition"]
+- !private ["So8NSObjectP", "addChild"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "zPosition"]
+- !private ["So14NSSecureCodingP", "addChild"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "zPosition"]
+- ["6CnD_v111PressPlatesC", "Adoor"]
+- ["6CnD_v111PressPlatesC", "Bool"]
+- ["6CnD_v111PressPlatesC", "CGFloat"]
 - ["6CnD_v111PressPlatesC", "Int"]
 - ["6CnD_v111PressPlatesC", "SKSpriteNode"]
+- ["6CnD_v111PressPlatesC", "act"]
+- ["6CnD_v111PressPlatesC", "altSprite"]
+- ["6CnD_v111PressPlatesC", "door"]
 - ["6CnD_v111PressPlatesC", "init"]
+- ["6CnD_v111PressPlatesC", "rocked"]
+- !private ["6CnD_v111PressPlatesC", "sprite"]
+- ["6CnD_v111PressPlatesC", "stood"]
+- ["6CnD_v111PressPlatesC", "tmpz"]
+- !private ["So6SKNodeC", "addChild"]
+- !private ["So6SKNodeC", "init"]
+- !private ["So6SKNodeC", "zPosition"]
+- !private ["So12SKSpriteNodeC", "init"]
+- !private ["So12SKSpriteNodeC", "zPosition"]
+- !private ["So10SKWarpableP", "init"]
+- !private ["So10SKWarpableP", "zPosition"]
+- !private ["So18UIFocusEnvironmentP", "addChild"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "zPosition"]
+- !private ["So11UIFocusItemP", "addChild"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "zPosition"]
+- !private ["So30UIPasteConfigurationSupportingP", "addChild"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "zPosition"]
+- !private ["So11UIResponderC", "addChild"]
+- !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "zPosition"]
+- !private ["So30UIResponderStandardEditActionsP", "addChild"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "zPosition"]
+- !private ["So23UIUserActivityRestoringP", "addChild"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "zPosition"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "zPosition"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addChild"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "zPosition"]
 - !private ["6CnD_v113collisionTypeO", "NONE"]
 depends-nominal:
+- !private "6CnD_v15AdoorC"
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
 - "6CnD_v16EntityC"
 - "SQ"
 - !private "SH"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
 - "6CnD_v111PressPlatesC"
+- !private "So6SKNodeC"
+- !private "So12SKSpriteNodeC"
+- !private "So10SKWarpableP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So23UIUserActivityRestoringP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "6CnD_v113collisionTypeO"
 depends-dynamic-lookup:
 depends-external:
@@ -66,4 +177,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "176a52180b027f0924d89ccc52f8de4d"
+interface-hash: "9a1c7beca90c53e4de95f5fbdc7bacec"

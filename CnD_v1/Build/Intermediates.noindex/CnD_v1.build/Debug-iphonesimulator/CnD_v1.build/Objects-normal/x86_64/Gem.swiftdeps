@@ -7,21 +7,43 @@ provides-member:
 - ["6CnD_v13GemC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!"
+- "Dais"
 - "Gem"
 - "Item"
 depends-member:
+- !private ["6CnD_v14DaisC", "activate"]
+- !private ["6CnD_v14DaisC", "hasGem"]
+- !private ["6CnD_v16EntityC", "activate"]
+- !private ["6CnD_v16EntityC", "hasGem"]
+- !private ["6CnD_v16EntityC", "removeGem"]
+- !private ["SQ", "activate"]
+- !private ["SQ", "hasGem"]
+- !private ["SQ", "removeGem"]
+- ["6CnD_v13GemC", "Dais"]
 - ["6CnD_v13GemC", "examine"]
 - ["6CnD_v13GemC", "init"]
 - ["6CnD_v13GemC", "menu"]
 - ["6CnD_v13GemC", "place"]
+- !private ["6CnD_v13GemC", "player"]
+- !private ["6CnD_v112InteractableC", "activate"]
+- !private ["6CnD_v112InteractableC", "hasGem"]
+- ["6CnD_v14ItemC", "Dais"]
 - ["6CnD_v14ItemC", ""]
 - ["6CnD_v14ItemC", "examine"]
 - ["6CnD_v14ItemC", "init"]
 - ["6CnD_v14ItemC", "menu"]
 - ["6CnD_v14ItemC", "place"]
+- !private ["6CnD_v14ItemC", "player"]
+- !private ["6CnD_v16PlayerC", "removeGem"]
 depends-nominal:
+- !private "6CnD_v14DaisC"
+- !private "6CnD_v16EntityC"
+- !private "SQ"
 - "6CnD_v13GemC"
+- !private "6CnD_v112InteractableC"
 - "6CnD_v14ItemC"
+- !private "6CnD_v16PlayerC"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -55,4 +77,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "88d21fd265510e79d7390fd855a4e258"
+interface-hash: "34172694084ba169f533e38217c06d85"

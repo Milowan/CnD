@@ -15,6 +15,7 @@ depends-top-level:
 - "Interactable"
 - "Lever"
 - "SKSpriteNode"
+- !private "StringLiteralType"
 depends-member:
 - !private ["6CnD_v15AdoorC", "toggleState"]
 - !private ["s7CVarArgP", "addChild"]
@@ -94,10 +95,8 @@ depends-member:
 - !private ["So6SKNodeC", "removeAllChildren"]
 - !private ["So12SKSpriteNodeC", "addChild"]
 - !private ["So12SKSpriteNodeC", "init"]
-- !private ["So12SKSpriteNodeC", "removeAllChildren"]
 - !private ["So10SKWarpableP", "addChild"]
 - !private ["So10SKWarpableP", "init"]
-- !private ["So10SKWarpableP", "removeAllChildren"]
 - !private ["So18UIFocusEnvironmentP", "addChild"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "removeAllChildren"]
@@ -118,7 +117,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "removeAllChildren"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "addChild"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "removeAllChildren"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addChild"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "removeAllChildren"]

@@ -44,6 +44,7 @@ class Player : Entity
     var cDir : Int?
     
     var plate : PressPlates?
+    var onPlate = false
 
     var interactButton : Button
     var miniMapButton : Button
@@ -96,20 +97,20 @@ class Player : Entity
         dmgTaken =  0
     
         left = Button(x: (GameScene.gridSize! * -11),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 6, s: BSNode(imageNamed: "arrow_left"))
-        s.addChild(left.sprite!)
-        left.sprite!.texture!.filteringMode = .nearest
+        s.addChild(left.sprite)
+        left.sprite.texture!.filteringMode = .nearest
         
         right = Button(x: (GameScene.gridSize! * -9) + (uiGap * 2),y: (GameScene.gridSize! * -4) + uiBotMargin + uiGap,z: 6, s: BSNode(imageNamed: "arrow_right"))
-        s.addChild(right.sprite!)
-        right.sprite!.texture!.filteringMode = .nearest
+        s.addChild(right.sprite)
+        right.sprite.texture!.filteringMode = .nearest
         
         up = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -3) + uiBotMargin + (uiGap * 2),z: 6, s: BSNode(imageNamed: "arrow_up"))
-        s.addChild(up.sprite!)
-        up.sprite!.texture!.filteringMode = .nearest
+        s.addChild(up.sprite)
+        up.sprite.texture!.filteringMode = .nearest
         
         down = Button(x: (GameScene.gridSize! * -10) + uiGap,y: (GameScene.gridSize! * -5) + uiBotMargin,z: 6, s: BSNode(imageNamed: "arrow_down"))
-        s.addChild(down.sprite!)
-        down.sprite!.texture!.filteringMode = .nearest
+        s.addChild(down.sprite)
+        down.sprite.texture!.filteringMode = .nearest
     
         dPadBG = SKSpriteNode(imageNamed : "btn_interact")
         dPadBG.position.x = CGFloat((GameScene.gridSize! * -10) + 5)
@@ -143,27 +144,29 @@ class Player : Entity
         s.addChild(upRight)
         
         miniMapButton = Button(x: (GameScene.gridSize! * 11), y: (GameScene.gridSize! * -2) + uiBuffer, z: 5, s: BSNode(imageNamed: "mapIcon"))
-        s.addChild(miniMapButton.sprite!)
-        miniMapButton.sprite!.texture!.filteringMode = .nearest
-        miniMapButton.sprite!.run(scale)
+        s.addChild(miniMapButton.sprite)
+        miniMapButton.sprite.texture!.filteringMode = .nearest
+        miniMapButton.sprite.run(scale)
         inventoryButton = Button(x: (GameScene.gridSize! * 10) - (uiGap*2), y: (GameScene.gridSize! * -2) - (uiGap*2), z: 5, s: BSNode(imageNamed: "inventoryIcon"))
-        s.addChild(inventoryButton.sprite!)
-        inventoryButton.sprite!.texture!.filteringMode = .nearest
-        inventoryButton.sprite!.run(scale)
+        s.addChild(inventoryButton.sprite)
+        inventoryButton.sprite.texture!.filteringMode = .nearest
+        inventoryButton.sprite.run(scale)
         interactButton = Button(x: (GameScene.gridSize! * 11),y: (GameScene.gridSize! * -4),z: 5, s: BSNode(imageNamed: "interactIcon"))
-        s.addChild(interactButton.sprite!)
-        interactButton.sprite!.texture!.filteringMode = .nearest
+        s.addChild(interactButton.sprite)
+        interactButton.sprite.texture!.filteringMode = .nearest
+        
 
         super.init(x : x, y : y, z: z, s : s, m : .PLAYER)
         
-        self.sword = Sword(p : self, st : Stats(s : 1, d : 1, c : 1), sp : ISNode(imageNamed: "sword_01a"))
+        inventory = Inventory(p: self)
+        self.sword = WoodenSword(p : self)
         self.armour = Armour(p : self, st : Stats(s : 1, d : 1, c : 1), sp : ISNode(imageNamed: "sword_01a"))
         self.helmet = Helmet(p : self, st : Stats(s : 1, d : 1, c : 1), sp : ISNode(imageNamed: "sword_01a"))
-        GameScene.player = self
         setAnimations()
-        let dim = CGSize(width: 32, height: 32)
-        self.sprite?.size = dim
-        self.inventory = Inventory(p: GameScene.player!)
+        //self.sprite!.setScale(CGFloat(0.5))
+//        let dim = CGSize(width: 32, height: 32)
+//        self.sprite!.size.height = dim
+//        self.sprite!.size.width = dim
     }
     
     override func update()
@@ -317,7 +320,7 @@ class Player : Entity
         }
         pos.x = Int(sprite!.position.x)
         pos.y = Int(sprite!.position.y)
-        inventory?.update()
+        inventory!.update()
     }
     
     //class func wait(forDuration duration: TimeInterval) -> SKAction
@@ -327,12 +330,12 @@ class Player : Entity
     {
         
         let a = self.sprite!
-        let aBottom = self.pos.y - Int(a.size.height / 2)
-        let aTop = self.pos.y - Int(a.size.height / 4)
-        let aLeft = self.pos.x - Int((a.size.width / 4) / 2)
-        let aRight = self.pos.x + Int((a.size.width / 4) / 2)
+        let aBottom = self.pos.y - Int(a.frame.height / 2)
+        let aTop = self.pos.y - Int(a.frame.height / 4)
+        let aLeft = self.pos.x - Int((a.frame.width / 4) / 2)
+        let aRight = self.pos.x + Int((a.frame.width / 4) / 2)
         
-        let aPos = Pos(xX : Int(a.position.x), yY : aBottom + Int(a.size.height / 4))
+        let aPos = Pos(xX : Int(a.position.x), yY : aBottom + Int(a.frame.height / 4))
         
         var bBottom : Int
         var bTop : Int
@@ -340,10 +343,10 @@ class Player : Entity
         var bRight : Int
         if let b = response.sprite
         {
-             bBottom = response.pos.y - Int(b.size.height / 2)
-             bTop = response.pos.y + Int(b.size.height / 2)
-             bLeft = response.pos.x - Int(b.size.width / 2)
-             bRight = response.pos.x + Int(b.size.width / 2)
+             bBottom = response.pos.y - Int(b.frame.height / 2)
+             bTop = response.pos.y + Int(b.frame.height / 2)
+             bLeft = response.pos.x - Int(b.frame.width / 2)
+             bRight = response.pos.x + Int(b.frame.width / 2)
         }
         else
         {
@@ -402,6 +405,7 @@ class Player : Entity
             {
                 plate.act()
                 self.plate = plate
+                onPlate = true
             }
             
             if response.collisionMask == .WORLD
@@ -452,9 +456,11 @@ class Player : Entity
             plate!.act()
             plate!.stood = false
             plate = nil
+            
+            onPlate = false
         }
         
-        pos = Pos(xX : aPos.x, yY : aPos.y + Int(a.size.height / 4))
+        pos = Pos(xX : aPos.x, yY : aPos.y + Int(a.frame.size.height / 4))
         
         sprite!.position.x = CGFloat(pos.x)
         sprite!.position.y = CGFloat(pos.y)
@@ -596,4 +602,31 @@ class Player : Entity
         
         return s
     }
-}
+    
+    func removeRock()
+    {
+        var i = 0
+        for item in inventory!.contents!
+        {
+            if let rock = item as? Rock
+            {
+                inventory!.contents!.remove(at : i)
+                break
+            }
+            i += 1
+        }
+    }
+    
+    func removeGem()
+    {
+        var i = 0
+        for item in inventory!.contents!
+        {
+            if let gem = item as? Gem
+            {
+                inventory!.contents!.remove(at : i)
+                break
+            }
+            i += 1
+        }
+    }}

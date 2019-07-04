@@ -22,13 +22,20 @@ class GameScene: SKScene
     var doorArray: [Adoor]? = []
     var customBGColor = UIColor(red: (22/255), green: (19/255), blue: (24/255), alpha: 1)
     
+    var roomFog_1  : Entity?
+    var roomFog_2  : Entity?
+    var roomFog_2b : Entity?
+    var roomFog_3  : Entity?
+    var roomFog_4  : Entity?
+    var roomFog_5  : Entity?
+
+    
     var edgeLimits = SKTileMapNode()
     static var view: SKView?
     static var rows: Int?
     static var columns: Int?
     static var gridSize: Int?
     static var invChild: SKNode?
-    static var player: Player?
     
     var pool = [Entity]()
     
@@ -61,8 +68,13 @@ class GameScene: SKScene
         let y = -200
         let z = 8
         levelGenerator!.generate()
-        addEntity(entity : Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0")))
-        setupCamera(player: GameScene.player!.sprite!)
+//        let tempSprite = SKSpriteNode(imageNamed: "knight iso char_idle_0")
+//        tempSprite.size.width = tempSprite.size.width / 2
+//        tempSprite.size.height = tempSprite.size.height / 2
+//        let tempPlayer = Player(x: x, y: y, z: z, s: tempSprite)
+        let tempPlayer = Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0"))
+        addEntity(entity : tempPlayer)
+        setupCamera(player: tempPlayer.sprite!)
     }
     
     func setupCamera(player: SKNode)
@@ -152,7 +164,7 @@ class GameScene: SKScene
         pool.append(entity)
         if entity.sprite != nil
         {
-            addChild(entity.sprite! as SKSpriteNode)
+            addChild(entity.sprite! as! SKSpriteNode)
         }
     }
     
@@ -176,6 +188,7 @@ class GameScene: SKScene
                 if enemy.isDespawned
                 {
                     removeEntity(entity: enemy)
+                    enemy.update()
                 }
             }
             if let collector = entity as? Collectable
@@ -184,6 +197,10 @@ class GameScene: SKScene
                 {
                     removeEntity(entity : collector)
                 }
+            }
+            if let player = entity as? Player
+            {
+                player.update()
             }
         }
         collision()
@@ -197,7 +214,14 @@ class GameScene: SKScene
             {
                 if entity != response
                 {
-                    entity.collision(response : response)
+                    if let player = entity as? Player
+                    {
+                        player.collision(response : response)
+                    }
+                    if let fog = entity as? Fog
+                    {
+                        fog.collision(response: response)
+                    }
                 }
             }
         }
