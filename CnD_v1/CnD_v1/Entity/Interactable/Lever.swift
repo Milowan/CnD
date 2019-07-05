@@ -23,7 +23,7 @@ class Lever : Interactable
         onSprite = SKSpriteNode(imageNamed: "switch_wall_off")
         offSprite = SKSpriteNode(imageNamed: "switch_wall_on")
         s.addChild(offSprite!)
-        super.init(x : x, y : y, z : z, s : s)
+        super.init(x : x, y : y, z : z, s : s, str : "Lever")
     }
     
     override func act()

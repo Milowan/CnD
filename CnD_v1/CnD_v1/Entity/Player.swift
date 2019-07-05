@@ -55,7 +55,7 @@ class Player : Entity
     var direction : Direction
     var lastDirection : Direction
     
-    let stats = Stats(s : 12, d : 15, c : 10)
+    let stats = Stats(s : 9, d : 15, c : 14)
     var inventory : Inventory?
     var map : Map?
     
@@ -88,14 +88,18 @@ class Player : Entity
     let uiBuffer = 2
     let uiBotMargin = 9
     
+    var hud : HUD
+    
 //    let hitText = HUD()
 //    let harmText = HUD()
     
     
-    init (x : Int, y : Int, z : Int, s : SKSpriteNode)
+    init (x : Int, y : Int, z : Int, s : SKSpriteNode, h : HUD)
     {
         direction = .NONE
         lastDirection = .NONE
+        
+        hud = h
         
         inCombat = false
         combatTimer = 0
@@ -267,7 +271,12 @@ class Player : Entity
                         {
                             if let interactable = interactButton.interactable
                             {
+                                hud.aTextField(t : "You use the " + interactable.name)
                                 interactable.act()
+                            }
+                            else
+                            {
+                                hud.aTextField(t : "You find nothing")
                             }
                             interactButton.clear = true
                         }
@@ -308,7 +317,9 @@ class Player : Entity
                             self.runAnimation(animAction: playerAtkLeft!, animKey: "atkLeft")
                             if arc4random_uniform( (UInt32(50))) > target!.evs / calcTotalPRS()
                             {
-                                self.target!.hp -= self.calcTotalDMG() / self.target!.def
+                                let deal = self.calcTotalDMG() / self.target!.def
+                                hud.aTextField(t : "You hit " + self.target!.name + " for " + String(deal))
+                                self.target!.hp -= deal
                             }
                         }
                     }
@@ -325,7 +336,12 @@ class Player : Entity
                         if !sprite!.actionForKeyIsRunning(key: "atkRight")
                         {
                             self.runAnimation(animAction: playerAtkRight!, animKey: "atkRight")
-                            self.target!.hp -= self.calcTotalDMG() / self.target!.def
+                            if arc4random_uniform( (UInt32(50))) > target!.evs / calcTotalPRS()
+                            {
+                                let deal = self.calcTotalDMG() / self.target!.def
+                                hud.aTextField(t : "You hit " + self.target!.name + " for " + String(deal))
+                                self.target!.hp -= deal
+                            }
                         }
                     }
                     if !target!.isAlive
@@ -555,7 +571,7 @@ class Player : Entity
         
         if let sword = self.sword
         {
-            dmg = (self.stats.STR + sword.stats.STR) / ((self.stats.CON + sword.stats.CON)/2) + sword.baseDamage
+            dmg = (self.stats.STR + sword.stats.STR) / ((self.stats.CON / 2) + sword.stats.CON) + sword.baseDamage
         }
         
         return dmg
@@ -567,7 +583,7 @@ class Player : Entity
         
         if let sword = self.sword
         {
-            s = (self.stats.DEX + sword.stats.DEX) / ((self.stats.CON + sword.stats.CON)/2) + sword.baseSpeed
+            s = (self.stats.DEX + sword.stats.DEX) / ((self.stats.CON / 2) + sword.stats.CON) + sword.baseSpeed
         }
         
         return s
@@ -580,8 +596,8 @@ class Player : Entity
         if let armour = self.armour ,
             let helmet = self.helmet
         {
-            def = (((self.stats.STR + armour.stats.STR) / ((self.stats.CON + armour.stats.CON)/2) + armour.baseDef)
-            + ((self.stats.STR + helmet.stats.STR) / ((self.stats.CON + helmet.stats.CON)/2) + helmet.baseDef))
+            def = (((self.stats.STR + armour.stats.STR) / ((self.stats.CON / 2) + armour.stats.CON) + armour.baseDef)
+            + ((self.stats.STR + helmet.stats.STR) / ((self.stats.CON / 2) + helmet.stats.CON) + helmet.baseDef))
         }
         
         return def

@@ -22,7 +22,7 @@ class Dais : Interactable
     {
         door = d
         
-        super.init(x : x, y : y, z : z, s : s)
+        super.init(x : x, y : y, z : z, s : s, str : "Dais")
     }
     
     override func act()

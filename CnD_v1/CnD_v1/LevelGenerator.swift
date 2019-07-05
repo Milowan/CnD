@@ -209,7 +209,7 @@ class LevelGenerator
             for column in 0..<alcMap.numberOfColumns
             {
                 guard tile(in: alcMap, at: (column, row)) != nil else {continue}
-                gameScene!.addEntity(entity: Collectable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "window_3_02"), i: Gem(s: ISNode(imageNamed: "gem_01c"))))
+                gameScene!.addEntity(entity: Collectable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "window_3_02"), str : "Alcove", i: Gem(s: ISNode(imageNamed: "gem_01c"))))
                     
                 alcMap.removeFromParent()
             }

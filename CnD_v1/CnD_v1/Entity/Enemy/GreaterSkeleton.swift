@@ -29,6 +29,6 @@ class GreaterSkeleton : Enemy
         //hp
         stats.append(25)
         
-        super.init(x : x, y : y, z : z, s : s, st : stats)
+        super.init(x : x, y : y, z : z, s : s, st : stats, str : "Greater Skeleton")
     }
 }

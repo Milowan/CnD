@@ -25,7 +25,7 @@ class HUD : SKNode
     func aTextField(t: String)
     {
         self.removeAllChildren()
-        let myLabel:SKLabelNode = SKLabelNode(fontNamed: "Pixeled")
+        let myLabel = SKLabelNode(fontNamed: "Pixeled")
         myLabel.fontSize = 15
         myLabel.text = t
         self.addChild(myLabel)

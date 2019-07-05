@@ -15,17 +15,21 @@ class Collectable : Interactable
     var item : Item
     var collected = false
     
-    init (x : Int, y : Int, z : Int, s : SKSpriteNode, i : Item)
+    init (x : Int, y : Int, z : Int, s : SKSpriteNode, str : String, i : Item)
     {
         item = i
-        super.init (x : x, y : y, z : z, s : s)
+        super.init (x : x, y : y, z : z, s : s, str : str)
     }
     
     override func act()
     {
-        item.player = player
-        player!.inventory!.contents.append(item)
-        collected = true
-        collisionMask = .NONE
+        if !collected
+        {
+            item.player = player
+            player!.inventory!.contents.append(item)
+            collected = true
+            collisionMask = .NONE
+            
+        }
     }
 }
