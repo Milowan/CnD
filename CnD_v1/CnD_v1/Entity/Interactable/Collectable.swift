@@ -13,6 +13,7 @@ import SpriteKit
 class Collectable : Interactable
 {
     var item : Item
+    var collected = false
     
     init (x : Int, y : Int, z : Int, s : SKSpriteNode, i : Item)
     {
@@ -24,6 +25,7 @@ class Collectable : Interactable
     {
         item.player = player
         player!.inventory!.contents.append(item)
+        collected = true
         collisionMask = .NONE
     }
 }

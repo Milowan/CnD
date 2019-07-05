@@ -195,7 +195,7 @@ class GameScene: SKScene
             }
             if let collector = entity as? Collectable
             {
-                if collector.item == nil
+                if collector.collected
                 {
                     removeEntity(entity : collector)
                 }
