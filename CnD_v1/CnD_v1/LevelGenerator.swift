@@ -20,6 +20,11 @@ class LevelGenerator
     var tempY: Int?
     
     var gameScene : GameScene?
+    var inventory : Inventory?
+    
+    init()
+    {
+    }
     
     func level(levelNum: Int) -> GameScene?
     {
@@ -33,7 +38,7 @@ class LevelGenerator
         return scene
     }
     
-    func generate()
+    func generate(p: Player)
     {
         createDoors()
         setupADoors()
@@ -44,6 +49,23 @@ class LevelGenerator
         createChests()
         createEnemies()
         createWallCollisions()
+        //createInventory(p : p)
+    }
+    
+    func createInventory(p : Player)
+    {
+        guard let inventorySlot = gameScene!.childNode(withName: "Inventory") /*as? SKTileMapNode*/ else {return}
+        guard let inventorySlots = inventorySlot.childNode(withName: "InventoryPlaceholders") as? SKTileMapNode else {return}
+        for row in 0..<inventorySlots.numberOfRows
+        {
+            for column in 0..<inventorySlots.numberOfColumns
+            {
+                guard tile(in: inventorySlots, at: (column, row)) != nil else {continue}
+                let slot = Slot(x : tempX!, y : tempY!, z : 16, s : SKSpriteNode(imageNamed: "emptySlot"), m : .NONE)
+                p.inventory!.slots.append(slot)
+                inventorySlots.removeFromParent()
+            }
+        }
     }
     
     func tile(in tileMap: SKTileMapNode, at coordinates: TileCoordinates) -> SKTileDefinition?
@@ -56,7 +78,6 @@ class LevelGenerator
     
     func setupADoors()
     {
-        var i: Int = 0
         guard let doorMap = gameScene!.childNode(withName: "Interactable_aDoor") as? SKTileMapNode else {return}
         for row in 0..<doorMap.numberOfRows
         {
@@ -66,7 +87,6 @@ class LevelGenerator
                 let tempDoor = Adoor(x: tempX! + 8, y: tempY! + 16, z: 5, s: SKSpriteNode(imageNamed: "frame0000"))
                 gameScene!.addEntity(entity: tempDoor)
                 gameScene!.doorArray?.append(tempDoor)
-                i += 1
                 doorMap.removeFromParent()
             }
         }
@@ -74,7 +94,6 @@ class LevelGenerator
     
     func createDoors()
     {
-        var i: Int = 0
         guard let doorMap = gameScene!.childNode(withName: "Interactable_Door") as? SKTileMapNode else {return}
         for row in 0..<doorMap.numberOfRows
         {
@@ -83,7 +102,6 @@ class LevelGenerator
                 guard tile(in: doorMap, at: (column, row)) != nil else {continue}
                 let tempDoor = Door(x: tempX! + 8, y: tempY! + 16, z: 5, s: SKSpriteNode(imageNamed: "frame0000"))
                 gameScene!.addEntity(entity: tempDoor)
-                i += 1
                 doorMap.removeFromParent()
             }
         }
@@ -230,7 +248,9 @@ class LevelGenerator
             for column in 0..<chestMap.numberOfColumns
             {
                 guard tile(in: chestMap, at: (column, row)) != nil else {continue}
-                gameScene!.addEntity(entity: Interactable(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "chest_closed")))
+                let tempChest = Chest(x: tempX!, y: tempY!, z: 5, s: SKSpriteNode(imageNamed: "chest_closed"), i: Rock())
+                tempChest.gameScene = gameScene
+                gameScene!.addEntity(entity: tempChest)
                 chestMap.removeFromParent()
             }
         }

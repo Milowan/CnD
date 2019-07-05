@@ -22,13 +22,7 @@ class GameScene: SKScene
     var doorArray: [Adoor]? = []
     var customBGColor = UIColor(red: (22/255), green: (19/255), blue: (24/255), alpha: 1)
     
-    var roomFog_1  : Entity?
-    var roomFog_2  : Entity?
-    var roomFog_2b : Entity?
-    var roomFog_3  : Entity?
-    var roomFog_4  : Entity?
-    var roomFog_5  : Entity?
-
+    var hud = HUD()
     
     var edgeLimits = SKTileMapNode()
     static var view: SKView?
@@ -69,15 +63,11 @@ class GameScene: SKScene
         let x = -15
         let y = -200
         let z = 8
-        levelGenerator!.generate()
-////        let tempSprite = SKSpriteNode(imageNamed: "knight iso char_idle_0")
-////        tempSprite.size.width = tempSprite.size.width / 2
-////        tempSprite.size.height = tempSprite.size.height / 2
-////        let tempPlayer = Player(x: x, y: y, z: z, s: tempSprite)
         let tempPlayer = Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0"))
+        levelGenerator!.generate(p: tempPlayer)
+        hud.player = tempPlayer
         addEntity(entity : tempPlayer)
-
-        
+        setupHUD()
         setupCamera(player: tempPlayer.sprite!)
     }
     
@@ -181,6 +171,14 @@ class GameScene: SKScene
         }
     }
     
+    func setupHUD()
+    {
+        hud.position.x = hud.player!.sprite!.position.x + 30
+        hud.position.y = (hud.player!.sprite!.position.y + 4)
+        hud.zPosition = 20
+        camera?.addChild(hud)
+        hud.aTextField(t: "Work In Progress ... Beta Footage")
+    }
     
     override func update(_  currentTime : TimeInterval)
     {

@@ -10,7 +10,6 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "BSNode"
 - "Bool"
-- !private "BooleanLiteralType"
 - "Button"
 - !private "CGFloat"
 - !private "CGPoint"

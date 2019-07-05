@@ -8,9 +8,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Armour"
+- !private "FloatLiteralType"
 - !private "ISNode"
+- !private "IntegerLiteralType"
 - "Player"
 - !private "Stats"
+- !private "StringLiteralType"
 - "WoodenArmour"
 depends-member:
 - !private ["6CnD_v16ArmourC", "ISNode"]

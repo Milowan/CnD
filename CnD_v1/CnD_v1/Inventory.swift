@@ -17,6 +17,9 @@ class Inventory : GameMenu
     var animSpeed : CGFloat?
     var baseY : CGFloat = 400
     
+    var contents = [Item]()
+    var slots : [Slot] = []
+    
     override init(p: Player)
     {
         invScene = GameScene.invChild!

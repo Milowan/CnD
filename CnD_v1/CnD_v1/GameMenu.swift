@@ -12,7 +12,6 @@ import SpriteKit
 
 class GameMenu
 {
-    var contents = [Item]()
     var isOpen : Bool
     var animDone : Bool?
     var playerRef : Player

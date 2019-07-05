@@ -21,7 +21,7 @@ depends-member:
 - ["6CnD_v14ItemC", "ISNode"]
 - ["6CnD_v14ItemC", "Player"]
 - ["6CnD_v14ItemC", "SKSpriteNode"]
-- ["6CnD_v14ItemC", "deinit"]
+- ["6CnD_v14ItemC", "handleInput"]
 - ["6CnD_v14ItemC", "init"]
 - ["6CnD_v14ItemC", "menu"]
 - ["6CnD_v14ItemC", "player"]
@@ -98,4 +98,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b5d72098a18adec67840a9637b3f6771"
+interface-hash: "c57d7b9cef1daa98d4d64970104a561c"

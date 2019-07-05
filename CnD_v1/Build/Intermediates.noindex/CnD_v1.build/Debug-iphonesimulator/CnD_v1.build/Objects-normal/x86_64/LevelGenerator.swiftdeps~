@@ -18,22 +18,29 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "CGPoint"
 - "CastingPrecedence"
+- !private "Chest"
 - !private "Collectable"
 - "Dais"
 - !private "Door"
+- !private "FloatLiteralType"
 - "GameScene"
 - !private "Gem"
 - !private "ISNode"
 - "Int"
-- !private "Interactable"
+- !private "IntegerLiteralType"
+- "Inventory"
 - !private "LesserSkeleton"
 - "LevelGenerator"
 - !private "Lever"
+- "Player"
 - !private "PressPlates"
+- !private "Rock"
 - !private "SKSpriteNode"
 - "SKTileDefinition"
 - "SKTileMapNode"
 - "SKTileSet"
+- !private "Slot"
+- !private "StringLiteralType"
 - !private "World"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
@@ -60,6 +67,9 @@ depends-member:
 - !private ["s7CVarArgP", "scaleMode"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "tileDefinition"]
+- !private ["6CnD_v15ChestC", "gameScene"]
+- !private ["6CnD_v15ChestC", "init"]
+- !private ["6CnD_v111CollectableC", "gameScene"]
 - !private ["6CnD_v111CollectableC", "init"]
 - !private ["Sl", "append"]
 - !private ["Sl", "init"]
@@ -123,7 +133,11 @@ depends-member:
 - !private ["SE", "x"]
 - !private ["SE", "y"]
 - !private ["6CnD_v16EntityC", "deinit"]
+- !private ["6CnD_v16EntityC", "gameScene"]
+- !private ["6CnD_v16EntityC", "init"]
+- !private ["6CnD_v16EntityC", "inventory"]
 - !private ["6CnD_v16EntityC", "oDais"]
+- !private ["SQ", "NONE"]
 - !private ["SQ", "addEntity"]
 - !private ["SQ", "append"]
 - !private ["SQ", "aspectFill"]
@@ -131,7 +145,9 @@ depends-member:
 - !private ["SQ", "childNode"]
 - !private ["SQ", "currentLevel"]
 - !private ["SQ", "doorArray"]
+- !private ["SQ", "gameScene"]
 - !private ["SQ", "init"]
+- !private ["SQ", "inventory"]
 - !private ["SQ", "numberOfColumns"]
 - !private ["SQ", "numberOfRows"]
 - !private ["SQ", "oDais"]
@@ -146,6 +162,7 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s17FixedWidthIntegerP", "init"]
+- !private ["6CnD_v18GameMenuC", "slots"]
 - !private ["6CnD_v19GameSceneC", "addEntity"]
 - !private ["6CnD_v19GameSceneC", "childNode"]
 - !private ["6CnD_v19GameSceneC", "currentLevel"]
@@ -154,6 +171,7 @@ depends-member:
 - !private ["6CnD_v19GameSceneC", "init"]
 - !private ["6CnD_v19GameSceneC", "scaleMode"]
 - !private ["6CnD_v13GemC", "init"]
+- !private ["SH", "NONE"]
 - !private ["SH", "addEntity"]
 - !private ["SH", "append"]
 - !private ["SH", "aspectFill"]
@@ -171,12 +189,15 @@ depends-member:
 - !private ["6CnD_v16ISNodeC", "deinit"]
 - !private ["6CnD_v16ISNodeC", "init"]
 - !private ["Si", "init"]
+- !private ["6CnD_v112InteractableC", "gameScene"]
 - !private ["6CnD_v112InteractableC", "init"]
 - !private ["6CnD_v112InteractableC", "oDais"]
+- !private ["6CnD_v19InventoryC", "slots"]
 - !private ["6CnD_v14ItemC", "init"]
 - !private ["6CnD_v114LesserSkeletonC", "init"]
 - !private ["6CnD_v114LevelGeneratorC", "Adoor"]
 - ["6CnD_v114LevelGeneratorC", "CGPoint"]
+- !private ["6CnD_v114LevelGeneratorC", "Chest"]
 - !private ["6CnD_v114LevelGeneratorC", "Collectable"]
 - ["6CnD_v114LevelGeneratorC", "Dais"]
 - !private ["6CnD_v114LevelGeneratorC", "Door"]
@@ -184,14 +205,17 @@ depends-member:
 - !private ["6CnD_v114LevelGeneratorC", "Gem"]
 - !private ["6CnD_v114LevelGeneratorC", "ISNode"]
 - ["6CnD_v114LevelGeneratorC", "Int"]
-- !private ["6CnD_v114LevelGeneratorC", "Interactable"]
+- ["6CnD_v114LevelGeneratorC", "Inventory"]
 - !private ["6CnD_v114LevelGeneratorC", "LesserSkeleton"]
 - !private ["6CnD_v114LevelGeneratorC", "Lever"]
+- ["6CnD_v114LevelGeneratorC", "Player"]
 - !private ["6CnD_v114LevelGeneratorC", "PressPlates"]
+- !private ["6CnD_v114LevelGeneratorC", "Rock"]
 - !private ["6CnD_v114LevelGeneratorC", "SKSpriteNode"]
 - ["6CnD_v114LevelGeneratorC", "SKTileDefinition"]
 - ["6CnD_v114LevelGeneratorC", "SKTileMapNode"]
 - ["6CnD_v114LevelGeneratorC", "SKTileSet"]
+- !private ["6CnD_v114LevelGeneratorC", "Slot"]
 - ["6CnD_v114LevelGeneratorC", "TileCoordinates"]
 - !private ["6CnD_v114LevelGeneratorC", "World"]
 - ["6CnD_v114LevelGeneratorC", "createAlcoves"]
@@ -199,12 +223,14 @@ depends-member:
 - ["6CnD_v114LevelGeneratorC", "createDoors"]
 - ["6CnD_v114LevelGeneratorC", "createEnemies"]
 - ["6CnD_v114LevelGeneratorC", "createGemDias"]
+- ["6CnD_v114LevelGeneratorC", "createInventory"]
 - ["6CnD_v114LevelGeneratorC", "createLever"]
 - ["6CnD_v114LevelGeneratorC", "createPressPlates"]
 - ["6CnD_v114LevelGeneratorC", "createWallCollisions"]
 - ["6CnD_v114LevelGeneratorC", "gameScene"]
 - ["6CnD_v114LevelGeneratorC", "generate"]
 - ["6CnD_v114LevelGeneratorC", "init"]
+- ["6CnD_v114LevelGeneratorC", "inventory"]
 - ["6CnD_v114LevelGeneratorC", "level"]
 - ["6CnD_v114LevelGeneratorC", "linkDaii"]
 - ["6CnD_v114LevelGeneratorC", "setupADoors"]
@@ -278,6 +304,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "scaleMode"]
 - !private ["So14NSSecureCodingP", "tileDefinition"]
 - !private ["Sj", "init"]
+- !private ["6CnD_v16PlayerC", "inventory"]
 - !private ["6CnD_v111PressPlatesC", "init"]
 - !private ["Sk", "append"]
 - !private ["Sk", "init"]
@@ -286,6 +313,7 @@ depends-member:
 - !private ["Sm", "init"]
 - !private ["Sm", "subscript"]
 - !private ["SY", "aspectFill"]
+- !private ["6CnD_v14RockC", "init"]
 - !private ["s10SIMDScalarP", "init"]
 - !private ["So12SKEffectNodeC", "addEntity"]
 - !private ["So12SKEffectNodeC", "childNode"]
@@ -328,6 +356,7 @@ depends-member:
 - !private ["ST", "subscript"]
 - !private ["SZ", "init"]
 - !private ["s13SignedNumericP", "init"]
+- !private ["6CnD_v14SlotC", "init"]
 - !private ["Sx", "init"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
@@ -432,6 +461,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "x"]
 - !private ["s21_ObjectiveCBridgeableP", "y"]
+- !private ["6CnD_v113collisionTypeO", "NONE"]
 depends-nominal:
 - !private "s18AdditiveArithmeticP"
 - !private "6CnD_v15AdoorC"
@@ -440,6 +470,7 @@ depends-nominal:
 - !private "Sz"
 - !private "So7CGPointV"
 - !private "s7CVarArgP"
+- !private "6CnD_v15ChestC"
 - !private "6CnD_v111CollectableC"
 - !private "Sl"
 - !private "SL"
@@ -458,12 +489,14 @@ depends-nominal:
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s17FixedWidthIntegerP"
+- !private "6CnD_v18GameMenuC"
 - !private "6CnD_v19GameSceneC"
 - !private "6CnD_v13GemC"
 - !private "SH"
 - !private "6CnD_v16ISNodeC"
 - !private "Si"
 - !private "6CnD_v112InteractableC"
+- !private "6CnD_v19InventoryC"
 - !private "6CnD_v14ItemC"
 - !private "6CnD_v114LesserSkeletonC"
 - "6CnD_v114LevelGeneratorC"
@@ -478,10 +511,12 @@ depends-nominal:
 - !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "Sj"
+- !private "6CnD_v16PlayerC"
 - !private "6CnD_v111PressPlatesC"
 - !private "Sk"
 - !private "Sm"
 - !private "SY"
+- !private "6CnD_v14RockC"
 - !private "s10SIMDScalarP"
 - !private "So12SKEffectNodeC"
 - !private "So6SKNodeC"
@@ -493,6 +528,7 @@ depends-nominal:
 - !private "ST"
 - !private "SZ"
 - !private "s13SignedNumericP"
+- !private "6CnD_v14SlotC"
 - !private "Sx"
 - !private "s27StringInterpolationProtocolP"
 - !private "s16TextOutputStreamP"
@@ -511,6 +547,7 @@ depends-nominal:
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
+- !private "6CnD_v113collisionTypeO"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -544,4 +581,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "7bc50fbbf9ab98ae43268571b0bbc6b0"
+interface-hash: "a0dc4a7ee1f4adf2f016dd29e11d0ea1"

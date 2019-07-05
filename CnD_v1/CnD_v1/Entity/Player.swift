@@ -88,6 +88,10 @@ class Player : Entity
     let uiBuffer = 2
     let uiBotMargin = 9
     
+//    let hitText = HUD()
+//    let harmText = HUD()
+    
+    
     init (x : Int, y : Int, z : Int, s : SKSpriteNode)
     {
         direction = .NONE
@@ -171,6 +175,17 @@ class Player : Entity
         
         inventory = Inventory(p: self)
         map = Map(p: self)
+//        hitText.position.x = CGFloat(self.pos.x + 10)
+//        hitText.position.y = CGFloat(self.pos.y)
+//        hitText.zPosition = 55
+//        harmText.position.x = CGFloat(self.pos.x - 10)
+//        harmText.position.y = CGFloat(self.pos.y)
+//        harmText.zPosition = 55
+//        hitText.aHitText(t: "25")
+//        hitText.aTextField(t: "TEXT")
+////        harmText.aHarmfulText(t: "25")
+//        //s.addChild(hitText)
+//        s.addChild(harmText)
         self.sword = WoodenSword(p : self)
         self.armour = Armour(p : self, st : Stats(s : 1, d : 1, c : 1), sp : ISNode(imageNamed: "sword_01a"))
         self.helmet = Helmet(p : self, st : Stats(s : 1, d : 1, c : 1), sp : ISNode(imageNamed: "sword_01a"))
@@ -332,8 +347,6 @@ class Player : Entity
         inventory!.update()
         map!.update()
     }
-    
-    //class func wait(forDuration duration: TimeInterval) -> SKAction
 
 
     override func collision(response : Entity)

@@ -14,7 +14,7 @@ class Rock : Item
     
     init ()
     {
-        super.init(s : ISNode(imageNamed : "movable_block"))
+        super.init(s : ISNode(imageNamed : "gem_01i"))
     }
     
     override func menu()

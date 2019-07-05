@@ -11,10 +11,16 @@ import SpriteKit
 
 class Chest : Collectable
 {
+    var gameScene : GameScene?
     override func act()
     {
-        player!.inventory!.contents.append(item!)
-        item = nil
-        self.sprite = SKSpriteNode(imageNamed: <#T##String#>)
+        item.player = player
+        player!.inventory!.contents.append(item)
+        self.sprite?.removeFromParent()
+        let sprite = SKSpriteNode(imageNamed: "chest_open")
+        sprite.position.x = CGFloat(self.pos.x)
+        sprite.position.y = CGFloat(self.pos.y)
+        sprite.zPosition = 6
+        gameScene!.addChild(sprite)
     }
 }
