@@ -55,6 +55,7 @@ depends-top-level:
 - "SKTexture"
 - "Stats"
 - "String"
+- !private "StringLiteralType"
 - "Sword"
 - !private "UInt32"
 - !private "WoodenSword"
@@ -630,6 +631,7 @@ depends-member:
 - ["6CnD_v16PlayerC", "collision"]
 - ["6CnD_v16PlayerC", "combatTimer"]
 - ["6CnD_v16PlayerC", "dPadBG"]
+- ["6CnD_v16PlayerC", "deinit"]
 - ["6CnD_v16PlayerC", "direction"]
 - ["6CnD_v16PlayerC", "dmTextBar"]
 - ["6CnD_v16PlayerC", "dmgTaken"]
