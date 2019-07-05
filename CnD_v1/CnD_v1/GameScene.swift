@@ -63,10 +63,10 @@ class GameScene: SKScene
         let x = -15
         let y = -200
         let z = 8
-        let tempPlayer = Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0"))
+        let tempPlayer = Player(x: x, y: y, z: z, s: SKSpriteNode(imageNamed: "knight iso char_idle_0"), h : hud)
+        addEntity(entity : tempPlayer)
         levelGenerator!.generate(p: tempPlayer)
         hud.player = tempPlayer
-        addEntity(entity : tempPlayer)
         setupHUD()
         setupCamera(player: tempPlayer.sprite!)
     }
@@ -193,13 +193,6 @@ class GameScene: SKScene
                     enemy.update()
                 }
             }
-            if let collector = entity as? Collectable
-            {
-                if collector.item == nil
-                {
-                    removeEntity(entity : collector)
-                }
-            }
             if let player = entity as? Player
             {
                 player.update()
@@ -216,10 +209,7 @@ class GameScene: SKScene
             {
                 if entity != response
                 {
-                    if let player = entity as? Player
-                    {
-                        player.collision(response : response)
-                    }
+                        entity.collision(response : response)
                 }
             }
         }

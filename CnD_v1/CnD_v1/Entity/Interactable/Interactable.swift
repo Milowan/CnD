@@ -11,11 +11,13 @@ import SpriteKit
 
 class Interactable : Entity
 {
-    
+    var name : String
     var player : Player?
     
-    init (x : Int, y : Int, z: Int, s : SKSpriteNode)
+    init (x : Int, y : Int, z: Int, s : SKSpriteNode, str : String)
     {
+        name = str
+        
         super.init(x: x, y: y, z: z, s: s, m: .NONE)
     }
     

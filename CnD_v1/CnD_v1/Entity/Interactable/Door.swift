@@ -18,11 +18,11 @@ class Door: Interactable
     var doorClosed: SKAction?
     var doorTextures:[SKTexture] = []
     
-    override init (x: Int, y: Int, z: Int, s: SKSpriteNode)
+    init (x : Int, y : Int, z : Int, s : SKSpriteNode)
     {
         isOpen = false
         i = 0
-        super.init(x: x, y: y, z: z, s: s)
+        super.init(x : x, y : y, z : z, s : s, str : "Door")
         setDoorAnims()
         collisionMask = .WORLD
     }

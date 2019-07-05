@@ -32,6 +32,6 @@ class SkeletonLord : Boss
         //spATS
         stats.append(1)
         
-        super.init(x : x, y : y, z : z, s : s, st : stats)
+        super.init(x : x, y : y, z : z, s : s, st : stats, str : "Skeleton Lord")
     }
 }

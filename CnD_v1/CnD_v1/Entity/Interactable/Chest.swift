@@ -12,6 +12,12 @@ import SpriteKit
 class Chest : Collectable
 {
     var gameScene : GameScene?
+    
+    init (x : Int, y : Int, z : Int, s : SKSpriteNode, i : Item)
+    {
+        super.init(x : x, y : y, z : z, s : s, str : "Chest", i : i)
+    }
+    
     override func act()
     {
         item.player = player

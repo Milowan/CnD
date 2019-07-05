@@ -14,10 +14,10 @@ class Boss : Enemy
     var specialDamage = 0
     var specialATS = 0
     
-    override init(x : Int, y : Int, z : Int, s : SKSpriteNode, st : [Int])
+    override init(x : Int, y : Int, z : Int, s : SKSpriteNode, st : [Int], str : String)
     {
         specialDamage = st[6]
         specialATS = st[7]
-        super.init(x : x, y : y, z : z, s : s, st : st)
+        super.init(x : x, y : y, z : z, s : s, st : st, str : str)
     }
 }

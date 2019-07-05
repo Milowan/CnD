@@ -36,7 +36,7 @@ class GreaterSkeleton : Enemy
         stats.append(4)
         //hp
         stats.append(25)
-        super.init(x : x, y : y, z : z, s : s, st : stats)
+        super.init(x : x, y : y, z : z, s : s, st : stats, str: "GreaterSkeleton")
         setAnimations()
     }
         

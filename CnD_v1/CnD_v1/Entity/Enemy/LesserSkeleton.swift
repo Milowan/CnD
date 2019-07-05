@@ -37,7 +37,7 @@ class LesserSkeleton : Enemy
         var stats = [Int]()
         
         //dmg
-        stats.append(3)
+        stats.append(9)
         //ats
         stats.append(25)
         //def
@@ -49,7 +49,7 @@ class LesserSkeleton : Enemy
         //hp
         stats.append(10)
         
-        super.init(x : x, y : y, z : z, s : s, st : stats)
+        super.init(x : x, y : y, z : z, s : s, st : stats, str : "Lesser Skeleton")
         setAnimations()
         startAnimation(animAction: enemyIdleL!, animKey: "idleL")
     }
@@ -73,7 +73,9 @@ class LesserSkeleton : Enemy
                         self.runAnimation(animAction: enemyAtkL!, animKey: "atkLeft")
                         if arc4random_uniform( (UInt32(50))) > player!.calcTotalEVS() / prs
                         {
-                            player!.dmgTaken += Float(dmg / player!.calcTotalDEF())
+                            let deal = Float(dmg / player!.calcTotalDEF())
+                            player!.hud.aTextField(t : name + "hits you for " + String(deal))
+                            player!.dmgTaken += deal
                         }
                     }
                 }
@@ -89,7 +91,9 @@ class LesserSkeleton : Enemy
                         self.runAnimation(animAction: enemyAtkR!, animKey: "atkRight")
                         if arc4random_uniform( (UInt32(50))) > player!.calcTotalEVS() / prs
                         {
-                            player!.dmgTaken += Float(dmg / player!.calcTotalDEF())
+                            let deal = Float(dmg / player!.calcTotalDEF())
+                            player!.hud.aTextField(t : name + " hits you for " + String(deal))
+                            player!.dmgTaken += deal
                         }
                     }
                 }
