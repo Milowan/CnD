@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "68bada735cf5513398e2c3cc8de28cad"
-build_time: [1562292302, 624215000]
+build_time: [1562293403, 431631000]
 inputs:
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Entity/Interactable/Dais.swift": [1562266490, 164757802]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Item/Helmet.swift": [1562185363, 355366278]
@@ -34,7 +34,7 @@ inputs:
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Map.swift": [1562271300, 156207729]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Pos.swift": [1561146323, 390672120]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Entity/Interactable/Lever.swift": [1562097091, 271264915]
-  "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Entity/Player.swift": [1562285569, 921772849]
+  "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Entity/Player.swift": [1562293211, 622630345]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Entity/Enemy/SkeletonLord.swift": [1561746469, 753142472]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/Options.swift": [1562271564, 657740097]
   "/Users/arrinity/Documents/GitHub/CnD-v1/CnD_v1/CnD_v1/ISNode.swift": [1562096770, 160683660]
