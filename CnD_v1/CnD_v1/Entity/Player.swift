@@ -59,7 +59,7 @@ class Player : Entity
     var inventory : Inventory?
     var map : Map?
     
-    let movSpeed = 3
+    let movSpeed = 2
     let animSpeed = 0.2
     var isIdle = true
     var tempString: String?

@@ -8,15 +8,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
-- !private "FloatLiteralType"
 - "HUD"
-- !private "IntegerLiteralType"
 - "NSCoder"
 - "Player"
 - !private "SKLabelNode"
 - "SKNode"
 - "String"
-- !private "StringLiteralType"
 - !private "UIColor"
 - !private "fatalError"
 depends-member:

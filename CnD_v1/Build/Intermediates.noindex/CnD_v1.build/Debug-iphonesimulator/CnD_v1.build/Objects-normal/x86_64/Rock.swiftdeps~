@@ -64,6 +64,7 @@ depends-member:
 - !private ["6CnD_v111PressPlatesC", "rocked"]
 - !private ["6CnD_v14RockC", "ISNode"]
 - !private ["6CnD_v14RockC", "Options"]
+- ["6CnD_v14RockC", "deinit"]
 - ["6CnD_v14RockC", "handleInput"]
 - ["6CnD_v14RockC", "init"]
 - ["6CnD_v14RockC", "menu"]

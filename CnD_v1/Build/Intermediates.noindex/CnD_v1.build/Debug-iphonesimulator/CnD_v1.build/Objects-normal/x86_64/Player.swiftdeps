@@ -30,7 +30,6 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "BSNode"
 - "Bool"
-- "BooleanLiteralType"
 - "Button"
 - !private "CGFloat"
 - !private "CGSize"
@@ -39,13 +38,11 @@ depends-top-level:
 - "Enemy"
 - "Entity"
 - "Float"
-- "FloatLiteralType"
 - !private "GameScene"
 - !private "Gem"
 - "Helmet"
 - !private "ISNode"
 - "Int"
-- "IntegerLiteralType"
 - !private "Interactable"
 - "Inventory"
 - "Map"
@@ -634,6 +631,7 @@ depends-member:
 - ["6CnD_v16PlayerC", "collision"]
 - ["6CnD_v16PlayerC", "combatTimer"]
 - ["6CnD_v16PlayerC", "dPadBG"]
+- ["6CnD_v16PlayerC", "deinit"]
 - ["6CnD_v16PlayerC", "direction"]
 - ["6CnD_v16PlayerC", "dmTextBar"]
 - ["6CnD_v16PlayerC", "dmgTaken"]
@@ -1006,4 +1004,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d160d06d223718f19406d0bf435164ca"
+interface-hash: "fc09efa70dbe00d0717bbd45acb6cd40"

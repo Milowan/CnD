@@ -22,6 +22,7 @@ depends-top-level:
 - "SKSpriteNode"
 - "SKTexture"
 - "String"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Sa", "append"]
 - !private ["SK", "append"]

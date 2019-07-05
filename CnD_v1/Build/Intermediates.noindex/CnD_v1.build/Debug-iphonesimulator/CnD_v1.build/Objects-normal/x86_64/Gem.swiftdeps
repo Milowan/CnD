@@ -21,6 +21,7 @@ depends-member:
 - !private ["SQ", "hasGem"]
 - !private ["SQ", "removeGem"]
 - ["6CnD_v13GemC", "Dais"]
+- ["6CnD_v13GemC", "deinit"]
 - ["6CnD_v13GemC", "examine"]
 - ["6CnD_v13GemC", "init"]
 - ["6CnD_v13GemC", "menu"]

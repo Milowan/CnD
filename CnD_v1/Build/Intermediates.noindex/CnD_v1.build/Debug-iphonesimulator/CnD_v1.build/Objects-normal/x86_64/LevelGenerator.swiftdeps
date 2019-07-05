@@ -25,6 +25,7 @@ depends-top-level:
 - !private "FloatLiteralType"
 - "GameScene"
 - !private "Gem"
+- !private "GreaterSkeleton"
 - !private "ISNode"
 - "Int"
 - !private "IntegerLiteralType"
@@ -171,6 +172,7 @@ depends-member:
 - !private ["6CnD_v19GameSceneC", "init"]
 - !private ["6CnD_v19GameSceneC", "scaleMode"]
 - !private ["6CnD_v13GemC", "init"]
+- !private ["6CnD_v115GreaterSkeletonC", "init"]
 - !private ["SH", "NONE"]
 - !private ["SH", "addEntity"]
 - !private ["SH", "append"]
@@ -203,6 +205,7 @@ depends-member:
 - !private ["6CnD_v114LevelGeneratorC", "Door"]
 - ["6CnD_v114LevelGeneratorC", "GameScene"]
 - !private ["6CnD_v114LevelGeneratorC", "Gem"]
+- !private ["6CnD_v114LevelGeneratorC", "GreaterSkeleton"]
 - !private ["6CnD_v114LevelGeneratorC", "ISNode"]
 - ["6CnD_v114LevelGeneratorC", "Int"]
 - ["6CnD_v114LevelGeneratorC", "Inventory"]
@@ -227,6 +230,7 @@ depends-member:
 - ["6CnD_v114LevelGeneratorC", "createLever"]
 - ["6CnD_v114LevelGeneratorC", "createPressPlates"]
 - ["6CnD_v114LevelGeneratorC", "createWallCollisions"]
+- ["6CnD_v114LevelGeneratorC", "createlvl2Enemies"]
 - ["6CnD_v114LevelGeneratorC", "gameScene"]
 - ["6CnD_v114LevelGeneratorC", "generate"]
 - ["6CnD_v114LevelGeneratorC", "init"]
@@ -492,6 +496,7 @@ depends-nominal:
 - !private "6CnD_v18GameMenuC"
 - !private "6CnD_v19GameSceneC"
 - !private "6CnD_v13GemC"
+- !private "6CnD_v115GreaterSkeletonC"
 - !private "SH"
 - !private "6CnD_v16ISNodeC"
 - !private "Si"
@@ -581,4 +586,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "a0dc4a7ee1f4adf2f016dd29e11d0ea1"
+interface-hash: "11af9833b27a25955a07c802d3c23b2d"

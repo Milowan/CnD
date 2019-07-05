@@ -8,11 +8,14 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
+- "FloatLiteralType"
 - "Gear"
 - "Helmet"
 - "ISNode"
+- "IntegerLiteralType"
 - "Player"
 - "Stats"
+- !private "StringLiteralType"
 depends-member:
 - ["6CnD_v14GearC", "ISNode"]
 - ["6CnD_v14GearC", "Player"]

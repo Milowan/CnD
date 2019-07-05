@@ -48,6 +48,7 @@ class LevelGenerator
         createAlcoves()
         createChests()
         createEnemies()
+        createlvl2Enemies()
         createWallCollisions()
         //createInventory(p : p)
     }
@@ -196,6 +197,20 @@ class LevelGenerator
                 guard tile(in: enemyMap, at: (column, row)) != nil else {continue}
                 gameScene!.addEntity(entity: LesserSkeleton(x: tempX!, y: tempY!, z: 9, s: SKSpriteNode(imageNamed: "Skeleton-Idle_01")))
                 enemyMap.removeFromParent()
+            }
+        }
+    }
+    
+    func createlvl2Enemies()
+    {
+        guard let enemyMap1 = gameScene!.childNode(withName: "Interactable_lvl2Enemy") as? SKTileMapNode else {return}
+        for row in 0..<enemyMap1.numberOfRows
+        {
+            for column in 0..<enemyMap1.numberOfColumns
+            {
+                guard tile(in: enemyMap1, at: (column, row)) != nil else {continue}
+                gameScene!.addEntity(entity: GreaterSkeleton(x: tempX!, y: tempY!, z: 9, s: SKSpriteNode(imageNamed: "undead_attack_sheet_01")))
+                enemyMap1.removeFromParent()
             }
         }
     }

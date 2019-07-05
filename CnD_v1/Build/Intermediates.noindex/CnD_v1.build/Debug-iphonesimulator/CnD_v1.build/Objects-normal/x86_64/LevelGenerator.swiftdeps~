@@ -227,6 +227,7 @@ depends-member:
 - ["6CnD_v114LevelGeneratorC", "createLever"]
 - ["6CnD_v114LevelGeneratorC", "createPressPlates"]
 - ["6CnD_v114LevelGeneratorC", "createWallCollisions"]
+- ["6CnD_v114LevelGeneratorC", "createlvl2Enemies"]
 - ["6CnD_v114LevelGeneratorC", "gameScene"]
 - ["6CnD_v114LevelGeneratorC", "generate"]
 - ["6CnD_v114LevelGeneratorC", "init"]
@@ -581,4 +582,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "a0dc4a7ee1f4adf2f016dd29e11d0ea1"
+interface-hash: "11af9833b27a25955a07c802d3c23b2d"

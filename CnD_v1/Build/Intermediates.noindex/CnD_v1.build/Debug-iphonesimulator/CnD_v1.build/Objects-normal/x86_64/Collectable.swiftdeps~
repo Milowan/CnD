@@ -22,7 +22,6 @@ depends-member:
 - ["6CnD_v111CollectableC", "SKSpriteNode"]
 - ["6CnD_v111CollectableC", "act"]
 - !private ["6CnD_v111CollectableC", "collisionMask"]
-- ["6CnD_v111CollectableC", "deinit"]
 - ["6CnD_v111CollectableC", "init"]
 - ["6CnD_v111CollectableC", "item"]
 - !private ["6CnD_v111CollectableC", "player"]

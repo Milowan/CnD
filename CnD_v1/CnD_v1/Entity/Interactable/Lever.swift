@@ -30,7 +30,6 @@ class Lever : Interactable
     {
         if !isOn!
         {
-            
             sprite!.removeAllChildren()
             door!.toggleState()
             sprite!.addChild(onSprite!)

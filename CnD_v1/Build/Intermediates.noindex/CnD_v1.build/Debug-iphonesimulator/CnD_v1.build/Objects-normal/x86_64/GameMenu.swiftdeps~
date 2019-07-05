@@ -10,7 +10,6 @@ depends-top-level:
 - !private "!"
 - "AssignmentPrecedence"
 - "Bool"
-- !private "BooleanLiteralType"
 - "GameMenu"
 - "Player"
 depends-member:
@@ -19,6 +18,7 @@ depends-member:
 - ["6CnD_v18GameMenuC", "act"]
 - ["6CnD_v18GameMenuC", "animDone"]
 - ["6CnD_v18GameMenuC", "closeMenu"]
+- ["6CnD_v18GameMenuC", "deinit"]
 - ["6CnD_v18GameMenuC", "init"]
 - ["6CnD_v18GameMenuC", "isOpen"]
 - ["6CnD_v18GameMenuC", "openMenu"]
