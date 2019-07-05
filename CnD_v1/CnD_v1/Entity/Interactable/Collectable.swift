@@ -24,7 +24,6 @@ class Collectable : Interactable
     {
         item.player = player
         player!.inventory!.contents.append(item)
-        
         collisionMask = .NONE
     }
 }

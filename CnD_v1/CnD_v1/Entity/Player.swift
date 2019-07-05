@@ -271,6 +271,7 @@ class Player : Entity
                         {
                             map!.act()
                         }
+                        miniMapButton.clear = true
                     }
                 }
             }

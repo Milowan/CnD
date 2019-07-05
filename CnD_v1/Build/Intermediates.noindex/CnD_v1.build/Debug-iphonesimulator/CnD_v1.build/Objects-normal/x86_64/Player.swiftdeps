@@ -30,6 +30,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "BSNode"
 - "Bool"
+- "BooleanLiteralType"
 - "Button"
 - !private "CGFloat"
 - !private "CGSize"
@@ -43,7 +44,6 @@ depends-top-level:
 - "Helmet"
 - !private "ISNode"
 - "Int"
-- "IntegerLiteralType"
 - !private "Interactable"
 - "Inventory"
 - "Map"
@@ -631,7 +631,6 @@ depends-member:
 - ["6CnD_v16PlayerC", "collision"]
 - ["6CnD_v16PlayerC", "combatTimer"]
 - ["6CnD_v16PlayerC", "dPadBG"]
-- ["6CnD_v16PlayerC", "deinit"]
 - ["6CnD_v16PlayerC", "direction"]
 - ["6CnD_v16PlayerC", "dmTextBar"]
 - ["6CnD_v16PlayerC", "dmgTaken"]

@@ -41,6 +41,7 @@
 		A611F0FD22BD4D8400F18221 /* PressPlates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611F0FC22BD4D8400F18221 /* PressPlates.swift */; };
 		A61318F422CE7CC600408957 /* GameMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61318F322CE7CC600408957 /* GameMenu.swift */; };
 		A61318F622CE7E9100408957 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61318F522CE7E9100408957 /* Map.swift */; };
+		A61318F822CE962100408957 /* Chest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61318F722CE962100408957 /* Chest.swift */; };
 		A619003922CD4756009628AB /* Adoor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A619003822CD4756009628AB /* Adoor.swift */; };
 		A61C3F5E22AF05ED0031B4B7 /* MapTiles.sks in Resources */ = {isa = PBXBuildFile; fileRef = A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */; };
 		A61C3F6022B025320031B4B7 /* LevelScene_1.sks in Resources */ = {isa = PBXBuildFile; fileRef = A61C3F5F22B025320031B4B7 /* LevelScene_1.sks */; };
@@ -109,6 +110,7 @@
 		A611F0FC22BD4D8400F18221 /* PressPlates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressPlates.swift; sourceTree = "<group>"; };
 		A61318F322CE7CC600408957 /* GameMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMenu.swift; sourceTree = "<group>"; };
 		A61318F522CE7E9100408957 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		A61318F722CE962100408957 /* Chest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chest.swift; sourceTree = "<group>"; };
 		A619003522CD1B10009628AB /* Pixeled.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Pixeled.ttf; path = ../../../../../Downloads/Pixeled.ttf; sourceTree = "<group>"; };
 		A619003822CD4756009628AB /* Adoor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Adoor.swift; path = Interactable/Adoor.swift; sourceTree = "<group>"; };
 		A61C3F5D22AF05ED0031B4B7 /* MapTiles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MapTiles.sks; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				26FAFE8522C69BCB00E36901 /* Dais.swift */,
 				26FAFE8622C69BCB00E36901 /* Lever.swift */,
 				26FAFE8322C69BBB00E36901 /* Collectable.swift */,
+				A61318F722CE962100408957 /* Chest.swift */,
 				26FAFE8122C69BA800E36901 /* Door.swift */,
 			);
 			path = Interactable;
@@ -442,6 +445,7 @@
 				26FE913A22CBE839003AB70A /* HUD.swift in Sources */,
 				A686E4BA22A45405004E1B64 /* GameViewController.swift in Sources */,
 				26FB096C22CD280A0022271E /* WoodenSword.swift in Sources */,
+				A61318F822CE962100408957 /* Chest.swift in Sources */,
 				265C0D0D22C53B3E001A471A /* Armour.swift in Sources */,
 				26FBAF0222A5965C00AEDCDC /* World.swift in Sources */,
 				26FDCA8E22BBFFE200CEE077 /* Stats.swift in Sources */,
