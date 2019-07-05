@@ -316,7 +316,6 @@ class Player : Entity
                     {
                         victory = true
                     }
-                    combatTimer += 1
                 }
                 if cDir == 1
                 {
@@ -333,8 +332,8 @@ class Player : Entity
                     {
                         victory = true
                     }
-                    combatTimer += 1
                 }
+                combatTimer += 1
             }
             
         }
